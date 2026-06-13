@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '* hspice simulation for cmos inverter'
+ rise_delay       fall_delay       rise_time        fall_time       
+ avg_power        avg_current      temper           alter#          
+  4.764e-11        4.039e-11        6.350e-11        6.378e-11      
+  3.964e-06       -1.830e-06         25.0000        1               

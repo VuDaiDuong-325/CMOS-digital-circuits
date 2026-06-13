@@ -1,0 +1,8 @@
+********************************************************************************
+* Library          : dff
+* Cell             : dff_test
+* View             : schematic
+* View Search List : hspice hspiceD cmos.sch cmos_sch schematic veriloga
+* View Stop List   : hspice hspiceD veriloga
+********************************************************************************
+xi0 clk d q dff

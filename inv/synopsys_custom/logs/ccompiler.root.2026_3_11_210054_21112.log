@@ -1,0 +1,42 @@
+[21:00:56.36] /r giWindowId 0
+[21:00:56.36] /r giWindowGeometry 600x300
+[21:00:56.37] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Mar 11 21:00:54 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/lab1vlsi/inverter/inv
+              /c 
+[21:00:58.50] /w Warning: In file /root/Excercise/lab1vlsi/inverter/inv/lib.defs: Unable to open library reference90RF at path /root/Excercise/lab1vlsi/inverter/Exercise/lab1vlsi/PDK/reference90RF : No access permission. (DATA_MANAGEMENT-014)
+[21:00:58.52] /r giShowFrameTabs true
+[21:00:58.52] /r giWindowId 1
+[21:00:58.52] /r giWindowGeometry 1040x800
+[21:01:01.28] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[21:01:01.28] /# 
+[21:01:01.28] /i dm::openLibraryManager
+[21:01:01.28] /r giWindowId 2
+[21:01:01.29] /r giWindowGeometry 660x600+50+84
+[21:01:01.33] /o oa:0x17ad3220
+[21:01:02.81] /i gi::setCurrentIndex {libs} -index {parasitics} -in [gi::getWindows 2]
+[21:01:02.83] /i gi::setItemSelection {libs} -index {parasitics} -in [gi::getWindows 2]
+[21:01:03.23] /i gi::setCurrentIndex {libs} -index {sheets} -in [gi::getWindows 2]
+[21:01:03.24] /i gi::setItemSelection {libs} -index {sheets} -in [gi::getWindows 2]
+[21:01:23.82] /i exit
+[21:01:23.89] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[21:01:24.12] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x155+741+389
+[21:01:25.07] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[21:01:25.09] /i gi::setActiveWindow 1
+[21:01:25.09] /i gi::setActiveWindow 1 -raise true
+[21:01:25.21] /o Shutdown time: Wed Mar 11 21:01:25 2026
+[21:01:25.22] /o Elapsed session real time: 0.48 minutes
+[21:01:25.22] /o Session terminated. Log is at /root/Excercise/lab1vlsi/inverter/inv/synopsys_custom/logs/ccompiler.root.2026_3_11_210054_21112.log

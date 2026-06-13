@@ -1,0 +1,43 @@
+[20:36:21.11] /r giWindowId 0
+[20:36:21.11] /r giWindowGeometry 600x300
+[20:36:21.13] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Mar 17 20:36:16 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/Tranmission_Gate
+              /c 
+[20:36:24.14] /w Warning: In file /root/Excercise/Tranmission_Gate/lib.defs: Unable to open library reference90RF at path /root/Excercise/Tranmission_Gate/PDK/reference90RF : No access permission. (DATA_MANAGEMENT-014)
+[20:36:24.17] /r giShowFrameTabs true
+[20:36:24.17] /r giWindowId 1
+[20:36:24.18] /r giWindowGeometry 1040x800
+[20:36:28.08] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[20:36:28.09] /# 
+[20:36:28.09] /i dm::openLibraryManager
+[20:36:28.09] /r giWindowId 2
+[20:36:28.09] /r giWindowGeometry 660x600+50+84
+[20:36:28.14] /o oa:0x19152540
+[20:36:28.21] /i gi::setSectionSizes {libs} -values {249} -in [gi::getWindows 2]
+[20:36:33.44] /i gi::setCurrentIndex {libs} -index {analogLib} -in [gi::getWindows 2]
+[20:36:33.48] /i gi::setItemSelection {libs} -index {analogLib} -in [gi::getWindows 2]
+[20:36:34.03] /i gi::setCurrentIndex {libs} -index {snpsDefTechLib} -in [gi::getWindows 2]
+[20:36:34.04] /i gi::setItemSelection {libs} -index {snpsDefTechLib} -in [gi::getWindows 2]
+[20:36:37.47] /i exit
+[20:36:37.55] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[20:36:37.79] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+376
+[20:36:38.80] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[20:36:38.82] /i gi::setActiveWindow 1
+[20:36:38.82] /i gi::setActiveWindow 1 -raise true
+[20:36:38.96] /o Shutdown time: Tue Mar 17 20:36:38 2026
+[20:36:38.96] /o Elapsed session real time: 0.3 minutes
+[20:36:38.96] /o Session terminated. Log is at /root/Excercise/Tranmission_Gate/synopsys_custom/logs/ccompiler.root.2026_3_17_203616_25640.log

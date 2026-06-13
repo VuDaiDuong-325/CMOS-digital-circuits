@@ -1,0 +1,16 @@
+Parsing option_file: split_netlist.tech (EX-304)
+Running Amd_64b    
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  11%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  17%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  23%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  41%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  58%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  76%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  94%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+0  
+xTractor      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.1    Mem=226.0 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.1    Mem=226.0 
+

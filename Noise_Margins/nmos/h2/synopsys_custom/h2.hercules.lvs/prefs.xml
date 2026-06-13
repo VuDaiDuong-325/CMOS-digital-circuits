@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref value="-sp /home/itsupport/Desktop/lab1vlsi/PDK/hercules/lvs/empty.subckt -cdl-a -cdl-p -mprop -slash" name="xtHerculesNettranOptions"/>
+                <pref value="true" name="xtLVSCalibreUseSVRFTranscript"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/hercules/lvs/reference_lvs.ev" name="xtLVSHerculesRunsetFile"/>
+                <pref value="{environment RES_3TERM double {0}} {environment CAP_3TERM double {0}} {environment DRAWCBM double {1}} {environment cmim_2t double {0}}" name="xtLVSHerculesVariables"/>
+                <pref value="h2" name="xtLVSLayCell"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.hercules.lvs/h2.net" name="xtLVSLayInputNetlist"/>
+                <pref value="nmos_h2/h2/layout" name="xtLVSLayLCV"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.hercules.lvs/h2.custom_compiler.gds" name="xtLVSLayStreamFile"/>
+                <pref value="h2" name="xtLVSSchCell"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.hercules.lvs/h2.custom_compiler.sp" name="xtLVSSchInputNetlist"/>
+                <pref value="CDL" name="xtLVSSchInputNetlistFormat"/>
+                <pref value="nmos_h2/h2/schematic" name="xtLVSSchLCV"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.hercules.lvs/h2.custom_compiler.sp" name="xtLVSSchOutputNetlist"/>
+                <pref value="Hercules" name="xtLVSTool"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/PDK/techfiles/reference90RF_layer.map" name="xtPVLayerMapFile"/>
+        </preferences>
+</file-format>

@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.hercules.drc; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i nmos_nm -b nmos_dc -p . -O gdsii -o nmos_dc_result.gds /root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.hercules.drc/reference_drc.drc.evx > /root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.hercules.drc/stdout.drc.log 2>&1

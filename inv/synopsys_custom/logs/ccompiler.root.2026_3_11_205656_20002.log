@@ -1,0 +1,38 @@
+[20:56:58.93] /r giWindowId 0
+[20:56:58.93] /r giWindowGeometry 600x300
+[20:56:58.95] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Mar 11 20:56:56 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/lab1vlsi/inverter/inv
+              /c 
+[20:57:01.17] /w Warning: In file /root/Excercise/lab1vlsi/inverter/inv/lib.defs: Unable to open library reference90RF at path /root/lab1vlsi/PDK/reference90RF : No access permission. (DATA_MANAGEMENT-014)
+[20:57:01.18] /r giShowFrameTabs true
+[20:57:01.19] /r giWindowId 1
+[20:57:01.19] /r giWindowGeometry 1040x800
+[20:57:06.03] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[20:57:06.03] /# 
+[20:57:06.03] /i dm::openLibraryManager
+[20:57:06.03] /r giWindowId 2
+[20:57:06.04] /r giWindowGeometry 660x600+50+84
+[20:57:06.09] /o oa:0x188c0cb0
+[20:57:08.07] /i exit
+[20:57:08.16] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[20:57:08.40] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x155+741+389
+[20:57:09.39] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[20:57:09.41] /i gi::setActiveWindow 1
+[20:57:09.41] /i gi::setActiveWindow 1 -raise true
+[20:57:09.56] /o Shutdown time: Wed Mar 11 20:57:09 2026
+[20:57:09.56] /o Elapsed session real time: 0.18 minutes
+[20:57:09.56] /o Session terminated. Log is at /root/Excercise/lab1vlsi/inverter/inv/synopsys_custom/logs/ccompiler.root.2026_3_11_205656_20002.log

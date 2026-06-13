@@ -1,0 +1,30 @@
+* SPICE INPUT		Mon Jun  8 10:28:01 2026	dff
+* EV_NETLIST Version AMD.64 Release B-2008.09.SP5.26005 2012/07/14
+*
+*The following line needed for Star-CR:
+*CRU_OPT (KEEP_ELEMENTS "^[CR]D")
+*
+*The following line needed for CDL:
+*.BIPOLAR
+
+* Top of hierarchy  cell=dff
+.subckt dff gnd! CLK D vdd! Q renamed
+M_XI18/MM1 net75 clkb renamed ln_N_140 N  l=0.100u w=0.360u
+M_XI22/MM3 gnd! Q renamed ln_N_140 N  l=0.100u w=0.360u
+M_XI23/MM3 gnd! net75 Q ln_N_140 N  l=0.100u w=0.360u
+M_XI17/MM1 net69 CLK net81 ln_N_140 N  l=0.100u w=0.360u
+M_XI19/MM1 net80 CLK net75 ln_N_140 N  l=0.100u w=0.360u
+M_XI21/MM3 gnd! net80 net81 ln_N_140 N  l=0.100u w=0.360u
+M_XI20/MM3 gnd! net69 net80 ln_N_140 N  l=0.100u w=0.360u
+M_XI16/MM1 D clkb net69 ln_N_140 N  l=0.100u w=0.360u
+M_XI15/MM3 gnd! CLK clkb ln_N_140 N  l=0.100u w=0.360u
+M_XI18/MM0 net75 CLK renamed ln_N_142 P  l=0.100u w=0.720u
+M_XI22/MM2 vdd! Q renamed ln_N_142 P  l=0.100u w=0.720u
+M_XI23/MM2 vdd! net75 Q ln_N_142 P  l=0.100u w=0.720u
+M_XI19/MM0 net80 clkb net75 ln_N_142 P  l=0.100u w=0.720u
+M_XI17/MM0 net69 clkb net81 ln_N_142 P  l=0.100u w=0.720u
+M_XI21/MM2 vdd! net80 net81 ln_N_142 P  l=0.100u w=0.720u
+M_XI20/MM2 vdd! net69 net80 ln_N_142 P  l=0.100u w=0.720u
+M_XI16/MM0 D CLK net69 ln_N_142 P  l=0.100u w=0.720u
+M_XI15/MM2 vdd! CLK clkb ln_N_142 P  l=0.100u w=0.720u
+.ends dff

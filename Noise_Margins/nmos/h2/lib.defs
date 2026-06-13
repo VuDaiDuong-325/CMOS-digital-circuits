@@ -1,0 +1,6 @@
+INCLUDE $SYNOPSYS_CUSTOM_INSTALL/samples/lib.defs
+DEFINE reference90RF /root/Excercise/lab1vlsi/PDK/reference90RF
+
+
+DEFINE nmos_h2 ./nmos_h2
+DEFINE nmos_h4 ./nmos_h4

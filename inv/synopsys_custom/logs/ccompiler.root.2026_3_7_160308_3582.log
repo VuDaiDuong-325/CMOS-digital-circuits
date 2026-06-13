@@ -1,0 +1,56 @@
+[16:03:14.62] /r giWindowId 0
+[16:03:14.62] /r giWindowGeometry 600x300
+[16:03:14.65] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Sat Mar  7 16:03:08 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/lab1vlsi/inverter/inv
+              /c 
+[16:03:21.00] /r giShowFrameTabs true
+[16:03:21.00] /r giWindowId 1
+[16:03:21.01] /r giWindowGeometry 1040x800
+[16:03:48.36] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[16:03:48.37] /# 
+[16:03:48.37] /i dm::openLibraryManager
+[16:03:48.37] /r giWindowId 2
+[16:03:48.37] /r giWindowGeometry 660x600+50+78
+[16:03:48.45] /o oa:0x19c3e0d0
+[16:03:48.63] /i gi::setSectionSizes {libs} -values {249} -in [gi::getWindows 2]
+[16:03:49.62] /i gi::setCurrentIndex {libs} -index {reference90RF} -in [gi::getWindows 2]
+[16:03:49.73] /i gi::setItemSelection {libs} -index {reference90RF} -in [gi::getWindows 2]
+[16:03:50.29] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 2]
+[16:03:51.44] /i gi::setItemSelection {libs} -index {reference90RF} -in [gi::getWindows 2]
+[16:03:53.85] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 2]
+[16:03:55.53] /i gi::setActiveWindow 1
+[16:03:55.53] /i gi::setActiveWindow 1 -raise true
+[16:03:58.55] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/giConsole} -in [gi::getWindows 1]
+[16:03:58.55] /# 
+[16:04:01.14] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[16:04:01.15] /i gi::setActiveWindow 1
+[16:04:01.15] /i gi::setActiveWindow 1 -raise true
+[16:04:03.94] /# gi::executeAction deOpenDesign -in [gi::getWindows 1]
+[16:04:03.94] /i de::showOpenDesign
+[16:04:03.98] /o oa:0x18d5c0d0
+[16:04:04.12] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[16:04:04.27] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x491+628+197
+[16:04:09.71] /i gi::closeWindows [gi::getDialogs {deOpenDesign}]
+[16:04:13.72] /i exit
+[16:04:13.83] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[16:04:14.07] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+352
+[16:04:15.73] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[16:04:15.75] /i gi::setActiveWindow 2
+[16:04:15.75] /i gi::setActiveWindow 2 -raise true
+[16:04:15.96] /o Shutdown time: Sat Mar  7 16:04:15 2026
+[16:04:15.96] /o Elapsed session real time: 1.03 minutes
+[16:04:15.96] /o Session terminated. Log is at /root/lab1vlsi/inverter/inv/synopsys_custom/logs/ccompiler.root.2026_3_7_160308_3582.log

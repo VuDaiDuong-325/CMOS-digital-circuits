@@ -1,0 +1,12 @@
+1 Setup 1780889236 1780889241 5 1.38 0 429 localhost.localdomain
+1 Layers 1780889241 1780889242 1 0.1 0.8 429.1 localhost.localdomain
+1 Models 1780889242 1780889242 0 0 0 429.1 localhost.localdomain
+1 HN 1780889242 1780889243 1 0.1 0.3 445.1 localhost.localdomain
+1 XrefHN 1780889243 1780889243 0 0 0 335.4 localhost.localdomain
+1 Cells 1780889243 1780889243 0 0.1 0.1 429.1 localhost.localdomain
+1 Translate 1780889243 1780889243 0 0 0 429.1 localhost.localdomain
+1 NetlistSetup 1780889243 1780889243 0 0 0 331.3 localhost.localdomain
+1 xTract 1780889243 1780889244 1 0.4 0.5 356.3 localhost.localdomain
+1 xTractPP 1780889244 1780889244 0 0 0 226 localhost.localdomain
+1 ReportViolations 1780889244 1780889245 0 0 0 331.5 localhost.localdomain
+1 Netlist 1780889245 1780889245 0 0.1 0 257.4 localhost.localdomain

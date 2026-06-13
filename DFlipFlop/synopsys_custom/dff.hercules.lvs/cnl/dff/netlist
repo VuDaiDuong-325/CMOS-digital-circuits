@@ -1,0 +1,20 @@
+********************************************************************************
+* Library          : dff
+* Cell             : dff
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt dff CLK D Q renamed
+*.PININFO CLK:I D:I Q:O renamed:O
+XI18 clkb CLK net75 renamed tg
+XI17 CLK clkb net69 net81 tg
+XI16 clkb CLK D net69 tg
+XI19 CLK clkb net80 net75 tg
+XI15 CLK clkb inv
+XI22 Q renamed inv
+XI21 net80 net81 inv
+XI20 net69 net80 inv
+XI23 net75 Q inv
+.ends dff
+

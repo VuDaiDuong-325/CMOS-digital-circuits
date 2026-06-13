@@ -1,0 +1,1001 @@
+ ****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: tb.sp                                                             
+  Command line options: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice tb.sp -o tb.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.3 
+ lic: USER:   root                 HOSTNAME: localhost.localdomain 
+ lic: HOSTID: 1234567890ab         PID:      6548 
+ lic: Using FLEXlm license file: 
+ lic: 27000@localhost 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost 
+ lic:   
+1****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+ ******  
+ * =======================================================
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x_ring.                         clk                1.00 
+  **warning** (tb.sp:33) Both nodes of element v_gnd are connected together; Line ignored.
+  **info** (tb.sp:32) DC voltage reset to initial transient source value in source 0:v_vdd. new dc=0.0000D+00
+  
+             
+ Warning:'No DC path nodes' occurs 26 times
+ No DC path from the following nodes,connected with gdcpath:
+ -----------------------------
+ |Node            |Subckt    |
+ |----------------+----------|
+ |x_ring.ln_n_41:2|clk       |
+ |x_ring.ln_n_42:1|clk       |
+ |x_ring.ln_n_42:2|clk       |
+ |x_ring.ln_n_42:7|clk       |
+ |x_ring.ln_n_42:8|clk       |
+ |x_ring.ln_n_43:1|clk       |
+ |x_ring.ln_n_43:2|clk       |
+ |x_ring.ln_n_43:3|clk       |
+ |x_ring.ln_n_43:4|clk       |
+ |x_ring.ln_n_43:9|clk       |
+ -----------------------------
+              
+             
+ Warning:'1 connection nodes' occurs 43 times
+ Summary of 1 connection from the following nodes:
+ -----------------------------
+ |Node            |Subckt    |
+ |----------------+----------|
+ |x_ring.clk:13   |clk       |
+ |x_ring.clk:17   |clk       |
+ |x_ring.clk:2    |clk       |
+ |x_ring.clk:3    |clk       |
+ |x_ring.gnd!:11  |clk       |
+ |x_ring.gnd!:13  |clk       |
+ |x_ring.gnd!:16  |clk       |
+ |x_ring.gnd!:18  |clk       |
+ |x_ring.ln_n_41:1|clk       |
+ |x_ring.ln_n_41:3|clk       |
+ -----------------------------
+              
+             
+ Warning:'No Tran path ' occurs 13 times
+ Summary of No Tran path from the following nodes:
+ -----------------------------
+ |Node            |Subckt    |
+ |----------------+----------|
+ |x_ring.ln_n_41:2|clk       |
+ |x_ring.ln_n_42:1|clk       |
+ |x_ring.ln_n_42:2|clk       |
+ |x_ring.ln_n_42:7|clk       |
+ |x_ring.ln_n_42:8|clk       |
+ |x_ring.ln_n_43:1|clk       |
+ |x_ring.ln_n_43:2|clk       |
+ |x_ring.ln_n_43:3|clk       |
+ |x_ring.ln_n_43:4|clk       |
+ |x_ring.ln_n_43:9|clk       |
+ -----------------------------
+              
+      
+             
+ Warning:'Floating bulk' occurs 6 times
+ Summary of floating bulk:
+ -------------------------------------
+ |Node               |Device         |
+ |-------------------+---------------|
+ |x_ring.xi0|mm2:bulk|x_ring.mxi0|mm2|
+ |x_ring.xi0|mm3:bulk|x_ring.mxi0|mm3|
+ |x_ring.xi1|mm2:bulk|x_ring.mxi1|mm2|
+ |x_ring.xi1|mm3:bulk|x_ring.mxi1|mm3|
+ |x_ring.xi2|mm2:bulk|x_ring.mxi2|mm2|
+ |x_ring.xi2|mm3:bulk|x_ring.mxi2|mm3|
+ -------------------------------------
+              
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-04  ~  1e-03|4         |2.3392    |
+ |1e-03  ~  1e-02|1         |0.5848    |
+ |1e-02  ~  1e-01|14        |8.1871    |
+ |1e-01  ~  1e+00|60        |35.0877   |
+ |1e+00  ~  1e+03|92        |53.8012   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |0e+00  ~  1e-24|3         |0.9615    |
+ |1e-21  ~  1e-20|5         |1.6026    |
+ |1e-20  ~  1e-19|16        |5.1282    |
+ |1e-19  ~  1e-18|41        |13.1410   |
+ |1e-18  ~  1e-17|157       |50.3205   |
+ |1e-17  ~  1e-16|85        |27.2436   |
+ |1e-16  ~  1e-15|5         |1.6026    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|171       |
+ |            |          |
+ |Constant Cap|312       |
+ -------------------------
+              
+  Opening plot unit= 15
+ file=tb.pa0
+
+  **warning** (n:mxi0|mm3 (/root/Excercise/ring_oscillator/synopsys_custom/clk.starrc.lpe/clk.SPF:932)) Warning: (B1 + Weff) may be too small in BSIM4 model with w=1e-07 l=1e-07.
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     1 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.7990n
+ t_rise_2=   2.9241n
+ freq_ghz=   7.9947 
+ wn_um= 100.0000m
+ wp_um= 200.0000m
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     2 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.7460n
+ t_rise_2=   2.8685n
+ freq_ghz=   8.1622 
+ wn_um= 100.0000m
+ wp_um= 225.0000m
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     3 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.7074n
+ t_rise_2=   2.8280n
+ freq_ghz=   8.2902 
+ wn_um= 100.0000m
+ wp_um= 250.0000m
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     4 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.6718n
+ t_rise_2=   2.7913n
+ freq_ghz=   8.3711 
+ wn_um= 100.0000m
+ wp_um= 275.0000m
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     5 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.5374n
+ t_rise_2=   2.6561n
+ freq_ghz=   8.4299 
+ wn_um= 100.0000m
+ wp_um= 300.0000m
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     6 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.0501n
+ t_rise_2=   2.1386n
+ freq_ghz=  11.2987 
+ wn_um= 200.0000m
+ wp_um= 400.0000m
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     7 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.0176n
+ t_rise_2=   2.1052n
+ freq_ghz=  11.4127 
+ wn_um= 200.0000m
+ wp_um= 450.0000m
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     8 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   2.0004n
+ t_rise_2=   2.0869n
+ freq_ghz=  11.5534 
+ wn_um= 200.0000m
+ wp_um= 500.0000m
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =     9 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.9139n
+ t_rise_2=   2.0002n
+ freq_ghz=  11.5954 
+ wn_um= 200.0000m
+ wp_um= 550.0000m
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    10 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.9138n
+ t_rise_2=   2.0000n
+ freq_ghz=  11.6030 
+ wn_um= 200.0000m
+ wp_um= 600.0000m
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    11 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.7470n
+ t_rise_2=   1.8209n
+ freq_ghz=  13.5234 
+ wn_um= 300.0000m
+ wp_um= 600.0000m
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    12 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.7405n
+ t_rise_2=   1.8140n
+ freq_ghz=  13.5946 
+ wn_um= 300.0000m
+ wp_um= 675.0000m
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    13 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.7382n
+ t_rise_2=   1.8118n
+ freq_ghz=  13.5966 
+ wn_um= 300.0000m
+ wp_um= 750.0000m
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    14 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.6667n
+ t_rise_2=   1.7400n
+ freq_ghz=  13.6245 
+ wn_um= 300.0000m
+ wp_um= 825.0000m
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    15 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.6709n
+ t_rise_2=   1.7446n
+ freq_ghz=  13.5673 
+ wn_um= 300.0000m
+ wp_um= 900.0000m
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    16 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.5912n
+ t_rise_2=   1.6572n
+ freq_ghz=  15.1383 
+ wn_um= 400.0000m
+ wp_um= 800.0000m
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    17 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.5878n
+ t_rise_2=   1.6538n
+ freq_ghz=  15.1493 
+ wn_um= 400.0000m
+ wp_um= 900.0000m
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    18 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.5877n
+ t_rise_2=   1.6537n
+ freq_ghz=  15.1602 
+ wn_um= 400.0000m
+ wp_um=   1.0000 
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    19 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.5239n
+ t_rise_2=   1.5901n
+ freq_ghz=  15.0983 
+ wn_um= 400.0000m
+ wp_um=   1.1000 
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    20 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.5288n
+ t_rise_2=   1.5952n
+ freq_ghz=  15.0720 
+ wn_um= 400.0000m
+ wp_um=   1.2000 
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    21 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4881n
+ t_rise_2=   1.5493n
+ freq_ghz=  16.3201 
+ wn_um= 500.0000m
+ wp_um=   1.0000 
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    22 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4848n
+ t_rise_2=   1.5458n
+ freq_ghz=  16.3862 
+ wn_um= 500.0000m
+ wp_um=   1.1250 
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    23 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4847n
+ t_rise_2=   1.5456n
+ freq_ghz=  16.3974 
+ wn_um= 500.0000m
+ wp_um=   1.2500 
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    24 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4293n
+ t_rise_2=   1.4903n
+ freq_ghz=  16.3775 
+ wn_um= 500.0000m
+ wp_um=   1.3750 
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    25 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4407n
+ t_rise_2=   1.5023n
+ freq_ghz=  16.2398 
+ wn_um= 500.0000m
+ wp_um=   1.5000 
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    26 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4730n
+ t_rise_2=   1.5303n
+ freq_ghz=  17.4377 
+ wn_um= 600.0000m
+ wp_um=   1.2000 
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    27 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4707n
+ t_rise_2=   1.5279n
+ freq_ghz=  17.4883 
+ wn_um= 600.0000m
+ wp_um=   1.3500 
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    28 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4177n
+ t_rise_2=   1.4754n
+ freq_ghz=  17.3305 
+ wn_um= 600.0000m
+ wp_um=   1.5000 
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    29 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.3726n
+ t_rise_2=   1.4305n
+ freq_ghz=  17.2710 
+ wn_um= 600.0000m
+ wp_um=   1.6500 
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    30 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4519n
+ t_rise_2=   1.5104n
+ freq_ghz=  17.1028 
+ wn_um= 600.0000m
+ wp_um=   1.8000 
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    31 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4226n
+ t_rise_2=   1.4776n
+ freq_ghz=  18.1913 
+ wn_um= 700.0000m
+ wp_um=   1.4000 
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    32 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4258n
+ t_rise_2=   1.4809n
+ freq_ghz=  18.1513 
+ wn_um= 700.0000m
+ wp_um=   1.5750 
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    33 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.3793n
+ t_rise_2=   1.4347n
+ freq_ghz=  18.0425 
+ wn_um= 700.0000m
+ wp_um=   1.7500 
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    34 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.3495n
+ t_rise_2=   1.4055n
+ freq_ghz=  17.8490 
+ wn_um= 700.0000m
+ wp_um=   1.9250 
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    35 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4961n
+ t_rise_2=   1.5529n
+ freq_ghz=  17.6095 
+ wn_um= 700.0000m
+ wp_um=   2.1000 
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    36 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4006n
+ t_rise_2=   1.4547n
+ freq_ghz=  18.5095 
+ wn_um= 800.0000m
+ wp_um=   1.6000 
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    37 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4068n
+ t_rise_2=   1.4609n
+ freq_ghz=  18.4878 
+ wn_um= 800.0000m
+ wp_um=   1.8000 
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    38 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.3661n
+ t_rise_2=   1.4207n
+ freq_ghz=  18.3182 
+ wn_um= 800.0000m
+ wp_um=   2.0000 
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    39 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4156n
+ t_rise_2=   1.4709n
+ freq_ghz=  18.0857 
+ wn_um= 800.0000m
+ wp_um=   2.2000 
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    40 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4904n
+ t_rise_2=   1.5466n
+ freq_ghz=  17.7869 
+ wn_um= 800.0000m
+ wp_um=   2.4000 
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    41 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4014n
+ t_rise_2=   1.4552n
+ freq_ghz=  18.5622 
+ wn_um= 900.0000m
+ wp_um=   1.8000 
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    42 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4123n
+ t_rise_2=   1.4665n
+ freq_ghz=  18.4395 
+ wn_um= 900.0000m
+ wp_um=   2.0250 
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    43 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.3508n
+ t_rise_2=   1.4058n
+ freq_ghz=  18.1690 
+ wn_um= 900.0000m
+ wp_um=   2.2500 
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    44 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4945n
+ t_rise_2=   1.5506n
+ freq_ghz=  17.8367 
+ wn_um= 900.0000m
+ wp_um=   2.4750 
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    45 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.5713n
+ t_rise_2=   1.6283n
+ freq_ghz=  17.5333 
+ wn_um= 900.0000m
+ wp_um=   2.7000 
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    46 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4186n
+ t_rise_2=   1.4733n
+ freq_ghz=  18.2852 
+ wn_um=   1.0000 
+ wp_um=   2.0000 
+ ratio_out=   2.0000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    47 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4335n
+ t_rise_2=   1.4887n
+ freq_ghz=  18.1020 
+ wn_um=   1.0000 
+ wp_um=   2.2500 
+ ratio_out=   2.2500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    48 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.4161n
+ t_rise_2=   1.4723n
+ freq_ghz=  17.7942 
+ wn_um=   1.0000 
+ wp_um=   2.5000 
+ ratio_out=   2.5000 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    49 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.5144n
+ t_rise_2=   1.5716n
+ freq_ghz=  17.4856 
+ wn_um=   1.0000 
+ wp_um=   2.7500 
+ ratio_out=   2.7500 
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** data name = size_sweep , index =    50 ***
+
+ ******
+ * =======================================================
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_rise_1=   1.6093n
+ t_rise_2=   1.6677n
+ freq_ghz=  17.1423 
+ wn_um=   1.0000 
+ wp_um=   3.0000 
+ ratio_out=   3.0000 
+
+          ***** job concluded
+ ******  
+ * =======================================================
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+ cpu MHz	: 1991.999
+  
+ OS:
+ Linux version 3.10.0-1160.59.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 23 16:47:03 UTC 2022
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     181 # elements   =     490
+  # resistors   =     171 # capacitors =     312 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       1
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.09           1         150
+  transient         37.31      250050      187342       60679 rev=        91
+  readin             0.08
+  errchk             0.05
+  setup              0.01
+  output             0.01
+
+
+           peak memory used        262.87 megabytes
+           total cpu time           37.77 seconds
+           total elapsed time       45.66 seconds
+           job started at     21:06:38 06/02/2026
+           job ended   at     21:07:24 06/02/2026
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.80(s)

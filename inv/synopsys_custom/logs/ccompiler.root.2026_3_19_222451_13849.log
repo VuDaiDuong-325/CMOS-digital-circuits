@@ -1,0 +1,694 @@
+[22:24:54.56] /r giWindowId 0
+[22:24:54.57] /r giWindowGeometry 600x300
+[22:24:54.58] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Thu Mar 19 22:24:51 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/lab1vlsi/inverter/inv
+              /c 
+[22:24:57.50] /r giShowFrameTabs true
+[22:24:57.50] /r giWindowId 1
+[22:24:57.50] /r giWindowGeometry 1040x800
+[22:25:05.29] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpeninvinvschematic} -in [gi::getWindows 1]
+[22:25:05.29] /# 
+[22:25:05.29] /i de::open inv/inv/schematic
+[22:25:05.33] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[22:25:05.33] /o 	#######################################
+[22:25:05.33] /o 	PDK Library Name	: reference90RF
+[22:25:05.33] /o 	PDK Version		: 2.0
+[22:25:05.33] /o 	PDK Release Date	: 25-March-2010 
+[22:25:05.33] /o 	#######################################
+[22:25:05.33] /o 
+[22:25:05.36] /m Information: License 'Schematic' checked out. (LICENSE-003)
+[22:25:05.46] /r giWindowId 2
+[22:25:05.46] /r giWindowGeometry 1632x849
+[22:25:05.84] /o "inv/inv/schematic" design does not need checking
+[22:25:05.85] /o oa:0x1e419840
+[22:25:07.78] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[22:25:08.45] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x911+5+62
+[22:25:12.53] /# gi::executeAction dePan -in [gi::getWindows 2]
+[22:25:12.53] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[22:25:12.84] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[22:25:12.84] /i de::startDrag {2.81875 0.20625} -context [db::getNext [de::getContexts -window 2]]
+[22:25:14.80] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[22:25:14.80] /i de::endDrag {2.825 0.20625} -context [db::getNext [de::getContexts -window 2]]
+[22:25:14.80] /r dePanToPoint {2.95625 -0.16875}
+[22:25:16.28] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[22:25:16.61] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[22:26:15.94] /# gi::executeAction seCreateInst -in [gi::getWindows 2]
+[22:26:15.94] /i ise::createInst
+[22:26:16.07] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[22:26:16.33] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+71
+[22:26:18.05] /i gi::closeWindows [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[22:38:52.25] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 2]
+[22:38:52.26] /i ise::check
+[22:38:52.46] /m Information: 
+              /c Cross view checking for inv/inv/symbol with inv/inv/schematic
+              /c No violations found. (DE_EDIT-007)
+[22:38:52.50] /m Information: 
+[22:38:52.50] /o Checking "inv/inv/schematic"
+[22:38:52.54] /o No rule violations found in "inv/inv/schematic"
+[22:38:52.54] /m Information: Checking process is completed: marking the design violations
+[22:38:52.66] /m Information: Marking of designs is completed
+[22:38:52.66] /o true
+[22:38:54.46] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 2]]
+[22:39:36.76] /i gi::setActiveWindow 1
+[22:39:36.76] /i gi::setActiveWindow 1 -raise true
+[22:39:37.73] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[22:39:37.73] /# 
+[22:39:37.73] /i dm::openLibraryManager
+[22:39:37.73] /r giWindowId 3
+[22:39:37.79] /r giWindowGeometry 660x600+50+84
+[22:39:38.06] /o oa:0x1edaaa20
+[22:39:40.01] /i gi::setCurrentIndex {libs} -index {inv} -in [gi::getWindows 3]
+[22:39:40.03] /i gi::setItemSelection {libs} -index {inv} -in [gi::getWindows 3]
+[22:39:41.34] /i gi::setCurrentIndex {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:41.34] /i gi::setItemSelection {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:43.59] /i gi::setCurrentIndex {cells} -index {inv_test} -in [gi::getWindows 3]
+[22:39:43.59] /i gi::setItemSelection {cells} -index {inv_test} -in [gi::getWindows 3]
+[22:39:44.67] /i gi::setCurrentIndex {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:44.68] /i gi::setItemSelection {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:45.31] /i gi::setCurrentIndex {cells} -index {inv_test} -in [gi::getWindows 3]
+[22:39:45.31] /i gi::setItemSelection {cells} -index {inv_test} -in [gi::getWindows 3]
+[22:39:46.86] /i gi::setCurrentIndex {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:46.86] /i gi::setItemSelection {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:47.95] /i gi::setCurrentIndex {cells} -index {synopsys_custom} -in [gi::getWindows 3]
+[22:39:47.96] /i gi::setItemSelection {cells} -index {synopsys_custom} -in [gi::getWindows 3]
+[22:39:48.56] /i gi::setCurrentIndex {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:48.56] /i gi::setItemSelection {cells} -index {inv} -in [gi::getWindows 3]
+[22:39:49.85] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 3]
+[22:39:49.85] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 3]
+[22:39:50.01] /i gi::executeAction dmOpen -in [gi::getWindows 3]
+[22:39:50.07] /r giWindowId 4
+[22:39:50.09] /r giWindowGeometry 1632x849
+[22:39:52.15] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 4]
+[22:39:52.15] /i de::zoom -window [gi::getWindows 4] -factor 0.5 -center {1.4625 0.35}
+[22:39:52.15] /o {-3.55 -1.7875} {3.1125 0.9625}
+[22:39:53.73] /# gi::executeAction dePan -in [gi::getWindows 4]
+[22:39:53.73] /i ide::pan [db::getNext [de::getContexts -window 4]]
+[22:39:54.07] /# gi::executeAction deStartDrag -in [gi::getWindows 4]
+[22:39:54.07] /i de::startDrag {2.2 0.2} -context [db::getNext [de::getContexts -window 4]]
+[22:39:56.04] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[22:39:56.04] /i de::endDrag {2.1875 0.2} -context [db::getNext [de::getContexts -window 4]]
+[22:39:56.04] /r dePanToPoint {0.69375 -0.10625}
+[22:40:11.52] /# gi::executeAction deAddPoint -in [gi::getWindows 4]
+[22:40:11.52] /i de::addPoint {1.4875 -0.28125} -context [db::getNext [de::getContexts -window 4]]
+[22:40:13.01] /# gi::executeAction deAbortCommand -in [gi::getWindows 4]
+[22:40:13.01] /i de::abortCommand -context [db::getNext [de::getContexts -window 4]]
+[22:40:13.82] /# gi::executeAction seButton1DragStart -in [gi::getWindows 4]
+[22:40:13.83] /i ise::stretch -object [de::getActiveFigure [gi::getWindows 4] -point {1.525 -0.28125} -index 0 -intent none] -point {1.5 -0.3125}
+[22:40:21.63] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[22:40:21.63] /i de::endDrag {0.83125 -0.275} -context [db::getNext [de::getContexts -window 4]]
+[22:40:22.86] /# gi::executeAction seButton1DragStart -in [gi::getWindows 4]
+[22:40:22.86] /i ise::stretch -object [de::getActiveFigure [gi::getWindows 4] -point {1.58125 -0.44375} -index 0 -intent none] -point {1.5625 -0.4375}
+[22:40:24.47] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[22:40:24.47] /i de::endDrag {0.8625 -0.3125} -context [db::getNext [de::getContexts -window 4]]
+[22:40:25.26] /# gi::executeAction seButton1DragStart -in [gi::getWindows 4]
+[22:40:25.26] /i ise::stretch -object [de::getActiveFigure [gi::getWindows 4] -point {1.65 -0.625} -index 0 -intent none] -point {1.625 -0.625}
+[22:40:26.43] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[22:40:26.43] /i de::endDrag {0.84375 -0.375} -context [db::getNext [de::getContexts -window 4]]
+[22:40:26.77] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[22:40:26.77] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 4]]
+[22:40:28.86] /i gi::executeAction deSaveDesign -in [gi::getWindows 4]
+[22:40:28.86] /m Information: Saving design 'inv inv symbol'. (DESIGN_WINDOW-004)
+[22:40:30.77] /i gi::executeAction deSaveDesign -in [gi::getWindows 4]
+[22:40:30.77] /m Information: Saving design 'inv inv symbol'. (DESIGN_WINDOW-004)
+[22:42:39.07] /i gi::setActiveWindow 3
+[22:42:39.07] /i gi::setActiveWindow 3 -raise true
+[22:42:40.78] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[22:42:41.53] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[22:42:42.66] /i gi::setCurrentIndex {cells} -index {inv_test} -in [gi::getWindows 3]
+[22:42:42.66] /i gi::setItemSelection {cells} -index {inv_test} -in [gi::getWindows 3]
+[22:42:44.05] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 3]
+[22:42:44.06] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 3]
+[22:42:44.20] /i gi::executeAction dmOpen -in [gi::getWindows 3]
+[22:42:44.27] /r giWindowId 5
+[22:42:44.28] /r giWindowGeometry 1632x849
+[22:42:44.59] /m Information: 
+[22:42:44.59] /o Checking "inv/inv_test/schematic"
+[22:42:44.59] /o No rule violations found in "inv/inv_test/schematic"
+[22:42:44.59] /m Information: Checking process is completed: marking the design violations
+[22:42:44.59] /m Information: Marking of designs is completed
+[22:42:46.79] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[22:42:46.79] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 5]]
+[22:42:50.37] /i gi::executeAction deSaveDesign -in [gi::getWindows 5]
+[22:42:50.37] /m Information: Saving design 'inv inv_test schematic'. (DESIGN_WINDOW-004)
+[22:51:58.12] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 5]
+[22:51:58.12] /i sa::showConsole -context [db::getNext [de::getContexts -window 5]]
+[22:52:02.93] /m Information: License 'SAE' checked out. (LICENSE-003)
+[22:52:03.08] /r giWindowId 6
+[22:52:03.12] /r giWindowGeometry 600x500
+[22:52:03.56] /o oa:0x23546a20
+[22:52:03.82] /m Information: Launching Background sae_shell Server Process "cd /root/Excercise/lab1vlsi/inverter/inv && sae_shell -log sae_shell_session0_job1 -libDefFile /root/Excercise/lab1vlsi/inverter/inv/lib.defs"
+[22:52:06.61] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:06.61] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]
+[22:52:09.05] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 6]
+[22:52:09.05] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 6] -mode overwrite
+[22:52:09.19] /r giWindowId 7
+[22:52:09.20] /r giWindowGeometry 800x600
+[22:52:09.81] /m Information: "Starting incremental netlisting for design "inv/inv_test/schematic"..." (NETLISTING-010)
+[22:52:09.89] /m Information: 
+[22:52:09.90] /o Checking "inv/inv_test/schematic"
+[22:52:09.90] /o No rule violations found in "inv/inv_test/schematic"
+[22:52:09.90] /o No Design Integrity rule violations found in "inv/inv_test/schematic"
+[22:52:10.26] /m Information: "inv inv schematic" renetlisted. (NETLISTING-056)
+[22:52:10.30] /m Information: "inv inv_test schematic" renetlisted. (NETLISTING-056)
+[22:52:10.32] /m Information: "Netlisting design "inv/inv_test/schematic" finished successfully." (NETLISTING-012)
+[22:52:10.34] /m Information: "Composing simulator input file for design "inv/inv_test/schematic"..."
+[22:52:10.87] /m Information: "Simulator input file composed successfully for design "inv/inv_test/schematic""
+[22:52:11.68] /m Information: "Starting HSPICE simulation for design: inv/inv_test/schematic"
+[22:52:11.69] /# gi::collapse {jobMonitorTable} -index {0.0.0.0,0} -in [gi::getWindows 7]
+[22:52:12.02] /o 1
+[22:52:14.32] /e Error: "Simulation failed for design: inv/inv_test/schematic "
+[22:52:14.87] /m Information: Launching Background sae_shell Server Process "cd /root/Excercise/lab1vlsi/inverter/inv && sae_shell -log sae_shell_session0_job2 -libDefFile /root/Excercise/lab1vlsi/inverter/inv/lib.defs"
+[22:52:17.34] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[22:52:17.43] /i gi::setActiveWindow 6
+[22:52:17.43] /i gi::setActiveWindow 6 -raise true
+[22:52:19.53] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:19.53] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 6]]
+[22:52:20.26] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:20.26] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 6]]
+[22:52:24.34] /m Information: Received ready-for-commands signal from background job 'sae_shell_session0_job1' after 21 seconds.
+[22:52:25.86] /m Information: Measurement calculations completed for testbench: default in 0s
+[22:52:29.34] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:29.34] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 6]]
+[22:52:29.65] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:29.65] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 6]]
+[22:52:30.29] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:30.29] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]
+[22:52:30.41] /m Information: Received ready-for-commands signal from background job 'sae_shell_session0_job2' after 16 seconds.
+[22:52:31.02] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:31.02] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 6]]
+[22:52:31.53] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:31.53] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]
+[22:52:34.65] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:34.65] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions saNetlistCascade -from [db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]]]]
+[22:52:37.33] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:37.33] /r giMenuAccess db::getNext [gi::getMenus saToolsMenu -from [gi::getWindows 6]]
+[22:52:37.75] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:37.75] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 6]]
+[22:52:39.88] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:39.88] /r giMenuAccess db::getNext [gi::getMenus saToolsMenu -from [gi::getWindows 6]]
+[22:52:40.51] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:40.51] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 6]]
+[22:52:40.72] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:40.72] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]
+[22:52:42.75] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:42.75] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions saNetlistCascade -from [db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]]]]
+[22:52:43.61] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:43.61] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 6]]
+[22:52:51.75] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:52:51.75] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 6]]
+[22:52:53.36] /# gi::executeAction saLoadState -in [gi::getWindows 6]
+[22:52:53.36] /i sa::showLoadState -parent 6
+[22:52:53.61] /e Error: parse error in '/root/.synopsys_custom/sae_states/inv/inv_test/HSPICE/HSPICE_default/state.xml' at index (1,1): unexpected end of file (OPAL-006)
+[22:52:53.97] /e Error: parse error in '/root/.synopsys_custom/sae_states/inv/inv_test/HSPICE/HSPICE_default/state.xml' at index (1,1): unexpected end of file (OPAL-006)
+[22:52:53.98] /e Error: parse error in '/root/.synopsys_custom/sae_states/inv/inv_test/HSPICE/HSPICE_default/state.xml' at index (1,1): unexpected end of file (TCL)
+[22:52:54.28] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:52:54.48] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]] -value 603x720+778+258
+[22:52:57.89] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:52:57.91] /e Error: Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081) (OPAL-006)
+[22:52:57.91] /o Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081)
+[22:53:01.90] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:01.90] /e Error: Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081) (OPAL-006)
+[22:53:01.90] /o Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081)
+[22:53:02.63] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:02.64] /e Error: Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081) (OPAL-006)
+[22:53:02.64] /o Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081)
+[22:53:03.85] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:03.85] /e Error: Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081) (OPAL-006)
+[22:53:03.85] /o Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081)
+[22:53:04.17] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:04.18] /e Error: Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081) (OPAL-006)
+[22:53:04.18] /o Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081)
+[22:53:04.33] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:04.34] /e Error: Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081) (OPAL-006)
+[22:53:04.34] /o Error: Unable to retrieve attribute 'simulator' from the empty object. (TCL_OBJECT-081)
+[22:53:08.89] /i gi::closeWindows [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:10.33] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:53:10.33] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 6]]
+[22:53:12.63] /# gi::executeAction saLoadState -in [gi::getWindows 6]
+[22:53:12.63] /i sa::showLoadState -parent 6
+[22:53:12.86] /o oa:0x23f13b60
+[22:53:13.07] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:13.25] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]] -value 603x720+778+221
+[22:53:16.10] /i gi::pressButton {/options/path/browseButton} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:26.42] /r giFileDialog accept ../../../../.synopsys_custom/sae_states/inv/inv_test/HSPICE/HSPICE_default
+[22:53:28.30] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:28.31] /e Error: The requested action could not be completed because one or more inputs are incomplete or invalid. (CUSTOM_WIDGETS-001)
+[22:53:29.19] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:29.19] /e Error: The requested action could not be completed because one or more inputs are incomplete or invalid. (CUSTOM_WIDGETS-001)
+[22:53:34.08] /i gi::closeWindows [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:35.74] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:53:35.74] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 6]]
+[22:53:40.47] /# gi::executeAction saLoadState -in [gi::getWindows 6]
+[22:53:40.47] /i sa::showLoadState -parent 6
+[22:53:40.67] /o oa:0x1ce47bc0
+[22:53:41.02] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:53:41.17] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]] -value 603x720+778+184
+[22:53:49.63] /i gi::pressButton {/options/path/browseButton} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:54:11.04] /r giFileDialog accept ../../../../.synopsys_custom/sae_states/inv/inv_test
+[22:54:15.31] /i gi::setField {/libs} -value {HSPICE} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:54:17.05] /i gi::setField {/cells} -value {HSPICE_default} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:54:23.09] /i gi::pressButton {/cancel} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 6]]
+[22:54:25.36] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 6]
+[22:54:25.36] /i sa::showEditAnalyses -parent 6 -analysisName "" 
+[22:54:25.62] /o oa:0x23faaf40
+[22:54:25.72] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 6]]
+[22:54:25.96] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 6]] -value 633x680+762+298
+[22:54:30.26] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {1ps} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 6]]
+[22:54:33.52] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {20n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 6]]
+[22:54:33.61] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 6]]
+[22:54:33.73] /i gi::setCurrentIndex {analysisPane} -index {0,0} -in [gi::getWindows 6]
+[22:54:35.13] /# gi::executeAction saEditModels -in [gi::getWindows 6]
+[22:54:35.13] /i sa::showModelFiles -parent 6
+[22:54:35.25] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 6]]
+[22:54:35.54] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 6]] -value 760x500+728+209
+[22:54:36.77] /i gi::setCurrentIndex {modelFilesTable} -index {0,1} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 6]]
+[22:55:02.94] /r giFileDialog accept ../../PDK/hspice/reference_models.inc
+[22:55:02.95] /i gi::setField {modelFilesTable} -index {0,1} -value {/root/Excercise/lab1vlsi/PDK/hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 6]]
+[22:55:02.95] /i gi::setField {modelFilesTable} -index {0,1} -value {/root/Excercise/lab1vlsi/PDK/hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 6]]
+[22:55:06.47] /i gi::pressButton {ok} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 6]]
+[22:55:08.69] /i gi::setCurrentIndex {outputsTable} -index {0,1} -in [gi::getWindows 6]
+[22:55:08.69] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 6]
+[22:55:08.69] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 6]
+[22:55:10.53] /i sa::selectOutputs -outputIndex 0 -window [gi::getWindows 6]
+[22:55:12.02] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[22:55:12.02] /i de::addPoint {4.39375 2.3375} -context [db::getNext [de::getContexts -window 5]]
+[22:55:13.01] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[22:55:13.01] /i de::addPoint {4.41875 2.39375} -context [db::getNext [de::getContexts -window 5]]
+[22:55:14.39] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 6]
+[22:55:14.39] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 6]
+[22:55:15.90] /i sa::selectOutputs -outputIndex 1 -window [gi::getWindows 6]
+[22:55:17.74] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[22:55:17.74] /i de::addPoint {6.55 2.35625} -context [db::getNext [de::getContexts -window 5]]
+[22:55:19.42] /i gi::pressButton {plotButton} -in [gi::getWindows 6]
+[22:55:19.47] /m Information: Expression 'v(/net5)' did not evaluate: No results found.
+[22:55:19.47] /m Information: Expression 'v(/result)' did not evaluate: No results found.
+[22:55:19.49] /w Warning: No data available to plot
+[22:55:30.76] /i gi::pressButton {plotButton} -in [gi::getWindows 6]
+[22:55:30.77] /m Information: Expression 'v(/net5)' did not evaluate: No results found.
+[22:55:30.77] /m Information: Expression 'v(/result)' did not evaluate: No results found.
+[22:55:30.78] /w Warning: No data available to plot
+[22:55:33.53] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 6]]
+[22:55:35.68] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 6]]
+[22:55:38.23] /i gi::executeAction menuPreShow -in [gi::getWindows 6]
+[22:55:38.23] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 6]]
+[22:55:39.81] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 6]
+[22:55:39.81] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 6] -mode overwrite
+[22:55:39.83] /r giWindowId 8
+[22:55:39.85] /r giWindowGeometry 800x600
+[22:55:40.12] /m Information: "Starting incremental netlisting for design "inv/inv_test/schematic"..." (NETLISTING-010)
+[22:55:40.15] /m Information: 
+[22:55:40.15] /o Checking "inv/inv_test/schematic"
+[22:55:40.15] /o No rule violations found in "inv/inv_test/schematic"
+[22:55:40.15] /o No Design Integrity rule violations found in "inv/inv_test/schematic"
+[22:55:40.26] /m Information: "Netlisting design "inv/inv_test/schematic" finished successfully." (NETLISTING-012)
+[22:55:40.31] /m Information: "Composing simulator input file for design "inv/inv_test/schematic"..."
+[22:55:40.43] /m Information: "Simulator input file composed successfully for design "inv/inv_test/schematic""
+[22:55:41.33] /m Information: "Starting HSPICE simulation for design: inv/inv_test/schematic"
+[22:55:41.34] /# gi::collapse {jobMonitorTable} -index {0.0.0.0,0} -in [gi::getWindows 8]
+[22:55:41.51] /o 1
+[22:55:43.50] /m Information: "Simulation completed successfully for design: inv/inv_test/schematic "
+[22:55:43.99] /m Information: "Evaluating and plotting outputs..."
+[22:55:45.17] /w Warning: Some integration features may not operate correctly because no valid manifest file for tool 'wv' was found in the searched location(s):
+              /c     /usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/bin/wv.manifest
+              /c     /usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/packages/SX-SNPSCUST-Link
+              /c     /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/waveform
+              /c If you are using a wrapper script, create /usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/bin/wv.manifest as a symbolic link targeted at the tool's original manifest file.
+[22:55:45.48] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[22:55:45.54] /w Warning: Derived signals will not plot correctly since this version of Custom WaveView is too old.
+[22:55:45.55] /m Information: Launching Waveform Viewer "cd /root/simulation/inv,inv_test,schematic/history_1/simulation/default/HSPICE/nominal/results &&  wv -k -cdesigner  -spxrc /tmp/sae_spxrc_wxnXdq    > /root/simulation/inv,inv_test,schematic/history_1/simulation/default/HSPICE/nominal/results/viewer.log 2>&1"
+[22:55:45.55] /i gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 8]
+[22:55:45.77] /m Information: Measurement calculations completed for testbench: default in 1s
+[22:55:53.85] /i gi::setActiveWindow 6
+[22:55:53.85] /i gi::setActiveWindow 6 -raise true
+[23:00:50.47] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[23:01:28.82] /m Information: Waveform viewer exited normally.
+[23:01:30.11] /i gi::setActiveWindow 5
+[23:01:30.11] /i gi::setActiveWindow 5 -raise true
+[23:01:31.18] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[23:01:31.36] /i gi::setActiveWindow 6
+[23:01:31.36] /i gi::setActiveWindow 6 -raise true
+[23:01:31.71] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 6]]
+[23:01:31.96] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 6]] -value 292x82+814+484
+[23:01:36.32] /r giDialog gi::pressButton {save} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 6]]
+[23:01:37.09] /r giDialog gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 6]]
+[23:01:37.35] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 6]] -value 462x528+729+261
+[23:01:41.03] /r giDialog gi::pressButton {/ok} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 6]]
+[23:01:41.11] /i gi::setActiveWindow 5
+[23:01:41.11] /i gi::setActiveWindow 5 -raise true
+[23:01:43.13] /i gi::setActiveWindow 8
+[23:01:43.13] /i gi::setActiveWindow 8 -raise true
+[23:01:44.35] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[23:01:44.50] /i gi::setActiveWindow 5
+[23:01:44.50] /i gi::setActiveWindow 5 -raise true
+[23:02:05.54] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 5]] -value 1867x423
+[23:02:31.08] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 5]] -value 1867x250
+[23:02:31.75] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 5]] -value 1867x223
+[23:02:33.40] /i db::setAttr shown -of [gi::getAssistants giConsole -from [gi::getWindows 5]] -value false
+[23:02:47.06] /i gi::executeAction xtSimulationTool -in [gi::getWindows 5]
+[23:02:49.67] /# gi::executeAction xtInitializeLoad -in [gi::getWindows 5]
+[23:02:49.67] /i xt::showInitLoad 5
+[23:02:49.81] /o oa:0x1f6712f0
+[23:02:49.90] /i gi::setActiveDialog [gi::getDialogs {xtInitLoad} -parent [gi::getWindows 5]]
+[23:02:50.15] /i db::setAttr geometry -of [gi::getDialogs {xtInitLoad} -parent [gi::getWindows 5]] -value 400x245+760+402
+[23:02:51.34] /i gi::closeWindows [gi::getDialogs {xtInitLoad} -parent [gi::getWindows 5]]
+[23:02:53.74] /# gi::executeAction xtInitializeNew -in [gi::getWindows 5]
+[23:02:53.74] /i xt::showInitNew 5
+[23:02:53.80] /o oa:0x1f287b70
+[23:02:53.98] /i gi::setActiveDialog [gi::getDialogs {xtInitNew} -parent [gi::getWindows 5]]
+[23:02:54.24] /i db::setAttr geometry -of [gi::getDialogs {xtInitNew} -parent [gi::getWindows 5]] -value 400x344+760+353
+[23:02:56.74] /i gi::pressButton {create} -in [gi::getDialogs {xtInitNew} -parent [gi::getWindows 5]]
+[23:03:01.28] /# gi::executeAction xtNetlist -in [gi::getWindows 5]
+[23:03:01.29] /i xt::runNetlister [xt::getSimRuns -context [db::getNext [de::getContexts -window 5]]]
+[23:03:01.34] /m Information: Final netlist "/root/Excercise/lab1vlsi/inverter/inv/inv_test.HSPICE1/netlist.final" is missing
+[23:03:01.34] /m Information: Structural netlist "/root/Excercise/lab1vlsi/inverter/inv/inv_test.HSPICE1/netlist/netlist.sp" is missing
+[23:03:01.34] /m Information: "Starting incremental netlisting for design "inv/inv_test/schematic"..." (NETLISTING-010)
+[23:03:01.38] /m Information: 
+[23:03:01.38] /o Checking "inv/inv_test/schematic"
+[23:03:01.38] /o No rule violations found in "inv/inv_test/schematic"
+[23:03:01.38] /o No Design Integrity rule violations found in "inv/inv_test/schematic"
+[23:03:01.43] /m Information: "inv inv schematic" renetlisted. (NETLISTING-056)
+[23:03:01.45] /m Information: "inv inv_test schematic" renetlisted. (NETLISTING-056)
+[23:03:01.46] /m Information: "Netlisting design "inv/inv_test/schematic" finished successfully." (NETLISTING-012)
+[23:03:04.90] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 5]]
+[23:15:41.75] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[23:15:42.13] /i gi::setActiveWindow 3
+[23:15:42.13] /i gi::setActiveWindow 3 -raise true
+[23:15:44.53] /i gi::setCurrentIndex {cells} -index {inv} -in [gi::getWindows 3]
+[23:15:44.55] /i gi::setItemSelection {cells} -index {inv} -in [gi::getWindows 3]
+[23:15:45.60] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 3]
+[23:15:45.61] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 3]
+[23:15:46.15] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 3]
+[23:15:46.16] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 3]
+[23:15:46.78] /i gi::executeAction dmOpen -in [gi::getWindows 3]
+[23:15:46.95] /m Information: License 'Basic' checked out. (LICENSE-003)
+[23:15:46.95] /m Information: License 'Schematic' checked in. (LICENSE-004)
+[23:15:48.80] /r giWindowId 9
+[23:15:48.81] /r giWindowGeometry 1632x849
+[23:15:49.06] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 9]]]
+[23:15:52.49] /i gi::setField {stopLevel} -value {1} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 9]]
+[23:17:56.21] /# gi::executeAction leRuler -in [gi::getWindows 9]
+[23:17:56.24] /i ile::createRuler
+[23:18:00.79] /# gi::executeAction deAbortCommand -in [gi::getWindows 9]
+[23:18:00.79] /i de::abortCommand -context [db::getNext [de::getContexts -window 9]]
+[23:18:01.52] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 9]
+[23:18:01.52] /i de::zoom -window [gi::getWindows 9] -factor 2.0 -center {-2.41 -0.511}
+[23:18:01.53] /o {-5.229 -1.798} {-0.308 0.507}
+[23:18:03.10] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 9]
+[23:18:03.10] /i de::zoom -window [gi::getWindows 9] -factor 0.5 -center {-2.523 -0.599}
+[23:18:03.10] /o {-7.936 -2.998} {1.907 1.614}
+[23:18:07.13] /# gi::executeAction xtLVSRun -in [gi::getWindows 9]
+[23:18:07.13] /i xt::physicalVerification::executeRun lvs 9
+[23:18:08.18] /# xt::physicalVerification::executePve lvs 9
+[23:18:09.67] /m Information: "Starting netlisting for design "inv/inv/schematic"..." (NETLISTING-010)
+[23:18:09.76] /o No Design Integrity rule violations found in "inv/inv/schematic"
+[23:18:09.86] /m Information: "Netlisting design "inv/inv/schematic" finished successfully." (NETLISTING-012)
+[23:18:10.29] /r giWindowId 10
+[23:18:10.38] /r giWindowGeometry 800x600
+[23:18:23.79] /m Information: 
+              /c =============================
+              /c JobID: hercules_lvs_30
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[23:18:41.10] /i gi::setActiveTab {tabs} -tabName {inv.LVS_ERRORS} -in [gi::getWindows 10]
+[23:20:12.16] /i gi::setActiveWindow 9
+[23:20:12.16] /i gi::setActiveWindow 9 -raise true
+[23:20:14.78] /# gi::executeAction xtDRCRun -in [gi::getWindows 9]
+[23:20:14.78] /i xt::physicalVerification::executeRun drc 9
+[23:20:15.47] /# xt::physicalVerification::executePve drc 9
+[23:20:17.03] /r giWindowId 11
+[23:20:17.06] /r giWindowGeometry 800x600
+[23:20:20.14] /m Information: 
+              /c =============================
+              /c JobID: hercules_drc_70
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[23:20:22.59] /i gi::setActiveTab {tabs} -tabName {inv.LAYOUT_ERRORS} -in [gi::getWindows 11]
+[23:21:47.41] /i gi::setActiveWindow 9
+[23:21:47.42] /i gi::setActiveWindow 9 -raise true
+[23:21:51.10] /# gi::executeAction xtLPERun -in [gi::getWindows 9]
+[23:21:51.10] /i xt::physicalVerification::executeRun lpe 9
+[23:21:51.82] /# xt::physicalVerification::executePve lpe 9
+[23:21:52.54] /r giWindowId 12
+[23:21:52.61] /r giWindowGeometry 800x600
+[23:22:15.05] /m Information: 
+              /c =============================
+              /c JobID: starrc_lpe_2
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[23:22:15.45] /r giWindowId 13
+[23:22:15.49] /r giWindowGeometry 1632x849
+[23:22:15.60] /i de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 13]]]
+[23:23:39.67] /i gi::setActiveWindow 9
+[23:23:39.67] /i gi::setActiveWindow 9 -raise true
+[23:23:43.69] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[23:23:43.81] /i gi::setActiveWindow 13
+[23:23:43.81] /i gi::setActiveWindow 13 -raise true
+[23:23:45.27] /i gi::executeAction giCloseWindow -in [gi::getWindows 12]
+[23:23:46.21] /i gi::executeAction giCloseWindow -in [gi::getWindows 13]
+[23:23:46.31] /i gi::setActiveWindow 11
+[23:23:46.31] /i gi::setActiveWindow 11 -raise true
+[23:23:46.86] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[23:23:46.93] /i gi::setActiveWindow 10
+[23:23:46.93] /i gi::setActiveWindow 10 -raise true
+[23:23:47.65] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[23:23:47.65] /i gi::setActiveWindow 3
+[23:23:47.65] /i gi::setActiveWindow 3 -raise true
+[23:23:51.05] /i gi::setCurrentIndex {cells} -index {inv_test} -in [gi::getWindows 3]
+[23:23:51.06] /i gi::setItemSelection {cells} -index {inv_test} -in [gi::getWindows 3]
+[23:23:51.93] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 3]
+[23:23:51.94] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 3]
+[23:23:52.61] /i gi::executeAction dmOpen -in [gi::getWindows 3]
+[23:23:52.71] /r giWindowId 14
+[23:23:52.71] /r giWindowGeometry 1632x849
+[23:23:53.02] /m Information: 
+[23:23:53.02] /o Checking "inv/inv_test/schematic"
+[23:23:53.02] /o No rule violations found in "inv/inv_test/schematic"
+[23:23:53.02] /m Information: Checking process is completed: marking the design violations
+[23:23:53.02] /m Information: Marking of designs is completed
+[23:24:27.91] /i gi::executeAction giCloseWindow -in [gi::getWindows 14]
+[23:24:27.96] /i gi::setActiveWindow 3
+[23:24:27.96] /i gi::setActiveWindow 3 -raise true
+[23:24:31.43] /i gi::executeAction dmDeleteCellView -in [gi::getWindows 3]
+[23:24:31.74] /r giDialog gi::setActiveDialog [gi::getDialogs {dmDelete}]
+[23:24:31.78] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmDelete}] -value 354x92+773+420
+[23:24:33.20] /r giDialog gi::pressButton {delete} -in [gi::getDialogs {dmDelete}]
+[23:24:33.22] /# db::destroy [dm::findCellView config -cell [dm::findCell inv\_test -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] inv ]]]]
+[23:24:33.24] /# gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 3]
+[23:24:33.24] /# gi::setItemSelection {views} -index {} -in [gi::getWindows 3]
+[23:24:36.12] /# gi::executeAction dmShowNewCellView -in [gi::getWindows 3]
+[23:24:36.12] /i dm::showNewCellView -parent 3
+[23:24:36.29] /o oa:0x245a36a0
+[23:24:36.40] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 3]]
+[23:24:36.62] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 3]] -value 588x285+656+324
+[23:24:41.97] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 3]]
+[23:24:41.99] /# db::getAttr viewType -of [dm::findCellView config -cell [dm::findCell inv\_test -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] inv]]]]
+[23:24:41.99] /# dm::createCellView config -cell [dm::findCell inv\_test -lib [ oa::LibFind [oa::ScalarName [oa::CdbaNS] inv]]] -viewType config\.xml
+[23:24:42.00] /# de::open [dm::findCellView config -cell [dm::findCell inv\_test -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] inv]]]] -application heEditor
+[23:24:42.03] /r giWindowId 15
+[23:24:42.04] /r giWindowGeometry 750x750
+[23:24:48.15] /i gi::setField {heTopLCVSelectorView} -value {schematic} -in [gi::getWindows 15]
+[23:25:00.32] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 15]
+[23:25:02.70] /i gi::setField {heViewStopList} -value {symbol} -in [gi::getWindows 15]
+[23:25:04.41] /i gi::setCurrentIndex {heTreeWidget} -index {0.0,2} -in [gi::getWindows 15]
+[23:25:04.42] /i gi::setItemSelection {heTreeWidget} -index {0.0,all} -in [gi::getWindows 15]
+[23:25:07.23] /i gi::setField {heTreeWidget} -value {//starrc} -index {0.0,2} -in [gi::getWindows 15] 
+[23:25:55.25] /i gi::executeAction heFileSave -in [gi::getWindows 15]
+[23:25:56.54] /i gi::executeAction giCloseWindow -in [gi::getWindows 15]
+[23:25:56.57] /i gi::setActiveWindow 3
+[23:25:56.57] /i gi::setActiveWindow 3 -raise true
+[23:25:58.21] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 3]
+[23:25:58.22] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 3]
+[23:25:59.58] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 3]
+[23:25:59.64] /r giWindowId 16
+[23:25:59.64] /r giWindowGeometry 1632x849
+[23:26:00.04] /m Information: 
+[23:26:00.04] /o Checking "inv/inv_test/schematic"
+[23:26:00.04] /o No rule violations found in "inv/inv_test/schematic"
+[23:26:00.04] /m Information: Checking process is completed: marking the design violations
+[23:26:00.04] /m Information: Marking of designs is completed
+[23:26:01.85] /# gi::executeAction deSelectActive -in [gi::getWindows 16]
+[23:26:01.85] /i de::deselectAll [db::getNext [de::getContexts -window 16]]
+[23:26:01.85] /i de::select [de::getActiveFigure [gi::getWindows 16] -point {5.65625 2.46875} -index 0 -intent none]
+[23:26:01.86] /o oa:0x23f480c0
+[23:26:01.99] /# gi::executeAction deDescend -in [gi::getWindows 16]
+[23:26:02.00] /i ide::descend 16 -inPlace false -promptView false -readOnly auto
+[23:26:02.04] /# Navigating to inv/inv/starrc (I1)
+[23:26:02.34] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 16]]]
+[23:26:03.07] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 16]]
+[23:26:03.40] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 16]] -value 1867x223
+[23:26:03.40] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 16]] -value 200x507
+[23:26:06.20] /w Warning: Nothing is bound to the 'Meta-Shift-s' in the current active set. (WINDOW-015)
+[23:26:22.56] /i db::setAttr shown -of [gi::getAssistants giConsole -from [gi::getWindows 16]] -value false
+[23:26:22.85] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 16]] -value 200x736
+[23:26:23.33] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 16]
+[23:26:23.33] /i de::zoom -window [gi::getWindows 16] -factor 2.0 -center {-1.243 -1.677}
+[23:26:23.33] /o {-6.03 -3.46} {1.66 -0.052}
+[23:26:36.51] /# gi::executeAction deFitEdit -in [gi::getWindows 16]
+[23:26:36.51] /i de::fit -window 16 -fitEdit true
+[23:26:36.52] /o {-8.425 -3.122} {2.17 1.573}
+[23:28:20.81] /# gi::executeAction giPostContextMenu -in [gi::getWindows 16]
+[23:28:22.88] /i gi::setActiveWindow 3
+[23:28:22.88] /i gi::setActiveWindow 3 -raise true
+[23:28:25.73] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 3]
+[23:28:25.75] /r giWindowId 17
+[23:28:25.76] /r giWindowGeometry 1632x849
+[23:28:26.21] /m Information: 
+[23:28:26.21] /o Checking "inv/inv_test/schematic"
+[23:28:26.21] /o No rule violations found in "inv/inv_test/schematic"
+[23:28:26.21] /m Information: Checking process is completed: marking the design violations
+[23:28:26.21] /m Information: Marking of designs is completed
+[23:28:29.80] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 17]
+[23:28:29.80] /i sa::showConsole -context [db::getNext [de::getContexts -window 17]]
+[23:28:29.99] /r giWindowId 18
+[23:28:30.01] /r giWindowGeometry 600x500
+[23:28:30.29] /o oa:0x199ef480
+[23:28:30.42] /m Information: Launching Background sae_shell Server Process "cd /root/Excercise/lab1vlsi/inverter/inv && sae_shell -log sae_shell_session3_job1 -libDefFile /root/Excercise/lab1vlsi/inverter/inv/lib.defs"
+[23:28:32.79] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 18]
+[23:28:32.79] /i sa::showEditAnalyses -parent 18 -analysisName "" 
+[23:28:33.28] /o oa:0x26f88200
+[23:28:33.64] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 18]]
+[23:28:33.78] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 18]] -value 633x680+762+298
+[23:28:38.83] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {1ps} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 18]]
+[23:28:41.33] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {20n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 18]]
+[23:28:41.40] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession1} -parent [gi::getWindows 18]]
+[23:28:42.86] /# gi::executeAction saEditModels -in [gi::getWindows 18]
+[23:28:42.86] /i sa::showModelFiles -parent 18
+[23:28:43.09] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 18]]
+[23:28:43.34] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 18]] -value 760x500+728+209
+[23:28:44.68] /i gi::setCurrentIndex {modelFilesTable} -index {0,1} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 18]]
+[23:28:46.56] /m Information: Received ready-for-commands signal from background job 'sae_shell_session3_job1' after 16 seconds.
+[23:29:03.34] /r giFileDialog accept ../../PDK/hspice/reference_models.inc
+[23:29:03.34] /i gi::setField {modelFilesTable} -index {0,1} -value {/root/Excercise/lab1vlsi/PDK/hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 18]]
+[23:29:03.35] /i gi::setField {modelFilesTable} -index {0,1} -value {/root/Excercise/lab1vlsi/PDK/hspice/reference_models.inc} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 18]]
+[23:29:04.41] /i gi::pressButton {ok} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 18]]
+[23:29:05.83] /i gi::setCurrentIndex {outputsTable} -index {0,1} -in [gi::getWindows 18]
+[23:29:05.83] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 18]
+[23:29:05.83] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 18]
+[23:29:07.10] /i sa::selectOutputs -outputIndex 0 -window [gi::getWindows 18]
+[23:29:08.64] /# gi::executeAction deAddPoint -in [gi::getWindows 17]
+[23:29:08.64] /i de::addPoint {4.85 2.41875} -context [db::getNext [de::getContexts -window 17]]
+[23:29:09.97] /# gi::executeAction deAddPoint -in [gi::getWindows 17]
+[23:29:09.97] /i de::addPoint {4.78125 2.39375} -context [db::getNext [de::getContexts -window 17]]
+[23:29:11.43] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 18]
+[23:29:11.43] /i gi::setItemSelection {outputsTable} -index {} -in [gi::getWindows 18]
+[23:29:12.81] /i sa::selectOutputs -outputIndex 1 -window [gi::getWindows 18]
+[23:29:14.27] /# gi::executeAction deAddPoint -in [gi::getWindows 17]
+[23:29:14.27] /i de::addPoint {6.6 2.375} -context [db::getNext [de::getContexts -window 17]]
+[23:29:17.04] /i gi::pressButton {plotButton} -in [gi::getWindows 18]
+[23:29:17.37] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[23:29:17.43] /m Information: Launching Waveform Viewer "cd /root/simulation/inv,inv_test,config/history_1/simulation/default/HSPICE/nominal/results &&  wv -k -cdesigner  -spxrc /tmp/sae_spxrc_EfMRHv    > /root/simulation/inv,inv_test,config/history_1/simulation/default/HSPICE/nominal/results/viewer.log 2>&1"
+[23:29:19.68] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 18]]
+[23:32:38.17] /m Information: Waveform viewer exited normally.
+[17:28:15.20] /m Information: Stopped sharing "Custom WaveView" license. (WAVEFORM-111)
+[17:28:16.56] /i gi::setActiveWindow 17
+[17:28:16.57] /i gi::setActiveWindow 17 -raise true
+[17:28:19.75] /e Error: can't read "pendingTasks": no such variable
+[17:29:03.46] /i gi::executeAction xtSimulationTool -in [gi::getWindows 17]
+[17:29:06.45] /# gi::executeAction deSelectActive -in [gi::getWindows 17]
+[17:29:06.46] /i de::cycleActiveFigure [gi::getWindows 17] -direction next
+[17:29:06.46] /o oa:0x26c63e50
+[17:29:06.61] /# gi::executeAction deDescend -in [gi::getWindows 17]
+[17:29:06.61] /i ide::descend 17 -inPlace false -promptView false -readOnly auto
+[17:29:06.63] /# Navigating to inv/inv/starrc (I1)
+[17:29:07.06] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 17]]]
+[17:29:07.95] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 17]]
+[17:29:08.30] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 17]] -value 1867x223
+[17:29:08.30] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 17]] -value 200x507
+[17:29:11.01] /# gi::executeAction giPostContextMenu -in [gi::getWindows 17]
+[17:29:15.11] /i gi::executeAction giCloseWindow -in [gi::getWindows 17]
+[17:29:15.26] /i gi::setActiveWindow 18
+[17:29:15.26] /i gi::setActiveWindow 18 -raise true
+[17:29:16.74] /i gi::executeAction giCloseWindow -in [gi::getWindows 18]
+[17:29:16.96] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 18]]
+[17:29:17.23] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 18]] -value 292x82+814+484
+[17:29:19.00] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 18]]
+[17:29:19.02] /i gi::setActiveWindow 16
+[17:29:19.03] /i gi::setActiveWindow 16 -raise true
+[17:29:20.68] /i gi::executeAction giCloseWindow -in [gi::getWindows 16]
+[17:29:20.79] /i gi::setActiveWindow 3
+[17:29:20.79] /i gi::setActiveWindow 3 -raise true
+[17:29:24.13] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 3]
+[17:29:24.37] /r giWindowId 19
+[17:29:24.38] /r giWindowGeometry 1632x849
+[17:29:24.97] /m Information: 
+[17:29:24.97] /o Checking "inv/inv_test/schematic"
+[17:29:24.98] /o No rule violations found in "inv/inv_test/schematic"
+[17:29:24.98] /m Information: Checking process is completed: marking the design violations
+[17:29:24.98] /m Information: Marking of designs is completed
+[17:29:29.23] /i gi::executeAction xtSimulationTool -in [gi::getWindows 19]
+[17:29:31.64] /# gi::executeAction xtInitializeNew -in [gi::getWindows 19]
+[17:29:31.64] /i xt::showInitNew 19
+[17:29:31.84] /o oa:0x23f61a20
+[17:29:31.90] /i gi::setActiveDialog [gi::getDialogs {xtInitNew} -parent [gi::getWindows 19]]
+[17:29:32.16] /i db::setAttr geometry -of [gi::getDialogs {xtInitNew} -parent [gi::getWindows 19]] -value 400x344+760+353
+[17:29:33.84] /i gi::pressButton {create} -in [gi::getDialogs {xtInitNew} -parent [gi::getWindows 19]]
+[17:29:37.70] /# gi::executeAction xtNetlist -in [gi::getWindows 19]
+[17:29:37.71] /i xt::runNetlister [xt::getSimRuns -context [db::getNext [de::getContexts -window 19]]]
+[17:29:37.77] /m Information: Final netlist "/root/Excercise/lab1vlsi/inverter/inv/inv_test.HSPICE2/netlist.final" is missing
+[17:29:37.77] /m Information: Structural netlist "/root/Excercise/lab1vlsi/inverter/inv/inv_test.HSPICE2/netlist/netlist.sp" is missing
+[17:29:37.78] /m Information: "Starting incremental netlisting for design "inv/inv_test/config"..." (NETLISTING-010)
+[17:29:37.84] /m Information: 
+[17:29:37.84] /o Checking "inv/inv_test/schematic"
+[17:29:37.85] /o No rule violations found in "inv/inv_test/schematic"
+[17:29:37.85] /o No Design Integrity rule violations found in "inv/inv_test/schematic"
+[17:29:37.86] /m Information: 
+              /c Cross view checking for inv/inv/symbol with inv/inv/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol (DE_EDIT-007)
+[17:29:37.86] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[17:29:37.87] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[17:29:38.00] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/hspice
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in hspice is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in hspice is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in hspice is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in hspice is missing in ivpcell (DE_EDIT-007)
+[17:29:38.00] /w Warning: "Terminal D found in hspice is missing in ivpcell" (NETLISTING-003)
+[17:29:38.00] /w Warning: "Terminal G found in hspice is missing in ivpcell" (NETLISTING-003)
+[17:29:38.00] /w Warning: "Terminal S found in hspice is missing in ivpcell" (NETLISTING-003)
+[17:29:38.00] /w Warning: "Terminal B found in hspice is missing in ivpcell" (NETLISTING-003)
+[17:29:38.18] /m Information: "inv inv starrc" renetlisted. (NETLISTING-056)
+[17:29:38.21] /m Information: "inv inv_test schematic" renetlisted. (NETLISTING-056)
+[17:29:38.22] /m Information: "Netlisting design "inv/inv_test/config" finished successfully." (NETLISTING-012)
+[13:48:24.00] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[13:48:24.25] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x108+811+471
+[13:48:25.26] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[13:48:25.29] /i exit
+[13:48:25.56] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[13:48:25.74] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+376
+[13:48:27.36] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[13:48:27.58] /i gi::setActiveWindow 3
+[13:48:27.58] /i gi::setActiveWindow 3 -raise true
+[13:48:27.80] /i gi::setActiveWindow 1
+[13:48:27.80] /i gi::setActiveWindow 1 -raise true
+[13:48:28.25] /o Shutdown time: Wed Apr  1 13:48:28 2026
+[13:48:28.25] /o Elapsed session real time: 2 hours 13.35 minutes
+[13:48:28.25] /o Session terminated. Log is at /root/Excercise/lab1vlsi/inverter/inv/synopsys_custom/logs/ccompiler.root.2026_3_19_222451_13849.log
+[13:48:29.32] /m Information: License 'SAE' checked in. (LICENSE-004)
+[13:48:29.32] /e Error: "Following error happened during execution of ::layout_editor::_impl::ADV_checked_in procedure during TCL callback invalid command name "::layout_editor::_impl::ADV_checked_in"" (POSTMAN-005)
+[13:48:29.32] /e Error: "Following error happened during execution of ::xt::physicalVerification::_private::onPostFeatureReleased procedure during TCL callback invalid command name "::xt::physicalVerification::_private::onPostFeatureReleased"" (POSTMAN-005)
+[13:48:29.33] /e Error: "Following error happened during execution of ::vdrc::voltage_annotation::_private::_onPostFeatureReleasedProc procedure during TCL callback invalid command name "::vdrc::voltage_annotation::_private::_onPostFeatureReleasedProc"" (POSTMAN-005)
+[13:48:29.33] /e Error: "Following error happened during execution of ::lx::_impl::onPostFeatureReleased procedure during TCL callback invalid command name "::lx::_impl::onPostFeatureReleased"" (POSTMAN-005)

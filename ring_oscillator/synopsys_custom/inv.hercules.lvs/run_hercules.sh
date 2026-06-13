@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /root/Excercise/ring_oscillator/synopsys_custom/inv.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i inv -b inv -p . -O gdsii -o inv_result.gds -s /root/Excercise/ring_oscillator/synopsys_custom/inv.hercules.lvs/inv.custom_compiler.sp -sf CDL -stb inv /root/Excercise/ring_oscillator/synopsys_custom/inv.hercules.lvs/reference_lvs.lvs.evx > /root/Excercise/ring_oscillator/synopsys_custom/inv.hercules.lvs/stdout.lvs.log 2>&1

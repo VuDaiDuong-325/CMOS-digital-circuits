@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler (TM), build #, on Tue Apr 21 22:13:09 2026
+-->
+<synopsysFile version="1.1" name="synopsysRecentFiles">
+        <recentFiles>
+                <file library="nmos_nm" view="starrc" mode="write" cell="nmos_dc" file="maskLayout" application="leLayout"/>
+                <file library="nmos_nm" view="layout" mode="write" cell="nmos_dc" file="maskLayout" application="leLayout"/>
+                <file library="nmos_nm" view="schematic" mode="write" cell="nmos_dc_test" file="schematic" application="seSchematic"/>
+                <file library="nmos_nm" view="schematic" mode="write" cell="nmos_dc" file="schematic" application="seSchematic"/>
+                <file library="nmos_nm" view="config" mode="write" cell="nmos_dc_test" file="config.xml" application=""/>
+        </recentFiles>
+</synopsysFile>

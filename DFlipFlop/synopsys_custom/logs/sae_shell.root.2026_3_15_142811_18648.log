@@ -1,0 +1,31 @@
+[14:28:18.81] /m Information: License 'SAE' checked out. (LICENSE-003)
+[14:28:27.55] /o sae_shell Version Custom Compiler N-2017.12-SP1-2
+              /c Build  (OPT) compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Execution time: Sun Mar 15 14:28:11 2026
+              /c Host: localhost.localdomain
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[14:28:27.71] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[14:28:27.72] /o 	#######################################
+[14:28:27.72] /o 	PDK Library Name	: reference90RF
+[14:28:27.72] /o 	PDK Version		: 2.0
+[14:28:27.72] /o 	PDK Release Date	: 25-March-2010 
+[14:28:27.72] /o 	#######################################
+[14:28:27.72] /o 
+[14:28:27.74] /i ::sa::_backgroundSaeShell::signalProcessReady 1773559683
+[14:28:27.75] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 24
+[14:31:53.59] /i ::sa::_backgroundSaeShell::runScript /root/simulation/dff,dff_test,schematic/history_1/simulation/default/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /root/simulation/dff,dff_test,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /root/simulation/dff,dff_test,schematic/history_1/simulation/default/HSPICE/nominal databaseName /root/simulation/dff,dff_test,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[14:31:56.36] /w Warning: Some integration features may not operate correctly because no valid manifest file for tool 'wv' was found in the searched location(s):
+              /c     /usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/bin/wv.manifest
+              /c     /usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/packages/SX-SNPSCUST-Link
+              /c     /usr/synopsys/customcompiler/N-2017.12-SP1-2/auxx/waveform
+              /c If you are using a wrapper script, create /usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/bin/wv.manifest as a symbolic link targeted at the tool's original manifest file.
+[14:31:56.53] /m Information: Started sharing "Custom WaveView" license. (WAVEFORM-110)
+[14:31:57.17] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::scriptFinished 3.5 {} sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession0 testbenchName default resultsDir /root/simulation/dff,dff_test,schematic/history_1/simulation/default/HSPICE/nominal/results testSuiteDir /root/simulation/dff,dff_test,schematic/history_1/simulation/default/HSPICE/nominal databaseName /root/simulation/dff,dff_test,schematic/history_1/simulation/default/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+[14:31:57.17] /o false
+[14:33:21.16] /i ::wf::viewerExited
+[14:34:38.61] /i ::sa::_backgroundSaeShell::exit
+[14:34:38.61] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting

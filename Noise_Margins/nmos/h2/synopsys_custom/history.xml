@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler (TM), build #, on Tue Apr 21 23:06:02 2026
+-->
+<synopsysFile version="1.1" name="synopsysRecentFiles">
+        <recentFiles>
+                <file cell="h4" mode="write" application="leLayout" view="starrc" library="nmos_h4" file="maskLayout"/>
+                <file cell="h4" mode="read" application="seSchematic" view="schematic" library="nmos_h4" file="schematic"/>
+                <file cell="h4" mode="read" application="leLayout" view="layout" library="nmos_h4" file="maskLayout"/>
+                <file cell="h2" mode="write" application="leLayout" view="starrc" library="nmos_h2" file="maskLayout"/>
+                <file cell="h2" mode="read" application="seSchematic" view="schematic" library="nmos_h2" file="schematic"/>
+        </recentFiles>
+</synopsysFile>

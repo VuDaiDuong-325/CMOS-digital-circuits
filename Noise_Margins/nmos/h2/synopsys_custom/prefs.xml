@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref name="dbGenerateCellViewEditor" value="Symbol Editor"/>
+                <pref name="deConfigEditor" value="config"/>
+                <pref name="deDescendMode" value="readOnly"/>
+                <pref name="deDescendRead" value="true"/>
+                <pref name="dmCheckInInteractive" value="always"/>
+                <pref name="giPromptCloseMultipleTabs" value="true"/>
+                <pref name="leAbstractGenOptionSetDefault" value=""/>
+                <pref name="leCheckViasDialogMode" value="true"/>
+                <pref name="seCreateInstDialogMode" value="true"/>
+                <pref name="seCreateLabelDialogMode" value="true"/>
+                <pref name="seCreateNoteDialogMode" value="true"/>
+                <pref name="seImportSymbolDialogMode" value="true"/>
+                <pref name="xtNetlistingPrefixes" value="background_netlisting"/>
+                <pref name="xtSimulationPrefixes" value="HSIM HSPICE Nanosim Spectre VHDL Verilog XA"/>
+        </preferences>
+</file-format>

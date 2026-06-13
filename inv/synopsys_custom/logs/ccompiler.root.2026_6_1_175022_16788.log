@@ -1,0 +1,215 @@
+[17:50:30.77] /r giWindowId 0
+[17:50:30.77] /r giWindowGeometry 600x300
+[17:50:30.81] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Mon Jun  1 17:50:22 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/lab1vlsi/inverter/inv
+              /c 
+[17:50:37.16] /r giShowFrameTabs true
+[17:50:37.17] /r giWindowId 1
+[17:50:37.17] /r giWindowGeometry 1040x800
+[17:50:50.01] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpeninvinvlayout} -in [gi::getWindows 1]
+[17:50:50.02] /# 
+[17:50:50.02] /i de::open inv/inv/layout
+[17:50:50.04] /m Information: License 'Basic' checked out. (LICENSE-003)
+[17:50:50.07] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[17:50:50.08] /o 	#######################################
+[17:50:50.08] /o 	PDK Library Name	: reference90RF
+[17:50:50.08] /o 	PDK Version		: 2.0
+[17:50:50.08] /o 	PDK Release Date	: 25-March-2010 
+[17:50:50.08] /o 	#######################################
+[17:50:50.08] /o 
+[17:50:50.93] /r giWindowId 2
+[17:50:50.94] /r giWindowGeometry 1632x849
+[17:50:51.08] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 2]]]
+[17:50:51.73] /o oa:0x1ed067c0
+[17:50:53.72] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[17:50:54.10] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 290x736
+[17:50:54.20] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x911+5+62
+[17:50:57.84] /# gi::executeAction xtLVSRun -in [gi::getWindows 2]
+[17:50:57.84] /i xt::physicalVerification::executeRun lvs 2
+[17:50:58.18] /# xt::physicalVerification::executePve lvs 2
+[17:50:59.75] /m Information: "Starting netlisting for design "inv/inv/schematic"..." (NETLISTING-010)
+[17:50:59.83] /o No Design Integrity rule violations found in "inv/inv/schematic"
+[17:50:59.90] /m Information: "Netlisting design "inv/inv/schematic" finished successfully." (NETLISTING-012)
+[17:51:00.13] /r giWindowId 3
+[17:51:00.14] /r giWindowGeometry 800x600
+[17:51:04.57] /i gi::setActiveTab {tabs} -tabName {inv.LAYOUT_ERRORS} -in [gi::getWindows 3]
+[17:51:06.00] /i gi::setActiveTab {tabs} -tabName {stdout.lvs.log} -in [gi::getWindows 3]
+[17:51:09.10] /m Information: 
+              /c =============================
+              /c JobID: hercules_lvs_1
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[17:51:10.81] /i gi::setActiveTab {tabs} -tabName {inv.LAYOUT_ERRORS} -in [gi::getWindows 3]
+[17:52:21.23] /i gi::setActiveWindow 2
+[17:52:21.24] /i gi::setActiveWindow 2 -raise true
+[17:52:24.01] /# gi::executeAction xtDRCRun -in [gi::getWindows 2]
+[17:52:24.01] /i xt::physicalVerification::executeRun drc 2
+[17:52:24.62] /# xt::physicalVerification::executePve drc 2
+[17:52:26.10] /r giWindowId 4
+[17:52:26.13] /r giWindowGeometry 800x600
+[17:52:29.14] /m Information: 
+              /c =============================
+              /c JobID: hercules_drc_1
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[17:52:34.11] /i gi::setActiveTab {tabs} -tabName {inv.LAYOUT_ERRORS} -in [gi::getWindows 4]
+[17:52:36.55] /i gi::setActiveTab {tabs} -tabName {inv.RESULTS} -in [gi::getWindows 4]
+[17:52:37.28] /i gi::setActiveTab {tabs} -tabName {inv.LAYOUT_ERRORS} -in [gi::getWindows 4]
+[17:52:37.74] /i gi::setActiveTab {tabs} -tabName {stdout.drc.log} -in [gi::getWindows 4]
+[17:52:40.47] /i gi::setActiveTab {tabs} -tabName {inv.LAYOUT_ERRORS} -in [gi::getWindows 4]
+[17:52:42.72] /i gi::setActiveWindow 3
+[17:52:42.72] /i gi::setActiveWindow 3 -raise true
+[17:52:43.53] /i gi::setActiveWindow 4
+[17:52:43.53] /i gi::setActiveWindow 4 -raise true
+[17:52:44.02] /i gi::setActiveWindow 3
+[17:52:44.02] /i gi::setActiveWindow 3 -raise true
+[17:52:44.59] /i gi::setActiveWindow 4
+[17:52:44.59] /i gi::setActiveWindow 4 -raise true
+[17:52:45.25] /i gi::setActiveWindow 3
+[17:52:45.25] /i gi::setActiveWindow 3 -raise true
+[17:52:46.45] /i gi::setActiveTab {tabs} -tabName {inv.LVS_ERRORS} -in [gi::getWindows 3]
+[17:52:48.40] /i gi::setActiveTab {tabs} -tabName {inv.LAYOUT_ERRORS} -in [gi::getWindows 3]
+[17:52:50.05] /i gi::setActiveTab {tabs} -tabName {inv.LVS_ERRORS} -in [gi::getWindows 3]
+[18:18:28.49] /i gi::setActiveWindow 2
+[18:18:28.57] /i gi::setActiveWindow 2 -raise true
+[18:18:31.84] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[18:18:32.15] /i gi::setActiveWindow 3
+[18:18:32.15] /i gi::setActiveWindow 3 -raise true
+[18:18:34.71] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[18:18:34.75] /i gi::setActiveWindow 4
+[18:18:34.75] /i gi::setActiveWindow 4 -raise true
+[18:18:35.77] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[18:18:35.80] /i gi::setActiveWindow 1
+[18:18:35.80] /i gi::setActiveWindow 1 -raise true
+[18:18:50.52] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpeninvinvschematic} -in [gi::getWindows 1]
+[18:18:50.53] /# 
+[18:18:50.54] /i de::open inv/inv/schematic
+[18:18:50.84] /r giWindowId 5
+[18:18:50.86] /r giWindowGeometry 1632x849
+[18:18:51.83] /o "inv/inv/schematic" design does not need checking
+[18:18:52.02] /o oa:0x1ad13890
+[18:18:57.18] /i gi::executeAction xtSimulationTool -in [gi::getWindows 5]
+[18:19:00.80] /# gi::executeAction xtInitializeNew -in [gi::getWindows 5]
+[18:19:00.80] /i xt::showInitNew 5
+[18:19:00.98] /o oa:0x1f2230e0
+[18:19:01.13] /i gi::setActiveDialog [gi::getDialogs {xtInitNew} -parent [gi::getWindows 5]]
+[18:19:01.37] /i db::setAttr geometry -of [gi::getDialogs {xtInitNew} -parent [gi::getWindows 5]] -value 400x344+760+353
+[18:19:04.28] /i gi::pressButton {create} -in [gi::getDialogs {xtInitNew} -parent [gi::getWindows 5]]
+[18:19:14.15] /# gi::executeAction xtNetlist -in [gi::getWindows 5]
+[18:19:14.15] /i xt::runNetlister [xt::getSimRuns -context [db::getNext [de::getContexts -window 5]]]
+[18:19:14.20] /m Information: Final netlist "/root/Excercise/lab1vlsi/inverter/inv/inv.HSPICE1/netlist.final" is missing
+[18:19:14.20] /m Information: Structural netlist "/root/Excercise/lab1vlsi/inverter/inv/inv.HSPICE1/netlist/netlist.sp" is missing
+[18:19:14.22] /m Information: "Starting incremental netlisting for design "inv/inv/schematic"..." (NETLISTING-010)
+[18:19:14.30] /o No Design Integrity rule violations found in "inv/inv/schematic"
+[18:19:14.39] /m Information: "inv inv schematic" renetlisted. (NETLISTING-056)
+[18:19:14.40] /m Information: "Netlisting design "inv/inv/schematic" finished successfully." (NETLISTING-012)
+[18:46:46.96] /i gi::setActiveWindow 1
+[18:46:46.98] /i gi::setActiveWindow 1 -raise true
+[18:46:48.91] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[18:46:48.91] /# 
+[18:46:48.92] /i dm::openLibraryManager
+[18:46:48.92] /r giWindowId 6
+[18:46:49.01] /r giWindowGeometry 660x600+50+84
+[18:46:49.24] /o oa:0x20475b90
+[18:46:58.12] /i gi::setCurrentIndex {libs} -index {inv} -in [gi::getWindows 6]
+[18:46:58.18] /i gi::setItemSelection {libs} -index {inv} -in [gi::getWindows 6]
+[18:46:59.64] /i gi::setCurrentIndex {cells} -index {inv_test} -in [gi::getWindows 6]
+[18:46:59.66] /i gi::setItemSelection {cells} -index {inv_test} -in [gi::getWindows 6]
+[18:47:01.79] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 6]
+[18:47:01.80] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 6]
+[18:47:02.42] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 6]
+[18:47:02.42] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 6]
+[18:47:03.69] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 6]
+[18:47:03.70] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 6]
+[18:47:06.89] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 6]
+[18:47:07.15] /r giWindowId 7
+[18:47:07.17] /r giWindowGeometry 1632x849
+[18:47:07.83] /o "inv/inv_test/schematic" design does not need checking
+[18:47:09.73] /# gi::executeAction deSelectActive -in [gi::getWindows 7]
+[18:47:09.73] /i de::deselectAll [db::getNext [de::getContexts -window 7]]
+[18:47:09.73] /i de::select [de::getActiveFigure [gi::getWindows 7] -point {5.68125 2.63125} -index 0 -intent none]
+[18:47:09.74] /o oa:0x20474dd0
+[18:47:09.86] /# gi::executeAction deDescend -in [gi::getWindows 7]
+[18:47:09.86] /i ide::descend 7 -inPlace false -promptView false -readOnly auto
+[18:47:09.91] /# Navigating to inv/inv/starrc (I1)
+[18:47:10.74] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 7]]]
+[18:47:11.43] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 7]]
+[18:47:11.68] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 7]] -value 200x736
+[18:47:12.88] /# gi::executeAction giPostContextMenu -in [gi::getWindows 7]
+[18:47:18.99] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[18:47:19.05] /i gi::setActiveWindow 6
+[18:47:19.05] /i gi::setActiveWindow 6 -raise true
+[18:47:22.26] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 6]
+[18:47:22.30] /r giWindowId 8
+[18:47:22.31] /r giWindowGeometry 1632x849
+[18:47:22.69] /o "inv/inv_test/schematic" design does not need checking
+[18:47:26.17] /i gi::executeAction xtSimulationTool -in [gi::getWindows 8]
+[18:47:30.11] /# gi::executeAction xtInitializeNew -in [gi::getWindows 8]
+[18:47:30.11] /i xt::showInitNew 8
+[18:47:30.16] /o oa:0x1f766ef0
+[18:47:30.29] /i gi::setActiveDialog [gi::getDialogs {xtInitNew} -parent [gi::getWindows 8]]
+[18:47:30.53] /i db::setAttr geometry -of [gi::getDialogs {xtInitNew} -parent [gi::getWindows 8]] -value 400x344+760+353
+[18:47:37.21] /i gi::pressButton {create} -in [gi::getDialogs {xtInitNew} -parent [gi::getWindows 8]]
+[18:47:41.41] /# gi::executeAction xtNetlist -in [gi::getWindows 8]
+[18:47:41.41] /i xt::runNetlister [xt::getSimRuns -context [db::getNext [de::getContexts -window 8]]]
+[18:47:41.45] /m Information: Final netlist "/root/Excercise/lab1vlsi/inverter/inv/inv_test.HSPICE1/netlist.final" is missing
+[18:47:41.45] /m Information: Structural netlist "/root/Excercise/lab1vlsi/inverter/inv/inv_test.HSPICE1/netlist/netlist.sp" is missing
+[18:47:41.46] /m Information: "Starting incremental netlisting for design "inv/inv_test/config"..." (NETLISTING-010)
+[18:47:41.49] /o No Design Integrity rule violations found in "inv/inv_test/schematic"
+[18:47:41.50] /m Information: 
+              /c Cross view checking for inv/inv/symbol with inv/inv/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal vdd! found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal gnd! found in starrc is missing in symbol (DE_EDIT-007)
+[18:47:41.51] /w Warning: "Terminal vdd! found in starrc is missing in symbol" (NETLISTING-003)
+[18:47:41.51] /w Warning: "Terminal gnd! found in starrc is missing in symbol" (NETLISTING-003)
+[18:47:41.58] /m Information: 
+              /c Cross view checking for reference90RF/n_4t/ivpcell with reference90RF/n_4t/hspice
+              /c 	[warning] Missing Terminal
+              /c 		Terminal D found in hspice is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal G found in hspice is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal S found in hspice is missing in ivpcell
+              /c 	[warning] Missing Terminal
+              /c 		Terminal B found in hspice is missing in ivpcell (DE_EDIT-007)
+[18:47:41.58] /w Warning: "Terminal D found in hspice is missing in ivpcell" (NETLISTING-003)
+[18:47:41.58] /w Warning: "Terminal G found in hspice is missing in ivpcell" (NETLISTING-003)
+[18:47:41.58] /w Warning: "Terminal S found in hspice is missing in ivpcell" (NETLISTING-003)
+[18:47:41.58] /w Warning: "Terminal B found in hspice is missing in ivpcell" (NETLISTING-003)
+[18:47:41.80] /m Information: "inv inv starrc" renetlisted. (NETLISTING-056)
+[18:47:41.81] /m Information: "inv inv_test schematic" renetlisted. (NETLISTING-056)
+[18:47:41.82] /m Information: "Netlisting design "inv/inv_test/config" finished successfully." (NETLISTING-012)
+[18:56:20.08] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[18:56:20.32] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x108+811+471
+[18:56:22.03] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[18:56:22.07] /i exit
+[18:56:22.33] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[18:56:22.50] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+376
+[18:56:25.57] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[18:56:25.92] /i gi::setActiveWindow 6
+[18:56:25.92] /i gi::setActiveWindow 6 -raise true
+[18:56:26.46] /i gi::setActiveWindow 1
+[18:56:26.46] /i gi::setActiveWindow 1 -raise true
+[18:56:26.72] /i gi::setActiveWindow 5
+[18:56:26.72] /i gi::setActiveWindow 5 -raise true
+[18:56:27.67] /o Shutdown time: Mon Jun  1 18:56:27 2026
+[18:56:27.67] /o Elapsed session real time: 1 hour 5.98 minutes
+[18:56:27.67] /o Session terminated. Log is at /root/Excercise/lab1vlsi/inverter/inv/synopsys_custom/logs/ccompiler.root.2026_6_1_175022_16788.log

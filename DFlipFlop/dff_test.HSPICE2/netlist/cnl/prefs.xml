@@ -1,0 +1,8 @@
+<preferences>
+<preference name="nlHSPICEBusStyle" value="&lt;>"/>
+<preference name="nlHSPICECompatiblePortOrder" value="true"/>
+<preference name="nlHSPICEDefaultStringParameters" value="model"/>
+<preference name="nlHSPICEGlobalNets" value="0 gnd! ground gnd"/>
+<preference name="nlHSPICEIncludeHSPICEFile" value="true"/>
+<preference name="nlHSPICEIsCaseSensitive" value="Lower"/>
+</preferences>

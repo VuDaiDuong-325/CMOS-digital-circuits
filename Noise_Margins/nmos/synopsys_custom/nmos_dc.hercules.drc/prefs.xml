@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref name="xtDRCHerculesRunsetFile" value="/root/Excercise/lab1vlsi/PDK/hercules/drc/reference_drc.ev"/>
+                <pref name="xtDRCHerculesVariables" value="{environment OPTION double {9}}"/>
+                <pref name="xtDRCLayCell" value="nmos_dc"/>
+                <pref name="xtDRCLayLCV" value="nmos_nm/nmos_dc/layout"/>
+                <pref name="xtDRCLayStreamFile" value="/root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.hercules.drc/nmos_dc.custom_compiler.gds"/>
+                <pref name="xtDRCTool" value="Hercules"/>
+                <pref name="xtPVLayerMapFile" value="/root/Excercise/lab1vlsi/PDK/techfiles/reference90RF_layer.map"/>
+        </preferences>
+</file-format>

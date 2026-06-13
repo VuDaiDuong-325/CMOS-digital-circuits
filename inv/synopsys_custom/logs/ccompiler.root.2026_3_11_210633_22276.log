@@ -1,0 +1,74 @@
+[21:06:35.04] /r giWindowId 0
+[21:06:35.04] /r giWindowGeometry 600x300
+[21:06:35.05] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Mar 11 21:06:33 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/lab1vlsi/inverter/inv
+              /c 
+[21:06:37.21] /w Warning: In file /root/Excercise/lab1vlsi/inverter/inv/lib.defs: Unable to open library reference90RF at path /root/Exercise/lab1vlsi/PDK/reference90RF : No access permission. (DATA_MANAGEMENT-014)
+[21:06:37.23] /r giShowFrameTabs true
+[21:06:37.24] /r giWindowId 1
+[21:06:37.24] /r giWindowGeometry 1040x800
+[21:06:39.52] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[21:06:39.52] /# 
+[21:06:39.52] /i dm::openLibraryManager
+[21:06:39.52] /r giWindowId 2
+[21:06:39.52] /r giWindowGeometry 660x600+50+84
+[21:06:39.57] /o oa:0x19b4e260
+[21:06:41.00] /i gi::setCurrentIndex {libs} -index {inv} -in [gi::getWindows 2]
+[21:06:41.01] /i gi::setItemSelection {libs} -index {inv} -in [gi::getWindows 2]
+[21:06:42.10] /i gi::setCurrentIndex {libs} -index {basic} -in [gi::getWindows 2]
+[21:06:42.11] /i gi::setItemSelection {libs} -index {basic} -in [gi::getWindows 2]
+[21:06:42.69] /i gi::setCurrentIndex {libs} -index {analogLib} -in [gi::getWindows 2]
+[21:06:42.72] /i gi::setItemSelection {libs} -index {analogLib} -in [gi::getWindows 2]
+[21:06:43.18] /i gi::setCurrentIndex {libs} -index {inv} -in [gi::getWindows 2]
+[21:06:43.18] /i gi::setItemSelection {libs} -index {inv} -in [gi::getWindows 2]
+[21:06:44.59] /i gi::setCurrentIndex {cells} -index {inv} -in [gi::getWindows 2]
+[21:06:44.60] /i gi::setItemSelection {cells} -index {inv} -in [gi::getWindows 2]
+[21:06:45.35] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[21:06:45.35] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[21:06:45.51] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[21:06:45.54] /m Information: License 'Schematic' checked out. (LICENSE-003)
+[21:06:45.54] /m Information: License 'Schematic' checked in. (LICENSE-004)
+[21:06:45.61] /r giDialog gi::setActiveDialog [gi::getDialogs {deInvalidTechnologyReference} -parent [gi::getWindows 2]]
+[21:06:45.85] /r giDialog db::setAttr geometry -of [gi::getDialogs {deInvalidTechnologyReference} -parent [gi::getWindows 2]] -value 512x92+703+454
+[21:06:54.83] /r giDialog gi::pressButton {manageTechnology} -in [gi::getDialogs {deInvalidTechnologyReference} -parent [gi::getWindows 2]]
+[21:06:54.83] /r giWindowId 3
+[21:06:54.84] /r giWindowGeometry 350x400
+[21:06:54.90] /# gi::setItemSelection {techTechnologyManagerLibWidget} -index {{analogLib}} -in [gi::getWindows 3]
+[21:06:54.90] /# gi::setItemSelection {techTechnologyManagerLibWidget} -index {} -in [gi::getWindows 3]
+[21:06:54.90] /# gi::setItemSelection {techTechnologyManagerLibWidget} -index {{inv}} -in [gi::getWindows 3]
+[21:06:54.90] /e Error: Invalid technology for file 'inv inv schematic schematic'. (TCL)
+[21:06:58.07] /i gi::setCurrentIndex {techTechnologyManagerLibWidget} -index {inv , Attachment} -in [gi::getWindows 3]
+[21:07:04.58] /i gi::setActiveWindow 2
+[21:07:04.58] /i gi::setActiveWindow 2 -raise true
+[21:07:17.62] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[21:07:17.62] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[21:07:19.04] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[21:07:19.04] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[21:08:11.89] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[21:08:12.14] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x108+810+446
+[21:08:13.11] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[21:08:13.12] /i exit
+[21:08:13.31] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[21:08:13.43] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x155+741+389
+[21:08:14.73] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[21:08:14.75] /i gi::setActiveWindow 3
+[21:08:14.75] /i gi::setActiveWindow 3 -raise true
+[21:08:14.75] /i gi::setActiveWindow 1
+[21:08:14.75] /i gi::setActiveWindow 1 -raise true
+[21:08:14.97] /o Shutdown time: Wed Mar 11 21:08:14 2026
+[21:08:14.97] /o Elapsed session real time: 1.66 minutes
+[21:08:14.97] /o Session terminated. Log is at /root/Excercise/lab1vlsi/inverter/inv/synopsys_custom/logs/ccompiler.root.2026_3_11_210633_22276.log

@@ -1,0 +1,12 @@
+{NETLIST nmos_dc
+{VERSION 1 0 0}
+
+/* Level 0 */
+
+{CELL nmos_dc
+	{PORT gnd! outS}
+	{PROP top=3.170000 bottom=-0.075000 left=3.315000 right=4.115000}
+	{INST M1=N {PROP x=3.715 y=1.700  l=0.100 w=2.000}
+		{PIN N_2=GATE N_2=SRC outS=DRN gnd!=BULK }}
+}
+}

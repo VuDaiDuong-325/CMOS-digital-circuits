@@ -1,0 +1,43 @@
+{NETLIST dff
+{VERSION 1 0 0}
+
+{CELL dff
+    {PORT Q' vdd! gnd! CLK Q D }
+    {INST M2=N {PROP n="N" x=-1.220 y=-0.855 Length=0.1 Width=0.36 }
+	{PIN Q=GATE Q'=SRC gnd!=DRN }}
+    {INST M9=N {PROP n="N" x=-7.590 y=-0.895 Length=0.1 Width=0.36 }
+	{PIN CLK=GATE N_8=SRC gnd!=DRN }}
+    {INST M16=P {PROP n="P" x=-5.770 y=1.590 Length=0.1 Width=0.72 }
+	{PIN N_10=GATE N_13=SRC vdd!=DRN }}
+    {INST M1=N {PROP n="N" x=-0.310 y=-0.860 Length=0.1 Width=0.36 }
+	{PIN N_8=GATE Q'=SRC N_24=DRN }}
+    {INST M8=N {PROP n="N" x=-6.680 y=-0.885 Length=0.1 Width=0.36 }
+	{PIN N_8=GATE N_10=SRC D=DRN }}
+    {INST M15=P {PROP n="P" x=-4.860 y=1.590 Length=0.1 Width=0.72 }
+	{PIN N_13=GATE N_18=SRC vdd!=DRN }}
+    {INST M7=N {PROP n="N" x=-5.770 y=-0.895 Length=0.1 Width=0.36 }
+	{PIN N_10=GATE N_13=SRC gnd!=DRN }}
+    {INST M14=P {PROP n="P" x=-3.950 y=1.590 Length=0.1 Width=0.72 }
+	{PIN N_8=GATE N_18=SRC N_10=DRN }}
+    {INST M6=N {PROP n="N" x=-4.860 y=-0.900 Length=0.1 Width=0.36 }
+	{PIN N_13=GATE N_18=SRC gnd!=DRN }}
+    {INST M13=P {PROP n="P" x=-3.040 y=1.590 Length=0.1 Width=0.72 }
+	{PIN N_8=GATE N_24=SRC N_13=DRN }}
+    {INST M5=N {PROP n="N" x=-3.040 y=-0.880 Length=0.1 Width=0.36 }
+	{PIN CLK=GATE N_24=SRC N_13=DRN }}
+    {INST M12=P {PROP n="P" x=-2.130 y=1.590 Length=0.1 Width=0.72 }
+	{PIN N_24=GATE Q=SRC vdd!=DRN }}
+    {INST M4=N {PROP n="N" x=-3.950 y=-0.860 Length=0.1 Width=0.36 }
+	{PIN CLK=GATE N_18=SRC N_10=DRN }}
+    {INST M11=P {PROP n="P" x=-1.220 y=1.590 Length=0.1 Width=0.72 }
+	{PIN Q=GATE Q'=SRC vdd!=DRN }}
+    {INST M18=P {PROP n="P" x=-7.590 y=1.590 Length=0.1 Width=0.72 }
+	{PIN CLK=GATE N_8=SRC vdd!=DRN }}
+    {INST M3=N {PROP n="N" x=-2.130 y=-0.860 Length=0.1 Width=0.36 }
+	{PIN N_24=GATE Q=SRC gnd!=DRN }}
+    {INST M10=P {PROP n="P" x=-0.310 y=1.590 Length=0.1 Width=0.72 }
+	{PIN CLK=GATE Q'=SRC N_24=DRN }}
+    {INST M17=P {PROP n="P" x=-6.680 y=1.590 Length=0.1 Width=0.72 }
+	{PIN CLK=GATE N_10=SRC D=DRN }}
+}
+}

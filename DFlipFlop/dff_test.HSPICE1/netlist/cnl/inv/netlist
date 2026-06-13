@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : inv
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD cmos.sch cmos_sch schematic veriloga
+* View Stop List   : hspice hspiceD veriloga
+********************************************************************************
+.subckt inv in out
+m2 out in vdd! vdd! P w=0.72u l=0.1u nf=1 m=1 ad=0.1584p as=0.1584p pd=1.16u ps=1.16u
++  nrd=0.3055555556 nrs=0.3055555556 sa=0.22u sb=0.22u sd=0
+m3 out in gnd! gnd! N w=0.36u l=0.1u nf=1 m=1 ad=79.2f as=79.2f pd=0.8u ps=0.8u
++ nrd=0.6111111111 nrs=0.6111111111 sa=0.22u sb=0.22u sd=0
+.ends inv
+

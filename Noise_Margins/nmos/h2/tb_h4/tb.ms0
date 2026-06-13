@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '*======================================================='
+ vout_tai_0_5ua   vout_tai_1_0ua   vout_tai_2_0ua   ids_tai_0_5ua   
+ ids_tai_1_0ua    ids_tai_2_0ua    temper           alter#          
+    0.9074           0.8787           0.8490        -5.000e-07      
+ -1.000e-06       -2.000e-06         25.0000        1               

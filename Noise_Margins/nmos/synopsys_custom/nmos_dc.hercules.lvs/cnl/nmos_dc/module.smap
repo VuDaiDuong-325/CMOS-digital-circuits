@@ -1,0 +1,28 @@
+<module name="vsl: nmos_nm nmos_dc schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="MM0" src="M0"/>
+</forward>
+<reverse>
+<mapping dst="M0" src="MM0"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="outS" src="&lt;unmappedTermOrder>"/>
+<mapping dst="outS" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="outS"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="n_4t">
+<instance name="M0"/>
+</instance_header>
+</master_instances>
+</module>

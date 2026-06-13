@@ -1,0 +1,43 @@
+<module name="switched: dff dff_test schematic vl: schematic hspice symbol sl: symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="xi0" src="I0"/>
+</forward>
+<reverse>
+<mapping dst="I0" src="xi0"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="q" src="Q"/>
+<mapping dst="d" src="D"/>
+<mapping dst="clk" src="CLK"/>
+</forward>
+<reverse>
+<mapping dst="Q" src="q"/>
+<mapping dst="D" src="d"/>
+<mapping dst="CLK" src="clk"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="CLK D Q" src="&lt;unmappedTermOrder>"/>
+<mapping dst="clk d q" src="&lt;termOrder>"/>
+<mapping dst="q" src="Q"/>
+<mapping dst="d" src="D"/>
+<mapping dst="clk" src="CLK"/>
+</forward>
+<reverse>
+<mapping dst="&lt;termOrder>" src="clk d q"/>
+<mapping dst="&lt;unmappedTermOrder>" src="CLK D Q"/>
+<mapping dst="Q" src="q"/>
+<mapping dst="D" src="d"/>
+<mapping dst="CLK" src="clk"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="dff">
+<instance name="I0"/>
+</instance_header>
+</master_instances>
+</module>

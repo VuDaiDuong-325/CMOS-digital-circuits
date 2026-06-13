@@ -1,0 +1,161 @@
+*** h2		Tue Apr 21 21:39:04 2026
+
+PRE_TREE
+
+
+
+		DESIGN STATISTICS DEFINITIONS
+		______ __________ ______________.
+
+Hierarchical levels       The number of levels in the design.
+Unique Cells              The number of unique cells in the design.
+Hierarchical placements   The total number of placements (srefs and arefs)
+			  at each level in the design.
+Total Design placements   The total number of placements (srefs and arefs)
+			  in the design.
+Exploded references       The total number of exploded references in the
+			   design.
+Exploded placements       The total number of exploded placements in the
+			   design.
+Total Data count          The total number of all polygons, paths, 
+			  vectors, and rectangles in the design.
+Sref Placements           The total number of cell references in the design.
+Arefs                     The total number of array references in the design.
+Aref Placements           The total number of references in each array
+			  reference in the design.
+Data                      The number of data primitives in each cell
+			  of the design.
+Text                      The number of text primitives in each cell of the design.
+
+
+*********************************************************************************
+
+
+		DESIGN STATISTICS FOR "h2".
+		______ __________ ___ ___________.
+
+	Hierarchical levels	=         2
+	Unique cells		=         4
+	Hierarchical placements	=        18
+	Total design placements	=        18
+	Exploded references	=         0
+	Exploded placements	=         0
+	Total data count	=       161
+	SREF placements		=        18
+	AREFS			=         0
+	AREF placements		=         0
+	DATA 			=        55
+	TEXT			=         3
+
+
+*********************************************************************************
+
+		HIERARCHICAL TREE FOR BLOCK "h2".
+
+
+							     TOTAL SREF AREF
+ h2                                           Level=0  Count=   1    1    0 
+  n_3t                                        Level=1  Count=   3    3    0 
+  poly_cust                                   Level=1  Count=   3    3    0 
+  via12                                       Level=1  Count=  11   11    0 
+
+
+*********************************************************************************
+
+
+		CELL STATISTICS
+
+
+CELL = h2
+	Cell Status		= USED
+	OPENACCESS Library	= nmos_h2
+	OPENACCESS Cell Extents (LL,UR)	= (-1.170, -0.535) (1.235, 2.785)
+	Cell Area		= 7.98
+	Hierarchical Placements	=        1
+	Flat Placements		=        1
+	SREFS			=       17	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=       14
+	TEXT			=        3
+	Via			=        0
+   Layer Usage of Original Cell:
+ Name          Layer:Dtype Data/Text  Layer Extents (LL,UR)              Lyr Area
+ ---------------  -------  --------   ---------------------------------  --------
+ M1S               8:0        7/0    (-1.07, -0.48) (0.78, 2.56)      0.29
+ M1PIN             9:0        1/0    (0.61, 1.36) (0.70, 1.42)      0.00
+ M2S              10:0        4/0    (-1.17, -0.54) (1.24, 2.79)      2.16
+ M2PIN            11:0        2/0    (0.23, -0.48) (1.15, 2.69)      0.06
+ M1S               9:0        0/1    (0.61, 1.36) (0.61, 1.36) 
+ M2S              11:0        0/2    (0.23, -0.48) (0.90, 2.56) 
+
+CELL = n_3t
+	Cell Status		= USED
+	OPENACCESS Library	= reference90RF
+	OPENACCESS Cell Extents (LL,UR)	= (-0.350, -0.470) (0.450, 2.130)
+	Cell Area		= 2.08
+	Hierarchical Placements	=        3
+	Flat Placements		=        3
+	SREFS			=        0	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=       35
+	TEXT			=        0
+	Via			=        0
+   Layer Usage of Original Cell:
+ Name          Layer:Dtype Data/Text  Layer Extents (LL,UR)              Lyr Area
+ ---------------  -------  --------   ---------------------------------  --------
+ DIFN              2:0        4/0    (-0.22, -0.45) (0.32, 2.00)      1.18
+ POLS              3:0        4/0    (0.00, -0.13) (0.10, 2.13)      0.43
+ PPS               4:0        1/0    (-0.24, -0.47) (0.34, -0.24)      0.13
+ NPS               5:0        1/0    (-0.35, -0.13) (0.45, 2.13)      1.81
+ CONTS             7:0       22/0    (-0.17, -0.40) (0.27, 1.90)      0.18
+ M1S               8:0        3/0    (-0.21, -0.41) (0.31, 1.94)      0.43
+
+CELL = via12
+	Cell Status		= USED
+	OPENACCESS Library	= reference90RF
+	OPENACCESS Cell Extents (LL,UR)	= (-0.105, -0.105) (0.105, 0.105)
+	Cell Area		= 0.04
+	Hierarchical Placements	=       11
+	Flat Placements		=       11
+	SREFS			=        0	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=        3
+	TEXT			=        0
+	Via			=        1
+   Layer Usage of Original Cell:
+ Name          Layer:Dtype Data/Text  Layer Extents (LL,UR)              Lyr Area
+ ---------------  -------  --------   ---------------------------------  --------
+ M1S               8:0        1/0    (-0.10, -0.07) (0.10, 0.07)      0.03
+ M2S              10:0        1/0    (-0.07, -0.10) (0.07, 0.10)      0.03
+ V1S              16:0        1/0    (-0.07, -0.07) (0.07, 0.07)      0.02
+
+CELL = poly_cust
+	Cell Status		= USED
+	OPENACCESS Library	= reference90RF
+	OPENACCESS Cell Extents (LL,UR)	= (-0.095, -0.115) (0.095, 0.115)
+	Cell Area		= 0.04
+	Hierarchical Placements	=        3
+	Flat Placements		=        3
+	SREFS			=        0	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=        3
+	TEXT			=        0
+	Via			=        1
+   Layer Usage of Original Cell:
+ Name          Layer:Dtype Data/Text  Layer Extents (LL,UR)              Lyr Area
+ ---------------  -------  --------   ---------------------------------  --------
+ POLS              3:0        1/0    (-0.10, -0.12) (0.10, 0.12)      0.04
+ CONTS             7:0        1/0    (-0.04, -0.04) (0.04, 0.04)      0.01
+ M1S               8:0        1/0    (-0.09, -0.05) (0.09, 0.05)      0.02

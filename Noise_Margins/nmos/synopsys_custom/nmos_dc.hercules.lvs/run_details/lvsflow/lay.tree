@@ -1,0 +1,11 @@
+nmos_dc Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = nmos_dc
+	Ports                =	2
+
+CELL = nmos_dc
+	Flat Placements      =	0

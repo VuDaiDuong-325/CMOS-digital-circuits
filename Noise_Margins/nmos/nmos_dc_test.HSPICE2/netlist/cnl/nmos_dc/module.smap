@@ -1,0 +1,518 @@
+<module name="switched: nmos_nm nmos_dc starrc vl: hspice schematic symbol sl: symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="mm0" src="MM0"/>
+<mapping dst="c3" src="C3"/>
+<mapping dst="cg5" src="Cg5"/>
+<mapping dst="cg6" src="Cg6"/>
+<mapping dst="c7" src="C7"/>
+<mapping dst="c9" src="C9"/>
+<mapping dst="c10" src="C10"/>
+<mapping dst="c11" src="C11"/>
+<mapping dst="c16" src="C16"/>
+<mapping dst="c19" src="C19"/>
+<mapping dst="c20" src="C20"/>
+<mapping dst="c22" src="C22"/>
+<mapping dst="c24" src="C24"/>
+<mapping dst="c26" src="C26"/>
+<mapping dst="c31" src="C31"/>
+<mapping dst="c32" src="C32"/>
+<mapping dst="c33" src="C33"/>
+<mapping dst="c34" src="C34"/>
+<mapping dst="c35" src="C35"/>
+<mapping dst="c21" src="C21"/>
+<mapping dst="c36" src="C36"/>
+<mapping dst="cg37" src="Cg37"/>
+<mapping dst="c38" src="C38"/>
+<mapping dst="c39" src="C39"/>
+<mapping dst="c43" src="C43"/>
+<mapping dst="c47" src="C47"/>
+<mapping dst="c48" src="C48"/>
+<mapping dst="c14" src="C14"/>
+<mapping dst="cg52" src="Cg52"/>
+<mapping dst="r2" src="R2"/>
+<mapping dst="r4" src="R4"/>
+<mapping dst="c12" src="C12"/>
+<mapping dst="r5" src="R5"/>
+<mapping dst="r6" src="R6"/>
+<mapping dst="r7" src="R7"/>
+<mapping dst="r11" src="R11"/>
+<mapping dst="c44" src="C44"/>
+<mapping dst="r12" src="R12"/>
+<mapping dst="r13" src="R13"/>
+<mapping dst="r14" src="R14"/>
+<mapping dst="r15" src="R15"/>
+<mapping dst="c40" src="C40"/>
+<mapping dst="c23" src="C23"/>
+<mapping dst="r17" src="R17"/>
+<mapping dst="r18" src="R18"/>
+<mapping dst="r19" src="R19"/>
+<mapping dst="cg18" src="Cg18"/>
+<mapping dst="r21" src="R21"/>
+<mapping dst="r22" src="R22"/>
+<mapping dst="r23" src="R23"/>
+<mapping dst="c17" src="C17"/>
+<mapping dst="r24" src="R24"/>
+<mapping dst="r28" src="R28"/>
+<mapping dst="cg8" src="Cg8"/>
+<mapping dst="r29" src="R29"/>
+<mapping dst="r30" src="R30"/>
+<mapping dst="c13" src="C13"/>
+<mapping dst="r37" src="R37"/>
+<mapping dst="r9" src="R9"/>
+<mapping dst="r25" src="R25"/>
+<mapping dst="r38" src="R38"/>
+<mapping dst="cg2" src="Cg2"/>
+<mapping dst="r39" src="R39"/>
+<mapping dst="r34" src="R34"/>
+<mapping dst="r41" src="R41"/>
+<mapping dst="r42" src="R42"/>
+<mapping dst="r43" src="R43"/>
+<mapping dst="r44" src="R44"/>
+<mapping dst="c28" src="C28"/>
+<mapping dst="r31" src="R31"/>
+<mapping dst="c49" src="C49"/>
+<mapping dst="r46" src="R46"/>
+<mapping dst="r1" src="R1"/>
+<mapping dst="r48" src="R48"/>
+<mapping dst="r49" src="R49"/>
+<mapping dst="r51" src="R51"/>
+<mapping dst="r54" src="R54"/>
+<mapping dst="r56" src="R56"/>
+<mapping dst="r27" src="R27"/>
+<mapping dst="r50" src="R50"/>
+<mapping dst="r58" src="R58"/>
+<mapping dst="r40" src="R40"/>
+<mapping dst="r60" src="R60"/>
+<mapping dst="c51" src="C51"/>
+<mapping dst="r36" src="R36"/>
+<mapping dst="cg46" src="Cg46"/>
+<mapping dst="r63" src="R63"/>
+<mapping dst="r32" src="R32"/>
+<mapping dst="r57" src="R57"/>
+<mapping dst="c41" src="C41"/>
+<mapping dst="r64" src="R64"/>
+<mapping dst="r35" src="R35"/>
+<mapping dst="r65" src="R65"/>
+<mapping dst="r67" src="R67"/>
+<mapping dst="r20" src="R20"/>
+<mapping dst="r69" src="R69"/>
+<mapping dst="c15" src="C15"/>
+<mapping dst="r70" src="R70"/>
+<mapping dst="c29" src="C29"/>
+<mapping dst="r33" src="R33"/>
+<mapping dst="r68" src="R68"/>
+<mapping dst="c25" src="C25"/>
+<mapping dst="r72" src="R72"/>
+<mapping dst="r74" src="R74"/>
+<mapping dst="r62" src="R62"/>
+<mapping dst="r47" src="R47"/>
+<mapping dst="c45" src="C45"/>
+<mapping dst="r59" src="R59"/>
+<mapping dst="r77" src="R77"/>
+<mapping dst="r76" src="R76"/>
+<mapping dst="r26" src="R26"/>
+<mapping dst="cg1" src="Cg1"/>
+<mapping dst="r71" src="R71"/>
+<mapping dst="r16" src="R16"/>
+<mapping dst="c50" src="C50"/>
+<mapping dst="c27" src="C27"/>
+<mapping dst="r78" src="R78"/>
+<mapping dst="r61" src="R61"/>
+<mapping dst="c4" src="C4"/>
+<mapping dst="r53" src="R53"/>
+<mapping dst="r55" src="R55"/>
+<mapping dst="r80" src="R80"/>
+<mapping dst="r75" src="R75"/>
+<mapping dst="r82" src="R82"/>
+<mapping dst="r66" src="R66"/>
+<mapping dst="r3" src="R3"/>
+<mapping dst="r81" src="R81"/>
+<mapping dst="r79" src="R79"/>
+<mapping dst="r8" src="R8"/>
+<mapping dst="r83" src="R83"/>
+<mapping dst="r73" src="R73"/>
+<mapping dst="r52" src="R52"/>
+<mapping dst="r86" src="R86"/>
+<mapping dst="r85" src="R85"/>
+<mapping dst="r87" src="R87"/>
+<mapping dst="c42" src="C42"/>
+<mapping dst="r84" src="R84"/>
+<mapping dst="r45" src="R45"/>
+<mapping dst="r10" src="R10"/>
+<mapping dst="cg30" src="Cg30"/>
+<mapping dst="r88" src="R88"/>
+</forward>
+<reverse>
+<mapping dst="MM0" src="mm0"/>
+<mapping dst="C3" src="c3"/>
+<mapping dst="Cg6" src="cg6"/>
+<mapping dst="C7" src="c7"/>
+<mapping dst="Cg8" src="cg8"/>
+<mapping dst="C9" src="c9"/>
+<mapping dst="C10" src="c10"/>
+<mapping dst="C12" src="c12"/>
+<mapping dst="C13" src="c13"/>
+<mapping dst="C15" src="c15"/>
+<mapping dst="C17" src="c17"/>
+<mapping dst="C11" src="c11"/>
+<mapping dst="C20" src="c20"/>
+<mapping dst="C22" src="c22"/>
+<mapping dst="C24" src="c24"/>
+<mapping dst="C29" src="c29"/>
+<mapping dst="C34" src="c34"/>
+<mapping dst="C35" src="c35"/>
+<mapping dst="C40" src="c40"/>
+<mapping dst="C43" src="c43"/>
+<mapping dst="C44" src="c44"/>
+<mapping dst="C45" src="c45"/>
+<mapping dst="C38" src="c38"/>
+<mapping dst="Cg46" src="cg46"/>
+<mapping dst="C47" src="c47"/>
+<mapping dst="C50" src="c50"/>
+<mapping dst="C16" src="c16"/>
+<mapping dst="C51" src="c51"/>
+<mapping dst="Cg52" src="cg52"/>
+<mapping dst="C49" src="c49"/>
+<mapping dst="C42" src="c42"/>
+<mapping dst="R2" src="r2"/>
+<mapping dst="R3" src="r3"/>
+<mapping dst="R4" src="r4"/>
+<mapping dst="C27" src="c27"/>
+<mapping dst="R5" src="r5"/>
+<mapping dst="R6" src="r6"/>
+<mapping dst="R7" src="r7"/>
+<mapping dst="R8" src="r8"/>
+<mapping dst="R11" src="r11"/>
+<mapping dst="Cg37" src="cg37"/>
+<mapping dst="R12" src="r12"/>
+<mapping dst="Cg5" src="cg5"/>
+<mapping dst="R15" src="r15"/>
+<mapping dst="C4" src="c4"/>
+<mapping dst="R16" src="r16"/>
+<mapping dst="R23" src="r23"/>
+<mapping dst="R26" src="r26"/>
+<mapping dst="R28" src="r28"/>
+<mapping dst="R29" src="r29"/>
+<mapping dst="C21" src="c21"/>
+<mapping dst="R32" src="r32"/>
+<mapping dst="R33" src="r33"/>
+<mapping dst="C14" src="c14"/>
+<mapping dst="R34" src="r34"/>
+<mapping dst="R22" src="r22"/>
+<mapping dst="R9" src="r9"/>
+<mapping dst="R36" src="r36"/>
+<mapping dst="R17" src="r17"/>
+<mapping dst="R10" src="r10"/>
+<mapping dst="R25" src="r25"/>
+<mapping dst="R38" src="r38"/>
+<mapping dst="Cg1" src="cg1"/>
+<mapping dst="R43" src="r43"/>
+<mapping dst="C23" src="c23"/>
+<mapping dst="R44" src="r44"/>
+<mapping dst="R40" src="r40"/>
+<mapping dst="R13" src="r13"/>
+<mapping dst="C48" src="c48"/>
+<mapping dst="Cg18" src="cg18"/>
+<mapping dst="R46" src="r46"/>
+<mapping dst="R47" src="r47"/>
+<mapping dst="C33" src="c33"/>
+<mapping dst="R48" src="r48"/>
+<mapping dst="R51" src="r51"/>
+<mapping dst="R39" src="r39"/>
+<mapping dst="R53" src="r53"/>
+<mapping dst="R41" src="r41"/>
+<mapping dst="R54" src="r54"/>
+<mapping dst="C28" src="c28"/>
+<mapping dst="R56" src="r56"/>
+<mapping dst="R14" src="r14"/>
+<mapping dst="R58" src="r58"/>
+<mapping dst="R57" src="r57"/>
+<mapping dst="R63" src="r63"/>
+<mapping dst="R65" src="r65"/>
+<mapping dst="C41" src="c41"/>
+<mapping dst="R1" src="r1"/>
+<mapping dst="Cg2" src="cg2"/>
+<mapping dst="R19" src="r19"/>
+<mapping dst="R67" src="r67"/>
+<mapping dst="R49" src="r49"/>
+<mapping dst="R69" src="r69"/>
+<mapping dst="R37" src="r37"/>
+<mapping dst="R70" src="r70"/>
+<mapping dst="R62" src="r62"/>
+<mapping dst="R64" src="r64"/>
+<mapping dst="R66" src="r66"/>
+<mapping dst="R61" src="r61"/>
+<mapping dst="R71" src="r71"/>
+<mapping dst="C19" src="c19"/>
+<mapping dst="R72" src="r72"/>
+<mapping dst="C32" src="c32"/>
+<mapping dst="R35" src="r35"/>
+<mapping dst="R73" src="r73"/>
+<mapping dst="R74" src="r74"/>
+<mapping dst="R79" src="r79"/>
+<mapping dst="C31" src="c31"/>
+<mapping dst="C25" src="c25"/>
+<mapping dst="R75" src="r75"/>
+<mapping dst="C36" src="c36"/>
+<mapping dst="C26" src="c26"/>
+<mapping dst="R52" src="r52"/>
+<mapping dst="R80" src="r80"/>
+<mapping dst="R42" src="r42"/>
+<mapping dst="R27" src="r27"/>
+<mapping dst="R82" src="r82"/>
+<mapping dst="R68" src="r68"/>
+<mapping dst="R81" src="r81"/>
+<mapping dst="Cg30" src="cg30"/>
+<mapping dst="R31" src="r31"/>
+<mapping dst="R21" src="r21"/>
+<mapping dst="R83" src="r83"/>
+<mapping dst="R45" src="r45"/>
+<mapping dst="R20" src="r20"/>
+<mapping dst="R84" src="r84"/>
+<mapping dst="R76" src="r76"/>
+<mapping dst="R55" src="r55"/>
+<mapping dst="R85" src="r85"/>
+<mapping dst="R18" src="r18"/>
+<mapping dst="R87" src="r87"/>
+<mapping dst="R77" src="r77"/>
+<mapping dst="R59" src="r59"/>
+<mapping dst="R30" src="r30"/>
+<mapping dst="R50" src="r50"/>
+<mapping dst="R86" src="r86"/>
+<mapping dst="R78" src="r78"/>
+<mapping dst="R24" src="r24"/>
+<mapping dst="R60" src="r60"/>
+<mapping dst="C39" src="c39"/>
+<mapping dst="R88" src="r88"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="1:ln_n_13" src="1:ln_N_13"/>
+<mapping dst="ln_n_13" src="ln_N_13"/>
+<mapping dst="3:ln_n_12" src="3:ln_N_12"/>
+<mapping dst="ln_n_12" src="ln_N_12"/>
+<mapping dst="4:ln_n_12" src="4:ln_N_12"/>
+<mapping dst="ln_n_11" src="ln_N_11"/>
+<mapping dst="6:ln_n_11" src="6:ln_N_11"/>
+<mapping dst="ln_n_15" src="ln_N_15"/>
+<mapping dst="2:ln_n_13" src="2:ln_N_13"/>
+<mapping dst="mm0|src" src="MM0|SRC"/>
+<mapping dst="26:outs" src="26:outS"/>
+<mapping dst="7:ln_n_15" src="7:ln_N_15"/>
+<mapping dst="28:outs" src="28:outS"/>
+<mapping dst="30:outs" src="30:outS"/>
+<mapping dst="31:outs" src="31:outS"/>
+<mapping dst="32:outs" src="32:outS"/>
+<mapping dst="35:outs" src="35:outS"/>
+<mapping dst="25:outs" src="25:outS"/>
+<mapping dst="24:outs" src="24:outS"/>
+<mapping dst="34:outs" src="34:outS"/>
+<mapping dst="mm0|gate" src="MM0|GATE"/>
+<mapping dst="5:ln_n_11" src="5:ln_N_11"/>
+<mapping dst="mm0|drn" src="MM0|DRN"/>
+<mapping dst="mm0|bulk" src="MM0|BULK"/>
+<mapping dst="8:ln_n_15" src="8:ln_N_15"/>
+<mapping dst="29:outs" src="29:outS"/>
+<mapping dst="ln_n_14" src="ln_N_14"/>
+<mapping dst="27:outs" src="27:outS"/>
+<mapping dst="33:outs" src="33:outS"/>
+<mapping dst="outs" src="outS"/>
+<mapping dst="63:ln_n_14" src="63:ln_N_14"/>
+</forward>
+<reverse>
+<mapping dst="1:ln_N_13" src="1:ln_n_13"/>
+<mapping dst="3:ln_N_12" src="3:ln_n_12"/>
+<mapping dst="ln_N_13" src="ln_n_13"/>
+<mapping dst="ln_N_12" src="ln_n_12"/>
+<mapping dst="4:ln_N_12" src="4:ln_n_12"/>
+<mapping dst="5:ln_N_11" src="5:ln_n_11"/>
+<mapping dst="7:ln_N_15" src="7:ln_n_15"/>
+<mapping dst="MM0|BULK" src="mm0|bulk"/>
+<mapping dst="24:outS" src="24:outs"/>
+<mapping dst="27:outS" src="27:outs"/>
+<mapping dst="29:outS" src="29:outs"/>
+<mapping dst="31:outS" src="31:outs"/>
+<mapping dst="32:outS" src="32:outs"/>
+<mapping dst="33:outS" src="33:outs"/>
+<mapping dst="34:outS" src="34:outs"/>
+<mapping dst="MM0|GATE" src="mm0|gate"/>
+<mapping dst="28:outS" src="28:outs"/>
+<mapping dst="26:outS" src="26:outs"/>
+<mapping dst="MM0|DRN" src="mm0|drn"/>
+<mapping dst="ln_N_11" src="ln_n_11"/>
+<mapping dst="MM0|SRC" src="mm0|src"/>
+<mapping dst="25:outS" src="25:outs"/>
+<mapping dst="2:ln_N_13" src="2:ln_n_13"/>
+<mapping dst="35:outS" src="35:outs"/>
+<mapping dst="ln_N_14" src="ln_n_14"/>
+<mapping dst="63:ln_N_14" src="63:ln_n_14"/>
+<mapping dst="6:ln_N_11" src="6:ln_n_11"/>
+<mapping dst="ln_N_15" src="ln_n_15"/>
+<mapping dst="8:ln_N_15" src="8:ln_n_15"/>
+<mapping dst="outS" src="outs"/>
+<mapping dst="30:outS" src="30:outs"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="outS" src="&lt;unmappedTermOrder>"/>
+<mapping dst="outs" src="&lt;termOrder>"/>
+<mapping dst="outs" src="outS"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="outS"/>
+<mapping dst="&lt;termOrder>" src="outs"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="n_4t">
+<instance name="MM0"/>
+</instance_header>
+<instance_header master="pcapacitor">
+<instance name="C10"/>
+<instance name="C11"/>
+<instance name="C12"/>
+<instance name="C13"/>
+<instance name="C14"/>
+<instance name="C15"/>
+<instance name="C16"/>
+<instance name="C17"/>
+<instance name="C19"/>
+<instance name="C20"/>
+<instance name="C21"/>
+<instance name="C22"/>
+<instance name="C23"/>
+<instance name="C24"/>
+<instance name="C25"/>
+<instance name="C26"/>
+<instance name="C27"/>
+<instance name="C28"/>
+<instance name="C29"/>
+<instance name="C3"/>
+<instance name="C31"/>
+<instance name="C32"/>
+<instance name="C33"/>
+<instance name="C34"/>
+<instance name="C35"/>
+<instance name="C36"/>
+<instance name="C38"/>
+<instance name="C39"/>
+<instance name="C4"/>
+<instance name="C40"/>
+<instance name="C41"/>
+<instance name="C42"/>
+<instance name="C43"/>
+<instance name="C44"/>
+<instance name="C45"/>
+<instance name="C47"/>
+<instance name="C48"/>
+<instance name="C49"/>
+<instance name="C50"/>
+<instance name="C51"/>
+<instance name="C7"/>
+<instance name="C9"/>
+<instance name="Cg1"/>
+<instance name="Cg18"/>
+<instance name="Cg2"/>
+<instance name="Cg30"/>
+<instance name="Cg37"/>
+<instance name="Cg46"/>
+<instance name="Cg5"/>
+<instance name="Cg52"/>
+<instance name="Cg6"/>
+<instance name="Cg8"/>
+</instance_header>
+<instance_header master="presistor">
+<instance name="R1"/>
+<instance name="R10"/>
+<instance name="R11"/>
+<instance name="R12"/>
+<instance name="R13"/>
+<instance name="R14"/>
+<instance name="R15"/>
+<instance name="R16"/>
+<instance name="R17"/>
+<instance name="R18"/>
+<instance name="R19"/>
+<instance name="R2"/>
+<instance name="R20"/>
+<instance name="R21"/>
+<instance name="R22"/>
+<instance name="R23"/>
+<instance name="R24"/>
+<instance name="R25"/>
+<instance name="R26"/>
+<instance name="R27"/>
+<instance name="R28"/>
+<instance name="R29"/>
+<instance name="R3"/>
+<instance name="R30"/>
+<instance name="R31"/>
+<instance name="R32"/>
+<instance name="R33"/>
+<instance name="R34"/>
+<instance name="R35"/>
+<instance name="R36"/>
+<instance name="R37"/>
+<instance name="R38"/>
+<instance name="R39"/>
+<instance name="R4"/>
+<instance name="R40"/>
+<instance name="R41"/>
+<instance name="R42"/>
+<instance name="R43"/>
+<instance name="R44"/>
+<instance name="R45"/>
+<instance name="R46"/>
+<instance name="R47"/>
+<instance name="R48"/>
+<instance name="R49"/>
+<instance name="R5"/>
+<instance name="R50"/>
+<instance name="R51"/>
+<instance name="R52"/>
+<instance name="R53"/>
+<instance name="R54"/>
+<instance name="R55"/>
+<instance name="R56"/>
+<instance name="R57"/>
+<instance name="R58"/>
+<instance name="R59"/>
+<instance name="R6"/>
+<instance name="R60"/>
+<instance name="R61"/>
+<instance name="R62"/>
+<instance name="R63"/>
+<instance name="R64"/>
+<instance name="R65"/>
+<instance name="R66"/>
+<instance name="R67"/>
+<instance name="R68"/>
+<instance name="R69"/>
+<instance name="R7"/>
+<instance name="R70"/>
+<instance name="R71"/>
+<instance name="R72"/>
+<instance name="R73"/>
+<instance name="R74"/>
+<instance name="R75"/>
+<instance name="R76"/>
+<instance name="R77"/>
+<instance name="R78"/>
+<instance name="R79"/>
+<instance name="R8"/>
+<instance name="R80"/>
+<instance name="R81"/>
+<instance name="R82"/>
+<instance name="R83"/>
+<instance name="R84"/>
+<instance name="R85"/>
+<instance name="R86"/>
+<instance name="R87"/>
+<instance name="R88"/>
+<instance name="R9"/>
+</instance_header>
+</master_instances>
+</module>

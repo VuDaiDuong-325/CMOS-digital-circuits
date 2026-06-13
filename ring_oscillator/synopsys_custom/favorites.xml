@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler (TM), build #, on Tue Jun  2 20:30:23 2026
+-->
+<synopsysFile name="synopsysFavoriteDevices" version="1.0">
+        <favoriteDevices viewType="maskLayout">
+                <cellView view="layout" cell="n_4t" library="reference90RF">
+                        <alias name="n_4t"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView view="layout" cell="p_4t" library="reference90RF">
+                        <alias name="p_4t"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+        </favoriteDevices>
+        <favoriteDevices viewType="schematic"/>
+</synopsysFile>

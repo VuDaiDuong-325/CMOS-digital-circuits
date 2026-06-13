@@ -1,0 +1,12 @@
+Stack Dump: VERSION N-2017.12-SP1-2 CONFIG 4182185 DATE Fri Mar 13 21:20:58 2026
+Frame 0. /lib64/libc.so.6 ::0x7ff0d5b7b400 + 0x40
+Frame 1. 0x1bea340 SNPSee_d76529b73998e72696e85138d8f657730168ac449b5939adfac5674c231daf924a8baa48c143781e + 0
+Frame 2. /lib64/libc.so.6 ::0x7ff0d5b7b400 + 0x40
+Frame 3. libc.so.6: __poll + 0x24
+Frame 4. /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/qt/lib/libxcb.so.1 ::0x7ff0d6f7daaa + 0x10a
+Frame 5. libxcb.so.1: xcb_wait_for_event + 0xa8
+Frame 6. QXcbConnection::windowEventListenerFromId(unsigned int) + 0xf9
+Frame 7. QThread::setTerminationEnabled(bool) + 0x369
+Frame 8. 0xc487ab8 SNPSee_d9c72da67e7a1f57e9891545cd875e2719332304182309de + 0xc8
+Frame 9. /lib64/libpthread.so.0 ::0x7ff0df5f1ea5 + 0xc5
+Frame 10. libc.so.6: clone + 0x6d

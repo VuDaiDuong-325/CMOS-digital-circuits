@@ -1,0 +1,10 @@
+-oa2dspf
+-oa_lib_name nmos_h4
+-oa_cell_name h4
+-oa_view_name starrc
+-o ../starrc.dspf
+-oa_output_file ../starrc.oa.out
+-netlist_header_file netlist.hdr
+-oa_lib_def /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h4.starrc.lpe/lib.defs
+-layer_info layer_info
+-ground_node_name 0

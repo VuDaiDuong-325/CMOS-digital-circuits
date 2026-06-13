@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler (TM), build #, on Mon Jun  1 20:26:20 2026
+-->
+<synopsysFile version="1.1" name="synopsysRecentFiles">
+        <recentFiles>
+                <file library="inv" mode="write" cell="inv_test" application="deConfiguredDesign" view="config" file="config.xml"/>
+                <file library="inv" mode="write" cell="inv" application="leLayout" view="starrc" file="maskLayout"/>
+                <file library="inv" mode="write" cell="inv" application="leLayout" view="layout" file="maskLayout"/>
+                <file library="inv" mode="write" cell="inv" application="seSchematic" view="schematic" file="schematic"/>
+                <file library="inv" mode="write" cell="inv_test" application="seSchematic" view="schematic" file="schematic"/>
+        </recentFiles>
+</synopsysFile>

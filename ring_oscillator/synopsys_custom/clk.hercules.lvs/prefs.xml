@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref value="-sp /home/itsupport/Desktop/lab1vlsi/PDK/hercules/lvs/empty.subckt -cdl-a -cdl-p -mprop -slash" name="xtHerculesNettranOptions"/>
+                <pref value="true" name="xtLVSCalibreUseSVRFTranscript"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/hercules/lvs/reference_lvs.ev" name="xtLVSHerculesRunsetFile"/>
+                <pref value="{environment RES_3TERM double {0}} {environment CAP_3TERM double {0}} {environment DRAWCBM double {1}} {environment cmim_2t double {0}}" name="xtLVSHerculesVariables"/>
+                <pref value="clk" name="xtLVSLayCell"/>
+                <pref value="/root/Excercise/ring_oscillator/synopsys_custom/clk.hercules.lvs/clk.net" name="xtLVSLayInputNetlist"/>
+                <pref value="clk/clk/layout" name="xtLVSLayLCV"/>
+                <pref value="/root/Excercise/ring_oscillator/synopsys_custom/clk.hercules.lvs/clk.custom_compiler.gds" name="xtLVSLayStreamFile"/>
+                <pref value="clk" name="xtLVSSchCell"/>
+                <pref value="/root/Excercise/ring_oscillator/synopsys_custom/clk.hercules.lvs/clk.custom_compiler.sp" name="xtLVSSchInputNetlist"/>
+                <pref value="CDL" name="xtLVSSchInputNetlistFormat"/>
+                <pref value="clk/clk/schematic" name="xtLVSSchLCV"/>
+                <pref value="/root/Excercise/ring_oscillator/synopsys_custom/clk.hercules.lvs/clk.custom_compiler.sp" name="xtLVSSchOutputNetlist"/>
+                <pref value="Hercules" name="xtLVSTool"/>
+                <pref value="/home/itsupport/Desktop/lab1vlsi/PDK/techfiles/reference90RF_layer.map" name="xtPVLayerMapFile"/>
+        </preferences>
+</file-format>

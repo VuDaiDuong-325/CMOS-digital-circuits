@@ -1,0 +1,13 @@
+WORKING_DIR       = .
+INLIB             = clk
+INLIB_PATH        = .
+OUTLIB            = clk_result.gds
+OUTLIB_PATH       = .
+BLOCK             = clk
+RUN_DETAILS_DIR   = run_details
+FORMAT            = OPENACCESS
+OUTPUT_FORMAT     = GDSII
+EXTRACTION_FLOW   = FALSE
+EVACCESS_PATH = run_details/evaccess
+DEVICE_PAGE       = FALSE
+RUN_STATUS        = SUCCEEDED

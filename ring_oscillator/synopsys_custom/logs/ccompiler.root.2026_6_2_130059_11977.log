@@ -1,0 +1,317 @@
+[13:01:04.73] /r giWindowId 0
+[13:01:04.73] /r giWindowGeometry 600x300
+[13:01:04.75] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Jun  2 13:00:59 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/ring_oscillator
+              /c 
+[13:01:09.33] /r giShowFrameTabs true
+[13:01:09.33] /r giWindowId 1
+[13:01:09.34] /r giWindowGeometry 1040x800
+[13:01:14.95] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[13:01:14.95] /# 
+[13:01:14.95] /i dm::openLibraryManager
+[13:01:14.95] /r giWindowId 2
+[13:01:14.96] /r giWindowGeometry 660x600+50+84
+[13:01:15.01] /o oa:0x1da9a0a0
+[13:01:16.76] /i gi::setCurrentIndex {libs} -index {clk} -in [gi::getWindows 2]
+[13:01:16.77] /i gi::setItemSelection {libs} -index {clk} -in [gi::getWindows 2]
+[13:01:17.84] /i gi::setCurrentIndex {cells} -index {clk} -in [gi::getWindows 2]
+[13:01:17.85] /i gi::setItemSelection {cells} -index {clk} -in [gi::getWindows 2]
+[13:01:19.00] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[13:01:19.01] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[13:01:19.14] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[13:01:19.16] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[13:01:19.18] /o 	#######################################
+[13:01:19.18] /o 	PDK Library Name	: reference90RF
+[13:01:19.18] /o 	PDK Version		: 2.0
+[13:01:19.18] /o 	PDK Release Date	: 25-March-2010 
+[13:01:19.18] /o 	#######################################
+[13:01:19.18] /o 
+[13:01:19.19] /m Information: License 'Schematic' checked out. (LICENSE-003)
+[13:01:19.28] /r giWindowId 3
+[13:01:19.28] /r giWindowGeometry 1632x848
+[13:01:19.66] /o "clk/clk/schematic" design does not need checking
+[13:01:23.14] /# gi::executeAction seSchCreateSchematicPin -in [gi::getWindows 3]
+[13:01:23.14] /i ise::createSchematicPin
+[13:01:25.14] /i gi::setField {schematicPinType} -value {output} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 3]]
+[13:01:27.32] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[13:01:27.32] /i de::addPoint {8.0375 1.86875} -context [db::getNext [de::getContexts -window 3]]
+[13:01:27.32] /w Warning: No wiring objects were found at this location. (SE-928)
+[13:01:30.60] /# gi::executeAction seSchCreateWire -in [gi::getWindows 3]
+[13:01:30.60] /i ise::createWire
+[13:01:31.63] /# gi::executeAction seSchWireTypeAuto -in [gi::getWindows 3]
+[13:01:31.63] /i db::setPrefValue seWiringType -value <auto> -scope [de::getActiveContext]
+[13:01:31.63] /o oa:0x1efb7e20
+[13:01:32.15] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[13:01:32.15] /i de::addPoint {7.775 1.89375} -context [db::getNext [de::getContexts -window 3]]
+[13:01:32.29] /i de::setCursor -point {7.8125 1.875 }
+[13:01:33.76] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[13:01:33.76] /i de::addPoint {8.10625 1.85625} -context [db::getNext [de::getContexts -window 3]]
+[13:01:35.76] /i de::setCursor -point {8.125 1.75 }
+[13:01:36.51] /i de::setCursor -point {8.1875 1.8125 }
+[13:01:36.52] /i de::setCursor -point {8.1875 1.875 }
+[13:01:36.91] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[13:01:36.91] /i de::addPoint {8.1625 1.84375} -context [db::getNext [de::getContexts -window 3]]
+[13:01:37.90] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[13:01:37.90] /i de::addPoint {8.15 1.85625} -context [db::getNext [de::getContexts -window 3]]
+[13:01:38.02] /# gi::executeAction deCompleteShape -in [gi::getWindows 3]
+[13:01:38.02] /i de::completeShape -context [db::getNext [de::getContexts -window 3]]
+[13:01:39.86] /# gi::executeAction dePan -in [gi::getWindows 3]
+[13:01:39.86] /i ide::pan [db::getNext [de::getContexts -window 3]]
+[13:01:40.14] /# gi::executeAction deStartDrag -in [gi::getWindows 3]
+[13:01:40.14] /i de::startDrag {8.13125 1.2375} -context [db::getNext [de::getContexts -window 3]]
+[13:01:40.38] /# gi::executeAction deEndDrag -in [gi::getWindows 3]
+[13:01:40.38] /i de::endDrag {8.11875 1.2375} -context [db::getNext [de::getContexts -window 3]]
+[13:01:40.38] /r dePanToPoint {6.2875 1.84375}
+[13:01:41.29] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[13:01:41.73] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x910+5+62
+[13:01:42.64] /# gi::executeAction seSchCreateSchematicPin -in [gi::getWindows 3]
+[13:01:42.64] /i ise::createSchematicPin
+[13:01:48.01] /i gi::executeAction deObjectActivation -in [gi::getWindows 3]
+[13:01:51.75] /i gi::setField {schematicPinName} -value {clk} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 3]]
+[13:01:51.75] /i gi::executeAction deObjectActivation -in [gi::getWindows 3]
+[13:01:53.26] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[13:01:53.26] /i de::addPoint {8.1875 1.86875} -context [db::getNext [de::getContexts -window 3]]
+[13:01:54.05] /# gi::executeAction deAbortCommand -in [gi::getWindows 3]
+[13:01:54.05] /i de::abortCommand -context [db::getNext [de::getContexts -window 3]]
+[13:01:54.84] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 3]
+[13:01:54.84] /i de::zoom -window [gi::getWindows 3] -factor 0.5 -center {9.95 2.40625}
+[13:01:54.84] /o {-4.3875 -4.73125} {21.88125 6.0875}
+[13:01:55.83] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 3]
+[13:01:55.83] /i de::zoom -window [gi::getWindows 3] -factor 2.0 -center {2.88125 2.65625}
+[13:01:55.83] /o {-0.75625 -1.0375} {12.38125 4.375}
+[13:01:58.81] /i gi::setActiveWindow 2
+[13:01:58.82] /i gi::setActiveWindow 2 -raise true
+[13:02:00.26] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[13:02:00.27] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[13:02:00.40] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[13:02:00.55] /m Information: License 'Basic' checked out. (LICENSE-003)
+[13:02:00.55] /m Information: License 'Schematic' checked in. (LICENSE-004)
+[13:02:01.41] /r giWindowId 4
+[13:02:01.42] /r giWindowGeometry 1632x848
+[13:02:01.52] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 4]]]
+[13:02:07.10] /i gi::setField {stopLevel} -value {2} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 4]]
+[13:02:08.08] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 4]
+[13:02:08.08] /i de::zoom -window [gi::getWindows 4] -factor 2.0 -center {-2.855 -0.946}
+[13:02:08.09] /o {-5.904 -1.852} {-1.666 0.023}
+[13:02:08.64] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 4]
+[13:02:08.64] /i de::zoom -window [gi::getWindows 4] -factor 2.0 -center {-2.771 -1.02}
+[13:02:08.64] /o {-4.337 -1.436} {-2.219 -0.498}
+[13:02:08.75] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 4]
+[13:02:08.75] /i de::zoom -window [gi::getWindows 4] -factor 2.0 -center {-2.771 -1.02}
+[13:02:08.75] /o {-3.554 -1.228} {-2.495 -0.759}
+[13:02:09.55] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 4]
+[13:02:09.55] /i de::zoom -window [gi::getWindows 4] -factor 0.5 -center {-2.818 -1.023}
+[13:02:09.55] /o {-4.29 -1.433} {-2.172 -0.495}
+[13:02:12.14] /i gi::setActiveWindow 3
+[13:02:12.14] /i gi::setActiveWindow 3 -raise true
+[13:02:15.33] /i gi::setActiveWindow 2
+[13:02:15.33] /i gi::setActiveWindow 2 -raise true
+[13:02:16.68] /i gi::setActiveWindow 3
+[13:02:16.68] /i gi::setActiveWindow 3 -raise true
+[13:02:17.10] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 3]
+[13:02:17.10] /i de::zoom -window [gi::getWindows 3] -factor 0.5 -center {3.0375 2.76875}
+[13:02:17.10] /o {-4.54375 -4.84375} {21.725 5.975}
+[13:02:18.20] /i gi::setActiveWindow 4
+[13:02:18.20] /i gi::setActiveWindow 4 -raise true
+[13:02:18.64] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 4]
+[13:02:18.64] /i de::zoom -window [gi::getWindows 4] -factor 0.5 -center {-3.751 -0.731}
+[13:02:18.64] /o {-4.83 -2.135} {-0.592 -0.26}
+[13:02:20.61] /# gi::executeAction deDescendRead -in [gi::getWindows 4]
+[13:02:20.61] /i ide::descend 4 -inPlace false -readOnly true -promptView false
+[13:02:20.91] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[13:02:20.91] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[13:02:20.91] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {-3.702 -1.418} -index 0 -intent none]
+[13:02:20.91] /o oa:0x1f0dac30
+[13:02:22.22] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[13:02:22.22] /i de::endDrag {-2.909 -1.599} -context [db::getNext [de::getContexts -window 4]]
+[13:02:22.54] /# gi::executeAction dePan -in [gi::getWindows 4]
+[13:02:22.54] /i ide::pan [db::getNext [de::getContexts -window 4]]
+[13:02:22.93] /# gi::executeAction deStartDrag -in [gi::getWindows 4]
+[13:02:22.93] /i de::startDrag {-2.376 -1.423} -context [db::getNext [de::getContexts -window 4]]
+[13:02:23.41] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[13:02:23.41] /i de::endDrag {-2.373 -1.423} -context [db::getNext [de::getContexts -window 4]]
+[13:02:23.41] /r dePanToPoint {-3.573 -1.074}
+[13:02:23.89] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 4]
+[13:02:23.89] /i de::zoom -window [gi::getWindows 4] -factor 2.0 -center {-3.743 -1.132}
+[13:02:23.89] /o {-4.717 -1.572} {-2.599 -0.635}
+[13:02:27.23] /# gi::setCurrentIndex {lpps} -index {m2 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[13:02:27.23] /# gi::setItemSelection {lpps} -index {m2 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[13:02:27.30] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[13:02:27.30] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind clk clk layout] -filter {%lpp =="m2 pin"}]
+[13:02:28.77] /i gi::executeAction deObjectActivation -in [gi::getWindows 4]
+[13:02:29.06] /# gi::executeAction deRedraw -in [gi::getWindows 4]
+[13:02:29.06] /i de::redraw -window 4
+[13:02:29.82] /i gi::executeAction deObjectActivation -in [gi::getWindows 4]
+[13:02:30.19] /# gi::executeAction deAbortCommand -in [gi::getWindows 4]
+[13:02:30.19] /i de::abortCommand -context [db::getNext [de::getContexts -window 4]]
+[13:02:31.99] /# gi::executeAction deRedraw -in [gi::getWindows 4]
+[13:02:31.99] /i de::redraw -window 4
+[13:02:33.41] /# gi::executeAction deAbortCommand -in [gi::getWindows 4]
+[13:02:33.41] /i de::abortCommand -context [db::getNext [de::getContexts -window 4]]
+[13:02:33.78] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 4]
+[13:02:35.06] /# gi::executeAction deRedraw -in [gi::getWindows 4]
+[13:02:35.06] /i de::redraw -window 4
+[13:02:36.49] /# gi::executeAction leRectangle -in [gi::getWindows 4]
+[13:02:36.49] /i ile::createRectangle
+[13:02:37.62] /i gi::executeAction deObjectActivation -in [gi::getWindows 4]
+[13:02:37.93] /# gi::executeAction deRedraw -in [gi::getWindows 4]
+[13:02:37.93] /i de::redraw -window 4
+[13:02:38.79] /# gi::executeAction lePin -in [gi::getWindows 4]
+[13:02:38.79] /i ile::createPin
+[13:02:41.91] /i gi::setField {pinLabel} -value {true} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 4]]
+[13:02:44.34] /i gi::setField {termName} -value {clk} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 4]]
+[13:02:45.67] /# gi::executeAction deStartDrag -in [gi::getWindows 4]
+[13:02:45.67] /i de::startDrag {-3.953 -1.112} -context [db::getNext [de::getContexts -window 4]]
+[13:02:49.24] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[13:02:49.24] /i de::endDrag {-3.95 -1.113} -context [db::getNext [de::getContexts -window 4]]
+[13:02:50.76] /# gi::executeAction deZoomIn -in [gi::getWindows 4]
+[13:02:50.76] /i de::zoom -window 4 -factor 2.0
+[13:02:50.76] /o {-4.188 -1.338} {-3.128 -0.869}
+[13:02:51.49] /# gi::executeAction deZoomIn -in [gi::getWindows 4]
+[13:02:51.49] /i de::zoom -window 4 -factor 2.0
+[13:02:51.49] /o {-3.923 -1.221} {-3.393 -0.986}
+[13:02:52.74] /i de::undoTransaction -design [db::getAttr editDesign -of [de::getContexts -window 4]] -steps 1
+[13:02:53.50] /# gi::executeAction deCanvasPanEast -in [gi::getWindows 4]
+[13:02:53.50] /i de::pan -window [gi::getWindows 4] -direction E -multiplier 0.5
+[13:02:53.50] /o {-3.658 -1.221} {-3.128 -0.986}
+[13:02:53.88] /# gi::executeAction deCanvasPanEast -in [gi::getWindows 4]
+[13:02:53.88] /i de::pan -window [gi::getWindows 4] -direction E -multiplier 0.5
+[13:02:53.88] /o {-3.393 -1.221} {-2.863 -0.986}
+[13:02:54.00] /# gi::executeAction deCanvasPanEast -in [gi::getWindows 4]
+[13:02:54.00] /i de::pan -window [gi::getWindows 4] -direction E -multiplier 0.5
+[13:02:54.01] /o {-3.128 -1.221} {-2.598 -0.986}
+[13:02:54.64] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 4]
+[13:02:54.64] /i de::zoom -window [gi::getWindows 4] -factor 0.5 -center {-3.047 -1.089}
+[13:02:54.65] /o {-3.209 -1.352} {-2.15 -0.883}
+[13:02:55.09] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 4]
+[13:02:55.09] /i de::zoom -window [gi::getWindows 4] -factor 0.5 -center {-3.06 -1.096}
+[13:02:55.09] /o {-3.358 -1.608} {-1.239 -0.671}
+[13:02:55.95] /# gi::executeAction dePan -in [gi::getWindows 4]
+[13:02:55.95] /i ide::pan [db::getNext [de::getContexts -window 4]]
+[13:02:56.01] /i gi::executeAction deObjectActivation -in [gi::getWindows 4]
+[13:02:56.13] /# gi::executeAction deStartDrag -in [gi::getWindows 4]
+[13:02:56.13] /i de::startDrag {-3.066 -1.103} -context [db::getNext [de::getContexts -window 4]]
+[13:02:57.25] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[13:02:57.25] /i de::endDrag {-3.03 -1.103} -context [db::getNext [de::getContexts -window 4]]
+[13:02:57.25] /r dePanToPoint {-3.607 -1.107}
+[13:02:57.66] /i gi::executeAction deObjectActivation -in [gi::getWindows 4]
+[13:02:57.82] /# gi::executeAction lePin -in [gi::getWindows 4]
+[13:02:57.82] /i ile::createPin
+[13:03:02.36] /# gi::executeAction deStartDrag -in [gi::getWindows 4]
+[13:03:02.36] /i de::startDrag {-4.061 -1.105} -context [db::getNext [de::getContexts -window 4]]
+[13:03:04.53] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[13:03:04.53] /i de::endDrag {-3.955 -1.173} -context [db::getNext [de::getContexts -window 4]]
+[13:03:07.12] /i gi::setActiveWindow 3
+[13:03:07.12] /i gi::setActiveWindow 3 -raise true
+[13:03:08.31] /i gi::setActiveWindow 4
+[13:03:08.31] /i gi::setActiveWindow 4 -raise true
+[13:03:08.88] /i gi::executeAction deSaveDesign -in [gi::getWindows 4]
+[13:03:08.88] /m Information: Saving design 'clk clk layout'. (DESIGN_WINDOW-004)
+[13:03:10.77] /i gi::executeAction deSaveDesign -in [gi::getWindows 4]
+[13:03:10.77] /m Information: Saving design 'clk clk layout'. (DESIGN_WINDOW-004)
+[13:03:11.42] /i gi::setActiveWindow 3
+[13:03:11.42] /i gi::setActiveWindow 3 -raise true
+[13:03:14.24] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 3]
+[13:03:14.24] /i ise::check
+[13:03:14.25] /m Information: 
+[13:03:14.25] /o Checking "clk/clk/schematic"
+[13:03:14.25] /o 	[warning] Floating Input Instance Pins
+[13:03:14.25] /o 		Input pin 'in' of instance 'I0' is floating
+[13:03:14.25] /o 		Input pin 'in' of instance 'I1' is floating
+[13:03:14.25] /o 		Input pin 'in' of instance 'I2' is floating
+[13:03:14.25] /o 		Input pin 'out' of instance 'I0' is floating
+[13:03:14.25] /o 		Input pin 'out' of instance 'I1' is floating
+[13:03:14.25] /o 		Input pin 'out' of instance 'I2' is floating
+[13:03:14.25] /o 	[warning] Floating Output Pins
+[13:03:14.25] /o 		Output pin 'clk' is floating
+[13:03:14.25] /o 0 Error(s),7 Warning(s),0 Message(s) found   in "clk/clk/schematic"
+[13:03:14.25] /m Information: Checking process is completed: marking the design violations
+[13:03:14.30] /m Information: Marking of designs is completed
+[13:03:14.30] /o true
+[13:03:16.02] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 3]]
+[13:03:18.36] /i gi::setActiveWindow 4
+[13:03:18.36] /i gi::setActiveWindow 4 -raise true
+[13:03:23.31] /# gi::executeAction xtLVSRun -in [gi::getWindows 4]
+[13:03:23.31] /i xt::physicalVerification::executeRun lvs 4
+[13:03:23.62] /# xt::physicalVerification::executePve lvs 4
+[13:03:24.89] /m Information: "Starting netlisting for design "clk/clk/schematic"..." (NETLISTING-010)
+[13:03:24.91] /o No Design Integrity rule violations found in "clk/clk/schematic"
+[13:03:24.99] /m Information: "Netlisting design "clk/clk/schematic" finished successfully." (NETLISTING-012)
+[13:03:25.18] /r giWindowId 5
+[13:03:25.20] /r giWindowGeometry 800x600
+[13:03:33.50] /m Information: 
+              /c =============================
+              /c JobID: hercules_lvs_5
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[13:03:36.31] /i gi::setActiveTab {tabs} -tabName {clk.LVS_ERRORS} -in [gi::getWindows 5]
+[13:03:36.95] /i gi::setActiveTab {tabs} -tabName {clk.LAYOUT_ERRORS} -in [gi::getWindows 5]
+[13:03:37.75] /i gi::setActiveWindow 4
+[13:03:37.75] /i gi::setActiveWindow 4 -raise true
+[13:03:40.35] /# gi::executeAction xtDRCRun -in [gi::getWindows 4]
+[13:03:40.35] /i xt::physicalVerification::executeRun drc 4
+[13:03:40.61] /# xt::physicalVerification::executePve drc 4
+[13:03:41.78] /r giWindowId 6
+[13:03:41.80] /r giWindowGeometry 800x600
+[13:03:43.45] /m Information: 
+              /c =============================
+              /c JobID: hercules_drc_12
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[13:03:46.29] /i gi::setActiveWindow 4
+[13:03:46.29] /i gi::setActiveWindow 4 -raise true
+[13:03:50.74] /# gi::executeAction xtLPESetup -in [gi::getWindows 4]
+[13:03:50.74] /i xt::showLPESetup -job lpe -window 4
+[13:03:51.81] /o oa:0x2174c1e0
+[13:03:51.92] /i gi::setActiveDialog [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[13:03:52.20] /i db::setAttr geometry -of [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]] -value 487x659+830+136
+[13:03:54.40] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/extractionOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[13:03:56.98] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/outputOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[13:04:16.08] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[13:04:17.02] /# xt::physicalVerification::executePve lpe 4
+[13:04:17.47] /r giWindowId 7
+[13:04:17.51] /r giWindowGeometry 800x600
+[13:04:30.70] /m Information: 
+              /c =============================
+              /c JobID: starrc_lpe_7
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[13:44:37.83] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[13:44:38.09] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x108+811+470
+[13:44:38.80] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[13:44:38.86] /i exit
+[13:44:39.16] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[13:44:39.38] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+375
+[13:44:40.65] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[13:44:40.90] /i gi::setActiveWindow 4
+[13:44:40.90] /i gi::setActiveWindow 4 -raise true
+[13:44:41.32] /i gi::setActiveWindow 6
+[13:44:41.32] /i gi::setActiveWindow 6 -raise true
+[13:44:42.15] /i gi::setActiveWindow 5
+[13:44:42.15] /i gi::setActiveWindow 5 -raise true
+[13:44:42.18] /i gi::setActiveWindow 3
+[13:44:42.18] /i gi::setActiveWindow 3 -raise true
+[13:44:42.29] /i gi::setActiveWindow 2
+[13:44:42.29] /i gi::setActiveWindow 2 -raise true
+[13:44:42.56] /i gi::setActiveWindow 1
+[13:44:42.56] /i gi::setActiveWindow 1 -raise true
+[13:44:43.33] /o Shutdown time: Tue Jun  2 13:44:43 2026
+[13:44:43.33] /o Elapsed session real time: 43.66 minutes
+[13:44:43.33] /o Session terminated. Log is at /root/Excercise/ring_oscillator/synopsys_custom/logs/ccompiler.root.2026_6_2_130059_11977.log

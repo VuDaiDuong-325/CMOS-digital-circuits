@@ -1,0 +1,15 @@
+clk Level=0 Count=1
+   inv Level=1 Count=3
+
+
+		CELL STATISTICS
+
+
+TOP CELL = clk
+	Ports                =	3
+
+CELL = clk
+	Flat Placements      =	0
+
+CELL = inv
+	Flat Placements      =	3

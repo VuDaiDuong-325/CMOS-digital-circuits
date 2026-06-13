@@ -1,0 +1,8 @@
+clk
+	Cell Level Device Counts
+		NMOS[N] = 3
+		PMOS[P] = 3
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = clk  *******
+		NMOS[N] = 3
+		PMOS[P] = 3

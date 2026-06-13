@@ -1,0 +1,11 @@
+clk Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = clk
+	Ports                =	3
+
+CELL = clk
+	Flat Placements      =	0

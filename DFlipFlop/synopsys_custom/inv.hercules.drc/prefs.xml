@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format name="synopsysPrefs" version="1.0">
+        <preferences>
+                <pref value="/root/Excercise/lab1vlsi/PDK/hercules/drc/reference_drc.ev" name="xtDRCHerculesRunsetFile"/>
+                <pref value="{environment OPTION double {9}}" name="xtDRCHerculesVariables"/>
+                <pref value="inv" name="xtDRCLayCell"/>
+                <pref value="inv/inv/layout" name="xtDRCLayLCV"/>
+                <pref value="/root/Excercise/DFlipFlop/synopsys_custom/inv.hercules.drc/inv.custom_compiler.gds" name="xtDRCLayStreamFile"/>
+                <pref value="Hercules" name="xtDRCTool"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/techfiles/reference90RF_layer.map" name="xtPVLayerMapFile"/>
+        </preferences>
+</file-format>

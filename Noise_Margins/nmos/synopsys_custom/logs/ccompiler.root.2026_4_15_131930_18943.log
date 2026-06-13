@@ -1,0 +1,40 @@
+[13:19:44.85] /r giWindowId 0
+[13:19:44.86] /r giWindowGeometry 600x300
+[13:19:44.90] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Apr 15 13:19:30 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/Noise_Margins/nmos
+              /c 
+[13:19:58.43] /w Warning: In file /root/lib.defs: Unable to open library inv at path /root/inv : No access permission. (DATA_MANAGEMENT-014)
+[13:19:58.49] /r giShowFrameTabs true
+[13:19:58.49] /r giWindowId 1
+[13:19:58.50] /r giWindowGeometry 1040x800
+[13:21:52.60] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[13:21:52.64] /# 
+[13:21:52.65] /i dm::openLibraryManager
+[13:21:52.65] /r giWindowId 2
+[13:21:52.67] /r giWindowGeometry 660x600+50+84
+[13:21:52.82] /o oa:0x18952ef0
+[13:21:57.26] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[13:22:00.77] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[13:22:02.91] /i exit
+[13:22:03.12] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[13:22:03.27] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+376
+[13:22:04.69] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[13:22:04.72] /i gi::setActiveWindow 1
+[13:22:04.72] /i gi::setActiveWindow 1 -raise true
+[13:22:05.16] /o Shutdown time: Wed Apr 15 13:22:05 2026
+[13:22:05.16] /o Elapsed session real time: 2.38 minutes
+[13:22:05.16] /o Session terminated. Log is at /root/Excercise/Noise_Margins/nmos/synopsys_custom/logs/ccompiler.root.2026_4_15_131930_18943.log

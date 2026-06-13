@@ -1,0 +1,34 @@
+<module name="switched: nmos_nm nmos_dc_test schematic vl: hspice schematic symbol sl: symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="xi0" src="I0"/>
+</forward>
+<reverse>
+<mapping dst="I0" src="xi0"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="outs" src="outS"/>
+</forward>
+<reverse>
+<mapping dst="outS" src="outs"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="outS" src="&lt;unmappedTermOrder>"/>
+<mapping dst="outs" src="&lt;termOrder>"/>
+<mapping dst="outs" src="outS"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="outS"/>
+<mapping dst="&lt;termOrder>" src="outs"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos_dc">
+<instance name="I0"/>
+</instance_header>
+</master_instances>
+</module>

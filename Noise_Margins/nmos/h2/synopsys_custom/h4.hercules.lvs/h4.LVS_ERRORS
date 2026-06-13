@@ -1,0 +1,44 @@
++------------------------------------------------------------------------+
+|                      Hercules LVS Comparison Report                    |
++------------------------------------------------------------------------+
+
+COMPARE (R) Hierarchical Layout Vs. Schematic
+	AMD.64 Release B-2008.09.SP5.26002 2012/07/10
+Copyright (C) Synopsys, Inc. All rights reserved.
+
+
+--------------------------------------------------------------------------
+LVS error file     = h4.LVS_ERRORS
+Layout error file  = h4.LAYOUT_ERRORS
+Schematic netlist  = h4.sch_out
+Layout netlist     = h4.net
+Equivalence file   = [automatic]
+Runset file        = /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h4.hercules.lvs/reference_lvs.lvs.evx
+Working directory  = /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h4.hercules.lvs
+Compare directory  = run_details/compare
+Compare start time = 2026-04-21 21:01:31
+
+
+
+--------------------------------------------------------------------------
+Top block compare result: PASS
+
+			#####   ##   ##### #####
+			#   #  #  #  #     #    
+			##### ###### ##### #####
+			#     #    #     #     #
+			#     #    # ##### #####
+
+
+                                [h4 == h4]
+
+--------------------------------------------------------------------------
+Comparison summary
+
+    1 successful equivalencies
+    0 failed equivalencies
+
+Schematic and layout agree at all equivalent points.
+
+
+End of LVS comparison report

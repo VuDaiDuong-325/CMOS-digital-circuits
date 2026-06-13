@@ -1,0 +1,160 @@
+*** h4		Tue Apr 21 21:01:29 2026
+
+AFTER removing temp no_explodes & post-vcell processing
+
+
+
+		DESIGN STATISTICS DEFINITIONS
+		______ __________ ______________.
+
+Hierarchical levels       The number of levels in the design.
+Unique Cells              The number of unique cells in the design.
+Hierarchical placements   The total number of placements (srefs and arefs)
+			  at each level in the design.
+Total Design placements   The total number of placements (srefs and arefs)
+			  in the design.
+Exploded references       The total number of exploded references in the
+			   design.
+Exploded placements       The total number of exploded placements in the
+			   design.
+Total Data count          The total number of all polygons, paths, 
+			  vectors, and rectangles in the design.
+Sref Placements           The total number of cell references in the design.
+Arefs                     The total number of array references in the design.
+Aref Placements           The total number of references in each array
+			  reference in the design.
+Data                      The number of data primitives in each cell
+			  of the design.
+Text                      The number of text primitives in each cell of the design.
+
+
+*********************************************************************************
+
+
+		DESIGN STATISTICS FOR "h4".
+		______ __________ ___ ___________.
+
+	Hierarchical levels	=         2
+	Unique cells		=         2
+	Hierarchical placements	=         3
+	Total design placements	=         3
+	Exploded references	=         0
+	Exploded placements	=         0
+	Total data count	=       109
+	SREF placements		=         3
+	AREFS			=         0
+	AREF placements		=         0
+	DATA 			=        74
+	TEXT			=         3
+
+
+*********************************************************************************
+
+		HIERARCHICAL TREE FOR BLOCK "h4".
+
+
+							     TOTAL SREF AREF
+ h4                                           Level=0  Count=   1    1    0 
+  n_3t                                        Level=1  Count=   2    2    0 
+
+
+*********************************************************************************
+
+
+		CELL STATISTICS
+
+
+CELL = h4
+	Cell Status		= USED (SCHEMATIC TO NO EXPLODE)
+	OPENACCESS Library	= nmos_h4
+	OPENACCESS Cell Extents (LL,UR)	= (-1.620, -1.495) (0.010, 2.330)
+	Cell Area		= 6.23
+	Hierarchical Placements	=        1
+	Flat Placements		=        1
+	SREFS			=        2	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=       39
+	TEXT			=        3
+	Via			=        0
+   Current Data Counts for Cell:
+   Name    Data     Text
+   -----   -----    -----
+   POLS       3       0       
+   CONTS      2       0       
+   M1S        14      1       
+   M1PIN      1       0       
+   M2S        10      2       
+   M2PIN      2       0       
+   V1S        7       0       
+
+CELL = n_3t
+	Cell Status		= USED
+	OPENACCESS Library	= reference90RF
+	OPENACCESS Cell Extents (LL,UR)	= (-0.350, -0.470) (0.450, 2.130)
+	Cell Area		= 2.08
+	Hierarchical Placements	=        2
+	Flat Placements		=        2
+	SREFS			=        0	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=       35
+	TEXT			=        0
+	Via			=        0
+   Current Data Counts for Cell:
+   Name    Data     Text
+   -----   -----    -----
+   DIFN       4       0       
+   POLS       4       0       
+   PPS        1       0       
+   NPS        1       0       
+   CONTS      22      0       
+   M1S        3       0       
+
+CELL = via12
+	Cell Status		= AUTO_EXPLODED (DATA_CELL_LIMIT CELL)
+	OPENACCESS Library	= reference90RF
+	OPENACCESS Cell Extents (LL,UR)	= (-0.105, -0.105) (0.105, 0.105)
+	Cell Area		= 0.04
+	Hierarchical Placements	=        0
+	Flat Placements		=        0
+	SREFS			=        0	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=        3
+	TEXT			=        0
+	Via			=        1
+   Current Data Counts for Cell:
+   Name    Data     Text
+   -----   -----    -----
+   M1S        1       0       
+   M2S        1       0       
+   V1S        1       0       
+
+CELL = poly_cust
+	Cell Status		= AUTO_EXPLODED (DATA_CELL_LIMIT CELL)
+	OPENACCESS Library	= reference90RF
+	OPENACCESS Cell Extents (LL,UR)	= (-0.095, -0.115) (0.095, 0.115)
+	Cell Area		= 0.04
+	Hierarchical Placements	=        0
+	Flat Placements		=        0
+	SREFS			=        0	
+	AREFS			=        0	
+	AREF placements		=        0
+	Exploded references	=        0
+	Exploded placements	=        0
+	DATA			=        3
+	TEXT			=        0
+	Via			=        1
+   Current Data Counts for Cell:
+   Name    Data     Text
+   -----   -----    -----
+   POLS       1       0       
+   CONTS      1       0       
+   M1S        1       0       

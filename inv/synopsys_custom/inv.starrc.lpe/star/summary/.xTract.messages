@@ -1,0 +1,62 @@
+Parsing option_file: xtract.tech (EX-304)
+Running Amd_64b    
+Initializing extraction ... (EX-724)
+Reading binary grd file /root/Excercise/lab1vlsi/PDK/starrc/reference_90nm_9lm_typ.nxtgrd ... (EX-135)
+Xin import time is 0.00 seconds.
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=4 ny=6 dx=3563 dy=5626 nentry=314  max/cell=27 av/cell=13.0833
+ Stats DB 0 100 0 0 0 0 0 8 0
+Import design time is 0.00 seconds.
+----- Initializing models ----- 
+Initialize models time is 0.00 seconds.
+----- Extracting 10 nets ----- 
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.27
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.27
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-31750,-30750)  ; y(-16250,-3150) ideal=4 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-31750,-30750)  ; y(-14950,-12950) ideal=4 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-31750,-30750)  ; y(-16250,-3150) ideal=4 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-31250,-31250)  ; y(-13950,-13950) ideal=4 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with pgate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-31750,-30750)  ; y(-16250,-3150) ideal=4 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-31750,-30750)  ; y(-8450,-4450) ideal=4 act_level=57 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with pgate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-31750,-30750)  ; y(-16250,-3150) ideal=4 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-31250,-31250)  ; y(-6450,-6450) ideal=4 act_level=57 pic_level=2
+         cap_level=2 (EX-78)
+Completed  50%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.27
+Completed  70%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.27
+Completed  90%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.27
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.27
+Net extraction time is 0.00 seconds.
+ CapExtractionCounters CapEnvD=78 CapEnvND=27 NumCap=979
+Extraction time is 0.00 seconds.
+----- Reducing 10 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0.00 seconds.Mem=356.27
+Reduction time is 0.00 seconds.
+Total capacitance environments constructed = 188
+Unique capacitance environments constructed = 131 (69.6809%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Final circuit write time is 0.00 seconds.
+Extracted 81 capacitors, 311 resistors, 175 nodes
+Reduced to 71 nodes,  (59.4286%)
+Reduced to 67 resistors,  (78.4566%)
+Reduced to 80 capacitors: 64 Cc and 16 Cg (1.23457%)
+INTERNAL Warning: There are still 2 branches in memory
+Partition 0 total time is 0.01 seconds.
+  
+xTractor      Elp=00:00:01 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=356.3 
+  
+Done          Elp=00:00:01 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=356.3 
+

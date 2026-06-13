@@ -1,0 +1,12 @@
+********************************************************************************
+* Library          : nmos_nm
+* Cell             : nmos_dc
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt nmos_dc outS
+*.PININFO outS:O
+MM0 vdd! vdd! outS gnd! N w=2u l=0.1u nf=1 m=1
+.ends nmos_dc
+

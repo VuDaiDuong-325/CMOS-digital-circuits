@@ -1,0 +1,13 @@
+* SPICE INPUT		Tue Apr 21 19:33:51 2026	nmos_dc
+* EV_NETLIST Version AMD.64 Release B-2008.09.SP5.26005 2012/07/14
+*
+*The following line needed for Star-CR:
+*CRU_OPT (KEEP_ELEMENTS "^[CR]D")
+*
+*The following line needed for CDL:
+*.BIPOLAR
+
+* Top of hierarchy  cell=nmos_dc
+.subckt nmos_dc gnd! outS
+M_MM0 outS vdd! vdd! gnd! N  l=0.100u w=2.000u
+.ends nmos_dc

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format name="synopsysPrefs" version="1.0">
+        <preferences>
+                <pref name="xtLPELayLCV" value="clk/clk/layout"/>
+                <pref name="xtLPESchLCV" value="clk/clk/schematic"/>
+                <pref name="xtLPEStarNetlistFormat" value="SPF"/>
+                <pref name="xtLPEStarOAPortAnnotationView" value="//"/>
+                <pref name="xtLPEStarOAPropertyAnnotationView" value="//"/>
+                <pref name="xtLPEStarOutputRunset" value="/root/Excercise/ring_oscillator/synopsys_custom/clk.starrc.lpe/star_herc_cmd.custom_compiler"/>
+                <pref name="xtLPEStarRunsetFile" value="/root/Excercise/lab1vlsi/PDK/starrc/star_herc_cmd"/>
+                <pref name="xtLPETool" value="StarRC"/>
+                <pref name="xtStarMappingFile" value="/root/Excercise/lab1vlsi/PDK/starrc/starrc_mapping_9lm"/>
+                <pref name="xtStarMilkywayDatabase" value="/root/Excercise/ring_oscillator/synopsys_custom/clk.hercules.lvs/EXTRACT_VIEW"/>
+                <pref name="xtStarNetlistFile" value="/root/Excercise/ring_oscillator/synopsys_custom/clk.starrc.lpe/clk.SPF"/>
+                <pref name="xtStarNetlistInductance" value="true"/>
+                <pref name="xtStarOADeviceMappingFile" value="/root/Excercise/lab1vlsi/PDK/starrc/device_map"/>
+                <pref name="xtStarOALayerMappingFile" value="/root/Excercise/lab1vlsi/PDK/starrc/output_layer_map"/>
+                <pref name="xtStarOAMarkerSize" value="0.1"/>
+                <pref name="xtStarReduction" value="NO"/>
+                <pref name="xtStarRemoveFloatingNets" value="false"/>
+                <pref name="xtStarSpiceSubcktFile" value="/root/Excercise/ring_oscillator/synopsys_custom/clk.hercules.lvs/clk.custom_compiler.sp"/>
+                <pref name="xtStarTcadGrdFile" value="/root/Excercise/lab1vlsi/PDK/starrc/reference_90nm_9lm_typ.nxtgrd"/>
+                <pref name="xtStarXref" value="YES"/>
+        </preferences>
+</file-format>

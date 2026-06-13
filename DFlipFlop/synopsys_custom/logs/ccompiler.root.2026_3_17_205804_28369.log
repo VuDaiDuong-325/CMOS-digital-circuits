@@ -1,0 +1,92 @@
+[20:58:08.10] /r giWindowId 0
+[20:58:08.10] /r giWindowGeometry 600x300
+[20:58:08.12] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Mar 17 20:58:04 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/DFlipFlop
+              /c 
+[20:58:11.37] /r giShowFrameTabs true
+[20:58:11.38] /r giWindowId 1
+[20:58:11.38] /r giWindowGeometry 1040x800
+[20:58:15.58] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpendffdffschematic} -in [gi::getWindows 1]
+[20:58:15.58] /# 
+[20:58:15.58] /i de::open dff/dff/schematic
+[20:58:15.61] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[20:58:15.61] /o 	#######################################
+[20:58:15.61] /o 	PDK Library Name	: reference90RF
+[20:58:15.61] /o 	PDK Version		: 2.0
+[20:58:15.61] /o 	PDK Release Date	: 25-March-2010 
+[20:58:15.61] /o 	#######################################
+[20:58:15.61] /o 
+[20:58:15.63] /m Information: License 'Schematic' checked out. (LICENSE-003)
+[20:58:15.69] /r giWindowId 2
+[20:58:15.70] /r giWindowGeometry 1632x849
+[20:58:16.08] /m Information: 
+[20:58:16.08] /o Checking "dff/dff/schematic"
+[20:58:16.08] /o No rule violations found in "dff/dff/schematic"
+[20:58:16.08] /m Information: Checking process is completed: marking the design violations
+[20:58:16.08] /m Information: Marking of designs is completed
+[20:58:16.09] /o oa:0x1cf1b210
+[20:58:17.86] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[20:58:18.21] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x911+5+62
+[20:58:19.84] /# gi::executeAction dePan -in [gi::getWindows 2]
+[20:58:19.84] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[20:58:20.23] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[20:58:20.23] /i de::startDrag {9.2375 3.43125} -context [db::getNext [de::getContexts -window 2]]
+[20:58:21.12] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[20:58:21.12] /i de::endDrag {9.25625 3.43125} -context [db::getNext [de::getContexts -window 2]]
+[20:58:21.12] /r dePanToPoint {6.75 0.46875}
+[20:58:21.54] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[20:58:21.54] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {6.31875 3.25625}
+[20:58:21.54] /o {1.65 -0.15} {11.41875 3.88125}
+[20:58:22.25] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[20:58:22.25] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {6.31875 3.25625}
+[20:58:22.25] /o {-3.0125 -3.55625} {16.51875 4.5}
+[20:58:23.34] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[20:58:23.34] /i de::addPoint {6.35 3.2} -context [db::getNext [de::getContexts -window 2]]
+[20:58:23.56] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[20:58:23.56] /i de::addPoint {6.2 6.0875} -context [db::getNext [de::getContexts -window 2]]
+[20:58:24.65] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[20:58:24.65] /i de::startDrag {6.1 6.4625} -context [db::getNext [de::getContexts -window 2]]
+[20:58:25.33] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[20:58:25.33] /i de::endDrag {6.1 6.4875} -context [db::getNext [de::getContexts -window 2]]
+[20:58:25.33] /r dePanToPoint {6.68125 2.85}
+[20:58:25.81] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[20:58:25.81] /i de::startDrag {7.25 3.44375} -context [db::getNext [de::getContexts -window 2]]
+[20:58:25.93] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[20:58:25.93] /i de::endDrag {7.25 3.48125} -context [db::getNext [de::getContexts -window 2]]
+[20:58:25.93] /r dePanToPoint {6.65625 1.975}
+[20:58:26.21] /# gi::executeAction seCreateInst -in [gi::getWindows 2]
+[20:58:26.21] /i ise::createInst
+[20:58:26.30] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[20:58:26.55] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+71
+[20:58:30.19] /i gi::setField {instMasterLib} -value {tg} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[20:58:30.52] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+71
+[20:58:33.01] /i gi::setField {instMasterCell} -value {symbol} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[20:58:33.33] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+71
+[20:58:35.16] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[20:58:35.16] /i de::addPoint {3.45625 4.19375} -context [db::getNext [de::getContexts -window 2]]
+[20:58:37.85] /i gi::setField {instMasterCell} -value {schematic} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[20:58:38.19] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst}] -value 359x337+0+71
+[20:58:45.69] /i gi::closeWindows [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[20:58:47.27] /i exit
+[20:58:47.36] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[20:58:47.61] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x155+741+389
+[20:58:48.66] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[20:58:48.69] /i gi::setActiveWindow 1
+[20:58:48.69] /i gi::setActiveWindow 1 -raise true
+[20:58:49.14] /o Shutdown time: Tue Mar 17 20:58:49 2026
+[20:58:49.14] /o Elapsed session real time: 0.68 minutes
+[20:58:49.14] /o Session terminated. Log is at /root/Excercise/DFlipFlop/synopsys_custom/logs/ccompiler.root.2026_3_17_205804_28369.log

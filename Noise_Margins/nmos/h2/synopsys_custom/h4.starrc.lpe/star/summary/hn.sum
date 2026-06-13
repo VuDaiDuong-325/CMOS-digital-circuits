@@ -1,0 +1,5 @@
+  
+InitDB        Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.2    Mem=429.1 
+HN            Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.3    Mem=445.1 
+  
+Done          Elp=00:00:01 Cpu=00:00:00 Usr=0.3    Sys=0.5    Mem=445.1 

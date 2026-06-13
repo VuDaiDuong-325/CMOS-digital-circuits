@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : clk
+* Cell             : clk
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt clk clk
+*.PININFO clk:O
+XI2 net8 clk inv
+XI1 net7 net8 inv
+XI0 clk net7 inv
+.ends clk
+

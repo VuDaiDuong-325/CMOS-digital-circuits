@@ -1,0 +1,83 @@
+<module name="vsl: dff dff schematic vl: hspice hspiceD cmos.sch cmos_sch schematic veriloga">
+<scope name="Instance">
+<forward>
+<mapping src="M8" dst="m8"/>
+<mapping src="M10" dst="m10"/>
+<mapping src="M9" dst="m9"/>
+<mapping src="M11" dst="m11"/>
+<mapping src="M5" dst="m5"/>
+<mapping src="I1" dst="xi1"/>
+<mapping src="M4" dst="m4"/>
+<mapping src="I2" dst="xi2"/>
+<mapping src="M7" dst="m7"/>
+<mapping src="I0" dst="xi0"/>
+<mapping src="I3" dst="xi3"/>
+<mapping src="M6" dst="m6"/>
+<mapping src="I14" dst="xi14"/>
+</forward>
+<reverse>
+<mapping src="m8" dst="M8"/>
+<mapping src="m10" dst="M10"/>
+<mapping src="m9" dst="M9"/>
+<mapping src="m11" dst="M11"/>
+<mapping src="m5" dst="M5"/>
+<mapping src="xi3" dst="I3"/>
+<mapping src="m7" dst="M7"/>
+<mapping src="xi2" dst="I2"/>
+<mapping src="m4" dst="M4"/>
+<mapping src="xi1" dst="I1"/>
+<mapping src="m6" dst="M6"/>
+<mapping src="xi0" dst="I0"/>
+<mapping src="xi14" dst="I14"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping src="Q" dst="q"/>
+<mapping src="D" dst="d"/>
+<mapping src="CLK" dst="clk"/>
+</forward>
+<reverse>
+<mapping src="q" dst="Q"/>
+<mapping src="d" dst="D"/>
+<mapping src="clk" dst="CLK"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="CLK D Q"/>
+<mapping src="&lt;termOrder>" dst="clk d q"/>
+<mapping src="Q" dst="q"/>
+<mapping src="D" dst="d"/>
+<mapping src="CLK" dst="clk"/>
+</forward>
+<reverse>
+<mapping src="clk d q" dst="&lt;termOrder>"/>
+<mapping src="CLK D Q" dst="&lt;unmappedTermOrder>"/>
+<mapping src="q" dst="Q"/>
+<mapping src="d" dst="D"/>
+<mapping src="clk" dst="CLK"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="inv">
+<instance name="I0"/>
+<instance name="I1"/>
+<instance name="I14"/>
+<instance name="I2"/>
+<instance name="I3"/>
+</instance_header>
+<instance_header master="n_4t">
+<instance name="M4"/>
+<instance name="M5"/>
+<instance name="M6"/>
+<instance name="M7"/>
+</instance_header>
+<instance_header master="p_4t">
+<instance name="M10"/>
+<instance name="M11"/>
+<instance name="M8"/>
+<instance name="M9"/>
+</instance_header>
+</master_instances>
+</module>

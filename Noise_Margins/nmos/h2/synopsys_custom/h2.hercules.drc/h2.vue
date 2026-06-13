@@ -1,0 +1,13 @@
+WORKING_DIR       = .
+INLIB             = nmos_h2
+INLIB_PATH        = .
+OUTLIB            = h2_result.gds
+OUTLIB_PATH       = .
+BLOCK             = h2
+RUN_DETAILS_DIR   = run_details
+FORMAT            = OPENACCESS
+OUTPUT_FORMAT     = GDSII
+EXTRACTION_FLOW   = FALSE
+EVACCESS_PATH = run_details/evaccess
+DEVICE_PAGE       = FALSE
+RUN_STATUS        = SUCCEEDED

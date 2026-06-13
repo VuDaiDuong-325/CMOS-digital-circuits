@@ -1,0 +1,15 @@
+h2 Level=0 Count=1
+   n_3t Level=1 Count=3
+
+
+		CELL STATISTICS
+
+
+TOP CELL = h2
+	Ports                =	3
+
+CELL = h2
+	Flat Placements      =	0
+
+CELL = n_3t
+	Flat Placements      =	3

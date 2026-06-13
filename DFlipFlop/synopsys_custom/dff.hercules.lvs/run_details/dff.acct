@@ -1,0 +1,8 @@
+dff
+	Cell Level Device Counts
+		NMOS[N] = 9
+		PMOS[P] = 9
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = dff  *******
+		NMOS[N] = 9
+		PMOS[P] = 9

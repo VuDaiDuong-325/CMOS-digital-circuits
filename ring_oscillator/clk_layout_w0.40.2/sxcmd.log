@@ -1,0 +1,38 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP2 (build May 31, ) ###
+### created at 22:31:57 on Tue Jun  2 2026 (Linux AMD64) ###
+### Host Name: localhost.localdomain   User ID: root   PID: 15460   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) HOME defined
+sx_open_sim_file_read {tb_layout.tr0}
+wv_move_window {Custom WaveView} {} -10 61
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_layout.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:tb_layout.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk_out)} 3
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk_out)} 3
+wv_select_menu_item {Custom WaveView} {} {AxisCursor.Add Cursor} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSORX1
+wv_drag_item_to WV1 922 76
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 928 77
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 923 142
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 935 140
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 938 117
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 932 120
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSORX1
+wv_drag_item_to WV1 934 618
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 913 620
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 933 590
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 1174 558
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/root/.cx_hostport/.cx_hostport_localhost.localdomain_15460'.

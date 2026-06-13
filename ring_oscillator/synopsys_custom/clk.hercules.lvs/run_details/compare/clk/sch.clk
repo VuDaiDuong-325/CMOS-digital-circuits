@@ -1,0 +1,19 @@
+{NETLIST clk
+{VERSION 1 0 0}
+
+{CELL clk
+    {PORT vdd! gnd! clk }
+    {INST XI2/MM2=P {PROP n="inv/P" Length=0.13 Width=0.45 Mult=1 }
+	{PIN net8=GATE vdd!=SRC clk=DRN }}
+    {INST XI1/MM2=P {PROP n="inv/P" Length=0.13 Width=0.45 Mult=1 }
+	{PIN net7=GATE vdd!=SRC net8=DRN }}
+    {INST XI0/MM2=P {PROP n="inv/P" Length=0.13 Width=0.45 Mult=1 }
+	{PIN clk=GATE vdd!=SRC net7=DRN }}
+    {INST XI2/MM3=N {PROP n="inv/N" Length=0.13 Width=0.2 Mult=1 }
+	{PIN net8=GATE gnd!=SRC clk=DRN }}
+    {INST XI1/MM3=N {PROP n="inv/N" Length=0.13 Width=0.2 Mult=1 }
+	{PIN net7=GATE gnd!=SRC net8=DRN }}
+    {INST XI0/MM3=N {PROP n="inv/N" Length=0.13 Width=0.2 Mult=1 }
+	{PIN clk=GATE gnd!=SRC net7=DRN }}
+}
+}

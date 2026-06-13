@@ -1,0 +1,8 @@
+********************************************************************************
+* Library          : nmos_nm
+* Cell             : nmos_dc_test
+* View             : schematic
+* View Search List : hspice schematic symbol
+* View Stop List   : symbol
+********************************************************************************
+xi0 outs nmos_dc

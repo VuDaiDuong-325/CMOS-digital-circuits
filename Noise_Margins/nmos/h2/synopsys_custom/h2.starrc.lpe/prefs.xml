@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref name="xtLPELayLCV" value="nmos_h2/h2/layout"/>
+                <pref name="xtLPESchLCV" value="nmos_h2/h2/schematic"/>
+                <pref name="xtLPEStarOAPortAnnotationView" value="//"/>
+                <pref name="xtLPEStarOAPropertyAnnotationView" value="//"/>
+                <pref name="xtLPEStarOutputRunset" value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.starrc.lpe/star_herc_cmd.custom_compiler"/>
+                <pref name="xtLPEStarRunsetFile" value="/root/Excercise/lab1vlsi/PDK/starrc/star_herc_cmd"/>
+                <pref name="xtLPETool" value="StarRC"/>
+                <pref name="xtStarMappingFile" value="/root/Excercise/lab1vlsi/PDK/starrc/starrc_mapping_9lm"/>
+                <pref name="xtStarMilkywayDatabase" value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.hercules.lvs/EXTRACT_VIEW"/>
+                <pref name="xtStarNetlistFile" value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.starrc.lpe/h2.SPF"/>
+                <pref name="xtStarNetlistInductance" value="true"/>
+                <pref name="xtStarOADeviceMappingFile" value="/root/Excercise/lab1vlsi/PDK/starrc/device_map"/>
+                <pref name="xtStarOALayerMappingFile" value="/root/Excercise/lab1vlsi/PDK/starrc/output_layer_map"/>
+                <pref name="xtStarOAMarkerSize" value="0.1"/>
+                <pref name="xtStarReduction" value="NO"/>
+                <pref name="xtStarRemoveFloatingNets" value="false"/>
+                <pref name="xtStarSpiceSubcktFile" value="/root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h2.hercules.lvs/h2.custom_compiler.sp"/>
+                <pref name="xtStarTcadGrdFile" value="/root/Excercise/lab1vlsi/PDK/starrc/reference_90nm_9lm_typ.nxtgrd"/>
+                <pref name="xtStarXref" value="YES"/>
+        </preferences>
+</file-format>

@@ -1,0 +1,63 @@
+<module name="vsl: dff dff schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI21" src="I21"/>
+<mapping dst="XI20" src="I20"/>
+<mapping dst="XI23" src="I23"/>
+<mapping dst="XI22" src="I22"/>
+<mapping dst="XI15" src="I15"/>
+<mapping dst="XI19" src="I19"/>
+<mapping dst="XI17" src="I17"/>
+<mapping dst="XI16" src="I16"/>
+<mapping dst="XI18" src="I18"/>
+</forward>
+<reverse>
+<mapping dst="I23" src="XI23"/>
+<mapping dst="I20" src="XI20"/>
+<mapping dst="I22" src="XI22"/>
+<mapping dst="I19" src="XI19"/>
+<mapping dst="I16" src="XI16"/>
+<mapping dst="I15" src="XI15"/>
+<mapping dst="I21" src="XI21"/>
+<mapping dst="I17" src="XI17"/>
+<mapping dst="I18" src="XI18"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="renamed" src="Q'"/>
+<mapping dst="CLK" src="clk"/>
+</forward>
+<reverse>
+<mapping dst="Q'" src="renamed"/>
+<mapping dst="clk" src="CLK"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="CLK D Q Q'" src="&lt;unmappedTermOrder>"/>
+<mapping dst="CLK D Q renamed" src="&lt;termOrder>"/>
+<mapping dst="renamed" src="Q'"/>
+</forward>
+<reverse>
+<mapping dst="&lt;termOrder>" src="CLK D Q renamed"/>
+<mapping dst="&lt;unmappedTermOrder>" src="CLK D Q Q'"/>
+<mapping dst="Q'" src="renamed"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="inv">
+<instance name="I15"/>
+<instance name="I20"/>
+<instance name="I21"/>
+<instance name="I22"/>
+<instance name="I23"/>
+</instance_header>
+<instance_header master="tg">
+<instance name="I16"/>
+<instance name="I17"/>
+<instance name="I18"/>
+<instance name="I19"/>
+</instance_header>
+</master_instances>
+</module>

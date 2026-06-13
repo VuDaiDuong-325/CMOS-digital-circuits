@@ -1,0 +1,21 @@
+<module name="switched: reference90RF p_4t hspice">
+<scope name="Terminal">
+<forward>
+<mapping dst="D G S B" src="&lt;unmappedTermOrder>"/>
+<mapping dst="b" src="B"/>
+<mapping dst="d g s b" src="&lt;termOrder>"/>
+<mapping dst="s" src="S"/>
+<mapping dst="g" src="G"/>
+<mapping dst="d" src="D"/>
+</forward>
+<reverse>
+<mapping dst="&lt;termOrder>" src="d g s b"/>
+<mapping dst="B" src="b"/>
+<mapping dst="S" src="s"/>
+<mapping dst="G" src="g"/>
+<mapping dst="&lt;unmappedTermOrder>" src="D G S B"/>
+<mapping dst="D" src="d"/>
+</reverse>
+</scope>
+<master_instances/>
+</module>

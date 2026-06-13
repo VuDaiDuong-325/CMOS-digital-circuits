@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /root/Excercise/DFlipFlop/synopsys_custom/dff.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i dff -b dff -p . -O gdsii -o dff_result.gds -s /root/Excercise/DFlipFlop/synopsys_custom/dff.hercules.lvs/dff.custom_compiler.sp -sf CDL -stb dff /root/Excercise/DFlipFlop/synopsys_custom/dff.hercules.lvs/reference_lvs.lvs.evx > /root/Excercise/DFlipFlop/synopsys_custom/dff.hercules.lvs/stdout.lvs.log 2>&1

@@ -1,0 +1,11 @@
+dff Level=0 Count=1
+
+
+		CELL STATISTICS
+
+
+TOP CELL = dff
+	Ports                =	6
+
+CELL = dff
+	Flat Placements      =	0

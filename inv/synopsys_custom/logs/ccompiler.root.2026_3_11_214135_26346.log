@@ -1,0 +1,1006 @@
+[21:41:41.54] /r giWindowId 0
+[21:41:41.54] /r giWindowGeometry 600x300
+[21:41:41.57] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Mar 11 21:41:35 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/lab1vlsi/inverter/inv
+              /c 
+[21:41:45.52] /r giShowFrameTabs true
+[21:41:45.52] /r giWindowId 1
+[21:41:45.52] /r giWindowGeometry 1040x800
+[21:41:49.23] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpeninvinvlayout} -in [gi::getWindows 1]
+[21:41:49.23] /# 
+[21:41:49.23] /i de::open inv/inv/layout
+[21:41:49.25] /m Information: License 'Basic' checked out. (LICENSE-003)
+[21:41:49.27] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[21:41:49.27] /o 	#######################################
+[21:41:49.27] /o 	PDK Library Name	: reference90RF
+[21:41:49.27] /o 	PDK Version		: 2.0
+[21:41:49.27] /o 	PDK Release Date	: 25-March-2010 
+[21:41:49.27] /o 	#######################################
+[21:41:49.27] /o 
+[21:41:49.87] /r giWindowId 2
+[21:41:49.88] /r giWindowGeometry 1632x849
+[21:41:50.02] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 2]]]
+[21:41:50.49] /o oa:0x1ddbc6c0
+[21:41:52.67] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[21:41:53.10] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 200x736
+[21:41:53.23] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x911+5+62
+[21:42:13.46] /i gi::setField {stopLevel} -value {1} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 2]]
+[21:42:14.20] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:42:14.20] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 2]]
+[21:42:43.44] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:42:43.44] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-1.013 0.42}
+[21:42:43.44] /o {-3.81 -1.764} {3.576 1.509}
+[21:42:45.00] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:42:45.00] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:42:45.25] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:42:45.25] /i de::startDrag {-1.667 0.157} -context [db::getNext [de::getContexts -window 2]]
+[21:42:47.32] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:42:47.32] /i de::endDrag {-1.662 0.162} -context [db::getNext [de::getContexts -window 2]]
+[21:42:47.32] /r dePanToPoint {-2.238 -0.002}
+[21:42:49.71] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:42:49.71] /i de::startDrag {-2.094 0.851} -context [db::getNext [de::getContexts -window 2]]
+[21:42:50.65] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:42:50.65] /i de::endDrag {-2.094 0.824} -context [db::getNext [de::getContexts -window 2]]
+[21:42:50.65] /r dePanToPoint {-2.198 1.202}
+[21:42:52.03] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:42:52.04] /i de::addPoint {-2.814 2.136} -context [db::getNext [de::getContexts -window 2]]
+[21:42:52.36] /# gi::executeAction giPostContextMenu -in [gi::getWindows 2]
+[21:42:54.30] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:42:54.30] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:42:54.81] /# gi::executeAction giPostContextMenu -in [gi::getWindows 2]
+[21:42:54.83] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[21:42:54.83] /r giMenuAccess db::getNext [gi::getMenus leRectContextMenu]
+[21:42:56.31] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:42:56.31] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:42:56.32] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.896 2.18} -index 0 -intent none]
+[21:42:56.32] /o oa:0x1f0ffe30
+[21:42:58.70] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:42:58.70] /i ile::delete
+[21:42:59.72] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:42:59.72] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:42:59.72] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.288 2.154} -index 0 -intent none]
+[21:42:59.72] /o oa:0x1dcaf8b0
+[21:43:01.37] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:01.37] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:01.37] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 2]]
+[21:43:02.63] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:02.63] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:02.63] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.292 1.144} -index 0 -intent none]
+[21:43:02.63] /o oa:0x1f31fa10
+[21:43:03.92] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:03.92] /i ile::delete
+[21:43:05.29] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:05.29] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 2]]
+[21:43:05.68] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:43:05.68] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-1.776 1.887}
+[21:43:05.69] /o {-11.238 -0.888} {3.534 5.658}
+[21:43:06.31] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:43:06.31] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-1.918 2.003}
+[21:43:06.31] /o {-6.578 0.557} {0.808 3.831}
+[21:43:07.09] /# gi::executeAction deSelectByWindow -in [gi::getWindows 2]
+[21:43:07.09] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 2]]]; ide::selectByRegion -region rectangle -point {-2.185 1.625} 
+[21:43:07.84] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:07.84] /i de::endDrag {-2.589 2.95} -context [db::getNext [de::getContexts -window 2]]
+[21:43:08.86] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:43:08.86] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:43:09.16] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:43:09.16] /i de::startDrag {-1.869 1.678} -context [db::getNext [de::getContexts -window 2]]
+[21:43:10.51] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:10.51] /i de::endDrag {-1.869 1.683} -context [db::getNext [de::getContexts -window 2]]
+[21:43:10.51] /r dePanToPoint {-2.698 0.588}
+[21:43:11.22] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:43:11.22] /i de::addPoint {-2.536 0.775} -context [db::getNext [de::getContexts -window 2]]
+[21:43:12.83] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:43:12.83] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:43:13.60] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:13.60] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 2]]
+[21:43:14.07] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:14.07] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:14.07] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.543 0.771} -index 0 -intent none]
+[21:43:14.07] /o oa:0x1eb402f0
+[21:43:15.64] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:15.64] /i ile::delete
+[21:43:16.37] /# gi::executeAction deSelectByWindow -in [gi::getWindows 2]
+[21:43:16.37] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 2]]]; ide::selectByRegion -region rectangle -point {-1.66 0.19} 
+[21:43:16.91] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:16.91] /i de::endDrag {-1.475 1.051} -context [db::getNext [de::getContexts -window 2]]
+[21:43:18.47] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:43:18.47] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:43:18.78] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:43:18.78] /i de::startDrag {-1.871 0.388} -context [db::getNext [de::getContexts -window 2]]
+[21:43:19.21] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:19.21] /i de::endDrag {-1.867 0.406} -context [db::getNext [de::getContexts -window 2]]
+[21:43:19.21] /r dePanToPoint {-2.763 -0.772}
+[21:43:19.81] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:43:19.81] /i de::startDrag {-2.351 -1.471} -context [db::getNext [de::getContexts -window 2]]
+[21:43:20.36] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:20.36] /i de::endDrag {-2.351 -1.466} -context [db::getNext [de::getContexts -window 2]]
+[21:43:20.36] /r dePanToPoint {-2.989 -1.186}
+[21:43:21.13] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:43:21.13] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.516 -1.186}
+[21:43:21.13] /o {-4.599 -2.004} {-0.906 -0.368}
+[21:43:22.26] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:43:22.26] /i de::startDrag {-2.587 -1.175} -context [db::getNext [de::getContexts -window 2]]
+[21:43:22.77] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:22.77] /i de::endDrag {-2.585 -1.175} -context [db::getNext [de::getContexts -window 2]]
+[21:43:22.77] /r dePanToPoint {-2.872 -1.172}
+[21:43:23.93] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:43:23.93] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:43:26.09] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:26.09] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:26.09] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.099 -0.999} -index 0 -intent none]
+[21:43:26.09] /o oa:0x1d893960
+[21:43:27.23] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:27.24] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:27.24] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.03 -0.933} -index 0 -intent none]
+[21:43:27.24] /o oa:0x1f32ab50
+[21:43:31.33] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:31.33] /i ile::delete
+[21:43:32.45] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:32.45] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:32.45] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.099 -1.128} -index 0 -intent none]
+[21:43:32.45] /o oa:0x1dd39750
+[21:43:33.76] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:33.76] /i ile::delete
+[21:43:34.74] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:34.74] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:34.74] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.821 -1.13} -index 0 -intent none]
+[21:43:34.74] /o oa:0x1f41a9d0
+[21:43:36.23] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:36.23] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:36.23] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.021 -1.162} -index 0 -intent none]
+[21:43:36.23] /o oa:0x1e67c240
+[21:43:37.21] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:37.21] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:37.21] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.856 -1.144} -index 0 -intent none]
+[21:43:37.22] /o oa:0x1e852340
+[21:43:37.96] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:37.96] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[21:43:37.96] /o oa:0x1f2e1c20
+[21:43:37.96] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:37.97] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.852 -1.13} -index 1 -intent none]
+[21:43:37.97] /o oa:0x1ef9f670
+[21:43:39.19] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:39.19] /i ile::delete
+[21:43:40.51] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:40.51] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:40.52] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.856 -1.135} -index 0 -intent none]
+[21:43:40.52] /o oa:0x1f342c20
+[21:43:42.05] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:42.05] /i ile::delete
+[21:43:42.64] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:42.64] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 2]]
+[21:43:43.18] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:43:43.18] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.436 -1.48}
+[21:43:43.18] /o {-7.003 -2.502} {0.384 0.771}
+[21:43:43.71] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:43:43.71] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.378 -1.479}
+[21:43:43.71] /o {-4.69 -1.99} {-0.997 -0.354}
+[21:43:44.34] /# gi::executeAction deSelectByWindow -in [gi::getWindows 2]
+[21:43:44.34] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 2]]]; ide::selectByRegion -region rectangle -point {-2.39 -1.545} 
+[21:43:44.68] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:44.68] /i de::endDrag {-2.378 -1.132} -context [db::getNext [de::getContexts -window 2]]
+[21:43:45.60] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:43:45.60] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:43:45.91] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:43:45.91] /i de::startDrag {-2.236 -1.468} -context [db::getNext [de::getContexts -window 2]]
+[21:43:46.65] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:46.65] /i de::endDrag {-2.238 -1.468} -context [db::getNext [de::getContexts -window 2]]
+[21:43:46.65] /r dePanToPoint {-2.992 -2.139}
+[21:43:47.21] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:43:47.21] /i de::startDrag {-2.294 -2.166} -context [db::getNext [de::getContexts -window 2]]
+[21:43:47.49] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:43:47.49] /i de::endDrag {-2.294 -2.164} -context [db::getNext [de::getContexts -window 2]]
+[21:43:47.49] /r dePanToPoint {-2.99 -2.164}
+[21:43:47.89] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:43:47.89] /i de::addPoint {-2.816 -2.059} -context [db::getNext [de::getContexts -window 2]]
+[21:43:49.07] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:43:49.07] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:43:49.43] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:49.43] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:49.43] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.677 -2.026} -index 0 -intent none]
+[21:43:49.43] /o oa:0x1f42f580
+[21:43:50.85] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:50.85] /i ile::delete
+[21:43:51.63] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:51.63] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:51.63] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.857 -2.341} -index 0 -intent none]
+[21:43:51.63] /o oa:0x1f294b90
+[21:43:53.95] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:53.95] /i ile::delete
+[21:43:55.07] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:43:55.07] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:43:55.07] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.306 -1.859} -index 0 -intent none]
+[21:43:55.07] /o oa:0x1f287b30
+[21:43:57.93] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:43:57.93] /i ile::delete
+[21:44:07.14] /# gi::executeAction deSelectByWindow -in [gi::getWindows 2]
+[21:44:07.15] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 2]]]; ide::selectByRegion -region rectangle -point {-2.42 -1.885} 
+[21:44:07.68] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:44:07.68] /i de::endDrag {-2.19 -2.497} -context [db::getNext [de::getContexts -window 2]]
+[21:44:08.39] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:44:08.40] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:44:08.75] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:44:08.75] /i de::startDrag {-2.539 -1.659} -context [db::getNext [de::getContexts -window 2]]
+[21:44:10.27] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:44:10.27] /i de::endDrag {-2.539 -1.661} -context [db::getNext [de::getContexts -window 2]]
+[21:44:10.27] /r dePanToPoint {-3.002 -1.105}
+[21:44:11.87] /# gi::setCurrentIndex {lpps} -index {poly drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:44:11.87] /# gi::setItemSelection {lpps} -index {poly drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:44:11.95] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:44:11.95] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly drawing"}]
+[21:44:14.22] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:44:14.22] /i ile::createRectangle
+[21:44:19.97] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:44:19.97] /i de::startDrag {-3.173 -0.887} -context [db::getNext [de::getContexts -window 2]]
+[21:44:24.46] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:44:24.46] /i de::endDrag {-3.073 -1.319} -context [db::getNext [de::getContexts -window 2]]
+[21:44:42.39] /# gi::setCurrentIndex {lpps} -index {m1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:44:42.39] /# gi::setItemSelection {lpps} -index {m1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:44:42.47] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:44:42.47] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m1 drawing"}]
+[21:44:48.77] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:44:48.77] /i ile::createRectangle
+[21:44:51.33] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:44:51.33] /i de::startDrag {-2.997 -0.672} -context [db::getNext [de::getContexts -window 2]]
+[21:44:57.87] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:44:57.87] /i de::endDrag {-2.904 -1.519} -context [db::getNext [de::getContexts -window 2]]
+[21:45:02.45] /# gi::setCurrentIndex {lpps} -index {poly pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:02.45] /# gi::setItemSelection {lpps} -index {poly pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:02.51] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:02.51] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly pin"}]
+[21:45:13.05] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:45:13.05] /i de::startDrag {-3.162 -1.112} -context [db::getNext [de::getContexts -window 2]]
+[21:45:16.35] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:45:16.35] /i de::endDrag {-3.155 -1.116} -context [db::getNext [de::getContexts -window 2]]
+[21:45:17.79] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:45:17.79] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:45:19.89] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:19.89] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly pin"}]
+[21:45:26.23] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:26.23] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly pin"}]
+[21:45:26.58] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:26.58] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly pin"}]
+[21:45:27.04] /# gi::executeAction leOLPToggleSelectable -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:27.04] /i db::setAttr selectable -of [de::getLPPs -filter {%lpp == "poly pin"} -from [de::getActiveContext] ] -value false
+[21:45:27.79] /# gi::executeAction giPostContextMenu -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:27.89] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:27.89] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly pin"}]
+[21:45:33.64] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:33.64] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly pin"}]
+[21:45:34.05] /# gi::setCurrentIndex {lpps} -index {poly drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:34.05] /# gi::setItemSelection {lpps} -index {poly drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:34.14] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:34.14] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly drawing"}]
+[21:45:34.69] /# gi::setCurrentIndex {lpps} -index {poly pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:34.69] /# gi::setItemSelection {lpps} -index {poly pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:34.79] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:34.79] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="poly pin"}]
+[21:45:36.74] /# gi::executeAction lePin -in [gi::getWindows 2]
+[21:45:36.74] /i ile::createPin
+[21:45:43.87] /i gi::setField {termName} -value {in} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:45:43.97] /i gi::setField {pinLabel} -value {true} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:45:52.26] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:45:52.26] /i de::startDrag {-3.16 -1.107} -context [db::getNext [de::getContexts -window 2]]
+[21:45:54.67] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:45:54.67] /i de::endDrag {-3.088 -1.152} -context [db::getNext [de::getContexts -window 2]]
+[21:45:58.79] /# gi::setCurrentIndex {lpps} -index {m1 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:58.79] /# gi::setItemSelection {lpps} -index {m1 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:58.86] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:45:58.86] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m1 pin"}]
+[21:46:02.52] /i gi::setField {termName} -value {out} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:46:05.66] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:05.66] /i de::startDrag {-2.982 -1.11} -context [db::getNext [de::getContexts -window 2]]
+[21:46:06.68] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:06.68] /i de::endDrag {-2.917 -1.145} -context [db::getNext [de::getContexts -window 2]]
+[21:46:10.30] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:46:10.30] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:46:11.36] /# gi::executeAction deSelectByWindow -in [gi::getWindows 2]
+[21:46:11.36] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 2]]]; ide::selectByRegion -region rectangle -point {-2.385 -1.685} 
+[21:46:11.88] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:11.88] /i de::endDrag {-2.426 -1.443} -context [db::getNext [de::getContexts -window 2]]
+[21:46:12.37] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:46:12.37] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:46:12.70] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:12.70] /i de::startDrag {-2.417 -1.652} -context [db::getNext [de::getContexts -window 2]]
+[21:46:15.08] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:15.08] /i de::endDrag {-2.417 -1.65} -context [db::getNext [de::getContexts -window 2]]
+[21:46:15.09] /r dePanToPoint {-3.06 -2.288}
+[21:46:20.05] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:46:20.05] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.942 -2.172}
+[21:46:20.05] /o {-4.425 -2.639} {-2.578 -1.821}
+[21:46:24.06] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:46:24.06] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.919 -2.159}
+[21:46:24.06] /o {-4.93 -3.119} {-1.237 -1.483}
+[21:46:26.85] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:26.85] /i de::startDrag {-2.22 -1.839} -context [db::getNext [de::getContexts -window 2]]
+[21:46:27.87] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:27.87] /i de::endDrag {-2.22 -1.847} -context [db::getNext [de::getContexts -window 2]]
+[21:46:27.87] /r dePanToPoint {-3.072 -1.994}
+[21:46:31.10] /# gi::setCurrentIndex {lpps} -index {m1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:46:31.10] /# gi::setItemSelection {lpps} -index {m1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:46:31.20] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:46:31.20] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m1 drawing"}]
+[21:46:34.47] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:34.47] /i de::startDrag {-3.347 -1.485} -context [db::getNext [de::getContexts -window 2]]
+[21:46:36.88] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:36.88] /i de::endDrag {-3.347 -1.467} -context [db::getNext [de::getContexts -window 2]]
+[21:46:36.88] /r dePanToPoint {-3.054 -2.11}
+[21:46:37.48] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:46:37.48] /i ile::createRectangle
+[21:46:41.22] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:41.22] /i de::startDrag {-3.349 -1.492} -context [db::getNext [de::getContexts -window 2]]
+[21:46:50.92] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:50.92] /i de::endDrag {-3.251 -2.815} -context [db::getNext [de::getContexts -window 2]]
+[21:46:55.41] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:46:55.41] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:46:55.82] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:55.82] /i de::startDrag {-2.017 -1.725} -context [db::getNext [de::getContexts -window 2]]
+[21:46:56.79] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:56.79] /i de::endDrag {-2.017 -1.727} -context [db::getNext [de::getContexts -window 2]]
+[21:46:56.79] /r dePanToPoint {-2.999 -0.749}
+[21:46:57.32] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:57.32] /i de::startDrag {-2.191 -0.387} -context [db::getNext [de::getContexts -window 2]]
+[21:46:58.79] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:46:58.79] /i de::endDrag {-2.198 -0.458} -context [db::getNext [de::getContexts -window 2]]
+[21:46:58.79] /r dePanToPoint {-3.05 0.551}
+[21:46:59.32] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:46:59.32] /i de::startDrag {-2.235 1.003} -context [db::getNext [de::getContexts -window 2]]
+[21:47:02.26] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:02.26] /i de::endDrag {-2.235 0.992} -context [db::getNext [de::getContexts -window 2]]
+[21:47:02.26] /r dePanToPoint {-3.008 1.414}
+[21:47:03.78] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:47:03.78] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:47:04.04] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:47:04.04] /i de::addPoint {-2.822 1.71} -context [db::getNext [de::getContexts -window 2]]
+[21:47:05.39] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:47:05.39] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:47:05.97] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:47:05.97] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:47:05.97] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.811 1.779} -index 0 -intent none]
+[21:47:05.97] /o oa:0x1f18cb20
+[21:47:07.00] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:47:07.00] /i ile::delete
+[21:47:07.76] /# gi::executeAction deSelectByWindow -in [gi::getWindows 2]
+[21:47:07.76] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 2]]]; ide::selectByRegion -region rectangle -point {-2.865 1.1} 
+[21:47:08.43] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:08.43] /i de::endDrag {-2.891 1.621} -context [db::getNext [de::getContexts -window 2]]
+[21:47:09.34] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:47:09.35] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:47:09.62] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:09.62] /i de::startDrag {-2.778 1.268} -context [db::getNext [de::getContexts -window 2]]
+[21:47:09.83] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:09.83] /i de::endDrag {-2.778 1.272} -context [db::getNext [de::getContexts -window 2]]
+[21:47:09.84] /r dePanToPoint {-3.014 1.107}
+[21:47:10.14] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:10.14] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.782 1.274}
+[21:47:10.15] /o {-6.941 -0.695} {0.446 2.578}
+[21:47:11.00] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:11.00] /i de::startDrag {-2.609 0.621} -context [db::getNext [de::getContexts -window 2]]
+[21:47:12.34] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:12.34] /i de::endDrag {-2.614 0.63} -context [db::getNext [de::getContexts -window 2]]
+[21:47:12.34] /r dePanToPoint {-3.198 0.656}
+[21:47:15.31] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:47:15.31] /i ile::move
+[21:47:15.97] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:15.97] /i de::startDrag {-3.267 1.426} -context [db::getNext [de::getContexts -window 2]]
+[21:47:18.06] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:18.06] /i de::endDrag {-3.294 1.47} -context [db::getNext [de::getContexts -window 2]]
+[21:47:19.78] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:19.78] /i de::startDrag {-3.494 2.266} -context [db::getNext [de::getContexts -window 2]]
+[21:47:20.49] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:20.49] /i de::endDrag {-2.96 1.012} -context [db::getNext [de::getContexts -window 2]]
+[21:47:21.48] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:21.48] /i de::startDrag {-3.272 1.457} -context [db::getNext [de::getContexts -window 2]]
+[21:47:22.54] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:22.54] /i de::endDrag {-3.276 1.253} -context [db::getNext [de::getContexts -window 2]]
+[21:47:24.87] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:24.87] /i de::startDrag {-3.539 2.275} -context [db::getNext [de::getContexts -window 2]]
+[21:47:25.53] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:25.53] /i de::endDrag {-2.88 1.137} -context [db::getNext [de::getContexts -window 2]]
+[21:47:27.66] /# gi::executeAction deZoomInCursor -in [gi::getWindows 2]
+[21:47:28.90] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:28.90] /i de::setViewport -window [gi::getWindows 2] -box {{-3.334 1.782} {-3.254 1.817}}
+[21:47:30.41] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:30.41] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.293 1.809}
+[21:47:30.42] /o {-3.375 1.755} {-3.215 1.825}
+[21:47:30.79] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:30.79] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.292 1.809}
+[21:47:30.79] /o {-3.458 1.7} {-3.138 1.842}
+[21:47:30.85] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:30.86] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.293 1.809}
+[21:47:30.86] /o {-3.623 1.591} {-2.983 1.875}
+[21:47:30.94] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:30.94] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.292 1.807}
+[21:47:30.95] /o {-3.954 1.375} {-2.674 1.943}
+[21:47:30.98] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:30.98] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.292 1.801}
+[21:47:30.98] /o {-4.616 0.95} {-2.056 2.084}
+[21:47:31.27] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:31.27] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.286 1.791}
+[21:47:31.28] /o {-5.946 0.109} {-0.826 2.377}
+[21:47:31.36] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:31.36] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.286 1.792}
+[21:47:31.36] /o {-8.606 -1.575} {1.634 2.963}
+[21:47:32.00] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:47:32.00] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.242 1.785}
+[21:47:32.00] /o {-5.924 0.105} {-0.804 2.374}
+[21:47:33.14] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:47:33.14] /i de::addPoint {-2.829 1.948} -context [db::getNext [de::getContexts -window 2]]
+[21:47:34.08] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:47:34.08] /i ile::move
+[21:47:34.62] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:47:34.62] /i ile::move
+[21:47:34.87] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:47:34.87] /i ile::move
+[21:47:35.80] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:47:35.80] /i de::addPoint {-3.214 2.063} -context [db::getNext [de::getContexts -window 2]]
+[21:47:37.01] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:37.01] /i de::startDrag {-3.846 2.303} -context [db::getNext [de::getContexts -window 2]]
+[21:47:37.76] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:37.76] /i de::endDrag {-3.282 1.002} -context [db::getNext [de::getContexts -window 2]]
+[21:47:39.27] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:39.27] /i de::startDrag {-3.359 0.694} -context [db::getNext [de::getContexts -window 2]]
+[21:47:39.98] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:39.98] /i de::endDrag {-3.245 1.434} -context [db::getNext [de::getContexts -window 2]]
+[21:47:41.33] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:41.33] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.523 1.976}
+[21:47:41.33] /o {-8.325 -1.766} {1.915 2.772}
+[21:47:42.41] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:42.41] /i de::startDrag {-4.04 2.377} -context [db::getNext [de::getContexts -window 2]]
+[21:47:42.92] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:42.92] /i de::endDrag {-3.245 0.861} -context [db::getNext [de::getContexts -window 2]]
+[21:47:45.58] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:47:45.58] /i de::addPoint {-3.707 1.459} -context [db::getNext [de::getContexts -window 2]]
+[21:47:46.79] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:46.79] /i de::startDrag {-3.707 1.459} -context [db::getNext [de::getContexts -window 2]]
+[21:47:47.88] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:47.88] /i de::endDrag {-3.553 0.978} -context [db::getNext [de::getContexts -window 2]]
+[21:47:48.77] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:48.77] /i de::startDrag {-3.979 2.445} -context [db::getNext [de::getContexts -window 2]]
+[21:47:49.31] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:47:49.31] /i de::endDrag {-3.405 1.027} -context [db::getNext [de::getContexts -window 2]]
+[21:47:51.19] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:47:51.19] /i ile::move
+[21:47:54.09] /# gi::executeAction deCanvasPanSouth -in [gi::getWindows 2]
+[21:47:54.09] /i de::pan -window [gi::getWindows 2] -direction S -multiplier 0.5
+[21:47:54.09] /o {-8.325 -4.034} {1.915 0.503}
+[21:47:54.30] /# gi::executeAction deCanvasPanSouth -in [gi::getWindows 2]
+[21:47:54.30] /i de::pan -window [gi::getWindows 2] -direction S -multiplier 0.5
+[21:47:54.30] /o {-8.325 -6.303} {1.915 -1.766}
+[21:47:54.96] /# gi::executeAction deCanvasPanNorth -in [gi::getWindows 2]
+[21:47:54.96] /i de::pan -window [gi::getWindows 2] -direction N -multiplier 0.5
+[21:47:54.96] /o {-8.325 -4.034} {1.915 0.503}
+[21:47:56.56] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:47:56.56] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.561 -0.298}
+[21:47:56.56] /o {-5.443 -2.166} {-0.323 0.103}
+[21:47:56.97] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:47:56.97] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.561 -0.298}
+[21:47:56.97] /o {-8.325 -4.034} {1.915 0.503}
+[21:47:58.38] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:47:58.38] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:47:58.68] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:47:58.68] /i de::startDrag {-2.394 0.022} -context [db::getNext [de::getContexts -window 2]]
+[21:48:01.35] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:48:01.35] /i de::endDrag {-2.394 0.028} -context [db::getNext [de::getContexts -window 2]]
+[21:48:01.35] /r dePanToPoint {-3.285 0.762}
+[21:48:01.69] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:01.69] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.294 1.791}
+[21:48:01.69] /o {-5.85 0.142} {-0.73 2.411}
+[21:48:02.59] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:02.59] /i de::addPoint {-3.387 1.868} -context [db::getNext [de::getContexts -window 2]]
+[21:48:04.02] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:48:04.03] /i ile::move
+[21:48:04.49] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:48:04.49] /i de::startDrag {-3.928 2.37} -context [db::getNext [de::getContexts -window 2]]
+[21:48:04.90] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:48:04.91] /i de::endDrag {-3.444 1.159} -context [db::getNext [de::getContexts -window 2]]
+[21:48:12.61] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:48:12.61] /i de::startDrag {-3.669 1.446} -context [db::getNext [de::getContexts -window 2]]
+[21:48:13.35] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:48:13.35] /i de::endDrag {-3.583 1.276} -context [db::getNext [de::getContexts -window 2]]
+[21:48:19.13] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:48:19.13] /i ile::move
+[21:48:20.96] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:20.96] /i de::addPoint {-3.703 2.176} -context [db::getNext [de::getContexts -window 2]]
+[21:48:23.61] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:48:23.61] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.419 1.329}
+[21:48:23.61] /o {-8.475 0.138} {1.765 4.676}
+[21:48:24.42] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:24.42] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.179 1.297}
+[21:48:24.42] /o {-5.827 0.718} {-0.707 2.986}
+[21:48:25.30] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:48:25.30] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.213 1.091}
+[21:48:25.30] /o {-8.441 0.344} {1.799 4.882}
+[21:48:26.10] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:48:26.10] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.213 1.09}
+[21:48:26.10] /o {-13.669 -0.401} {6.811 8.673}
+[21:48:28.29] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:28.29] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.386 0.659}
+[21:48:28.29] /o {-8.527 0.129} {1.713 4.666}
+[21:48:28.88] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:48:28.89] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.293 0.665}
+[21:48:28.89] /o {-13.762 -0.407} {6.718 8.667}
+[21:48:30.09] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:30.09] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.69 5.055}
+[21:48:30.10] /o {-8.226 2.324} {2.014 6.861}
+[21:48:30.81] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:48:30.81] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.69 4.611}
+[21:48:30.81] /o {-13.762 0.037} {6.718 9.111}
+[21:48:32.17] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:48:32.17] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.986 0.246}
+[21:48:32.17] /o {-24.538 -0.173} {16.422 17.977}
+[21:48:34.07] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:48:34.07] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-1.999 12.527}
+[21:48:34.07] /o {-47.077 -12.873} {34.843 23.427}
+[21:48:35.18] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:35.18] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.035 -0.74}
+[21:48:35.18] /o {-25.056 -6.806} {15.904 11.343}
+[21:48:35.65] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:35.65] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.035 -0.74}
+[21:48:35.66] /o {-14.045 -3.773} {6.435 5.302}
+[21:48:36.03] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:36.03] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.035 -0.74}
+[21:48:36.03] /o {-8.54 -2.257} {1.7 2.281}
+[21:48:36.48] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:48:36.48] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.035 -0.74}
+[21:48:36.48] /o {-5.788 -1.498} {-0.668 0.77}
+[21:48:39.31] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:39.31] /i de::addPoint {-3.399 0.459} -context [db::getNext [de::getContexts -window 2]]
+[21:48:40.13] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:40.13] /i de::addPoint {-3.648 0.444} -context [db::getNext [de::getContexts -window 2]]
+[21:48:43.61] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:43.61] /i de::addPoint {-3.291 0.401} -context [db::getNext [de::getContexts -window 2]]
+[21:48:44.79] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:48:44.79] /i de::startDrag {-2.915 0.638} -context [db::getNext [de::getContexts -window 2]]
+[21:48:45.23] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:48:45.23] /i de::endDrag {-2.909 0.823} -context [db::getNext [de::getContexts -window 2]]
+[21:48:46.36] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:48:46.36] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:48:46.85] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:48:46.85] /i de::startDrag {-2.847 0.515} -context [db::getNext [de::getContexts -window 2]]
+[21:48:49.34] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:48:49.34] /i de::endDrag {-2.847 0.505} -context [db::getNext [de::getContexts -window 2]]
+[21:48:49.34] /r dePanToPoint {-3.123 0.924}
+[21:48:49.50] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:48:49.50] /i ile::move
+[21:48:50.23] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:50.23] /i de::addPoint {-3.667 1.455} -context [db::getNext [de::getContexts -window 2]]
+[21:48:52.49] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:52.49] /i de::addPoint {-3.389 0.884} -context [db::getNext [de::getContexts -window 2]]
+[21:48:53.13] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:53.13] /i de::addPoint {-3.651 0.854} -context [db::getNext [de::getContexts -window 2]]
+[21:48:55.26] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:55.26] /i de::addPoint {-3.282 0.841} -context [db::getNext [de::getContexts -window 2]]
+[21:48:55.94] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:55.94] /i de::addPoint {-3.679 1.766} -context [db::getNext [de::getContexts -window 2]]
+[21:48:57.06] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:57.06] /i de::addPoint {-3.704 1.233} -context [db::getNext [de::getContexts -window 2]]
+[21:48:57.45] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:57.45] /i de::addPoint {-3.704 1.233} -context [db::getNext [de::getContexts -window 2]]
+[21:48:59.42] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:48:59.42] /i de::addPoint {-3.34 1.224} -context [db::getNext [de::getContexts -window 2]]
+[21:49:01.51] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:49:01.51] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:49:01.81] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:49:01.81] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:49:01.81] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.685 1.581} -index 0 -intent none]
+[21:49:01.81] /o oa:0x1f184ef0
+[21:49:02.93] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:49:02.93] /i ile::delete
+[21:49:04.29] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:49:04.29] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 2]]
+[21:49:04.85] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:49:04.85] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:49:04.85] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-3.667 1.936} -index 0 -intent none]
+[21:49:04.85] /o oa:0x1e6845c0
+[21:49:06.12] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:49:06.12] /i ile::delete
+[21:49:18.54] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:49:18.54] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.838 0.576}
+[21:49:18.55] /o {-4.26 0.183} {-1.7 1.317}
+[21:49:19.54] /# gi::executeAction leRuler -in [gi::getWindows 2]
+[21:49:19.54] /i ile::createRuler
+[21:49:21.90] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:21.90] /i de::addPoint {-3.313 0.533} -context [db::getNext [de::getContexts -window 2]]
+[21:49:26.75] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:26.75] /i de::addPoint {-3.323 0.686} -context [db::getNext [de::getContexts -window 2]]
+[21:49:30.79] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:49:30.79] /i ile::move
+[21:49:31.58] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:31.58] /i de::addPoint {-3.283 0.872} -context [db::getNext [de::getContexts -window 2]]
+[21:49:33.73] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:33.73] /i de::addPoint {-3.302 0.812} -context [db::getNext [de::getContexts -window 2]]
+[21:49:35.28] /# gi::executeAction leRuler -in [gi::getWindows 2]
+[21:49:35.28] /i ile::createRuler
+[21:49:38.69] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:38.69] /i de::addPoint {-3.317 0.903} -context [db::getNext [de::getContexts -window 2]]
+[21:49:40.42] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:49:40.42] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:49:42.37] /# gi::executeAction leRuler -in [gi::getWindows 2]
+[21:49:42.37] /i ile::createRuler
+[21:49:44.60] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:44.60] /i de::addPoint {-3.322 0.9} -context [db::getNext [de::getContexts -window 2]]
+[21:49:48.59] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:48.59] /i de::addPoint {-3.32 1.048} -context [db::getNext [de::getContexts -window 2]]
+[21:49:49.65] /# gi::executeAction leMove -in [gi::getWindows 2]
+[21:49:49.65] /i ile::move
+[21:49:50.14] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:50.14] /i de::addPoint {-3.269 1.271} -context [db::getNext [de::getContexts -window 2]]
+[21:49:57.13] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:49:57.13] /i de::addPoint {-3.293 1.169} -context [db::getNext [de::getContexts -window 2]]
+[21:49:58.22] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:49:58.22] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:49:58.65] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:49:58.65] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.929 0.892}
+[21:49:58.65] /o {-5.592 -0.526} {-0.472 1.743}
+[21:50:07.47] /# gi::setCurrentIndex {lpps} -index {v1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:07.48] /# gi::setItemSelection {lpps} -index {v1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:07.53] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:07.53] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="v1 drawing"}]
+[21:50:08.73] /# gi::setCurrentIndex {lpps} -index {m1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:08.73] /# gi::setItemSelection {lpps} -index {m1 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:08.83] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:08.83] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m1 drawing"}]
+[21:50:11.35] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:50:11.35] /i ile::createRectangle
+[21:50:14.52] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:50:14.52] /i de::startDrag {-3.351 -0.301} -context [db::getNext [de::getContexts -window 2]]
+[21:50:28.78] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:50:28.78] /i de::endDrag {-3.252 1.265} -context [db::getNext [de::getContexts -window 2]]
+[21:50:41.30] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:50:41.30] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.494 0.3}
+[21:50:41.30] /o {-4.043 -0.113} {-1.483 1.021}
+[21:50:43.54] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:50:43.54] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-3.03 0.297}
+[21:50:43.54] /o {-5.056 -0.523} {0.064 1.746}
+[21:50:46.39] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:50:46.39] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:50:46.81] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:50:46.81] /i de::startDrag {-2.84 0.319} -context [db::getNext [de::getContexts -window 2]]
+[21:50:48.78] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:50:48.78] /i de::endDrag {-2.84 0.322} -context [db::getNext [de::getContexts -window 2]]
+[21:50:48.78] /r dePanToPoint {-2.665 0.5}
+[21:50:52.94] /# gi::setCurrentIndex {lpps} -index {m2 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:52.94] /# gi::setItemSelection {lpps} -index {m2 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:53.05] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:50:53.05] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m2 drawing"}]
+[21:50:55.88] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:50:55.88] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-3.57 0.393}
+[21:50:55.88] /o {-4.398 -0.12} {-1.838 1.014}
+[21:51:01.53] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:51:01.53] /i de::startDrag {-3.635 0.146} -context [db::getNext [de::getContexts -window 2]]
+[21:51:04.19] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:51:04.19] /i de::endDrag {-3.638 0.145} -context [db::getNext [de::getContexts -window 2]]
+[21:51:04.19] /r dePanToPoint {-3.13 0.561}
+[21:51:04.33] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:51:04.33] /i ile::createRectangle
+[21:51:12.65] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:51:12.65] /i de::startDrag {-3.636 0.294} -context [db::getNext [de::getContexts -window 2]]
+[21:51:16.60] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:51:16.60] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.616 1.054}
+[21:51:16.61] /o {-6.204 -1.067} {-1.084 1.202}
+[21:51:17.85] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:51:17.85] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.598 1.147}
+[21:51:17.86] /o {-9.81 -3.28} {0.43 1.257}
+[21:51:21.17] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:51:21.17] /i de::endDrag {-2.616 1.294} -context [db::getNext [de::getContexts -window 2]]
+[21:51:21.66] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:51:21.66] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.523 1.134}
+[21:51:21.66] /o {-6.167 -1.073} {-1.047 1.196}
+[21:51:22.13] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:51:22.13] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.523 1.109}
+[21:51:22.13] /o {-4.345 0.018} {-1.785 1.152}
+[21:51:26.69] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:51:26.69] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.483 0.792}
+[21:51:26.69] /o {-6.207 -0.756} {-1.087 1.513}
+[21:51:30.39] /# gi::setCurrentIndex {lpps} -index {m2 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:51:30.39] /# gi::setItemSelection {lpps} -index {m2 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:51:30.50] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:51:30.50] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m2 pin"}]
+[21:51:33.26] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:51:33.26] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m2 pin"}]
+[21:51:34.55] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[21:51:34.75] /# gi::executeAction lePin -in [gi::getWindows 2]
+[21:51:34.75] /i ile::createPin
+[21:51:45.45] /i gi::setField {termName} -value {vdd!} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:51:47.45] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:51:47.45] /i de::startDrag {-3.004 0.992} -context [db::getNext [de::getContexts -window 2]]
+[21:51:48.75] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:51:48.75] /i de::endDrag {-2.733 0.847} -context [db::getNext [de::getContexts -window 2]]
+[21:51:51.17] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:51:51.17] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:51:51.30] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[21:51:52.79] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:51:52.79] /i de::startDrag {-1.971 -0.087} -context [db::getNext [de::getContexts -window 2]]
+[21:51:53.82] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:51:53.82] /i de::endDrag {-1.971 -0.081} -context [db::getNext [de::getContexts -window 2]]
+[21:51:53.82] /r dePanToPoint {-3.616 -0.861}
+[21:51:54.32] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:51:54.32] /i de::startDrag {-2.162 -1.169} -context [db::getNext [de::getContexts -window 2]]
+[21:51:55.35] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:51:55.35] /i de::endDrag {-2.162 -1.163} -context [db::getNext [de::getContexts -window 2]]
+[21:51:55.35] /r dePanToPoint {-3.499 -1.936}
+[21:51:57.92] /# gi::setCurrentIndex {lpps} -index {m2 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:51:57.92] /# gi::setItemSelection {lpps} -index {m2 drw} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:51:57.97] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:51:57.97] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m2 drawing"}]
+[21:52:00.61] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:52:00.61] /i ile::createRectangle
+[21:52:07.16] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:52:07.16] /i de::startDrag {-3.626 -1.897} -context [db::getNext [de::getContexts -window 2]]
+[21:52:10.99] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:52:10.99] /i de::endDrag {-3.626 -1.912} -context [db::getNext [de::getContexts -window 2]]
+[21:52:12.42] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:52:12.42] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:52:13.62] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:52:13.62] /i ile::createRectangle
+[21:52:15.07] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:52:15.07] /i de::startDrag {-3.642 -1.881} -context [db::getNext [de::getContexts -window 2]]
+[21:52:15.95] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:52:15.95] /i de::endDrag {-2.93 -2.353} -context [db::getNext [de::getContexts -window 2]]
+[21:52:19.31] /# gi::executeAction leStretch -in [gi::getWindows 2]
+[21:52:19.31] /i ile::stretch
+[21:52:19.86] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:52:19.86] /i de::startDrag {-2.933 -2.356} -context [db::getNext [de::getContexts -window 2]]
+[21:52:20.74] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:52:20.74] /i de::endDrag {-2.733 -2.501} -context [db::getNext [de::getContexts -window 2]]
+[21:52:21.34] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:21.34] /i de::addPoint {-2.995 -2.328} -context [db::getNext [de::getContexts -window 2]]
+[21:52:23.41] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:23.41] /i de::addPoint {-2.979 -2.31} -context [db::getNext [de::getContexts -window 2]]
+[21:52:24.35] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:52:24.35] /i de::startDrag {-2.924 -2.341} -context [db::getNext [de::getContexts -window 2]]
+[21:52:24.94] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:52:24.94] /i de::endDrag {-2.782 -2.464} -context [db::getNext [de::getContexts -window 2]]
+[21:52:26.19] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:52:26.19] /i de::startDrag {-2.933 -2.328} -context [db::getNext [de::getContexts -window 2]]
+[21:52:26.62] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:52:26.63] /i de::endDrag {-2.794 -2.448} -context [db::getNext [de::getContexts -window 2]]
+[21:52:26.93] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:52:26.93] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.874 -2.137}
+[21:52:26.93] /o {-4.466 -2.604} {-1.906 -1.47}
+[21:52:28.12] /# gi::executeAction leStretch -in [gi::getWindows 2]
+[21:52:28.12] /i ile::stretch
+[21:52:30.05] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:52:30.05] /i de::startDrag {-2.93 -2.331} -context [db::getNext [de::getContexts -window 2]]
+[21:52:30.61] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:52:30.61] /i de::endDrag {-2.853 -2.402} -context [db::getNext [de::getContexts -window 2]]
+[21:52:31.36] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:31.37] /i de::addPoint {-2.927 -2.324} -context [db::getNext [de::getContexts -window 2]]
+[21:52:32.92] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:52:32.92] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.726 -2.461}
+[21:52:32.92] /o {-6.207 -2.747} {-1.087 -0.478}
+[21:52:37.68] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:37.68] /i de::addPoint {-2.541 -2.682} -context [db::getNext [de::getContexts -window 2]]
+[21:52:38.32] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:52:38.32] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.434 -2.368}
+[21:52:38.32] /o {-9.979 -3.126} {0.261 1.411}
+[21:52:38.81] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:52:38.81] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.402 -2.479}
+[21:52:38.81] /o {-6.191 -2.803} {-1.071 -0.534}
+[21:52:40.48] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:40.48] /i de::addPoint {-2.562 -2.337} -context [db::getNext [de::getContexts -window 2]]
+[21:52:45.46] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:45.46] /i de::addPoint {-2.664 -2.756} -context [db::getNext [de::getContexts -window 2]]
+[21:52:46.07] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:52:46.08] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:52:46.61] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:52:46.61] /i de::startDrag {-2.276 -2.519} -context [db::getNext [de::getContexts -window 2]]
+[21:52:47.25] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:52:47.25] /i de::endDrag {-2.276 -2.513} -context [db::getNext [de::getContexts -window 2]]
+[21:52:47.25] /r dePanToPoint {-3.621 -2.038}
+[21:52:49.22] /# gi::executeAction leStretch -in [gi::getWindows 2]
+[21:52:49.22] /i ile::stretch
+[21:52:50.99] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:50.99] /i de::addPoint {-2.55 -2.747} -context [db::getNext [de::getContexts -window 2]]
+[21:52:55.21] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:55.21] /i de::addPoint {-2.624 -2.843} -context [db::getNext [de::getContexts -window 2]]
+[21:52:56.47] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:56.47] /i de::addPoint {-2.538 -2.843} -context [db::getNext [de::getContexts -window 2]]
+[21:52:58.04] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:52:58.04] /i de::addPoint {-2.566 -2.846} -context [db::getNext [de::getContexts -window 2]]
+[21:53:06.59] /# gi::setCurrentIndex {lpps} -index {m2 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:53:06.59] /# gi::setItemSelection {lpps} -index {m2 pin} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:53:06.66] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:53:06.66] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m2 pin"}]
+[21:53:10.02] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:53:10.02] /i ile::createRectangle
+[21:53:10.72] /# gi::executeAction leRectangle -in [gi::getWindows 2]
+[21:53:10.72] /i ile::createRectangle
+[21:53:12.23] /# gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:53:12.23] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind inv inv layout] -filter {%lpp =="m2 pin"}]
+[21:53:13.01] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[21:53:13.18] /# gi::executeAction lePin -in [gi::getWindows 2]
+[21:53:13.18] /i ile::createPin
+[21:53:17.34] /i gi::setField {termName} -value {gnd!} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:53:19.12] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:53:19.12] /i de::startDrag {-3 -2.254} -context [db::getNext [de::getContexts -window 2]]
+[21:53:21.19] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:53:21.19] /i de::endDrag {-2.723 -2.43} -context [db::getNext [de::getContexts -window 2]]
+[21:53:24.49] /# gi::executeAction leSplit -in [gi::getWindows 2]
+[21:53:24.49] /i ile::split
+[21:53:35.67] /# gi::executeAction leBoundary -in [gi::getWindows 2]
+[21:53:35.67] /i ile::createBoundary
+[21:53:35.82] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[21:53:37.37] /i gi::pressButton {autoCreate} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:53:39.20] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:53:39.20] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-1.644 -1.366}
+[21:53:39.20] /o {-10.719 -4.979} {-0.479 -0.442}
+[21:53:39.98] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:53:39.98] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-1.644 -1.366}
+[21:53:39.98] /o {-6.181 -3.173} {-1.061 -0.904}
+[21:53:41.76] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:53:41.76] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:53:42.27] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:53:42.27] /i de::startDrag {-1.776 -1.227} -context [db::getNext [de::getContexts -window 2]]
+[21:53:43.14] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:53:43.14] /i de::endDrag {-1.78 -1.227} -context [db::getNext [de::getContexts -window 2]]
+[21:53:43.14] /r dePanToPoint {-3.489 -0.497}
+[21:53:43.76] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:53:43.76] /i de::startDrag {-1.998 -0.028} -context [db::getNext [de::getContexts -window 2]]
+[21:53:44.91] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:53:44.91] /i de::endDrag {-1.998 -0.025} -context [db::getNext [de::getContexts -window 2]]
+[21:53:44.91] /r dePanToPoint {-3.467 -0.876}
+[21:53:45.37] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:53:45.37] /i de::startDrag {-2.137 -0.824} -context [db::getNext [de::getContexts -window 2]]
+[21:53:45.89] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:53:45.89] /i de::endDrag {-2.137 -0.793} -context [db::getNext [de::getContexts -window 2]]
+[21:53:45.89] /r dePanToPoint {-3.396 -1.739}
+[21:53:47.13] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:53:47.13] /i de::addPoint {-2.294 -1.702} -context [db::getNext [de::getContexts -window 2]]
+[21:53:47.91] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:53:47.91] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.095 -1.64}
+[21:53:47.91] /o {-3.474 -2.238} {-0.914 -1.104}
+[21:53:47.92] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:53:47.92] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.095 -1.64}
+[21:53:47.92] /o {-2.785 -1.939} {-1.505 -1.372}
+[21:53:48.00] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:53:48.00] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.095 -1.64}
+[21:53:48.00] /o {-2.44 -1.79} {-1.8 -1.506}
+[21:53:48.60] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:53:48.60] /i de::startDrag {-2.161 -1.631} -context [db::getNext [de::getContexts -window 2]]
+[21:53:48.99] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:53:48.99] /i de::endDrag {-2.156 -1.631} -context [db::getNext [de::getContexts -window 2]]
+[21:53:48.99] /r dePanToPoint {-2.31 -1.656}
+[21:53:49.35] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:53:49.35] /i de::startDrag {-2.53 -1.63} -context [db::getNext [de::getContexts -window 2]]
+[21:53:50.06] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:53:50.06] /i de::endDrag {-2.529 -1.63} -context [db::getNext [de::getContexts -window 2]]
+[21:53:50.06] /r dePanToPoint {-2.538 -1.651}
+[21:53:51.00] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:53:51.00] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.579 -1.641}
+[21:53:51.01] /o {-3.138 -1.946} {-1.858 -1.379}
+[21:53:51.38] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:53:51.38] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.58 -1.641}
+[21:53:51.38] /o {-3.695 -2.251} {-1.135 -1.116}
+[21:53:52.34] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:53:52.34] /i de::startDrag {-2.616 -1.491} -context [db::getNext [de::getContexts -window 2]]
+[21:53:54.34] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:53:54.34] /i de::endDrag {-2.613 -1.491} -context [db::getNext [de::getContexts -window 2]]
+[21:53:54.34] /r dePanToPoint {-2.571 -1.452}
+[21:53:55.18] /# gi::executeAction leStretch -in [gi::getWindows 2]
+[21:53:55.18] /i ile::stretch
+[21:53:57.15] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:53:57.15] /i de::addPoint {-2.569 -1.862} -context [db::getNext [de::getContexts -window 2]]
+[21:54:05.39] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:54:05.39] /i de::addPoint {-2.61 -1.842} -context [db::getNext [de::getContexts -window 2]]
+[21:54:06.81] /# gi::executeAction deAbortCommand -in [gi::getWindows 2]
+[21:54:06.81] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[21:54:07.81] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:54:07.81] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 2]]
+[21:54:08.52] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[21:54:08.52] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:54:08.52] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {-2.569 -1.371} -index 0 -intent none]
+[21:54:08.52] /o oa:0x1745ec10
+[21:54:10.91] /# gi::executeAction leDelete -in [gi::getWindows 2]
+[21:54:10.91] /i ile::delete
+[21:54:14.78] /# gi::executeAction leBoundary -in [gi::getWindows 2]
+[21:54:14.78] /i ile::createBoundary
+[21:54:16.02] /i gi::pressButton {autoCreate} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:54:17.36] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:54:17.36] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.271 -1.24}
+[21:54:17.36] /o {-5.431 -2.799} {-0.311 -0.53}
+[21:54:17.95] /# gi::executeAction deCanvasZoomInAtPoint -in [gi::getWindows 2]
+[21:54:17.95] /i de::zoom -window [gi::getWindows 2] -factor 2.0 -center {-2.271 -1.239}
+[21:54:17.95] /o {-3.851 -2.019} {-1.291 -0.885}
+[21:54:19.94] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:54:19.94] /i de::startDrag {-2.427 -1.008} -context [db::getNext [de::getContexts -window 2]]
+[21:54:20.32] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:54:20.32] /i de::endDrag {-2.418 -1.254} -context [db::getNext [de::getContexts -window 2]]
+[21:54:20.67] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:54:20.67] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:54:20.95] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:54:20.95] /i de::startDrag {-2.415 -1.02} -context [db::getNext [de::getContexts -window 2]]
+[21:54:21.92] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:54:21.92] /i de::endDrag {-2.415 -1.022} -context [db::getNext [de::getContexts -window 2]]
+[21:54:21.92] /r dePanToPoint {-2.571 -1.233}
+[21:54:22.09] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[21:54:22.73] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[21:54:23.76] /i de::undoTransaction -design [db::getAttr editDesign -of [de::getContexts -window 2]] -steps 1
+[21:54:27.92] /# gi::executeAction dePan -in [gi::getWindows 2]
+[21:54:27.92] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[21:54:28.36] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:54:28.36] /i de::startDrag {-2.282 -0.943} -context [db::getNext [de::getContexts -window 2]]
+[21:54:28.86] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:54:28.86] /i de::endDrag {-2.282 -0.975} -context [db::getNext [de::getContexts -window 2]]
+[21:54:28.86] /r dePanToPoint {-2.572 -0.555}
+[21:54:29.28] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:54:29.28] /i de::startDrag {-2.339 -0.128} -context [db::getNext [de::getContexts -window 2]]
+[21:54:30.90] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:54:30.90] /i de::endDrag {-2.341 -0.129} -context [db::getNext [de::getContexts -window 2]]
+[21:54:30.90] /r dePanToPoint {-2.519 -0.299}
+[21:54:31.27] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:54:31.27] /i de::startDrag {-2.373 -0.518} -context [db::getNext [de::getContexts -window 2]]
+[21:54:31.61] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:54:31.61] /i de::endDrag {-2.373 -0.513} -context [db::getNext [de::getContexts -window 2]]
+[21:54:31.61] /r dePanToPoint {-2.583 -0.943}
+[21:54:32.04] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:54:32.04] /i de::startDrag {-2.387 -1.171} -context [db::getNext [de::getContexts -window 2]]
+[21:54:32.42] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:54:32.42] /i de::endDrag {-2.387 -1.168} -context [db::getNext [de::getContexts -window 2]]
+[21:54:32.42] /r dePanToPoint {-2.608 -1.598}
+[21:54:33.50] /# gi::executeAction deStartDrag -in [gi::getWindows 2]
+[21:54:33.50] /i de::startDrag {-2.459 -1.777} -context [db::getNext [de::getContexts -window 2]]
+[21:54:34.77] /# gi::executeAction deEndDrag -in [gi::getWindows 2]
+[21:54:34.77] /i de::endDrag {-2.461 -1.778} -context [db::getNext [de::getContexts -window 2]]
+[21:54:34.77] /r dePanToPoint {-2.583 -1.539}
+[21:54:36.32] /i de::undoTransaction -design [db::getAttr editDesign -of [de::getContexts -window 2]] -steps 1
+[21:54:37.57] /# gi::executeAction leStretch -in [gi::getWindows 2]
+[21:54:37.57] /i ile::stretch
+[21:54:39.42] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:54:39.42] /i de::addPoint {-2.609 -1.863} -context [db::getNext [de::getContexts -window 2]]
+[21:54:41.37] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[21:54:41.37] /i de::addPoint {-2.616 -1.86} -context [db::getNext [de::getContexts -window 2]]
+[21:54:46.61] /# gi::executeAction leBoundary -in [gi::getWindows 2]
+[21:54:46.61] /i ile::createBoundary
+[21:54:47.92] /i gi::pressButton {autoCreate} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 2]]
+[21:54:49.93] /# gi::executeAction deCanvasZoomOutAtPoint -in [gi::getWindows 2]
+[21:54:49.93] /i de::zoom -window [gi::getWindows 2] -factor 0.5 -center {-2.673 -1.352}
+[21:54:49.93] /o {-5.054 -2.862} {0.066 -0.593}
+[21:54:56.67] /i gi::executeAction deObjectActivation -in [gi::getWindows 2]
+[21:54:56.98] /# gi::executeAction leSplit -in [gi::getWindows 2]
+[21:54:56.98] /i ile::split
+[21:54:59.76] /i gi::executeAction deSaveDesign -in [gi::getWindows 2]
+[21:54:59.77] /m Information: Saving design 'inv inv layout'. (DESIGN_WINDOW-004)
+[21:55:04.67] /# gi::executeAction xtLVSRun -in [gi::getWindows 2]
+[21:55:04.67] /i xt::physicalVerification::executeRun lvs 2
+[21:55:05.31] /# xt::physicalVerification::executePve lvs 2
+[21:55:05.40] /e Error: Error encountered parsing the runset '/root/Excercise/lab1vlsi/PDK/hercules/lvs/reference_lvs.ev': The binary 'evp' was not found in $PATH. (PHYSICAL_VERIFICATION-022)
+[21:55:05.41] /e Error: Error: Problem processing 'xt::hercules::_private::writeRunset' because: The binary 'evp' was not found in $PATH (PHYSICAL_VERIFICATION_COMMANDS-015)
+[21:55:05.89] /e Error: Error encountered parsing the runset '/root/Excercise/lab1vlsi/PDK/hercules/lvs/reference_lvs.ev': The binary 'evp' was not found in $PATH. (PHYSICAL_VERIFICATION-022)
+[21:55:06.37] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[21:55:06.62] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 704x454+787+330
+[21:55:09.18] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[21:55:10.14] /# xt::physicalVerification::executePve lvs 2
+[21:55:10.17] /e Error: Error encountered parsing the runset '/root/Excercise/lab1vlsi/PDK/hercules/lvs/reference_lvs.ev': The binary 'evp' was not found in $PATH. (PHYSICAL_VERIFICATION-022)
+[21:55:10.18] /e Error: Error: Problem processing 'xt::hercules::_private::writeRunset' because: The binary 'evp' was not found in $PATH (PHYSICAL_VERIFICATION_COMMANDS-015)
+[21:55:11.74] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 2]]
+[21:55:12.04] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 200x519
+[21:55:24.19] /i db::setAttr shown -of [gi::getAssistants giConsole -from [gi::getWindows 2]] -value false
+[21:55:24.51] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 200x736
+[21:55:28.14] /i gi::executeAction deSaveDesign -in [gi::getWindows 2]
+[21:55:28.14] /m Information: Saving design 'inv inv layout'. (DESIGN_WINDOW-004)
+[21:55:32.13] /i exit
+[21:55:32.27] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[21:55:32.45] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+376
+[21:55:33.96] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[21:55:34.08] /i gi::setActiveWindow 1
+[21:55:34.08] /i gi::setActiveWindow 1 -raise true
+[21:55:34.70] /o Shutdown time: Wed Mar 11 21:55:34 2026
+[21:55:34.70] /o Elapsed session real time: 13.9 minutes
+[21:55:34.70] /o Session terminated. Log is at /root/Excercise/lab1vlsi/inverter/inv/synopsys_custom/logs/ccompiler.root.2026_3_11_214135_26346.log

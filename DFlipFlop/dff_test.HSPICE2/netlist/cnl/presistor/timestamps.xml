@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Wed Mar 18 23:30:57 2026-->
+<file-format version="1.0" name="netlisting-timestamps">
+<module viewSearchList="schematic hspice symbol" timestamp="26" configTimeStamp="730914607" isSubcircuit="1" contextID="switched: analogLib presistor hspice vl: schematic hspice symbol sl: symbol config:dff dff_test config" viewStopList="symbol">
+<parameterizedConnections>
+<connectDefs timestamp="0"/>
+<oaAssignments timestamp="0"/>
+<dbAssignValue timestamp="0"/>
+<dbAssignAssignment timestamp="0"/>
+</parameterizedConnections>
+<parameters timestamp="1"/>
+<lib_parameters/>
+<LineageParams/>
+<ParentParams/>
+<Terms timestamp="11"/>
+<PortOrder><![CDATA[PLUSMINUS]]></PortOrder>
+</module>
+</file-format>

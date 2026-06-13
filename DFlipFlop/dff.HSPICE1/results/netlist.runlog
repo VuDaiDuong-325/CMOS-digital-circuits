@@ -1,0 +1,3 @@
+Using: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice  'netlist.final' -o results/netlist
+
+>error          ***** hspice job aborted

@@ -1,0 +1,431 @@
+
+                                  StarRC (TM)
+
+               Version O-2018.06-SP1 for linux64 - Jul 19, 2018 
+
+                    Copyright (c) 1999 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+ExecName: /usr/synopsys/starrc/O-2018.06-SP1/linux64_starrc/bin/StarXtract
+Version: O-2018.06-SP1
+Built on: Jul 19 2018 21:37:47
+Start Time: Tue Jun  2 16:37:09 2026
+
+Host ............ localhost.localdomain
+
+xTractorName: /usr/synopsys/starrc/O-2018.06-SP1/linux64_starrc/bin/xTractor
+Version: O-2018.06-SP1
+Built on: Jul 19 2018 21:37:30
+WARNING: Command -clean is obsoleted for GATE level extraction and turned on by default. (SX-3582)
+WARNING: Schematic device 'cmim_3t' equates to undefined layout device 'cmim_3t'. (SX-2284)
+WARNING: Schematic device 'MOSVAR_1V2' equates to undefined layout device 'MOSVAR_1V2'. (SX-2284)
+WARNING: Following option "DETECT_PERMUTABLE_PORTS" detected in Hercules/ICV runset is not supported
+         in StarXtract. (SX-2775)
+WARNING: Following option "PUSH_DOWN_PINS" detected in Hercules/ICV runset is not supported in
+         StarXtract. (SX-2776)
+WARNING: Following option "PUSH_DOWN_DEVICES" detected in Hercules/ICV runset is not supported in
+         StarXtract. (SX-2777)
+WARNING: Hercules COMPARE option MEMORY_ARRAY_COMPARISON is not supported for XREF extractions. (SX-2274)
+WARNING: OBSERVATION_POINT cell pattern "*" does not match any non SKIP_CELL EQUIV points and will
+         be ignored. (SX-1768)
+
+Block ........... clk
+Star Directory .. /root/Excercise/ring_oscillator/synopsys_custom/clk.starrc.lpe/star
+Milkyway DB ..... /root/Excercise/ring_oscillator/synopsys_custom/clk.hercules.lvs/EXTRACT_VIEW
+ Ref Libs Report is skipped.
+  Setup         Elp=00:00:09 Cpu=00:00:04 Usr=4.2    Sys=0.0    Mem=429.1 
+Done
+
+Map Layers:  Tue Jun  2 16:37:18 2026
+WARNING: Device terminal layer 'coll_dnw_pnp' used by "'DNWPNP':'COLL'" is removed in MAPPING_FILE
+         or is the BULK terminal of another device. (SX-2250)
+WARNING: Device terminal layer 'mom_cap_123_term' used by "'cmom_123':'T1'" is removed in
+         MAPPING_FILE or is the BULK terminal of another device. (SX-2250)
+WARNING: Device terminal layer 'mom_cap_123_term' used by "'cmom_123':'T2'" is removed in
+         MAPPING_FILE or is the BULK terminal of another device. (SX-2250)
+WARNING: Device terminal layer 'mom_cap_1234_term' used by "'cmom_1234':'T1'" is removed in
+         MAPPING_FILE or is the BULK terminal of another device. (SX-2250)
+WARNING: Device terminal layer 'mom_cap_1234_term' used by "'cmom_1234':'T2'" is removed in
+         MAPPING_FILE or is the BULK terminal of another device. (SX-2250)
+WARNING: Device terminal layer 'mom_cap_234_term' used by "'cmom_234':'T1'" is removed in
+         MAPPING_FILE or is the BULK terminal of another device. (SX-2250)
+WARNING: Device terminal layer 'mom_cap_234_term' used by "'cmom_234':'T2'" is removed in
+         MAPPING_FILE or is the BULK terminal of another device. (SX-2250)
+WARNING: Layer "M3S" has no connections. (SX-1851)
+WARNING: Layer "M4S" has no connections. (SX-1851)
+WARNING: The precedence is not set for ignored cap layer: psub (SX-1794)
+WARNING: The precedence is not set for ignored cap layer: nxwell (SX-1794)
+WARNING: The precedence is not set for ignored cap layer: nxwell_NWDIODE (SX-1794)
+WARNING: The precedence is not set for ignored cap layer: nxwell_NWDIODE18 (SX-1794)
+WARNING: The precedence is not set for ignored cap layer: nxwell_NWDIODE25 (SX-1794)
+WARNING: The precedence is not set for ignored cap layer: nxwell_NWDIODE33 (SX-1794)
+WARNING: The precedence is not set for layers mapped to substrate in the mapping file when
+         TRANSLATE_RETAIN_BULK_LAYERS:YES or CONLY is specified in your command file. Accuracy can
+         be affected. Check the order of substrate layer and set precedence for them in your
+ mapping
+         file whenever the TRANSLATE_RETAIN_BULK_LAYERS:YES or CONLY command is used. (SX-1790)
+  Warnings: 16    Errors: 0    (See file summary/layers.sum)
+  Layers        Elp=00:00:01 Cpu=00:00:01 Usr=0.4    Sys=1.0    Mem=429.2 
+Done
+
+Create Models:  Tue Jun  2 16:37:19 2026
+  Warnings: 0    Errors: 0
+  Models        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+Done
+
+Build HN:  Tue Jun  2 16:37:19 2026
+  Warnings: 0    Errors: 0
+  HN            Elp=00:00:01 Cpu=00:00:00 Usr=0.2    Sys=0.7    Mem=445.2 
+Done
+
+Build XrefHN:  Tue Jun  2 16:37:21 2026
+  Warnings: 0    Errors: 0
+  XrefHN        Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=335.4 
+Done
+
+Process Cells:  Tue Jun  2 16:37:21 2026
+  Warnings: 0    Errors: 0
+  Cells         Elp=00:00:01 Cpu=00:00:00 Usr=0.3    Sys=0.3    Mem=429.2 
+Done
+
+Translate DB:  Tue Jun  2 16:37:22 2026
+  Warnings: 0    Errors: 0
+  Translate     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.1    Mem=429.2 
+Done
+
+Netlist Setup:  Tue Jun  2 16:37:22 2026
+  Warnings: 0    Errors: 0
+  NetlistSetup  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=331.4 
+Done
+
+xTract DB:  Tue Jun  2 16:37:24 2026
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-78400,-77100)  ; y(-10650,-8650) ideal=3 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-11950,-7350) ideal=15 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-78400,-77100)  ; y(-10650,-8650) ideal=3 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-11950,-7350) ideal=15 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-78400,-77100)  ; y(250,4750) ideal=3 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-1050,6050) ideal=15 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-78400,-77100)  ; y(250,4750) ideal=3 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-1050,6050) ideal=15 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-77750,-77750)  ; y(-9650,-9650) ideal=3 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-11950,-7350) ideal=15 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-77750,-77750)  ; y(-9650,-9650) ideal=3 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-11950,-7350) ideal=15 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-77750,-77750)  ; y(2500,2500) ideal=3 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-1050,6050) ideal=15 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-77750,-77750)  ; y(2500,2500) ideal=3 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-78400,-77100)  ; y(-1050,6050) ideal=15 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+Completed  17%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-10650,-8650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-10650,-8650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-10650,-8650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(250,4750) ideal=5 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-1050,6050) ideal=16 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(250,4750) ideal=5 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-1050,6050) ideal=16 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(250,4750) ideal=5 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-1050,6050) ideal=16 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-64550,-64550)  ; y(-9650,-9650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-64550,-64550)  ; y(-9650,-9650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-64550,-64550)  ; y(2500,2500) ideal=5 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-1050,6050) ideal=16 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer pgate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-64550,-64550)  ; y(2500,2500) ideal=5 act_level=57 pic_level=2
+         cap_level=2 r2= R0,  x(-65200,-63900)  ; y(-1050,6050) ideal=16 act_level=106 pic_level=2
+         cap_level=3 (EX-78)
+Completed  29%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+Completed  41%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+Completed  52%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+Completed  64%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+Completed  76%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-78400,-77100)  ; y(-11950,-7350) ideal=15 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-78400,-77100)  ; y(-10650,-8650) ideal=3 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-78400,-77100)  ; y(-11950,-7350) ideal=15 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-78400,-77100)  ; y(-10650,-8650) ideal=3 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with pgate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-78400,-77100)  ; y(-1050,6050) ideal=15 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-78400,-77100)  ; y(250,4750) ideal=3 act_level=57 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-65200,-63900)  ; y(-10650,-8650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-65200,-63900)  ; y(-10650,-8650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-11950,-7350) ideal=16 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-65200,-63900)  ; y(-10650,-8650) ideal=5 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with pgate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-1050,6050) ideal=16 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-65200,-63900)  ; y(250,4750) ideal=5 act_level=57 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with pgate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-65200,-63900)  ; y(-1050,6050) ideal=16 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-65200,-63900)  ; y(250,4750) ideal=5 act_level=57 pic_level=2
+         cap_level=2 (EX-78)
+Completed  88%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-52000,-50700)  ; y(-10650,-8650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-51350,-51350)  ; y(-9650,-9650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-52000,-50700)  ; y(-10650,-8650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with ngate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 r2= R0,  x(-51350,-51350)  ; y(-9650,-9650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with pgate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-1050,6050) ideal=17 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-52000,-50700)  ; y(250,4750) ideal=18 act_level=57 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer POLS
+         overlaps with pgate Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-1050,6050) ideal=17 act_level=106 pic_level=2
+         cap_level=3 r2= R0,  x(-51350,-51350)  ; y(2500,2500) ideal=18 act_level=57 pic_level=2
+         cap_level=2 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-10650,-8650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-52000,-50700)  ; y(-10650,-8650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-51350,-51350)  ; y(-9650,-9650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+WARNING: Two Overlapping rectangles with different cap_levels and same picture levels Layer ngate
+         overlaps with POLS Suggested Fix in Transistor Level: Use Boolean Not in runset to remove
+         the overlap r1= R0,  x(-51350,-51350)  ; y(-9650,-9650) ideal=18 act_level=40 pic_level=2
+         cap_level=2 r2= R0,  x(-52000,-50700)  ; y(-11950,-7350) ideal=17 act_level=106
+ pic_level=2
+         cap_level=3 (EX-78)
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=356.273
+Extracted 360 capacitors, 632 resistors, 377 nodes
+Reduced to 183 nodes,  (51.4589%)
+Reduced to 172 resistors,  (72.7848%)
+Reduced to 348 capacitors: 312 Cc and 36 Cg (3.33333%)
+  Warnings: 36    Errors: 0    (See file summary/xtract.sum)
+  xTract        Elp=00:00:03 Cpu=00:00:02 Usr=1.4    Sys=1.2    Mem=356.3 
+Done
+
+xTract Post Process DB:  Tue Jun  2 16:37:27 2026
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  11%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  17%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  23%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  41%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  58%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  76%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed  94%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=225.977
+  Warnings: 0    Errors: 0
+  xTractPP      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.1    Mem=226.0 
+Done
+
+Report Violations:  Tue Jun  2 16:37:27 2026
+WARNING: Found shorted nets (see file shorts_all.sum). The capacitances of these nets may be
+         unreliable due to the shorts. (SX-0955)
+  Warnings: 1    Errors: 0    (See file summary/report_violations.sum)
+  ReportViolations Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=331.6 
+Done
+
+Netlist DB:  Tue Jun  2 16:37:28 2026
+Completed   0%  Time=00:00:00  RemainingTime=00:00:01  Mem=257.312
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.312
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.312
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.312
+Completed   7%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.312
+Completed   8%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.312
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.312
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.375
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.375
+Completed  39%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.375
+Completed  49%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.375
+Completed  59%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.438
+Completed  69%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.441
+Completed  79%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.441
+Completed  89%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.441
+Completed  98%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.441
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=257.441
+  Warnings: 0    Errors: 0
+  Netlist       Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=257.4 
+Done
+  
+Setup            Elp=00:00:09 Cpu=00:00:04 Usr=4.2    Sys=0.0    Mem=429.1 
+Layers           Elp=00:00:01 Cpu=00:00:01 Usr=0.4    Sys=1.0    Mem=429.2 
+Models           Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=429.2 
+HN               Elp=00:00:01 Cpu=00:00:00 Usr=0.2    Sys=0.7    Mem=445.2 
+XrefHN           Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=335.4 
+Cells            Elp=00:00:01 Cpu=00:00:00 Usr=0.3    Sys=0.3    Mem=429.2 
+Translate        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.1    Mem=429.2 
+NetlistSetup     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=331.4 
+xTract           Elp=00:00:03 Cpu=00:00:02 Usr=1.4    Sys=1.2    Mem=356.3 
+xTractPP         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.1    Mem=226.0 
+ReportViolations Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=331.6 
+Netlist          Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=257.4 
+  
+Done          Elp=00:00:15 Cpu=00:00:10 Usr=6.7    Sys=3.5    Mem=445.2 
+
+End Time: Tue Jun  2 16:37:28 2026
+
+
+
+RUN-TIME SUMMARY:
+----------------------------------------------------------------------------------------------
+CPU#   | STAGE SUMMARY                                            |END TIME             |HOST NAME
+----------------------------------------------------------------------------------------------
+CPU_01 |*Setup                     Elp=00:00:09 Cpu=00:00:04 Mem=429.1  |Jun  2 16:37:18 |localhost.localdomain
+CPU_01 |*Layers                    Elp=00:00:01 Cpu=00:00:01 Mem=429.2  |Jun  2 16:37:19 |localhost.localdomain
+CPU_01 |*Models                    Elp=00:00:00 Cpu=00:00:00 Mem=429.2  |Jun  2 16:37:19 |localhost.localdomain
+CPU_01 |*HN                        Elp=00:00:02 Cpu=00:00:00 Mem=445.2  |Jun  2 16:37:21 |localhost.localdomain
+CPU_01 |*XrefHN                    Elp=00:00:00 Cpu=00:00:00 Mem=335.4  |Jun  2 16:37:21 |localhost.localdomain
+CPU_01 |*Cells                     Elp=00:00:01 Cpu=00:00:00 Mem=429.2  |Jun  2 16:37:22 |localhost.localdomain
+CPU_01 |*Translate                 Elp=00:00:00 Cpu=00:00:00 Mem=429.2  |Jun  2 16:37:22 |localhost.localdomain
+CPU_01 |*NetlistSetup              Elp=00:00:02 Cpu=00:00:00 Mem=331.4  |Jun  2 16:37:24 |localhost.localdomain
+CPU_01 |*xTract                    Elp=00:00:03 Cpu=00:00:02 Mem=356.3  |Jun  2 16:37:27 |localhost.localdomain
+CPU_01 |*xTractPP                  Elp=00:00:00 Cpu=00:00:00 Mem=226    |Jun  2 16:37:27 |localhost.localdomain
+CPU_01 |*ReportViolations          Elp=00:00:01 Cpu=00:00:00 Mem=331.6  |Jun  2 16:37:28 |localhost.localdomain
+CPU_01 |*Netlist                   Elp=00:00:00 Cpu=00:00:00 Mem=257.4  |Jun  2 16:37:28 |localhost.localdomain
+----------------------------------------------------------------------------------------------
+Start Time: Tue Jun  2 16:37:09 2026
+End Time: Tue Jun  2 16:37:28 2026
+----------------------------------------------------------------------------------------------
+Overall:         Elp=00:00:19 Cpu= 00:00:10
+PreXtraction:    Elp=00:00:15 Cpu= 00:00:07
+Xtraction:       Elp=00:00:03 Cpu= 00:00:02
+PostXtraction:   Elp=00:00:01 Cpu= 00:00:00
+----------------------------------------------------------------------------------------------
+Spef Output:     Elp= 00:00:00 Cpu= 00:00:00
+----------------------------------------------------------------------------------------------
+
+
+
+Message Summary:
+----------------------------------------------------------------------------------------------
+EX-78   (x  36)|Warning      |TWO OVERLAPPING RECTANGLES WITH DIFFERENT CAP_LEVELS AND SAME PICTURE LEVELS LAYER () OVERLAPS WITH () SUGGESTED FIX IN TRANSISTOR LEVEL: USE BOOLEAN NOT IN RUNSET TO REMOVE THE OVERLAP R1=() R2=()
+SX-0955 (x   1)|Warning      |FOUND SHORTED NETS (SEE FILE SHORTS_ALL.SUM). THE CAPACITANCES OF THESE NETS MAY BE UNRELIABLE DUE TO THE SHORTS.
+SX-1768 (x   1)|Warning      |OBSERVATION_POINT CELL PATTERN "()" DOES NOT MATCH ANY NON SKIP_CELL EQUIV POINTS AND WILL BE IGNORED.
+SX-1790 (x   1)|Warning      |THE PRECEDENCE IS NOT SET FOR LAYERS MAPPED TO SUBSTRATE IN THE MAPPING FILE WHEN TRANSLATE_RETAIN_BULK_LAYERS:YES OR CONLY IS SPECIFIED IN YOUR COMMAND FILE. ACCURACY CAN BE AFFECTED. CHECK THE ORDER OF SUBSTRATE LAYER AND SET PRECEDENCE FOR THEM IN YOUR MAPPING FILE WHENEVER THE TRANSLATE_RETAIN_BULK_LAYERS:YES OR CONLY COMMAND IS USED.
+SX-1794 (x   6)|Warning      |THE PRECEDENCE IS NOT SET FOR IGNORED CAP LAYER: ()
+SX-1851 (x   2)|Warning      |LAYER "()" HAS NO CONNECTIONS.
+SX-2250 (x   7)|Warning      |DEVICE TERMINAL LAYER '()' USED BY "'()':'()'" IS REMOVED IN MAPPING_FILE OR IS THE BULK TERMINAL OF ANOTHER DEVICE.
+SX-2274 (x   1)|Warning      |HERCULES COMPARE OPTION MEMORY_ARRAY_COMPARISON IS NOT SUPPORTED FOR XREF EXTRACTIONS.
+SX-2284 (x   2)|Warning      |SCHEMATIC DEVICE '()' EQUATES TO UNDEFINED LAYOUT DEVICE '()'.
+SX-2775 (x   1)|Warning      |FOLLOWING OPTION "DETECT_PERMUTABLE_PORTS" DETECTED IN HERCULES/ICV RUNSET IS NOT SUPPORTED IN STARXTRACT.
+SX-2776 (x   1)|Warning      |FOLLOWING OPTION "PUSH_DOWN_PINS" DETECTED IN HERCULES/ICV RUNSET IS NOT SUPPORTED IN STARXTRACT.
+SX-2777 (x   1)|Warning      |FOLLOWING OPTION "PUSH_DOWN_DEVICES" DETECTED IN HERCULES/ICV RUNSET IS NOT SUPPORTED IN STARXTRACT.
+SX-3582 (x   1)|Warning      |COMMAND -CLEAN IS OBSOLETED FOR GATE LEVEL EXTRACTION AND TURNED ON BY DEFAULT.
+

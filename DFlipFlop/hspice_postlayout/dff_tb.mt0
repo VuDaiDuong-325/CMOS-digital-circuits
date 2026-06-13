@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '*========================================'
+ tpd_rise         tpd_fall         trise            tfall           
+ pwr_avg          iavg             energy           temper          
+ alter#          
+  2.004e-08        2.996e-08        2.813e-11        2.269e-11      
+  2.827e-06       -2.175e-06        5.654e-13         25.0000       
+1               

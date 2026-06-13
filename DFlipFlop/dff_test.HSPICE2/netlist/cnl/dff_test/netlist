@@ -1,0 +1,8 @@
+********************************************************************************
+* Library          : dff
+* Cell             : dff_test
+* View             : schematic
+* View Search List : schematic hspice symbol
+* View Stop List   : symbol
+********************************************************************************
+xi0  dff

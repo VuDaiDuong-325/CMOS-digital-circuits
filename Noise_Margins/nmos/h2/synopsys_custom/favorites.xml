@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler (TM), build #, on Tue Apr 21 23:06:03 2026
+-->
+<synopsysFile version="1.0" name="synopsysFavoriteDevices">
+        <favoriteDevices viewType="maskLayout">
+                <cellView cell="n_3t" view="layout" library="reference90RF">
+                        <alias name="n_3t"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+        </favoriteDevices>
+        <favoriteDevices viewType="schematic">
+                <cellView cell="h2" view="symbol" library="nmos_h2">
+                        <alias name="h2"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView cell="n_3t" view="symbol" library="reference90RF">
+                        <alias name="n_3t"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView cell="h4" view="symbol" library="nmos_h4">
+                        <alias name="h4"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+                <cellView cell="vdd" view="symbol" library="basic">
+                        <alias name="vdd"/>
+                        <category name="Recently Placed"/>
+                </cellView>
+        </favoriteDevices>
+</synopsysFile>

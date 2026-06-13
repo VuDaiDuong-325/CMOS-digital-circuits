@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format name="synopsysPrefs" version="1.0">
+        <preferences>
+                <pref value="nmos_nm/nmos_dc/layout" name="xtLPELayLCV"/>
+                <pref value="nmos_nm/nmos_dc/schematic" name="xtLPESchLCV"/>
+                <pref value="//" name="xtLPEStarOAPortAnnotationView"/>
+                <pref value="//" name="xtLPEStarOAPropertyAnnotationView"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.starrc.lpe/star_herc_cmd.custom_compiler" name="xtLPEStarOutputRunset"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/starrc/star_herc_cmd" name="xtLPEStarRunsetFile"/>
+                <pref value="StarRC" name="xtLPETool"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/starrc/starrc_mapping_9lm" name="xtStarMappingFile"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.hercules.lvs/EXTRACT_VIEW" name="xtStarMilkywayDatabase"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.starrc.lpe/nmos_dc.SPF" name="xtStarNetlistFile"/>
+                <pref value="true" name="xtStarNetlistInductance"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/starrc/device_map" name="xtStarOADeviceMappingFile"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/starrc/output_layer_map" name="xtStarOALayerMappingFile"/>
+                <pref value="0.1" name="xtStarOAMarkerSize"/>
+                <pref value="NO" name="xtStarReduction"/>
+                <pref value="false" name="xtStarRemoveFloatingNets"/>
+                <pref value="/root/Excercise/Noise_Margins/nmos/synopsys_custom/nmos_dc.hercules.lvs/nmos_dc.custom_compiler.sp" name="xtStarSpiceSubcktFile"/>
+                <pref value="/root/Excercise/lab1vlsi/PDK/starrc/reference_90nm_9lm_typ.nxtgrd" name="xtStarTcadGrdFile"/>
+                <pref value="YES" name="xtStarXref"/>
+        </preferences>
+</file-format>

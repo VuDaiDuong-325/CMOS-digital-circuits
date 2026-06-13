@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref name="nlHSPICEGenerateSubcktInTopModule" value="false"/>
+                <pref name="xtHSPICEGlobalSearchList" value="hspice hspiceD cmos.sch cmos_sch schematic veriloga"/>
+                <pref name="xtHSPICEGlobalStopList" value="hspice hspiceD veriloga"/>
+                <pref name="xtRunNetlister" value="true"/>
+                <pref name="xtRunSimulation" value="true"/>
+                <pref name="xtSimulationJobMode" value="foreground"/>
+                <pref name="xtSimulationRunHost" value="localhost"/>
+        </preferences>
+</file-format>

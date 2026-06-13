@@ -1,0 +1,19 @@
+********************************************************************************
+* Library          : dff
+* Cell             : dff
+* View             : schematic
+* View Search List : hspice hspiceD cmos.sch cmos_sch schematic veriloga
+* View Stop List   : hspice hspiceD veriloga
+********************************************************************************
+.subckt dff clk d q
+xi18 clkb clk net75 net72 tg
+xi17 clk clkb net69 net70 tg
+xi16 clkb clk d net69 tg
+xi19 clk clkb net71 net75 tg
+xi15 clk clkb inv
+xi22 q net72 inv
+xi21 net71 net70 inv
+xi20 net69 net71 inv
+xi23 net75 q inv
+.ends dff
+

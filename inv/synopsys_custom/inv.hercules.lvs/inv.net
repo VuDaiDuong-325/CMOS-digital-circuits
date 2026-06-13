@@ -1,0 +1,14 @@
+{NETLIST inv
+{VERSION 1 0 0}
+
+/* Level 0 */
+
+{CELL inv
+	{PORT out vdd! gnd! in}
+	{PROP top=0.795000 bottom=-2.580000 left=-3.825000 right=-2.400000}
+	{INST M1=N {PROP x=-3.125 y=-1.395  l=0.100 w=0.200}
+		{PIN in=GATE out=SRC gnd!=DRN N_9=BULK }}
+	{INST M2=P {PROP x=-3.125 y=-0.645  l=0.100 w=0.400}
+		{PIN in=GATE out=SRC vdd!=DRN N_11=BULK }}
+}
+}

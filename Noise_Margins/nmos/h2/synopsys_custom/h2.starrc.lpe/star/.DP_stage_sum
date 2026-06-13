@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------------
+CPU#   | STAGE SUMMARY                                      | END TIME        | HOST NAME
+----------------------------------------------------------------------------------------------
+CPU_01 |*Setup        Elp=00:00:06 Cpu=00:00:01 Mem=429.0  | Apr 21 22:36:01 | localhost.localdomain
+CPU_01 |*Layers        Elp=00:00:01 Cpu=00:00:01 Mem=429.1  | Apr 21 22:36:02 | localhost.localdomain
+CPU_01 |*Models        Elp=00:00:00 Cpu=00:00:00 Mem=429.1  | Apr 21 22:36:02 | localhost.localdomain
+CPU_01 |*HN            Elp=00:00:01 Cpu=00:00:00 Mem=445.1  | Apr 21 22:36:03 | localhost.localdomain
+CPU_01 |*XrefHN        Elp=00:00:00 Cpu=00:00:00 Mem=335.4  | Apr 21 22:36:03 | localhost.localdomain
+CPU_01 |*Cells         Elp=00:00:01 Cpu=00:00:00 Mem=429.1  | Apr 21 22:36:04 | localhost.localdomain
+CPU_01 |*Translate     Elp=00:00:00 Cpu=00:00:00 Mem=429.1  | Apr 21 22:36:04 | localhost.localdomain
+CPU_01 |*NetlistSetup  Elp=00:00:00 Cpu=00:00:00 Mem=331.3  | Apr 21 22:36:04 | localhost.localdomain
+CPU_01 |*xTract        Elp=00:00:01 Cpu=00:00:00 Mem=356.3  | Apr 21 22:36:05 | localhost.localdomain
+CPU_01 |*xTractPP      Elp=00:00:00 Cpu=00:00:00 Mem=226.0  | Apr 21 22:36:05 | localhost.localdomain
+CPU_01 |*ReportViolations Elp=00:00:00 Cpu=00:00:00 Mem=331.6  | Apr 21 22:36:05 | localhost.localdomain
+CPU_01 |*Netlist       Elp=00:00:02 Cpu=00:00:01 Mem=541.7  | Apr 21 22:36:07 | localhost.localdomain
+----------------------------------------------------------------------------------------------
+Start Time: Tue Apr 21 22:36:01 2026
+End Time: Tue Apr 21 22:36:07 2026
+Total Wall Time: 00:00:06
+Time on PreXtraction:  00:00:03
+Time on Xtraction:     00:00:01
+Time on PostXtraction: 00:00:02
+----------------------------------------------------------------------------------------------

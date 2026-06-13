@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h4.hercules.lvs; unset TCLLIBPATH; unset TCL_LIBRARY; exec-oa22.04.hercules hercules_oa -f openaccess -i nmos_h4 -b h4 -p . -O gdsii -o h4_result.gds -s /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h4.hercules.lvs/h4.custom_compiler.sp -sf CDL -stb h4 /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h4.hercules.lvs/reference_lvs.lvs.evx > /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/h4.hercules.lvs/stdout.lvs.log 2>&1

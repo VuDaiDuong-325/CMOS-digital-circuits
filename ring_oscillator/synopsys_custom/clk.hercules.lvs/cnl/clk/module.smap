@@ -1,0 +1,34 @@
+<module name="vsl: clk clk schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping src="I1" dst="XI1"/>
+<mapping src="I0" dst="XI0"/>
+<mapping src="I2" dst="XI2"/>
+</forward>
+<reverse>
+<mapping src="XI0" dst="I0"/>
+<mapping src="XI1" dst="I1"/>
+<mapping src="XI2" dst="I2"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="clk"/>
+<mapping src="&lt;termOrder>" dst="clk"/>
+</forward>
+<reverse>
+<mapping src="clk" dst="&lt;unmappedTermOrder>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="inv">
+<instance name="I0"/>
+<instance name="I1"/>
+<instance name="I2"/>
+</instance_header>
+</master_instances>
+</module>

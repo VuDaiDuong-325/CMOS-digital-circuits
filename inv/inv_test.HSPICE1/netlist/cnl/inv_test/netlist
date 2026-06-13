@@ -1,0 +1,8 @@
+********************************************************************************
+* Library          : inv
+* Cell             : inv_test
+* View             : schematic
+* View Search List : schematic hspice symbol
+* View Stop List   : symbol
+********************************************************************************
+xi1 in out inv

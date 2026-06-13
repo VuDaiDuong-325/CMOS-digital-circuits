@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : tg
+* Cell             : tg
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt tg clk clkb in out
+*.PININFO clk:I clkb:I in:I out:O
+MM0 in clkb out vdd! P w=0.72u l=0.1u nf=1 m=1
+MM1 in clk out gnd! N w=0.36u l=0.1u nf=1 m=1
+.ends tg
+

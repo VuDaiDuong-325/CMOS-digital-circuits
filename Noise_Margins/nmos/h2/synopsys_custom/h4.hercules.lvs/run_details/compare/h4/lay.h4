@@ -1,0 +1,11 @@
+{NETLIST h4
+{VERSION 1 0 0}
+
+{CELL h4
+    {PORT vdd! out }
+    {INST I1/M1=N {PROP n="n_3t/N" x=-0.395 y=0.245 Length=0.1 Width=2 }
+	{PIN N_4=GATE vdd!=SRC out=DRN }}
+    {INST I0/M1=N {PROP n="n_3t/N" x=-1.195 y=0.245 Length=0.1 Width=2 }
+	{PIN vdd!=GATE vdd!=SRC N_4=DRN }}
+}
+}

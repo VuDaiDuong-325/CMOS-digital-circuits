@@ -1,0 +1,7 @@
+INCLUDE $SYNOPSYS_CUSTOM_INSTALL/samples/lib.defs
+
+
+DEFINE reference90RF /root/Excercise/lab1vlsi/PDK/reference90RF
+DEFINE inv /root/Excercise/lab1vlsi/inverter/inv
+DEFINE dff ./dff
+DEFINE tg /root/Excercise/Tranmission_Gate/TG

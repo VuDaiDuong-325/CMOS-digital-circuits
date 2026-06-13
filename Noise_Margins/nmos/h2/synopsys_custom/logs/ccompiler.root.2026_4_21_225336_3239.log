@@ -1,0 +1,116 @@
+[22:53:45.29] /r giWindowId 0
+[22:53:45.29] /r giWindowGeometry 600x300
+[22:53:45.31] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c               Version N-2017.12-SP1-2 for linux64 - May 16, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4182185 compiled on Wed May 16 15:20:56 2018 for RHEL64 6.6
+              /c Invocation: /usr/synopsys/customcompiler/N-2017.12-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr 21 22:53:36 2026
+              /c Host: localhost.localdomain
+              /c Working directory: /root/Excercise/Noise_Margins/nmos/h2
+              /c 
+[22:53:50.47] /r giShowFrameTabs true
+[22:53:50.47] /r giWindowId 1
+[22:53:50.47] /r giWindowGeometry 1040x800
+[22:53:56.97] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[22:53:56.98] /# 
+[22:53:56.98] /i dm::openLibraryManager
+[22:53:56.98] /r giWindowId 2
+[22:53:56.99] /r giWindowGeometry 660x600+50+84
+[22:53:57.06] /o oa:0x1ba91f90
+[22:53:58.81] /i gi::setCurrentIndex {libs} -index {nmos_h4} -in [gi::getWindows 2]
+[22:53:58.83] /i gi::setItemSelection {libs} -index {nmos_h4} -in [gi::getWindows 2]
+[22:54:00.11] /i gi::setCurrentIndex {cells} -index {h4} -in [gi::getWindows 2]
+[22:54:00.12] /i gi::setItemSelection {cells} -index {h4} -in [gi::getWindows 2]
+[22:54:00.51] /i gi::setCurrentIndex {cells} -index {h4_test} -in [gi::getWindows 2]
+[22:54:00.51] /i gi::setItemSelection {cells} -index {h4_test} -in [gi::getWindows 2]
+[22:54:00.93] /i gi::setCurrentIndex {cells} -index {h4} -in [gi::getWindows 2]
+[22:54:00.94] /i gi::setItemSelection {cells} -index {h4} -in [gi::getWindows 2]
+[22:54:01.64] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[22:54:01.64] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[22:54:02.72] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[22:54:02.72] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[22:54:02.92] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[22:54:02.96] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[22:54:03.00] /o 	#######################################
+[22:54:03.00] /o 	PDK Library Name	: reference90RF
+[22:54:03.00] /o 	PDK Version		: 2.0
+[22:54:03.00] /o 	PDK Release Date	: 25-March-2010 
+[22:54:03.00] /o 	#######################################
+[22:54:03.00] /o 
+[22:54:03.04] /m Information: License 'Schematic' checked out. (LICENSE-003)
+[22:54:03.27] /r giWindowId 3
+[22:54:03.27] /r giWindowGeometry 1632x848
+[22:54:03.87] /m Information: 
+[22:54:03.87] /o Checking "nmos_h4/h4/schematic"
+[22:54:03.87] /o No rule violations found in "nmos_h4/h4/schematic"
+[22:54:03.87] /m Information: Checking process is completed: marking the design violations
+[22:54:03.87] /m Information: Marking of designs is completed
+[22:54:06.57] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[22:54:06.97] /i db::setAttr dockSize -of [gi::getAssistants deMarkerBrowser -from [gi::getWindows 3]] -value 292x769
+[22:54:07.05] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x910+5+62
+[22:54:08.68] /w Warning: Nothing is bound to the 'Meta-Shift-s' in the current active set. (WINDOW-015)
+[22:59:12.25] /i gi::setActiveWindow 2
+[22:59:12.26] /i gi::setActiveWindow 2 -raise true
+[22:59:13.91] /i gi::setCurrentIndex {views} -index {symbol} -in [gi::getWindows 2]
+[22:59:13.92] /i gi::setItemSelection {views} -index {symbol} -in [gi::getWindows 2]
+[22:59:14.45] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[22:59:14.45] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[22:59:14.59] /i gi::executeAction dmOpen -in [gi::getWindows 2]
+[22:59:14.83] /m Information: License 'Basic' checked out. (LICENSE-003)
+[22:59:14.84] /m Information: License 'Schematic' checked in. (LICENSE-004)
+[22:59:16.67] /r giWindowId 4
+[22:59:16.69] /r giWindowGeometry 1632x848
+[22:59:16.89] /# de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 4]]]
+[23:02:15.53] /i gi::setField {stopLevel} -value {1} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 4]]
+[23:02:16.28] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[23:02:16.28] /i de::deselectAllLogic -context [db::getNext [de::getContexts -window 4]]
+[23:02:17.58] /w Warning: Nothing is bound to the 'Meta-Shift-s' in the current active set. (WINDOW-015)
+[23:02:50.32] /# gi::executeAction xtLPESetup -in [gi::getWindows 4]
+[23:02:50.32] /i xt::showLPESetup -job lpe -window 4
+[23:02:52.14] /o oa:0x20208380
+[23:02:52.32] /i gi::setActiveDialog [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[23:02:52.55] /i db::setAttr geometry -of [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]] -value 487x659+830+136
+[23:02:53.52] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/outputOptionsTab} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[23:02:55.28] /i gi::setField {/tabGroup/outputOptionsTab/outputGroup/outputFormat} -value {OA} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[23:02:56.56] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLPESetup} -parent [gi::getWindows 4]]
+[23:02:57.84] /# xt::physicalVerification::executePve lpe 4
+[23:02:58.56] /r giWindowId 5
+[23:02:58.61] /r giWindowGeometry 800x600
+[23:03:25.37] /m Information: 
+              /c =============================
+              /c JobID: starrc_lpe_16
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[23:03:25.57] /r giWindowId 6
+[23:03:25.59] /r giWindowGeometry 1632x848
+[23:03:25.70] /i de::setActiveLPP [de::getLPPs "exclude blockage" -from [db::getAttr editDesign -of [de::getContexts -window 6]]]
+[23:05:57.33] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[23:05:57.56] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x108+811+470
+[23:05:58.94] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[23:05:58.99] /i exit
+[23:05:59.24] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[23:05:59.35] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x155+741+388
+[23:06:00.66] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[23:06:00.84] /i gi::setActiveWindow 5
+[23:06:00.84] /i gi::setActiveWindow 5 -raise true
+[23:06:01.29] /i gi::setActiveWindow 4
+[23:06:01.29] /i gi::setActiveWindow 4 -raise true
+[23:06:01.43] /i gi::setActiveWindow 2
+[23:06:01.44] /i gi::setActiveWindow 2 -raise true
+[23:06:01.81] /i gi::setActiveWindow 3
+[23:06:01.82] /i gi::setActiveWindow 3 -raise true
+[23:06:01.91] /i gi::setActiveWindow 1
+[23:06:01.93] /i gi::setActiveWindow 1 -raise true
+[23:06:02.93] /o Shutdown time: Tue Apr 21 23:06:02 2026
+[23:06:02.93] /o Elapsed session real time: 12.31 minutes
+[23:06:02.93] /o Session terminated. Log is at /root/Excercise/Noise_Margins/nmos/h2/synopsys_custom/logs/ccompiler.root.2026_4_21_225336_3239.log

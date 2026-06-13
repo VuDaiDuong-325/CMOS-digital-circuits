@@ -1,0 +1,35 @@
+****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******
+ Input File: tb_h1.sp
+ lic:
+ lic: FLEXlm: SDK_11.6.9.3
+ lic: USER:   root                 HOSTNAME: localhost.localdomain
+ lic: HOSTID: 1234567890ab         PID:      4905
+ lic: Using FLEXlm license file:
+ lic: 27000@localhost
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost
+ lic:
+ init: begin read circuit files, cpu clock= 3.40E-01
+       option search = /usr/synopsys/hspice/N-2017.12-SP2/hspice/parts/
+                         ad
+       option runlvl
+       option post =     1.00
+       option parhier = local
+       option post =     1.00
+       option nomod
+ init: end read circuit files, cpu clock= 3.40E-01 peak memory=     260 mb
+ init: begin check errors, cpu clock= 3.40E-01
+  **warning**  No DC path to ground from node        1:                       2:
+ init: end check errors, cpu clock= 3.40E-01 peak memory=     260 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 3.40E-01
+       establish matrix -- done, cpu clock= 3.40E-01 peak memory=     260 mb
+       re-order matrix -- done, cpu clock= 3.40E-01 peak memory=     260 mb
+ init: end setup matrix, cpu clock= 3.40E-01 peak memory=     260 mb
+ output: tb_h1.sw0
+ sweep: dc dc0    begin, #sweeps= 121 cpu clock= 3.40E-01
+       establish matrix -- done, cpu clock= 3.40E-01 peak memory=     260 mb
+       re-order matrix -- done, cpu clock= 3.40E-01 peak memory=     260 mb
+ sweep: dc dc0    end, cpu clock= 3.40E-01 peak memory=     260 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

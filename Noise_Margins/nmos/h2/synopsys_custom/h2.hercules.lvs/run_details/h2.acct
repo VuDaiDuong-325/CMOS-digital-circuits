@@ -1,0 +1,11 @@
+n_3t
+	Cell Level Device Counts
+		NMOS[N] = 1
+	Flat Device Counts
+		NMOS[N] = 1
+h2
+	Cell Level Device Counts
+		NMOS[N] = 0
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = h2  *******
+		NMOS[N] = 3
