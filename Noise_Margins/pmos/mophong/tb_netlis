@@ -1,0 +1,58 @@
+* ==========================================
+* TESTBENCH KHAO SAT PMOS TRUYỀN MỨC "0" KÉM 
+* (Cố định Bulk ở 1.2V, quét áp kéo qua trở)
+* ==========================================
+
+* 1. Gọi thư viện công nghệ PDK
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc' 
+
+* 2. Gọi file ký sinh SPF của PMOS
+.include '/root/lab1vlsi/synopsys_custom/pmos.starrc.lpe/pmos.SPF'
+
+* ==========================================
+* 3. KHAI BÁO CÁC NGUỒN GLOBAL VÀ NGUỒN SWEEP
+* ==========================================
+* Cố định mạng vdd! ở 1.2V. 
+* Do Bulk nối với vdd! bên trong SPF, Bulk sẽ luôn = 1.2V (Loại bỏ Body Effect)
+V_VDD  vdd!   0  1.2V
+
+* Cố định mạng gnd! ở 0V (Bên trong SPF, Gate và Drain bám vào mạng này)
+V_GND  gnd!   0  0V
+
+* TẠO MỚI: Nguồn độc lập dùng để quét (Sweep Source)
+* Khởi tạo tạm ở 1.2V, lệnh .dc bên dưới sẽ thay đổi giá trị này
+V_SWEEP n_sweep 0 1.2V
+
+* Điện trở kéo 10 kOhm nối từ node Vs lên nguồn quét n_sweep
+R_pullup vs n_sweep 10K
+
+* ==========================================
+* 4. GỌI KHỐI PMOS_DUT TỪ FILE SPF
+* ==========================================
+* Theo file SPF: Tên subckt là "pmos", có 1 chân "S" (Source)
+X_DUT_1  vs  pmos
+
+* ==========================================
+* 5. PHẦN QUÉT THÔNG SỐ (DC SWEEP)
+* ==========================================
+* Quét nguồn biến thiên V_SWEEP từ 0V đến 1.2V với bước nhảy 0.01V
+* (Nguồn V_VDD cấp cho Bulk vẫn sẽ đứng im ở 1.2V)
+.dc V_SWEEP 0 1.2 0.01
+
+* ==========================================
+* 6. PHẦN ĐO ĐẠC VÀ XUẤT ĐỒ THỊ
+* ==========================================
+* Đo điện áp bị ghim tại node Vs khi nguồn kéo đạt 1.2V
+.meas dc V_weak_zero FIND v(vs) AT=1.2
+
+* Vẽ đồ thị: Đầu ra Vs và Nguồn kéo n_sweep
+.probe dc V_out_Source = par('v(vs)')
+.probe dc V_in_Pullup = par('v(n_sweep)')
+
+* ==========================================
+* 7. CẤU HÌNH HỆ THỐNG
+* ==========================================
+.option post=2 nomod autostop
+.option post_version=9601
+
+.end

@@ -1,0 +1,202 @@
+ ****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: tb_netlis                                                         
+  Command line options: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice tb_netlis -o tb_netlis.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.3 
+ lic: USER:   root                 HOSTNAME: localhost.localdomain 
+ lic: HOSTID: 1234567890ab         PID:      1996 
+ lic: Using FLEXlm license file: 
+ lic: 27000@localhost 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost 
+ lic:   
+1****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+ ******  
+ * ==========================================
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x_dut_1.                        pmos               1.00 
+  **warning** (tb_netlis:20) Both nodes of element v_gnd are connected together; Line ignored.
+  
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(tb_netlis:17)v_vdd                   0:vdd!             defined in subckt 0                     0:0                defined in subckt 0               
+             
+ Warning:'No DC path nodes' occurs 11 times
+ No DC path from the following nodes,connected with gdcpath:
+ ------------------------------
+ |Node             |Subckt    |
+ |-----------------+----------|
+ |x_dut_1.ln_n_10:1|pmos      |
+ |x_dut_1.ln_n_12:2|pmos      |
+ |x_dut_1.ln_n_12:3|pmos      |
+ |x_dut_1.ln_n_12:4|pmos      |
+ |x_dut_1.ln_n_13:1|pmos      |
+ |x_dut_1.ln_n_13:4|pmos      |
+ |x_dut_1.ln_n_14:1|pmos      |
+ |x_dut_1.ln_n_14:2|pmos      |
+ |x_dut_1.ln_n_15:1|pmos      |
+ |x_dut_1.ln_n_15:3|pmos      |
+ ------------------------------
+              
+             
+ Warning:'1 connection nodes' occurs 20 times
+ Summary of 1 connection from the following nodes:
+ ------------------------------
+ |Node             |Subckt    |
+ |-----------------+----------|
+ |x_dut_1.gnd!:20  |pmos      |
+ |x_dut_1.gnd!:23  |pmos      |
+ |x_dut_1.gnd!:4   |pmos      |
+ |x_dut_1.gnd!:5   |pmos      |
+ |x_dut_1.gnd!:8   |pmos      |
+ |x_dut_1.ln_n_12:1|pmos      |
+ |x_dut_1.ln_n_12:5|pmos      |
+ |x_dut_1.ln_n_12:6|pmos      |
+ |x_dut_1.ln_n_13:2|pmos      |
+ |x_dut_1.ln_n_13:3|pmos      |
+ ------------------------------
+              
+             
+ Warning:'No Tran path ' occurs 7 times
+ Summary of No Tran path from the following nodes:
+ ------------------------------
+ |Node             |Subckt    |
+ |-----------------+----------|
+ |x_dut_1.ln_n_12:2|pmos      |
+ |x_dut_1.ln_n_12:3|pmos      |
+ |x_dut_1.ln_n_12:4|pmos      |
+ |x_dut_1.ln_n_13:1|pmos      |
+ |x_dut_1.ln_n_13:4|pmos      |
+ |x_dut_1.ln_n_14:1|pmos      |
+ |x_dut_1.ln_n_14:2|pmos      |
+ ------------------------------
+              
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -------------------------------
+ |Node            |Device      |
+ |----------------+------------|
+ |x_dut_1.mm0:bulk|x_dut_1.mmm0|
+ -------------------------------
+              
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |0e+00  ~  1e-05|1         |1.1364    |
+ |1e-02  ~  1e-01|10        |11.3636   |
+ |1e-01  ~  1e+00|34        |38.6364   |
+ |1e+00  ~  1e+03|41        |46.5909   |
+ |1e+03  ~  1e+05|1         |1.1364    |
+ |1e+05  ~  1e+06|1         |1.1364    |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-20  ~  1e-19|1         |1.7544    |
+ |1e-19  ~  1e-18|12        |21.0526   |
+ |1e-18  ~  1e-17|17        |29.8246   |
+ |1e-17  ~  1e-16|23        |40.3509   |
+ |1e-16  ~  1e-15|4         |7.0175    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -----------------------------
+ |Element Type    |Number    |
+ |----------------+----------|
+ |Constant Res    |87        |
+ |Other Linear Res|1         |
+ |                |          |
+ |Constant Cap    |57        |
+ -----------------------------
+              
+  Opening plot unit= 15
+ file=tb_netlis.pa0
+
+ ******
+ * ==========================================
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+ v_weak_zero= 467.8096m
+
+          ***** job concluded
+ ******  
+ * ==========================================
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: 13th Gen Intel(R) Core(TM) i5-13500H
+ cpu MHz	: 3187.212
+  
+ OS:
+ Linux version 3.10.0-1160.59.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 23 16:47:03 UTC 2022
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =      77 # elements   =     148
+  # resistors   =      88 # capacitors =      57 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       1 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  dc sweep           0.01         121         243
+  readin             0.03
+  errchk             0.01
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        261.82 megabytes
+           total cpu time            0.07 seconds
+           total elapsed time        0.20 seconds
+           job started at     21:35:01 04/21/2026
+           job ended   at     21:35:01 04/21/2026
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.15(s)

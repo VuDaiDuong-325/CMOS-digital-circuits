@@ -1,0 +1,51 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP2 (build May 31, ) ###
+### created at 21:35:03 on Tue Apr 21 2026 (Linux AMD64) ###
+### Host Name: localhost.localdomain   User ID: root   PID: 2192   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) HOME defined
+wv_resize_window {Custom WaveView} 842 502
+wv_move_window {Custom WaveView} {} 85 115
+wv_resize_window {Custom WaveView} 800 400
+wv_select_window {Custom WaveView} 
+wv_move_window {Custom WaveView} {} -10 20
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_move_window {FileDialog} {} 756 137
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {tb_netlis.sw0} 8
+wv_dclick_list_item {FileDialog} {} {FileList} {tb_netlis.sw0} 8
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlis.sw0(0)} {+sep=@}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlis.sw0(0)@toplevel(0)} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(n_sweep)} 5
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(n_sweep)} 5
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(vs)} 7
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(vs)} 7
+wv_drag_enter WV1
+wv_drag_to WV1 3 477
+wv_drop_on WV1
+wv_press_key "S" 177 738
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 80 121
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 104
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 104 133
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 132
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 132 139
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 162
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 163 136
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 189
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 0.728176 0.0253659
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/root/.cx_hostport/.cx_hostport_localhost.localdomain_2192'.
