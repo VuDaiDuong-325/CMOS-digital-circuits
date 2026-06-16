@@ -1,0 +1,138 @@
+ ****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: tb_netlist_dff                                                    
+  Command line options: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice tb_netlist_dff -o tb_netlist_dff.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.3 
+ lic: USER:   root                 HOSTNAME: localhost.localdomain 
+ lic: HOSTID: 1234567890ab         PID:      10420 
+ lic: Using FLEXlm license file: 
+ lic: 27000@localhost 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost 
+ lic:   
+1****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+ ******  
+ *******************************************************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             dff                1.00 
+        2 x1.xi10.                        inv                1.00 
+        3 x1.xi11.                        inv                1.00 
+        4 x1.xi8.                         dlatch             1.00 
+        5 x1.xi9.                         dlatch             1.00 
+        6 x1.xi8.xi6.                     nand2              1.00 
+        7 x1.xi8.xi5.                     nand2              1.00 
+        8 x1.xi8.xi3.                     nand2              1.00 
+        9 x1.xi8.xi4.                     nand2              1.00 
+       10 x1.xi8.xi7.                     inv                1.00 
+       11 x1.xi9.xi6.                     nand2              1.00 
+       12 x1.xi9.xi5.                     nand2              1.00 
+       13 x1.xi9.xi3.                     nand2              1.00 
+       14 x1.xi9.xi4.                     nand2              1.00 
+       15 x1.xi9.xi7.                     inv                1.00 
+  **info** (tb_netlist_dff:30) DC voltage reset to initial transient source value in source 0:vclk. new dc=0.0000D+00
+  **warning** (tb_netlist_dff:21) Both nodes of element vss are connected together; Line ignored.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=tb_netlist_dff.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ *******************************************************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:clk     =   0.       0:d       =   0.       0:q       = 560.8029m
+ + 0:qn      = 532.1849m  0:vdd!    =   1.2000   1:net29   =   1.2000 
+ + 1:net34   =  50.3425u  1:net38   =  19.4304u  1:net39   =   1.1999 
+ + 4:net1    =   1.1999   4:net2    =  40.7866u  4:net3    =   1.1999 
+ + 5:net1    =   1.2000   5:net2    =   1.1999   5:net3    =   1.1999 
+ + 6:net1    =  92.1599m  7:net1    =  26.5733u  8:net1    =  46.3557u
+ + 9:net1    =  31.3511u 11:net1    =  41.4987m 12:net1    = 974.9040m
+ +13:net1    =  92.1746m 14:net1    = 480.0815m
+
+ ******
+ *******************************************************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ trise_q=  37.2066p  targ=  25.1020n   trig=  25.0648n
+ tfall_q=  30.4256p  targ=  15.1217n   trig=  15.0913n
+ trise_qn=  42.8356p  targ=  15.1078n   trig=  15.0650n
+ tfall_qn=  32.4806p  targ=  25.1172n   trig=  25.0847n
+
+          ***** job concluded
+ ******  
+ *******************************************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: 13th Gen Intel(R) Core(TM) i5-13500H
+ cpu MHz	: 3187.212
+  
+ OS:
+ Linux version 3.10.0-1160.59.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 23 16:47:03 UTC 2022
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     104 # elements   =      45
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      40 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          13
+  transient          0.22      100001        3083        1140 rev=       111
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        261.82 megabytes
+           total cpu time            0.26 seconds
+           total elapsed time        0.30 seconds
+           job started at     21:34:56 06/09/2026
+           job ended   at     21:34:56 06/09/2026
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.14(s)

@@ -1,0 +1,72 @@
+*******************************************************
+* 1-Bit Full Adder Testbench - Truth Table Verification
+*******************************************************
+
+.option post=2 nomod
+.temp 25
+
+* Cài đặt biến VDD (có thể đổi thành 1.8V hoặc 1.2V tùy công nghệ)
+.param vdd_val = 1.2
+
+*******************************************************
+* 1. Include model và netlist pre-layout
+*******************************************************
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+.include '/root/lab1vlsi/lab2/prelayoutfulladder/full_adder_2b_full_adder.sp'
+
+*******************************************************
+* 2. Khai báo nguồn DC
+*******************************************************
+VDD vdd! 0 vdd_val
+VSS gnd! 0 0
+
+*******************************************************
+* 3. Input Stimulus (Tạo 8 trạng thái bảng chân trị)
+* * Phân bổ thời gian để quét đủ từ 000 -> 111:
+* - Cin quét nhanh nhất (chu kỳ 10ns, đổi trạng thái mỗi 5ns)
+* - B chậm hơn 1 bậc (chu kỳ 20ns, đổi trạng thái mỗi 10ns)
+* - A chậm nhất (chu kỳ 40ns, đổi trạng thái mỗi 20ns)
+*******************************************************
+
+* Cấu trúc: PULSE(Vlow Vhigh Tdelay Trise Tfall Ton Tperiod)
+VA   a   0 PULSE (0 vdd_val 0 20p 20p 20n 40n)
+VB   b   0 PULSE (0 vdd_val 0 20p 20p 10n 20n)
+VCIN cin 0 PULSE (0 vdd_val 0 20p 20p 5n  10n)
+
+*******************************************************
+* 4. Gọi khối DUT (Device Under Test)
+* LƯU Ý: Phải khớp tuyệt đối thứ tự chân trong .sp: a b cin cout s
+*******************************************************
+X1 a b cin cout s full_adder
+
+*******************************************************
+* 5. Tải ngõ ra (Output Load)
+*******************************************************
+Cload_s    s    0 10f
+Cload_cout cout 0 10f
+
+*******************************************************
+* 6. Thiết lập thời gian mô phỏng & Đo đạc cơ bản
+*******************************************************
+* Chạy 40ns là đủ 8 trường hợp, chạy đến 45ns để nhìn rõ chu kỳ cuối
+.tran 1p 45n
+
+* Các lệnh đo Rise/Fall time (lấy ở chu kỳ đầu tiên)
+.measure tran trise_s TRIG v(s) VAL='0.1*vdd_val' RISE=1
++                     TARG v(s) VAL='0.9*vdd_val' RISE=1
+
+.measure tran tfall_s TRIG v(s) VAL='0.9*vdd_val' FALL=1
++                     TARG v(s) VAL='0.1*vdd_val' FALL=1
+
+.measure tran trise_cout TRIG v(cout) VAL='0.1*vdd_val' RISE=1
++                        TARG v(cout) VAL='0.9*vdd_val' RISE=1
+
+.measure tran tfall_cout TRIG v(cout) VAL='0.9*vdd_val' FALL=1
++                        TARG v(cout) VAL='0.1*vdd_val' FALL=1
+
+*******************************************************
+* 7. Xuất dạng sóng
+*******************************************************
+.probe v(a) v(b) v(cin) v(s) v(cout)
+
+.end

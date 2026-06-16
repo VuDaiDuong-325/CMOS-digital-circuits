@@ -1,0 +1,152 @@
+ ****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: tb_netlist_fa2b                                                   
+  Command line options: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice tb_netlist_fa2b -o tb_netlist_fa2b.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.3 
+ lic: USER:   root                 HOSTNAME: localhost.localdomain 
+ lic: HOSTID: 1234567890ab         PID:      1521 
+ lic: Using FLEXlm license file: 
+ lic: 27000@localhost 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost 
+ lic:   
+1****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+ ******  
+ *******************************************************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xuut.                           full_adder_2b      1.00 
+        2 xuut.xi1.                       full_adder         1.00 
+        3 xuut.xi0.                       full_adder         1.00 
+        4 xuut.xi1.xi8.                   nand2              1.00 
+        5 xuut.xi1.xi7.                   nand2              1.00 
+        6 xuut.xi1.xi6.                   nand2              1.00 
+        7 xuut.xi1.xi5.                   nand2              1.00 
+        8 xuut.xi1.xi4.                   nand2              1.00 
+        9 xuut.xi1.xi3.                   nand2              1.00 
+       10 xuut.xi1.xi2.                   nand2              1.00 
+       11 xuut.xi1.xi1.                   nand2              1.00 
+       12 xuut.xi1.xi0.                   nand2              1.00 
+       13 xuut.xi0.xi8.                   nand2              1.00 
+       14 xuut.xi0.xi7.                   nand2              1.00 
+       15 xuut.xi0.xi6.                   nand2              1.00 
+       16 xuut.xi0.xi5.                   nand2              1.00 
+       17 xuut.xi0.xi4.                   nand2              1.00 
+       18 xuut.xi0.xi3.                   nand2              1.00 
+       19 xuut.xi0.xi2.                   nand2              1.00 
+       20 xuut.xi0.xi1.                   nand2              1.00 
+       21 xuut.xi0.xi0.                   nand2              1.00 
+  **warning** (tb_netlist_fa2b:20) Both nodes of element v_gnd are connected together; Line ignored.
+  **info** (tb_netlist_fa2b:38) DC voltage reset to initial transient source value in source 0:va0. new dc=0.1800D+01
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=tb_netlist_fa2b.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ *******************************************************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a0      =   1.8000   0:a1      =   1.8000   0:b0      =   1.8000 
+ + 0:b1      =   1.8000   0:cin     =   1.8000   0:cout    =   1.7997 
+ + 0:s0      =   1.7997   0:s1      =   1.7997   0:vdd!    =   1.8000 
+ + 1:net10   =   1.7988   2:net32   =   1.7994   2:net33   = 399.5006u
+ + 2:net34   =   1.7986   2:net35   = 428.5658u  2:net36   = 455.8496u
+ + 2:net37   =   1.7992   2:net38   =   1.7990   3:net32   =   1.7994 
+ + 3:net33   = 398.8541u  3:net34   =   1.7986   3:net35   = 428.5658u
+ + 3:net36   = 455.8488u  3:net37   =   1.7992   3:net38   =   1.7990 
+ + 4:net32   = 298.1827u  5:net32   =   1.4970   6:net32   =   1.4977 
+ + 7:net32   = 251.5667u  8:net32   = 269.6945u  9:net32   = 251.7758u
+ +10:net32   = 284.3320u 11:net32   = 252.0563u 12:net32   =   1.4980 
+ +13:net32   = 298.1823u 14:net32   =   1.4969  15:net32   =   1.4977 
+ +16:net32   = 251.8301u 17:net32   = 269.5025u 18:net32   = 251.7758u
+ +19:net32   = 284.3320u 20:net32   = 252.0563u 21:net32   =   1.4980 
+
+ ******
+ *******************************************************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ trise_s0= 130.7511p  targ=   1.1832n   trig=   1.0525n
+ tfall_s0=  94.4986p  targ= 129.9431p   trig=  35.4444p
+ trise_s1= 135.5576p  targ=   3.2172n   trig=   3.0816n
+ tfall_s1=  92.2160p  targ= 150.7164p   trig=  58.5004p
+ trise_cout= 129.8908p  targ=  11.2180n   trig=  11.0881n
+ tfall_cout=  94.1806p  targ= 126.6171p   trig=  32.4365p
+
+          ***** job concluded
+ ******  
+ *******************************************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: 13th Gen Intel(R) Core(TM) i5-13500H
+ cpu MHz	: 3187.190
+  
+ OS:
+ Linux version 3.10.0-1160.59.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 23 16:47:03 UTC 2022
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     187 # elements   =      81
+  # resistors   =       0 # capacitors =       3 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      72 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          12
+  transient          0.54        4001        4698        1586 rev=       175
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        261.86 megabytes
+           total cpu time            0.57 seconds
+           total elapsed time        0.46 seconds
+           job started at     14:21:37 04/28/2026
+           job ended   at     14:21:37 04/28/2026
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.12(s)

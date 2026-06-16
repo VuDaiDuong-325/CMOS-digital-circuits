@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12-SP2 linux64"
+* "format" "HSP"
+* "rundate" "19:42:13 04/27/2026 "
+* "netlist" "netlist.final "
+* "runtitle" "* hspice netlist - nand2 functional verification (with load capacitor)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.8000        
++ b =   1.8000        
++ net5 = 181.2850u       
++ vdd! =   1.8000        
++ y = 252.4056u       
+***   END: Saved Operating Point ***                     

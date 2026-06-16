@@ -1,0 +1,44 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP2 (build May 31, ) ###
+### created at 23:04:05 on Tue Jun  9 2026 (Linux AMD64) ###
+### Host Name: localhost.localdomain   User ID: root   PID: 20982   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) HOME defined
+sx_open_sim_file_read {tb_netlist_jkff.tr0}
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.Configuration}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_jkff.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_jkff.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 5
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 5
+wv_select_list_item {Custom WaveView} {} {sigview} {v(j)} 6
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(j)} 6
+wv_select_list_item {Custom WaveView} {} {sigview} {v(k)} 7
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(k)} 7
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q)} 8
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q)} 8
+wv_select_list_item {Custom WaveView} {} {sigview} {v(qn)} 9
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(qn)} 9
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.Configuration}
+wv_press_tool_button {Custom WaveView} {} {WVPreferences} 
+wv_move_window {Preference Settings} {} 475 158
+wv_select_dialog {Preference Settings} 
+wv_set_radion {Preference Settings} {} {CanvasBackground:White} 
+wv_press_button {Preference Settings} {} {Preference.OK} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Grid Display} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Grid Display} 
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL3:1 1.07053e-08 0.366102
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {PanelPopMenu.Dump Screen} 
+wv_move_window {SaveScreenDump} {} 746 381
+wv_select_dialog {SaveScreenDump} 
+wv_press_button {SaveScreenDump} {} {SaveToFileBrowse} 
+wv_move_window {FileDialog} {} 784 293
+wv_select_dialog {FileDialog} 
+wv_set_text {FileDialog} {} {FileName} "jkff"
+wv_press_button {FileDialog} {} {Ok} 
+wv_select_dialog {SaveScreenDump} 
+wv_press_button {SaveScreenDump} {} {Save} 

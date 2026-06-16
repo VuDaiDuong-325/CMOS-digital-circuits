@@ -1,0 +1,175 @@
+ ****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: tb_netlist_jkff_counter_2b                                        
+  Command line options: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice tb_netlist_jkff_counter_2b -o tb_netlist_jkff_counter_2b.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.3 
+ lic: USER:   root                 HOSTNAME: localhost.localdomain 
+ lic: HOSTID: 1234567890ab         PID:      26777 
+ lic: Using FLEXlm license file: 
+ lic: 27000@localhost 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost 
+ lic:   
+1****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+ ******  
+ *******************************************************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             counter_2b         1.00 
+        2 x1.xi1.                         jkff               1.00 
+        3 x1.xi0.                         jkff               1.00 
+        4 x1.xi1.xi0.                     dff                1.00 
+        5 x1.xi1.xi3.                     nand2              1.00 
+        6 x1.xi1.xi2.                     nand2              1.00 
+        7 x1.xi1.xi1.                     nand2              1.00 
+        8 x1.xi1.xi4.                     inv                1.00 
+        9 x1.xi0.xi0.                     dff                1.00 
+       10 x1.xi0.xi3.                     nand2              1.00 
+       11 x1.xi0.xi2.                     nand2              1.00 
+       12 x1.xi0.xi1.                     nand2              1.00 
+       13 x1.xi0.xi4.                     inv                1.00 
+       14 x1.xi1.xi0.xi10.                inv                1.00 
+       15 x1.xi1.xi0.xi11.                inv                1.00 
+       16 x1.xi1.xi0.xi8.                 dlatch             1.00 
+       17 x1.xi1.xi0.xi9.                 dlatch             1.00 
+       18 x1.xi0.xi0.xi10.                inv                1.00 
+       19 x1.xi0.xi0.xi11.                inv                1.00 
+       20 x1.xi0.xi0.xi8.                 dlatch             1.00 
+       21 x1.xi0.xi0.xi9.                 dlatch             1.00 
+       22 x1.xi1.xi0.xi8.xi6.             nand2              1.00 
+       23 x1.xi1.xi0.xi8.xi5.             nand2              1.00 
+       24 x1.xi1.xi0.xi8.xi3.             nand2              1.00 
+       25 x1.xi1.xi0.xi8.xi4.             nand2              1.00 
+       26 x1.xi1.xi0.xi8.xi7.             inv                1.00 
+       27 x1.xi1.xi0.xi9.xi6.             nand2              1.00 
+       28 x1.xi1.xi0.xi9.xi5.             nand2              1.00 
+       29 x1.xi1.xi0.xi9.xi3.             nand2              1.00 
+       30 x1.xi1.xi0.xi9.xi4.             nand2              1.00 
+       31 x1.xi1.xi0.xi9.xi7.             inv                1.00 
+       32 x1.xi0.xi0.xi8.xi6.             nand2              1.00 
+       33 x1.xi0.xi0.xi8.xi5.             nand2              1.00 
+       34 x1.xi0.xi0.xi8.xi3.             nand2              1.00 
+       35 x1.xi0.xi0.xi8.xi4.             nand2              1.00 
+       36 x1.xi0.xi0.xi8.xi7.             inv                1.00 
+       37 x1.xi0.xi0.xi9.xi6.             nand2              1.00 
+       38 x1.xi0.xi0.xi9.xi5.             nand2              1.00 
+       39 x1.xi0.xi0.xi9.xi3.             nand2              1.00 
+       40 x1.xi0.xi0.xi9.xi4.             nand2              1.00 
+       41 x1.xi0.xi0.xi9.xi7.             inv                1.00 
+  **info** (tb_netlist_jkff_counter_2b:33) DC voltage reset to initial transient source value in source 0:vclk. new dc=0.0000D+00
+  **warning** (tb_netlist_jkff_counter_2b:27) Both nodes of element vss are connected together; Line ignored.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=tb_netlist_jkff_counter_2b.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ *******************************************************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:clk     =   0.       0:q0      =   1.4455n  0:q1      =   1.0000 
+ + 0:vdd!    =   1.2000   1:net2    =   1.1998   1:net7    = 632.3500u
+ + 2:net12   = 637.4063u  2:net15   =   1.2000   2:net18   =   1.1999 
+ + 2:net9    =   1.1999   3:net12   =   1.2000   3:net15   =  41.1008u
+ + 3:net18   = 592.2894u  3:net9    =   1.1999   4:net29   =  40.7830u
+ + 4:net34   =   1.2000   4:net38   =  19.4304u  4:net39   =   1.1999 
+ + 5:net1    =  92.5763m  6:net1    = 348.0343u  7:net1    = 974.5319m
+ + 9:net29   =  40.7830u  9:net34   =   1.2000   9:net38   =  19.4304u
+ + 9:net39   =   1.1999  10:net1    =  26.7298u 11:net1    =  92.5487m
+ +12:net1    =  46.3896u 16:net1    =  41.1150u 16:net2    =   1.1999 
+ +16:net3    =  15.5552u 17:net1    =   1.1999  17:net2    =   1.2000 
+ +17:net3    =  15.5477u 20:net1    =  41.1171u 20:net2    =   1.1999 
+ +20:net3    =  15.5587u 21:net1    =   1.1999  21:net2    =   1.2000 
+ +21:net3    =  15.5477u 22:net1    =  26.5724u 23:net1    =  46.3689u
+ +24:net1    =  26.7370u 25:net1    =  92.1533m 27:net1    = 296.6002u
+ +28:net1    =  92.1506m 29:net1    = 974.9249m 30:net1    = 946.8891m
+ +32:net1    =  26.5724u 33:net1    =  46.3689u 34:net1    =  26.7375u
+ +35:net1    =  92.1533m 37:net1    =  46.3535u 38:net1    =  92.1506m
+ +39:net1    = 974.9217m 40:net1    =   6.1797u
+
+ ******
+ *******************************************************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ trise_q0=  56.2645p  targ=   5.1231n   trig=   5.0668n
+ tfall_q0=  48.5730p  targ=  15.1385n   trig=  15.0899n
+ trise_q1= -35.0578n  targ=   8.3560p   trig=  35.0662n
+ tfall_q1=  41.7418p  targ=  15.1312n   trig=  15.0894n
+
+          ***** job concluded
+ ******  
+ *******************************************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: 13th Gen Intel(R) Core(TM) i5-13500H
+ cpu MHz	: 3187.212
+  
+ OS:
+ Linux version 3.10.0-1160.59.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 23 16:47:03 UTC 2022
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =     273 # elements   =     112
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     108 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          13
+  transient          0.61      100001        2870        1026 rev=       102
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        262.00 megabytes
+           total cpu time            0.64 seconds
+           total elapsed time        0.50 seconds
+           job started at     23:49:00 06/09/2026
+           job ended   at     23:49:00 06/09/2026
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.14(s)

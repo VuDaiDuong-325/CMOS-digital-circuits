@@ -1,0 +1,58 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP2 (build May 31, ) ###
+### created at 21:35:03 on Tue Jun  9 2026 (Linux AMD64) ###
+### Host Name: localhost.localdomain   User ID: root   PID: 10604   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) HOME defined
+sx_open_sim_file_read {tb_netlist_dff.tr0}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_dff.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_dff.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 4
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 4
+wv_select_list_item {Custom WaveView} {} {sigview} {v(d)} 5
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(d)} 5
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q)} 6
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q)} 6
+wv_select_list_item {Custom WaveView} {} {sigview} {v(qn)} 7
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(qn)} 7
+wv_select_window {Custom WaveView} 
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.Configuration}
+wv_press_tool_button {Custom WaveView} {} {WVPreferences} 
+wv_move_window {Preference Settings} {} 475 158
+wv_select_dialog {Preference Settings} 
+wv_set_radion {Preference Settings} {} {CanvasBackground:White} 
+wv_press_button {Preference Settings} {} {Preference.OK} 
+wv_select_window {Custom WaveView} 
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.Configuration}
+wv_press_tool_button {Custom WaveView} {} {WVPreferences} 
+wv_move_window {Preference Settings} {} 475 158
+wv_select_dialog {Preference Settings} 
+wv_select_pagelist_item {Preference Settings} {} {PreferenceGroup} { Waveview} 3
+wv_select_pagelist_item {Preference Settings} {} {PreferenceGroup} { Colors} 6
+wv_select_pagelist_item {Preference Settings} {} {PreferenceGroup} { Threshold} 7
+wv_select_pagelist_item {Preference Settings} {} {PreferenceGroup} { General} 0
+wv_select_pagelist_item {Preference Settings} {} {PreferenceGroup} { Readers} 1
+wv_select_pagelist_item {Preference Settings} {} {PreferenceGroup} { General} 0
+wv_press_button {Preference Settings} {} {Preference.Cancel} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL1:1 2.48517e-08 0.604027
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.File}
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL1:1 2.7027e-08 0.314094
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL2:1 2.84773e-08 0.378523
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {PanelPopMenu.Dump Screen} 
+wv_move_window {SaveScreenDump} {} 746 381
+wv_select_dialog {SaveScreenDump} 
+wv_set_check {SaveScreenDump} {} {UseMaxWVHeight} 1
+wv_set_check {SaveScreenDump} {} {UseMaxWVHeight} 0
+wv_set_radion {SaveScreenDump} {} {PNG} 
+wv_press_button {SaveScreenDump} {} {SaveToFileBrowse} 
+wv_move_window {FileDialog} {} 784 293
+wv_select_dialog {FileDialog} 
+wv_set_text {FileDialog} {} {FileName} "wv"
+wv_press_button {FileDialog} {} {Ok} 
+wv_select_dialog {SaveScreenDump} 
+wv_press_button {SaveScreenDump} {} {Save} 

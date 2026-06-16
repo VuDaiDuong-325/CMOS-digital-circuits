@@ -1,0 +1,92 @@
+*******************************************************
+* NAND2 Testbench - Corrected (Truth table + Timing)
+*******************************************************
+
+.option post=2 nomod
+.temp 25
+
+* Khai báo biến VDD để tự động hóa các mốc tính toán
+.param vdd_val = 1.2
+
+*******************************************************
+* Include model + netlist
+*******************************************************
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+.include '/root/lab1vlsi/lab2/netlistnand2/nand2_nand2.sp'
+
+*******************************************************
+* Power supply
+*******************************************************
+VDD vdd! 0 vdd_val
+VSS gnd! 0 0
+
+*******************************************************
+* Input stimulus (Đã thiết kế lại để dễ đo Delay)
+* 0 - 5n  : A=0, B=0 (Y=1)
+* 5 - 10n : A=1, B=0 (Y=1)
+* 10 - 15n: A=1, B=1 (Y=0) -> Tại 10ns: B lên 1, Y xuống 0 (Đo delay B->Y)
+* 15 - 20n: A=0, B=1 (Y=1) -> Tại 15ns: A xuống 0, Y lên 1 (Đo delay A->Y)
+* 20 - 25n: A=0, B=1 (Y=1) 
+* 25 - 30n: A=1, B=1 (Y=0) -> Tại 25ns: A lên 1, Y xuống 0 (Đo delay A->Y)
+* 30 - 35n: A=1, B=0 (Y=1) -> Tại 30ns: B xuống 0, Y lên 1 (Đo delay B->Y)
+*******************************************************
+
+* Cấu trúc: PULSE(V1 V2 Tdelay Trise Tfall Ton Tperiod)
+VA a 0 PULSE (0 vdd_val 5n 20p 20p 10n 20n)
+VB b 0 PULSE (0 vdd_val 10n 20p 20p 20n 40n)
+
+*******************************************************
+* DUT
+*******************************************************
+XU1 a b y nand2
+
+*******************************************************
+* Output load (Tải 10fF)
+*******************************************************
+CL y 0 10f
+
+*******************************************************
+* Simulation
+*******************************************************
+.tran 1p 40n
+
+*******************************************************
+* Measurements - Rise/Fall time (10% <-> 90% của VDD)
+*******************************************************
+
+* Đo Rise Time cho Y
+.measure tran trise_y TRIG v(y) VAL='0.1*vdd_val' RISE=1
++                     TARG v(y) VAL='0.9*vdd_val' RISE=1
+
+* Đo Fall Time cho Y
+.measure tran tfall_y TRIG v(y) VAL='0.9*vdd_val' FALL=1
++                     TARG v(y) VAL='0.1*vdd_val' FALL=1
+
+*******************************************************
+* Measurements - Propagation Delay (Mốc 50% của VDD)
+*******************************************************
+
+* 1. Đo Delay từ A -> Y (Khi B = 1)
+* Tại t=25ns: A(0->1) làm Y(1->0). Đây là tPD_HL của mạch theo A
+.measure tran tpd_hl_a TRIG v(a) VAL='0.5*vdd_val' RISE=2 
++                      TARG v(y) VAL='0.5*vdd_val' FALL=2
+
+* Tại t=15ns: A(1->0) làm Y(0->1). Đây là tPD_LH của mạch theo A
+.measure tran tpd_lh_a TRIG v(a) VAL='0.5*vdd_val' FALL=1 
++                      TARG v(y) VAL='0.5*vdd_val' RISE=1
+
+* 2. Đo Delay từ B -> Y (Khi A = 1)
+* Tại t=10ns: B(0->1) làm Y(1->0). Đây là tPD_HL của mạch theo B
+.measure tran tpd_hl_b TRIG v(b) VAL='0.5*vdd_val' RISE=1 
++                      TARG v(y) VAL='0.5*vdd_val' FALL=1
+
+* Tại t=30ns: B(1->0) làm Y(0->1). Đây là tPD_LH của mạch theo B
+.measure tran tpd_lh_b TRIG v(b) VAL='0.5*vdd_val' FALL=1 
++                      TARG v(y) VAL='0.5*vdd_val' RISE=2
+
+*******************************************************
+* Output waveform
+*******************************************************
+.probe v(a) v(b) v(y)
+
+.end

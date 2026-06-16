@@ -1,0 +1,97 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP2 (build May 31, ) ###
+### created at 23:49:07 on Tue Jun  9 2026 (Linux AMD64) ###
+### Host Name: localhost.localdomain   User ID: root   PID: 27045   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) HOME defined
+sx_open_sim_file_read {tb_netlist_jkff_counter_2b.tr0}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_jkff_counter_2b.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_jkff_counter_2b.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 3
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 3
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q1)} 5
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q1)} 5
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_press_tool_button {Custom WaveView} {waveview 1:1} {Waveview.CloseBtn} 
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
+wv_press_tool_button {Custom WaveView} {} {NewWaveView0} 
+wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1660 711
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 3
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 3
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q1)} 5
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q1)} 5
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.Configuration}
+wv_press_tool_button {Custom WaveView} {} {WVPreferences} 
+wv_move_window {Preference Settings} {} 475 158
+wv_select_dialog {Preference Settings} 
+wv_set_radion {Preference Settings} {} {CanvasBackground:White} 
+wv_press_button {Preference Settings} {} {Preference.OK} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Grid Display} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Grid Display} 
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL2:1 2.11602e-08 1.16182
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {PanelPopMenu.Dump Screen} 
+wv_move_window {SaveScreenDump} {} 746 381
+wv_select_dialog {SaveScreenDump} 
+wv_press_button {SaveScreenDump} {} {SaveToFileBrowse} 
+wv_move_window {FileDialog} {} 784 293
+wv_select_dialog {FileDialog} 
+wv_set_text {FileDialog} {} {FileName} "counter_2b"
+wv_press_button {FileDialog} {} {Ok} 
+wv_select_dialog {SaveScreenDump} 
+wv_press_button {SaveScreenDump} {} {Save} 
+wv_press_tool_button {Custom WaveView} {} {NewWaveView0} 
+wv_press_tool_button {Custom WaveView} {} {OpenWaveformFile0} 
+wv_move_window {FileDialog} {} 756 139
+wv_move_window {FileDialog} {} 756 141
+wv_select_dialog {FileDialog} 
+wv_press_button {FileDialog} {} {Up} 
+wv_press_button {FileDialog} {} {Up} 
+wv_select_list_item {FileDialog} {} {FileList} {netlist_post} 8
+wv_dclick_list_item {FileDialog} {} {FileList} {netlist_post} 8
+wv_select_list_item {FileDialog} {} {FileList} {counter_2b} 2
+wv_dclick_list_item {FileDialog} {} {FileList} {counter_2b} 2
+wv_move_scrollbar {FileDialog} {} {FileList.HScrollBar} {111}
+wv_select_list_item {FileDialog} {} {FileList} {tb_netlist_counter_2b_post.tr0} 9
+wv_dclick_list_item {FileDialog} {} {FileList} {tb_netlist_counter_2b_post.tr0} 9
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D1:tb_netlist_counter_2b_post.tr0(1)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D1:tb_netlist_counter_2b_post.tr0(1)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 3
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(clk)} 3
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q1)} 5
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q1)} 5
+wv_select_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(q0)} 4
+wv_select_waveview 2 {waveview 2}
+wv_waveview_context_menu WV2.PANEL2:1 3.33553e-08 0.405054
+wv_select_waveview 2 {waveview 2}
+wv_select_menu_item {Custom WaveView} {waveview 2:2} {PanelPopMenu.Dump Screen} 
+wv_move_window {SaveScreenDump} {} 746 381
+wv_select_dialog {SaveScreenDump} 
+wv_press_button {SaveScreenDump} {} {SaveToFileBrowse} 
+wv_move_window {FileDialog} {} 784 293
+wv_select_dialog {FileDialog} 
+wv_press_button {FileDialog} {} {Up} 
+wv_press_button {FileDialog} {} {Up} 
+wv_select_list_item {FileDialog} {} {FileList} {netlist_post} 8
+wv_dclick_list_item {FileDialog} {} {FileList} {netlist_post} 8
+wv_select_list_item {FileDialog} {} {FileList} {counter_2b} 2
+wv_dclick_list_item {FileDialog} {} {FileList} {counter_2b} 2
+wv_set_text {FileDialog} {} {FileName} "counter_2bp"
+wv_press_button {FileDialog} {} {Ok} 
+wv_select_dialog {SaveScreenDump} 
+wv_press_button {SaveScreenDump} {} {Save} 

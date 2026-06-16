@@ -1,0 +1,77 @@
+*******************************************************
+* 2-Bit Synchronous Counter Testbench
+*******************************************************
+
+.option post=2 nomod
+.temp 25
+
+* Cài đặt biến VDD 1.2V
+.param vdd_val = 1.2
+
+* ÉP NGUỒN VÀO BÊN TRONG KHỐI SPICE
+.GLOBAL vdd! gnd!
+
+*******************************************************
+* 1. Include model và netlist
+*******************************************************
+* Đảm bảo đường dẫn model PDK là chính xác với máy của bạn
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+
+* Đường dẫn file netlist mạch đếm của bạn
+.include '/root/lab1vlsi/lab3/jkff/netlist_pre/counter_2b/jkff_counter_2b.sp'
+
+*******************************************************
+* 2. Khai báo nguồn DC
+*******************************************************
+VDD vdd! 0 vdd_val
+VSS gnd! 0 0
+
+*******************************************************
+* 3. Input Stimulus (Kích thích ngõ vào)
+*******************************************************
+* Mạch đếm chỉ cần cấp xung Clock (Chu kỳ 10ns, độ rộng 5ns)
+VCLK clk 0 PULSE (0 vdd_val 5n 20p 20p 5n 10n)
+
+*******************************************************
+* 4. Gọi khối DUT (Device Under Test)
+*******************************************************
+X1 clk q0 q1 counter_2b
+
+*******************************************************
+* 5. Tải ngõ ra (Output Load) & Khởi tạo trạng thái
+*******************************************************
+* Gắn tụ tải 10fF để mô phỏng giống với điều kiện thực tế
+Cload_q0 q0 0 10f
+Cload_q1 q1 0 10f
+
+* Ép trạng thái ban đầu (Initial Condition) để mạch bắt đầu từ 10
+.ic v(q0)=0 v(q1)=1
+
+*******************************************************
+* 6. Thiết lập thời gian mô phỏng & Đo đạc thời gian
+*******************************************************
+* Chạy 100ns (10 chu kỳ clock) để quan sát ít nhất 2 vòng lặp (40ns/vòng)
+.tran 1p 100n
+
+* 1. Đo Rise time tại cạnh lên đầu tiên của Q0
+.measure tran trise_q0 TRIG v(q0) VAL='0.1*vdd_val' RISE=1 
++                      TARG v(q0) VAL='0.9*vdd_val' RISE=1 
+
+* 2. Đo Fall time tại cạnh xuống đầu tiên của Q0
+.measure tran tfall_q0 TRIG v(q0) VAL='0.9*vdd_val' FALL=1 
++                      TARG v(q0) VAL='0.1*vdd_val' FALL=1 
+
+* 3. Đo Rise time tại cạnh lên đầu tiên của Q1
+.measure tran trise_q1 TRIG v(q1) VAL='0.1*vdd_val' RISE=1 
++                      TARG v(q1) VAL='0.9*vdd_val' RISE=1 
+
+* 4. Đo Fall time tại cạnh xuống đầu tiên của Q1
+.measure tran tfall_q1 TRIG v(q1) VAL='0.9*vdd_val' FALL=1 
++                      TARG v(q1) VAL='0.1*vdd_val' FALL=1 
+
+*******************************************************
+* 7. Xuất dạng sóng
+*******************************************************
+.probe v(clk) v(q1) v(q0)
+
+.end

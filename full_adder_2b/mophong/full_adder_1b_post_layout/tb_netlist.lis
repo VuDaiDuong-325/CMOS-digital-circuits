@@ -1,0 +1,1240 @@
+ ****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: tb_netlist                                                        
+  Command line options: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice tb_netlist -o tb_netlist.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.3 
+ lic: USER:   root                 HOSTNAME: localhost.localdomain 
+ lic: HOSTID: 1234567890ab         PID:      30881 
+ lic: Using FLEXlm license file: 
+ lic: 27000@localhost 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost 
+ lic:   
+1****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+ ******  
+ * hspice testbench cho 1-bit full adder (post-layout)
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             full_adder         1.00 
+ ******  
+ * hspice testbench cho 1-bit full adder (post-layout)
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: /root/lab1vlsi/PDK/hspice/reference_models.inc
+ Model line:          346
+ Model Name: n  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VERSION =    4.2 
+    TOXREF =  3e-09 
+    TOXE = 2.33e-09 
+    TOXP = 2.03e-09 
+    TOXM = 2.33e-09 
+    DTOX =  3e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR = 0.3235 
+    XJ = 1.5e-07 
+    VSAT = 9.706e+04 
+    A0 =  2.167 
+    AGS = 0.8235 
+    A1 = -0.5166 
+    A2 = 0.9523 
+    AT = 4.5e+04 
+    KETA = -0.03675 
+    NSUB =  6e+16 
+    NDEP = 8.369e+17 
+    NSD =  1e+20 
+    NGATE =  4e+20 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.3189 
+    KT1 = -0.2081 
+    KT1L =      0 
+    KT2 = -0.04464 
+    K2 = 0.009447 
+    K3 = -2.212 
+    K3B =  0.354 
+    LPE0 = 1.222e-07 
+    LPEB =      0 
+    DVTP0 =  4e-07 
+    DVTP1 =      2 
+    W0 =      0 
+    DVT0 =   13.9 
+    DVT1 =  5.692 
+    DVT2 = -1.143e-12 
+    DVT0W = -99.96 
+    DVT1W = 4.864e+06 
+    DVT2W = -0.07826 
+    DROUT =      0 
+    DSUB = 0.4885 
+    VTH0 = 0.2273 
+    EU =   1.67 
+    UA = -4.842e-10 
+    UA1 = 2.684e-09 
+    UB =  2e-18 
+    UB1 = -3.673e-18 
+    UC = 2.215e-10 
+    UC1 = -6.421e-11 
+    U0 = 0.04031 
+    UTE =  -1.73 
+    VOFF = -0.1061 
+    VOFFL =      0 
+    MINV = 0.0545 
+    FPROUT =    200 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA = 0.0075 
+    RDSW =    100 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 6.345e+04 
+    ETAB = 3.348e+04 
+    PCLM = 0.8927 
+    PDIBLC1 =      0 
+    PDIBLC2 = 0.0001763 
+    PDIBLCB =      0 
+    PSCBE1 = 9.264e+08 
+    PSCBE2 =  1e-20 
+    PVAG = -0.05627 
+    WR =      1 
+    DWG = -5.051e-08 
+    DWB = -8.395e-08 
+    XW = 1.5e-08 
+    XWREF = 1.5e-08 
+    XL = -3.5e-08 
+    XLREF = -3.5e-08 
+    B0 = -6.833e-08 
+    B1 = -1.218e-07 
+    ALPHA0 =      0 
+    ALPHA1 =   0.03 
+    AGIDL =  9e-08 
+    BGIDL = 2.3e+09 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =   0.53 
+    AIGC = 0.0103 
+    BIGC = 0.001525 
+    CIGC =      0 
+    AIGSD = 0.00845 
+    BIGSD = 0.0004021 
+    CIGSD = 0.001463 
+    AIGBACC = 0.01134 
+    BIGBACC = 0.003249 
+    CIGBACC = 0.1416 
+    AIGBINV =   0.35 
+    BIGBINV =   0.03 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      1 
+    NIGBACC =   4.05 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =    2.3 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =    8.7 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 6.514e-11 
+    CGDL = 6.514e-11 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.38e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC = 1.172e-08 
+    DLCIG = 2.5e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    1.2 
+    MOIN =   12.6 
+    NOFF =  1.686 
+    VOFFCV = -0.05472 
+    DMCG = 9.25e-08 
+    DMCI = 9.25e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000732 
+    TPB =  0.001 
+    TCJSW = 0.000357 
+    TPBSW = 0.0019 
+    TCJSWG = 0.000357 
+    TPBSWG = 0.0019 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LNFACTOR = 1.062e-06 
+    LA1 = 5.819e-08 
+    LKETA = 3.404e-08 
+    LK1 = 7.948e-08 
+    LK2 = -3.398e-08 
+    LVTH0 = -2.235e-08 
+    LUA = -6.01e-16 
+    LUC = -8.463e-17 
+    LU0 = 5.87e-09 
+    LPRWG = 2.732e-06 
+    LPRWB = -7.551e-07 
+    LETA0 = -0.01995 
+    LETAB = -0.01088 
+    WKETA = -1.405e-08 
+    WVTH0 = 2.468e-09 
+    WUA = 4.058e-16 
+    WUC = -4.983e-17 
+    WU0 = -1.953e-09 
+    WPRWB = 1.014e-05 
+    PNFACTOR = 3.446e-14 
+    PVSAT = -2.973e-09 
+    PKETA = 1.896e-15 
+    PK1 = 1.389e-15 
+    PK2 = -1e-15 
+    PVTH0 = -4.112e-15 
+    PUA = -6.55e-24 
+    PUB = 1.779e-31 
+    PUC = -2.958e-34 
+    PU0 = 2.289e-15 
+    PVOFF = 1.447e-15 
+    PRDSW = 3.812e-10 
+    PPRWG = 8.224e-12 
+    PPRWB = -2.572e-12 
+    PWR = -1.046e-12 
+    SA0 = 6.3e-07 
+    SB0 = 6.3e-07 
+    WLOD =  8e-07 
+    KU0 = -7.36e-08 
+    KVSAT =    0.2 
+    KVTH0 = 3.5e-09 
+    TKU0 =   0.01 
+    LLODKU0 =      1 
+    WLODKU0 =      1 
+    LLODVTH =      1 
+    WLODVTH =      1 
+    LKU0 = 4.027e-07 
+    WKU0 =  8e-07 
+    PKU0 = -2e-13 
+    LKVTH0 = -2.68e-11 
+    WKVTH0 = 1.5e-06 
+    PKVTH0 =      0 
+    STK2 = 1.35e-09 
+    LODK2 =    0.5 
+    STETA0 =      0 
+    LODETA0 =      1 
+    TNOM =  298.1 
+    CGSO = 1.209e-10 
+    CGDO = 1.209e-10 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   10.5 
+    JSS = 1.77e-07 
+    JSWS = 4.23e-13 
+    JSWGS =      0 
+    PBS =    0.5 
+    MJS =   0.25 
+    PBSWS =    0.8 
+    MJSWS =   0.01 
+    CJS = 0.00098 
+    CJSWS =  4e-11 
+    NJS =      1 
+    PBSWGS =   0.78 
+    MJSWGS =   0.52 
+    CJSWGS = 3.7e-10 
+    XTIS =      3 
+    JSD = 1.77e-07 
+    JSWD = 4.23e-13 
+    JSWGD =      0 
+    PBD =    0.5 
+    MJD =   0.25 
+    PBSWD =    0.8 
+    MJSWD =   0.01 
+    CJD = 0.00098 
+    CJSWD =  4e-11 
+    NJD =      1 
+    PBSWGD =   0.78 
+    MJSWGD =   0.52 
+    CJSWGD = 3.7e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = -1.287e-07 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = -1.227e-08 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 4.293e+24 
+    NOIB = 1.612e+24 
+    NOIC =   8.75 
+    EM = 1.192e+07 
+    EF = 0.8841 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ Model file: /root/lab1vlsi/PDK/hspice/reference_models.inc
+ Model line:          607
+ Model Name: p  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VERSION =    4.2 
+    TOXREF =  3e-09 
+    TOXE = 2.5e-09 
+    TOXP = 1.975e-09 
+    TOXM = 2.5e-09 
+    DTOX = 5.25e-10 
+    EPSROX =    3.9 
+    CDSC =  1e-12 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = -0.0001318 
+    NFACTOR =    0.5 
+    XJ = 1.7e-07 
+    VSAT = 3.77e+04 
+    A0 =  5.506 
+    AGS =  1.218 
+    A1 = -1.139e-07 
+    A2 =      1 
+    AT = 2.8e+05 
+    KETA = -0.02974 
+    NSUB =  6e+16 
+    NDEP = 1.72e+17 
+    NSD =  1e+20 
+    NGATE =  8e+19 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.1623 
+    KT1 = -0.2898 
+    KT1L =      0 
+    KT2 = -0.02958 
+    K2 = 0.01058 
+    K3 = -12.26 
+    K3B =  1.146 
+    LPE0 = 5.966e-07 
+    LPEB =  1e-07 
+    DVTP0 =      0 
+    DVTP1 =      0 
+    W0 = 4.976e-09 
+    DVT0 = 0.1239 
+    DVT1 = 0.1221 
+    DVT2 = -0.5358 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =   0.05 
+    DSUB = 0.1634 
+    VTH0 = -0.1647 
+    EU =      1 
+    UA = -2.764e-10 
+    UA1 = 4.215e-09 
+    UB = 2.014e-18 
+    UB1 = -8.025e-18 
+    UC = 8.649e-11 
+    UC1 = -6.421e-11 
+    U0 = 0.008392 
+    UTE = -1.198 
+    VOFF = -0.09684 
+    VOFFL =      0 
+    MINV =      0 
+    FPROUT =   1000 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA =   0.02 
+    RDSW =    160 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      0 
+    PRWB = 1.896e-16 
+    PRT =      0 
+    ETA0 =  0.085 
+    ETAB = -6.583e-10 
+    PCLM = 0.09455 
+    PDIBLC1 =      0 
+    PDIBLC2 =  0.005 
+    PDIBLCB =      0 
+    PSCBE1 = 9.264e+08 
+    PSCBE2 =  1e-20 
+    PVAG =      0 
+    WR =  4.853 
+    DWG = -8.023e-08 
+    DWB = -6.224e-08 
+    XW = 1.5e-08 
+    XWREF = 1.5e-08 
+    XL = -3.5e-08 
+    XLREF = -3.5e-08 
+    B0 = -5.549e-42 
+    B1 =      0 
+    ALPHA0 =      0 
+    ALPHA1 =   0.06 
+    AGIDL =  9e-08 
+    BGIDL = 2.3e+09 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =   0.53 
+    AIGC = 0.00606 
+    BIGC = 0.0007625 
+    CIGC =  1e-10 
+    AIGSD = 0.00459 
+    BIGSD =      0 
+    CIGSD = 0.002267 
+    AIGBACC = 0.01069 
+    BIGBACC = 0.003132 
+    CIGBACC = 0.1498 
+    AIGBINV =   0.35 
+    BIGBINV =   0.03 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      1 
+    NIGBACC =  4.049 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =    2.3 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =     12 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 1.896e-10 
+    CGDL = 1.896e-10 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.69e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC = 1.525e-08 
+    DLCIG = 2.5e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    1.2 
+    MOIN =  11.09 
+    NOFF =  2.175 
+    VOFFCV = -0.03885 
+    DMCG = 9.25e-08 
+    DMCI = 9.25e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000854 
+    TPB = 0.0019 
+    TCJSW = 0.000357 
+    TPBSW = 0.0019 
+    TCJSWG = 0.00312 
+    TPBSWG = 0.0019 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LCIT = 1.313e-09 
+    LAGS = 8.468e-07 
+    LKETA = -6.589e-08 
+    LK1 = -1.194e-10 
+    LK2 = 2.194e-08 
+    LVTH0 = 2.402e-08 
+    LUA = -2.621e-16 
+    LUB = -1.05e-25 
+    LUC = -6.27e-17 
+    LU0 = 1.696e-09 
+    LVOFF = 1.347e-08 
+    LPRWB = -9.343e-07 
+    LETAB = -2.045e-08 
+    LPCLM = 1.05e-06 
+    WVTH0 = -2.317e-08 
+    WUA = 1.042e-15 
+    WUC = -1.322e-16 
+    WU0 = 1.146e-09 
+    WPRWB = 4.937e-06 
+    PNFACTOR = 2.733e-13 
+    PVSAT = -9.545e-10 
+    PK1 = -1.487e-16 
+    PK2 =  1e-22 
+    PVTH0 = 9.589e-15 
+    PUA = 2.558e-23 
+    PUB = -1.331e-31 
+    PUC = 1.674e-23 
+    PU0 = -3.644e-16 
+    PVOFF = 5.229e-15 
+    PPRWB = -1.549e-31 
+    PWR = -6.867e-13 
+    SA0 = 6.3e-07 
+    SB0 = 6.3e-07 
+    WLOD =  8e-07 
+    KU0 = 1.325e-07 
+    KVSAT =   -0.9 
+    KVTH0 = -1.5e-09 
+    TKU0 =    0.1 
+    LLODKU0 =      1 
+    WLODKU0 =      1 
+    LLODVTH =      2 
+    WLODVTH =      1 
+    LKU0 = 1.33e-07 
+    WKU0 = 6.5e-07 
+    PKU0 =      0 
+    LKVTH0 = -1.68e-15 
+    WKVTH0 =  5e-07 
+    PKVTH0 =      0 
+    STK2 =  4e-10 
+    LODK2 =      2 
+    STETA0 =      0 
+    LODETA0 =      1 
+    TNOM =  298.1 
+    CGSO = 2.568e-11 
+    CGDO = 2.568e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   9.68 
+    JSS = 1.245e-07 
+    JSWS = 3.77e-13 
+    JSWGS =      0 
+    PBS =    0.8 
+    MJS =   0.36 
+    PBSWS =    0.8 
+    MJSWS =   0.01 
+    CJS = 0.00114 
+    CJSWS =  6e-11 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.99 
+    CJSWGS = 3.6e-10 
+    XTIS =      3 
+    JSD = 1.245e-07 
+    JSWD = 3.77e-13 
+    JSWGD =      0 
+    PBD =    0.8 
+    MJD =   0.36 
+    PBSWD =    0.8 
+    MJSWD =   0.01 
+    CJD = 0.00114 
+    CJSWD =  6e-11 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.99 
+    CJSWGD = 3.6e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = -9.028e-08 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 1.333e-10 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 1.635e+24 
+    NOIB = 7.241e+26 
+    NOIC =   8.75 
+    EM = 1.5e+08 
+    EF =   1.19 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+  **warning** (tb_netlist:22) Both nodes of element v_gnd are connected together; Line ignored.
+  **info** (tb_netlist:26) DC voltage reset to initial transient source value in source 0:va. new dc=0.1800D+01
+  
+             
+ Warning:'No DC path nodes' occurs 142 times
+ No DC path from the following nodes,connected with gdcpath:
+ --------------------------
+ |Node         |Subckt    |
+ |-------------+----------|
+ |x1.ln_n_190:1|full_adder|
+ |x1.ln_n_205:2|full_adder|
+ |x1.ln_n_205:4|full_adder|
+ |x1.ln_n_205:5|full_adder|
+ |x1.ln_n_206:2|full_adder|
+ |x1.ln_n_206:3|full_adder|
+ |x1.ln_n_206:4|full_adder|
+ |x1.ln_n_207:2|full_adder|
+ |x1.ln_n_211:2|full_adder|
+ |x1.ln_n_211:4|full_adder|
+ --------------------------
+              
+             
+ Warning:'1 connection nodes' occurs 282 times
+ Summary of 1 connection from the following nodes:
+ -----------------------
+ |Node      |Subckt    |
+ |----------+----------|
+ |x1.a:18   |full_adder|
+ |x1.a:20   |full_adder|
+ |x1.a:23   |full_adder|
+ |x1.a:24   |full_adder|
+ |x1.a:26   |full_adder|
+ |x1.a:27   |full_adder|
+ |x1.b:12   |full_adder|
+ |x1.b:15   |full_adder|
+ |x1.b:18   |full_adder|
+ |x1.b:20   |full_adder|
+ -----------------------
+              
+             
+ Warning:'No Tran path ' occurs 101 times
+ Summary of No Tran path from the following nodes:
+ --------------------------
+ |Node         |Subckt    |
+ |-------------+----------|
+ |x1.ln_n_205:2|full_adder|
+ |x1.ln_n_205:4|full_adder|
+ |x1.ln_n_205:5|full_adder|
+ |x1.ln_n_206:2|full_adder|
+ |x1.ln_n_206:3|full_adder|
+ |x1.ln_n_206:4|full_adder|
+ |x1.ln_n_207:2|full_adder|
+ |x1.ln_n_211:2|full_adder|
+ |x1.ln_n_211:4|full_adder|
+ --------------------------
+              
+      
+             
+ Warning:'Floating bulk' occurs 36 times
+ Summary of floating bulk:
+ -----------------------------
+ |Node           |Device     |
+ |---------------+-----------|
+ |x1.xi0|mm0:bulk|x1.mxi0|mm0|
+ |x1.xi0|mm1:bulk|x1.mxi0|mm1|
+ |x1.xi0|mm2:bulk|x1.mxi0|mm2|
+ |x1.xi0|mm3:bulk|x1.mxi0|mm3|
+ |x1.xi1|mm0:bulk|x1.mxi1|mm0|
+ |x1.xi1|mm1:bulk|x1.mxi1|mm1|
+ |x1.xi1|mm2:bulk|x1.mxi1|mm2|
+ |x1.xi1|mm3:bulk|x1.mxi1|mm3|
+ |x1.xi2|mm0:bulk|x1.mxi2|mm0|
+ |x1.xi2|mm1:bulk|x1.mxi2|mm1|
+ -----------------------------
+              
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-04  ~  1e-03|34        |3.2819    |
+ |1e-02  ~  1e-01|276       |26.6409   |
+ |1e-01  ~  1e+00|256       |24.7104   |
+ |1e+00  ~  1e+03|470       |45.3668   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |0e+00  ~  1e-24|1         |0.0553    |
+ |1e-24  ~  1e-23|22        |1.2161    |
+ |1e-23  ~  1e-22|29        |1.6031    |
+ |1e-22  ~  1e-21|7         |0.3870    |
+ |1e-21  ~  1e-20|10        |0.5528    |
+ |1e-20  ~  1e-19|112       |6.1913    |
+ |1e-19  ~  1e-18|389       |21.5036   |
+ |1e-18  ~  1e-17|698       |38.5849   |
+ |1e-17  ~  1e-16|524       |28.9663   |
+ |1e-16  ~  1e-15|15        |0.8292    |
+ |1e-14  ~  1e-13|2         |0.1106    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|1036      |
+ |            |          |
+ |Constant Cap|1809      |
+ -------------------------
+              
+  Opening plot unit= 15
+ file=tb_netlist.pa0
+
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ * hspice testbench cho 1-bit full adder (post-layout)
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   1.8000  0:b       =   1.8000  0:cin     =   1.8000 
+ +0:cout    =   1.7993  0:s       =   1.7993  0:vdd!    =   1.8000 
+ +1:a:1     =   1.8000  1:a:10    =   1.8000  1:a:11    =   1.8000 
+ +1:a:12    =   1.8000  1:a:13    =   1.8000  1:a:14    =   1.8000 
+ +1:a:15    =   1.8000  1:a:16    =   1.8000  1:a:17    =   1.8000 
+ +1:a:18    =   1.8000  1:a:19    =   1.8000  1:a:2     =   1.8000 
+ +1:a:20    =   1.8000  1:a:21    =   1.8000  1:a:22    =   1.8000 
+ +1:a:23    =   1.8000  1:a:24    =   1.8000  1:a:25    =   1.8000 
+ +1:a:26    =   1.8000  1:a:27    =   1.8000  1:a:28    =   1.8000 
+ +1:a:29    =   1.8000  1:a:3     =   1.8000  1:a:30    =   1.8000 
+ +1:a:4     =   1.8000  1:a:5     =   1.8000  1:a:6     =   1.8000 
+ +1:a:7     =   1.8000  1:a:8     =   1.8000  1:a:9     =   1.8000 
+ +1:b:1     =   1.8000  1:b:10    =   1.8000  1:b:11    =   1.8000 
+ +1:b:12    =   1.8000  1:b:13    =   1.8000  1:b:14    =   1.8000 
+ +1:b:15    =   1.8000  1:b:16    =   1.8000  1:b:17    =   1.8000 
+ +1:b:18    =   1.8000  1:b:19    =   1.8000  1:b:2     =   1.8000 
+ +1:b:20    =   1.8000  1:b:21    =   1.8000  1:b:22    =   1.8000 
+ +1:b:23    =   1.8000  1:b:24    =   1.8000  1:b:25    =   1.8000 
+ +1:b:26    =   1.8000  1:b:27    =   1.8000  1:b:28    =   1.8000 
+ +1:b:3     =   1.8000  1:b:4     =   1.8000  1:b:5     =   1.8000 
+ +1:b:6     =   1.8000  1:b:7     =   1.8000  1:b:8     =   1.8000 
+ +1:b:9     =   1.8000  1:cin:1   =   1.8000  1:cin:10  =   1.8000 
+ +1:cin:11  =   1.8000  1:cin:12  =   1.8000  1:cin:13  =   1.8000 
+ +1:cin:14  =   1.8000  1:cin:15  =   1.8000  1:cin:16  =   1.8000 
+ +1:cin:17  =   1.8000  1:cin:18  =   1.8000  1:cin:19  =   1.8000 
+ +1:cin:2   =   1.8000  1:cin:20  =   1.8000  1:cin:21  =   1.8000 
+ +1:cin:22  =   1.8000  1:cin:23  =   1.8000  1:cin:24  =   1.8000 
+ +1:cin:25  =   1.8000  1:cin:26  =   1.8000  1:cin:3   =   1.8000 
+ +1:cin:4   =   1.8000  1:cin:5   =   1.8000  1:cin:6   =   1.8000 
+ +1:cin:7   =   1.8000  1:cin:8   =   1.8000  1:cin:9   =   1.8000 
+ +1:cout:1  =   1.7993  1:cout:2  =   1.7993  1:cout:3  =   1.7993 
+ +1:cout:4  =   1.7993  1:cout:5  =   1.7993  1:cout:6  =   1.7993 
+ +1:cout:7  =   1.7993  1:cout:8  =   1.7993  1:cout:9  =   1.7993 
+ +1:gnd!:1  =   3.5573u 1:gnd!:10 =   3.3847u 1:gnd!:11 =   3.3888u
+ +1:gnd!:12 =   3.3977u 1:gnd!:13 =   3.1993u 1:gnd!:14 =   3.3634u
+ +1:gnd!:15 =   3.3634u 1:gnd!:16 =   3.1993u 1:gnd!:17 =   3.3275u
+ +1:gnd!:18 =   3.3316u 1:gnd!:19 =   3.1422u 1:gnd!:2  =   3.5001u
+ +1:gnd!:20 =   3.3062u 1:gnd!:21 =   3.3062u 1:gnd!:22 =   3.2951u
+ +1:gnd!:23 =   3.3010u 1:gnd!:24 =   3.3138u 1:gnd!:25 =   3.0274u
+ +1:gnd!:26 =   3.2643u 1:gnd!:27 =   3.2643u 1:gnd!:28 =   3.2014u
+ +1:gnd!:29 =   3.2096u 1:gnd!:3  =   3.5443u 1:gnd!:30 =   2.8298u
+ +1:gnd!:31 =   3.1586u 1:gnd!:32 =   3.1586u 1:gnd!:33 =   2.8891u
+ +1:gnd!:34 =   2.8973u 1:gnd!:35 =   2.9150u 1:gnd!:36 =   2.5172u
+ +1:gnd!:37 =   2.8463u 1:gnd!:38 =   2.8463u 1:gnd!:39 =   2.3696u
+ +1:gnd!:4  =   3.5472u 1:gnd!:40 =   2.3758u 1:gnd!:41 =   2.0896u
+ +1:gnd!:42 =   2.3374u 1:gnd!:43 =   2.3374u 1:gnd!:44 =   1.9473u
+ +1:gnd!:45 =   1.9556u 1:gnd!:46 =   1.9733u 1:gnd!:47 =   1.5752u
+ +1:gnd!:48 =   1.9045u 1:gnd!:49 =   1.9045u 1:gnd!:5  =   3.2352u
+ +1:gnd!:50 =   1.1315u 1:gnd!:51 =   1.1356u 1:gnd!:52 = 945.7503n
+ +1:gnd!:53 =   1.1101u 1:gnd!:54 =   1.1101u 1:gnd!:55 = 550.0222n
+ +1:gnd!:56 = 556.4655n 1:gnd!:57 = 570.3507n 1:gnd!:58 = 258.7869n
+ +1:gnd!:59 = 516.5173n 1:gnd!:6  =   2.6303u 1:gnd!:60 = 516.5173n
+ +1:gnd!:61 =   3.3405u 1:gnd!:62 =   3.2273u 1:gnd!:63 =   2.3892u
+ +1:gnd!:64 =   1.1445u 1:gnd!:65 =   3.3675u 1:gnd!:66 =   3.3103u
+ +1:gnd!:67 =   3.2702u 1:gnd!:68 =   3.1668u 1:gnd!:69 =   2.8545u
+ +1:gnd!:7  =   2.2937u 1:gnd!:70 =   2.3436u 1:gnd!:71 =   1.9127u
+ +1:gnd!:72 =   1.1142u 1:gnd!:73 = 522.9605n 1:gnd!:74 =   3.5573u
+ +1:gnd!:75 =   3.5001u 1:gnd!:76 =   3.5443u 1:gnd!:77 =   3.5472u
+ +1:gnd!:78 =   3.2352u 1:gnd!:79 =   2.6303u 1:gnd!:8  =   1.3044u
+ +1:gnd!:80 =   2.2937u 1:gnd!:81 =   1.3044u 1:gnd!:82 = 821.1178n
+ +1:gnd!:9  = 821.1178n 1:ln_n_190=   0.      1:ln_n_205=   0.     
+ +1:ln_n_205=   0.      1:ln_n_205=   0.      1:ln_n_205=   0.     
+ +1:ln_n_205=   0.      1:ln_n_205=   0.      1:ln_n_206=   0.     
+ +1:ln_n_206=   0.      1:ln_n_206=   0.      1:ln_n_206=   0.     
+ +1:ln_n_206=   0.      1:ln_n_207=   0.      1:ln_n_207=   0.     
+ +1:ln_n_207=   0.      1:ln_n_208=   0.      1:ln_n_208=   0.     
+ +1:ln_n_209=   0.      1:ln_n_209=   0.      1:ln_n_210=   0.     
+ +1:ln_n_210=   0.      1:ln_n_211=   0.      1:ln_n_211=   0.     
+ +1:ln_n_211=   0.      1:ln_n_211=   0.      1:ln_n_211=   0.     
+ +1:ln_n_211=   0.      1:ln_n_212=   0.      1:ln_n_212=   0.     
+ +1:ln_n_212=   0.      1:ln_n_212=   0.      1:ln_n_212=   0.     
+ +1:ln_n_213=   0.      1:ln_n_213=   0.      1:ln_n_213=   0.     
+ +1:ln_n_214=   0.      1:ln_n_214=   0.      1:ln_n_215=   0.     
+ +1:ln_n_215=   0.      1:ln_n_215=   0.      1:ln_n_216=   0.     
+ +1:ln_n_216=   0.      1:ln_n_216=   0.      1:ln_n_217=   0.     
+ +1:ln_n_217=   0.      1:ln_n_217=   0.      1:ln_n_217=   0.     
+ +1:ln_n_217=   0.      1:ln_n_218=   0.      1:ln_n_218=   0.     
+ +1:ln_n_218=   0.      1:ln_n_218=   0.      1:ln_n_218=   0.     
+ +1:ln_n_219=   0.      1:ln_n_219=   0.      1:ln_n_220=   0.     
+ +1:ln_n_220=   0.      1:ln_n_221=   0.      1:ln_n_221=   0.     
+ +1:ln_n_221=   0.      1:ln_n_221=   0.      1:ln_n_221=   0.     
+ +1:ln_n_221=   0.      1:ln_n_222=   0.      1:ln_n_222=   0.     
+ +1:ln_n_222=   0.      1:ln_n_222=   0.      1:ln_n_222=   0.     
+ +1:ln_n_222=   0.      1:ln_n_223=   0.      1:ln_n_223=   0.     
+ +1:ln_n_223=   0.      1:ln_n_223=   0.      1:ln_n_223=   0.     
+ +1:ln_n_224=   0.      1:ln_n_224=   0.      1:ln_n_224=   0.     
+ +1:ln_n_224=   0.      1:ln_n_224=   0.      1:ln_n_225=   0.     
+ +1:ln_n_225=   0.      1:ln_n_225=   0.      1:ln_n_226=   0.     
+ +1:ln_n_226=   0.      1:ln_n_227=   0.      1:ln_n_227=   0.     
+ +1:ln_n_227=   0.      1:ln_n_228=   0.      1:ln_n_228=   0.     
+ +1:ln_n_228=   0.      1:ln_n_228=   0.      1:ln_n_228=   0.     
+ +1:ln_n_229=   0.      1:ln_n_229=   0.      1:ln_n_230=   0.     
+ +1:ln_n_230=   0.      1:ln_n_231=   0.      1:ln_n_231=   0.     
+ +1:ln_n_232=   0.      1:ln_n_232=   0.      1:ln_n_232=   0.     
+ +1:ln_n_232=   0.      1:ln_n_232=   0.      1:ln_n_232=   0.     
+ +1:ln_n_233=   0.      1:ln_n_233=   0.      1:ln_n_234=   0.     
+ +1:ln_n_234=   0.      1:ln_n_234=   0.      1:ln_n_235=   0.     
+ +1:ln_n_235=   0.      1:ln_n_235=   0.      1:ln_n_236=   0.     
+ +1:ln_n_236=   0.      1:ln_n_236=   0.      1:ln_n_236=   0.     
+ +1:ln_n_236=   0.      1:ln_n_237=   0.      1:ln_n_237=   0.     
+ +1:ln_n_237=   0.      1:ln_n_237=   0.      1:ln_n_237=   0.     
+ +1:ln_n_238=   0.      1:ln_n_238=   0.      1:ln_n_239=   0.     
+ +1:ln_n_239=   0.      1:ln_n_239=   0.      1:ln_n_239=   0.     
+ +1:ln_n_239=   0.      1:ln_n_240=   0.      1:ln_n_240=   0.     
+ +1:ln_n_240=   0.      1:ln_n_241=   0.      1:ln_n_241=   0.     
+ +1:ln_n_242=   0.      1:ln_n_242=   0.      1:ln_n_242=   0.     
+ +1:ln_n_243=   0.      1:ln_n_243=   0.      1:ln_n_244=   0.     
+ +1:ln_n_244=   0.      1:ln_n_245=   0.      1:ln_n_245=   0.     
+ +1:ln_n_245=   0.      1:ln_n_245=   0.      1:ln_n_245=   0.     
+ +1:ln_n_245=   0.      1:ln_n_246=   0.      1:ln_n_246=   0.     
+ +1:ln_n_247=   0.      1:ln_n_247=   0.      1:ln_n_247=   0.     
+ +1:ln_n_247=   0.      1:ln_n_247=   0.      1:ln_n_248=   0.     
+ +1:ln_n_248=   0.      1:ln_n_249=   0.      1:ln_n_249=   0.     
+ +1:ln_n_249=   0.      1:ln_n_250=   0.      1:ln_n_250=   0.     
+ +1:ln_n_250=   0.      1:ln_n_251=   0.      1:ln_n_251=   0.     
+ +1:ln_n_251=   0.      1:ln_n_251=   0.      1:ln_n_251=   0.     
+ +1:ln_n_252=   0.      1:ln_n_252=   0.      1:ln_n_253=   0.     
+ +1:ln_n_253=   0.      1:ln_n_253=   0.      1:ln_n_253=   0.     
+ +1:ln_n_253=   0.      1:ln_n_253=   0.      1:ln_n_254=   0.     
+ +1:ln_n_254=   0.      1:ln_n_254=   0.      1:ln_n_254=   0.     
+ +1:ln_n_254=   0.      1:ln_n_254=   0.      1:ln_n_255=   0.     
+ +1:ln_n_255=   0.      1:ln_n_256=   0.      1:ln_n_256=   0.     
+ +1:ln_n_256=   0.      1:ln_n_257=   0.      1:ln_n_257=   0.     
+ +1:ln_n_257=   0.      1:ln_n_257=   0.      1:ln_n_257=   0.     
+ +1:ln_n_258=   0.      1:ln_n_258=   0.      1:ln_n_259=   0.     
+ +1:ln_n_259=   0.      1:ln_n_259=   0.      1:ln_n_259=   0.     
+ +1:ln_n_259=   0.      1:ln_n_260=   0.      1:ln_n_260=   0.     
+ +1:ln_n_260=   0.      1:ln_n_260=   0.      1:ln_n_260=   0.     
+ +1:ln_n_261=   0.      1:ln_n_261=   0.      1:ln_n_262=   0.     
+ +1:ln_n_262=   0.      1:ln_n_262=   0.      1:ln_n_263=   0.     
+ +1:ln_n_263=   0.      1:ln_n_263=   0.      1:ln_n_263=   0.     
+ +1:ln_n_263=   0.      1:ln_n_264=   0.      1:ln_n_264=   0.     
+ +1:ln_n_265=   0.      1:ln_n_265=   0.      1:ln_n_266=   0.     
+ +1:ln_n_266=   0.      1:ln_n_267=   0.      1:ln_n_267=   0.     
+ +1:ln_n_267=   0.      1:ln_n_267=   0.      1:ln_n_267=   0.     
+ +1:ln_n_267=   0.      1:ln_n_268=   0.      1:ln_n_268=   0.     
+ +1:ln_n_268=   0.      1:ln_n_268=   0.      1:ln_n_268=   0.     
+ +1:ln_n_269=   0.      1:ln_n_269=   0.      1:ln_n_270=   0.     
+ +1:ln_n_270=   0.      1:ln_n_270=   0.      1:ln_n_270=   0.     
+ +1:ln_n_270=   0.      1:ln_n_271=   0.      1:ln_n_271=   0.     
+ +1:ln_n_271=   0.      1:ln_n_271=   0.      1:ln_n_271=   0.     
+ +1:ln_n_272=   0.      1:ln_n_272=   0.      1:ln_n_272=   0.     
+ +1:ln_n_272=   0.      1:ln_n_272=   0.      1:ln_n_273=   0.     
+ +1:ln_n_273=   0.      1:ln_n_274=   0.      1:ln_n_274=   0.     
+ +1:ln_n_275=   0.      1:ln_n_275=   0.      1:ln_n_275=   0.     
+ +1:ln_n_276=   0.      1:ln_n_276=   0.      1:ln_n_276=   0.     
+ +1:ln_n_276=   0.      1:ln_n_277=   0.      1:ln_n_277=   0.     
+ +1:ln_n_277=   0.      1:ln_n_277=   0.      1:ln_n_278=   0.     
+ +1:ln_n_278=   0.      1:ln_n_278=   0.      1:ln_n_278=   0.     
+ +1:ln_n_279=   0.      1:ln_n_279=   0.      1:ln_n_279=   0.     
+ +1:ln_n_280=   0.      1:ln_n_280=   0.      1:ln_n_280=   0.     
+ +1:ln_n_280=   0.      1:ln_n_281=   0.      1:ln_n_281=   0.     
+ +1:ln_n_281=   0.      1:ln_n_281=   0.      1:ln_n_282=   0.     
+ +1:ln_n_282=   0.      1:ln_n_282=   0.      1:ln_n_282=   0.     
+ +1:ln_n_283=   0.      1:ln_n_283=   0.      1:ln_n_283=   0.     
+ +1:ln_n_283=   0.      1:ln_n_284=   0.      1:ln_n_284=   0.     
+ +1:ln_n_284=   0.      1:ln_n_284=   0.      1:ln_n_285=   0.     
+ +1:ln_n_285=   0.      1:ln_n_285=   0.      1:ln_n_285=   0.     
+ +1:ln_n_286=   0.      1:ln_n_286=   0.      1:ln_n_286=   0.     
+ +1:ln_n_287=   0.      1:ln_n_287=   0.      1:ln_n_287=   0.     
+ +1:ln_n_288=   0.      1:ln_n_288=   0.      1:ln_n_288=   0.     
+ +1:ln_n_288=   0.      1:ln_n_289=   0.      1:ln_n_289=   0.     
+ +1:ln_n_289=   0.      1:ln_n_289=   0.      1:ln_n_290=   0.     
+ +1:ln_n_290=   0.      1:ln_n_290=   0.      1:ln_n_290=   0.     
+ +1:ln_n_291=   0.      1:ln_n_291=   0.      1:ln_n_291=   0.     
+ +1:ln_n_291=   0.      1:ln_n_292=   0.      1:ln_n_292=   0.     
+ +1:ln_n_292=   0.      1:ln_n_292=   0.      1:net32:1 =   1.7990 
+ +1:net32:10=   1.7990  1:net32:11=   1.7990  1:net32:12=   1.7990 
+ +1:net32:13=   1.7990  1:net32:14=   1.7990  1:net32:15=   1.7990 
+ +1:net32:16=   1.7990  1:net32:17=   1.7990  1:net32:18=   1.7990 
+ +1:net32:19=   1.7990  1:net32:2 =   1.7990  1:net32:20=   1.7990 
+ +1:net32:21=   1.7990  1:net32:22=   1.7990  1:net32:23=   1.7990 
+ +1:net32:24=   1.7990  1:net32:25=   1.7990  1:net32:26=   1.7990 
+ +1:net32:27=   1.7990  1:net32:28=   1.7990  1:net32:3 =   1.7990 
+ +1:net32:4 =   1.7990  1:net32:5 =   1.7990  1:net32:6 =   1.7990 
+ +1:net32:7 =   1.7990  1:net32:8 =   1.7990  1:net32:9 =   1.7990 
+ +1:net33:1 = 423.4303u 1:net33:10= 422.7485u 1:net33:11= 422.5275u
+ +1:net33:12= 422.5275u 1:net33:13= 422.5206u 1:net33:14= 422.3607u
+ +1:net33:15= 422.3607u 1:net33:16= 422.5430u 1:net33:17= 422.6803u
+ +1:net33:18= 422.6803u 1:net33:19= 422.7548u 1:net33:2 = 422.7727u
+ +1:net33:20= 422.3528u 1:net33:21= 422.6870u 1:net33:22= 423.4303u
+ +1:net33:23= 422.7727u 1:net33:24= 422.5501u 1:net33:25= 422.5430u
+ +1:net33:26= 422.5501u 1:net33:27= 422.2538u 1:net33:28= 422.7485u
+ +1:net33:3 = 423.9840u 1:net33:4 = 423.3105u 1:net33:5 = 422.7702u
+ +1:net33:6 = 422.5501u 1:net33:7 = 422.7538u 1:net33:8 = 422.8016u
+ +1:net33:9 = 422.2538u 1:net34:1 =   1.7984  1:net34:10=   1.7984 
+ +1:net34:11=   1.7984  1:net34:12=   1.7984  1:net34:13=   1.7984 
+ +1:net34:14=   1.7984  1:net34:15=   1.7984  1:net34:16=   1.7984 
+ +1:net34:17=   1.7984  1:net34:18=   1.7984  1:net34:19=   1.7984 
+ +1:net34:2 =   1.7984  1:net34:20=   1.7984  1:net34:21=   1.7984 
+ +1:net34:22=   1.7984  1:net34:23=   1.7984  1:net34:24=   1.7984 
+ +1:net34:25=   1.7984  1:net34:26=   1.7984  1:net34:27=   1.7984 
+ +1:net34:28=   1.7984  1:net34:29=   1.7984  1:net34:3 =   1.7984 
+ +1:net34:30=   1.7984  1:net34:31=   1.7984  1:net34:32=   1.7984 
+ +1:net34:33=   1.7984  1:net34:34=   1.7984  1:net34:35=   1.7984 
+ +1:net34:36=   1.7984  1:net34:37=   1.7984  1:net34:38=   1.7984 
+ +1:net34:39=   1.7984  1:net34:4 =   1.7984  1:net34:40=   1.7984 
+ +1:net34:41=   1.7984  1:net34:42=   1.7984  1:net34:43=   1.7984 
+ +1:net34:44=   1.7984  1:net34:45=   1.7984  1:net34:46=   1.7984 
+ +1:net34:47=   1.7984  1:net34:48=   1.7984  1:net34:49=   1.7984 
+ +1:net34:5 =   1.7984  1:net34:50=   1.7984  1:net34:51=   1.7984 
+ +1:net34:52=   1.7984  1:net34:53=   1.7984  1:net34:54=   1.7984 
+ +1:net34:6 =   1.7984  1:net34:7 =   1.7984  1:net34:8 =   1.7984 
+ +1:net34:9 =   1.7984  1:net35:1 = 452.7266u 1:net35:10= 451.8434u
+ +1:net35:11= 452.0501u 1:net35:12= 452.0980u 1:net35:13= 451.8278u
+ +1:net35:14= 452.0345u 1:net35:15= 452.0823u 1:net35:16= 451.4763u
+ +1:net35:17= 452.0123u 1:net35:18= 451.8205u 1:net35:19= 451.8048u
+ +1:net35:2 = 452.0832u 1:net35:20= 451.8205u 1:net35:21= 451.7832u
+ +1:net35:22= 451.5993u 1:net35:23= 451.5993u 1:net35:24= 451.8057u
+ +1:net35:25= 451.9437u 1:net35:26= 451.9437u 1:net35:27= 452.0519u
+ +1:net35:28= 452.0362u 1:net35:29= 451.5903u 1:net35:3 = 452.7108u
+ +1:net35:30= 451.9504u 1:net35:31= 452.7266u 1:net35:32= 452.0832u
+ +1:net35:33= 452.7108u 1:net35:34= 452.0674u 1:net35:35= 451.8434u
+ +1:net35:36= 451.8278u 1:net35:37= 451.8057u 1:net35:38= 451.8434u
+ +1:net35:39= 451.8278u 1:net35:4 = 452.0674u 1:net35:40= 451.4763u
+ +1:net35:41= 452.0123u 1:net35:5 = 453.2540u 1:net35:6 = 452.0789u
+ +1:net35:7 = 452.6068u 1:net35:8 = 452.5911u 1:net35:9 = 452.0632u
+ +1:net36:1 = 476.9328u 1:net36:10= 475.9551u 1:net36:11= 475.8899u
+ +1:net36:12= 476.7005u 1:net36:13= 475.8425u 1:net36:14= 475.7409u
+ +1:net36:15= 475.9445u 1:net36:16= 476.0049u 1:net36:17= 475.6652u
+ +1:net36:18= 475.8719u 1:net36:19= 475.9197u 1:net36:2 = 476.8131u
+ +1:net36:20= 475.6283u 1:net36:21= 475.8319u 1:net36:22= 475.8923u
+ +1:net36:23= 475.2846u 1:net36:24= 475.8353u 1:net36:25= 475.7183u
+ +1:net36:26= 475.7183u 1:net36:27= 475.6422u 1:net36:28= 475.6056u
+ +1:net36:29= 475.5818u 1:net36:3 = 475.9575u 1:net36:30= 475.3780u
+ +1:net36:31= 475.3780u 1:net36:32= 475.6039u 1:net36:33= 475.7395u
+ +1:net36:34= 475.7395u 1:net36:35= 475.9458u 1:net36:36= 475.8736u
+ +1:net36:37= 475.8332u 1:net36:38= 476.9328u 1:net36:39= 475.9575u
+ +1:net36:4 = 476.8475u 1:net36:40= 476.8475u 1:net36:41= 475.8942u
+ +1:net36:42= 476.8202u 1:net36:43= 475.8450u 1:net36:44= 475.7409u
+ +1:net36:45= 475.6652u 1:net36:46= 475.6283u 1:net36:47= 475.3680u
+ +1:net36:48= 475.7461u 1:net36:49= 475.6039u 1:net36:5 = 476.7278u
+ +1:net36:50= 475.7409u 1:net36:51= 475.6652u 1:net36:52= 475.8353u
+ +1:net36:53= 475.6283u 1:net36:54= 475.2846u 1:net36:6 = 475.8942u
+ +1:net36:7 = 476.8202u 1:net36:8 = 475.8450u 1:net36:9 = 477.0552u
+ +1:net37:1 =   1.7990  1:net37:10=   1.7990  1:net37:11=   1.7990 
+ +1:net37:12=   1.7990  1:net37:13=   1.7990  1:net37:14=   1.7990 
+ +1:net37:15=   1.7990  1:net37:16=   1.7990  1:net37:17=   1.7990 
+ +1:net37:18=   1.7990  1:net37:19=   1.7990  1:net37:2 =   1.7990 
+ +1:net37:20=   1.7990  1:net37:21=   1.7990  1:net37:22=   1.7990 
+ +1:net37:23=   1.7990  1:net37:24=   1.7990  1:net37:25=   1.7990 
+ +1:net37:26=   1.7990  1:net37:27=   1.7990  1:net37:28=   1.7990 
+ +1:net37:3 =   1.7990  1:net37:4 =   1.7990  1:net37:5 =   1.7990 
+ +1:net37:6 =   1.7990  1:net37:7 =   1.7990  1:net37:8 =   1.7990 
+ +1:net37:9 =   1.7990  1:net38:1 =   1.7987  1:net38:10=   1.7987 
+ +1:net38:11=   1.7987  1:net38:12=   1.7987  1:net38:13=   1.7987 
+ +1:net38:14=   1.7987  1:net38:15=   1.7987  1:net38:16=   1.7987 
+ +1:net38:17=   1.7987  1:net38:18=   1.7987  1:net38:19=   1.7987 
+ +1:net38:2 =   1.7987  1:net38:20=   1.7987  1:net38:21=   1.7987 
+ +1:net38:22=   1.7987  1:net38:23=   1.7987  1:net38:24=   1.7987 
+ +1:net38:25=   1.7987  1:net38:26=   1.7987  1:net38:27=   1.7987 
+ +1:net38:28=   1.7987  1:net38:29=   1.7987  1:net38:3 =   1.7987 
+ +1:net38:30=   1.7987  1:net38:4 =   1.7987  1:net38:5 =   1.7987 
+ +1:net38:6 =   1.7987  1:net38:7 =   1.7987  1:net38:8 =   1.7987 
+ +1:net38:9 =   1.7987  1:s:1     =   1.7993  1:s:2     =   1.7993 
+ +1:s:3     =   1.7993  1:s:4     =   1.7993  1:s:5     =   1.7993 
+ +1:s:6     =   1.7993  1:s:7     =   1.7993  1:vdd!:1  =   1.8000 
+ +1:vdd!:10 =   1.8000  1:vdd!:100=   1.8000  1:vdd!:101=   1.8000 
+ +1:vdd!:102=   1.8000  1:vdd!:103=   1.8000  1:vdd!:104=   1.8000 
+ +1:vdd!:105=   1.8000  1:vdd!:106=   1.8000  1:vdd!:107=   1.8000 
+ +1:vdd!:108=   1.8000  1:vdd!:109=   1.8000  1:vdd!:11 =   1.8000 
+ +1:vdd!:110=   1.8000  1:vdd!:111=   1.8000  1:vdd!:112=   1.8000 
+ +1:vdd!:113=   1.8000  1:vdd!:114=   1.8000  1:vdd!:115=   1.8000 
+ +1:vdd!:116=   1.8000  1:vdd!:117=   1.8000  1:vdd!:118=   1.8000 
+ +1:vdd!:119=   1.8000  1:vdd!:12 =   1.8000  1:vdd!:120=   1.8000 
+ +1:vdd!:121=   1.8000  1:vdd!:122=   1.8000  1:vdd!:123=   1.8000 
+ +1:vdd!:124=   1.8000  1:vdd!:125=   1.8000  1:vdd!:126=   1.8000 
+ +1:vdd!:127=   1.8000  1:vdd!:128=   1.8000  1:vdd!:129=   1.8000 
+ +1:vdd!:13 =   1.8000  1:vdd!:130=   1.8000  1:vdd!:131=   1.8000 
+ +1:vdd!:132=   1.8000  1:vdd!:133=   1.8000  1:vdd!:134=   1.8000 
+ +1:vdd!:135=   1.8000  1:vdd!:136=   1.8000  1:vdd!:137=   1.8000 
+ +1:vdd!:138=   1.8000  1:vdd!:139=   1.8000  1:vdd!:14 =   1.8000 
+ +1:vdd!:140=   1.8000  1:vdd!:141=   1.8000  1:vdd!:142=   1.8000 
+ +1:vdd!:143=   1.8000  1:vdd!:144=   1.8000  1:vdd!:145=   1.8000 
+ +1:vdd!:146=   1.8000  1:vdd!:147=   1.8000  1:vdd!:148=   1.8000 
+ +1:vdd!:149=   1.8000  1:vdd!:15 =   1.8000  1:vdd!:150=   1.8000 
+ +1:vdd!:151=   1.8000  1:vdd!:152=   1.8000  1:vdd!:153=   1.8000 
+ +1:vdd!:154=   1.8000  1:vdd!:155=   1.8000  1:vdd!:156=   1.8000 
+ +1:vdd!:157=   1.8000  1:vdd!:158=   1.8000  1:vdd!:159=   1.8000 
+ +1:vdd!:16 =   1.8000  1:vdd!:160=   1.8000  1:vdd!:161=   1.8000 
+ +1:vdd!:162=   1.8000  1:vdd!:163=   1.8000  1:vdd!:17 =   1.8000 
+ +1:vdd!:18 =   1.8000  1:vdd!:19 =   1.8000  1:vdd!:2  =   1.8000 
+ +1:vdd!:20 =   1.8000  1:vdd!:21 =   1.8000  1:vdd!:22 =   1.8000 
+ +1:vdd!:23 =   1.8000  1:vdd!:24 =   1.8000  1:vdd!:25 =   1.8000 
+ +1:vdd!:26 =   1.8000  1:vdd!:27 =   1.8000  1:vdd!:28 =   1.8000 
+ +1:vdd!:29 =   1.8000  1:vdd!:3  =   1.8000  1:vdd!:30 =   1.8000 
+ +1:vdd!:31 =   1.8000  1:vdd!:32 =   1.8000  1:vdd!:33 =   1.8000 
+ +1:vdd!:34 =   1.8000  1:vdd!:35 =   1.8000  1:vdd!:36 =   1.8000 
+ +1:vdd!:37 =   1.8000  1:vdd!:38 =   1.8000  1:vdd!:39 =   1.8000 
+ +1:vdd!:4  =   1.8000  1:vdd!:40 =   1.8000  1:vdd!:41 =   1.8000 
+ +1:vdd!:42 =   1.8000  1:vdd!:43 =   1.8000  1:vdd!:44 =   1.8000 
+ +1:vdd!:45 =   1.8000  1:vdd!:46 =   1.8000  1:vdd!:47 =   1.8000 
+ +1:vdd!:48 =   1.8000  1:vdd!:49 =   1.8000  1:vdd!:5  =   1.8000 
+ +1:vdd!:50 =   1.8000  1:vdd!:51 =   1.8000  1:vdd!:52 =   1.8000 
+ +1:vdd!:53 =   1.8000  1:vdd!:54 =   1.8000  1:vdd!:55 =   1.8000 
+ +1:vdd!:56 =   1.8000  1:vdd!:57 =   1.8000  1:vdd!:58 =   1.8000 
+ +1:vdd!:59 =   1.8000  1:vdd!:6  =   1.8000  1:vdd!:60 =   1.8000 
+ +1:vdd!:61 =   1.8000  1:vdd!:62 =   1.8000  1:vdd!:63 =   1.8000 
+ +1:vdd!:64 =   1.8000  1:vdd!:65 =   1.8000  1:vdd!:66 =   1.8000 
+ +1:vdd!:67 =   1.8000  1:vdd!:68 =   1.8000  1:vdd!:69 =   1.8000 
+ +1:vdd!:7  =   1.8000  1:vdd!:70 =   1.8000  1:vdd!:71 =   1.8000 
+ +1:vdd!:72 =   1.8000  1:vdd!:73 =   1.8000  1:vdd!:74 =   1.8000 
+ +1:vdd!:75 =   1.8000  1:vdd!:76 =   1.8000  1:vdd!:77 =   1.8000 
+ +1:vdd!:78 =   1.8000  1:vdd!:79 =   1.8000  1:vdd!:8  =   1.8000 
+ +1:vdd!:80 =   1.8000  1:vdd!:81 =   1.8000  1:vdd!:82 =   1.8000 
+ +1:vdd!:83 =   1.8000  1:vdd!:84 =   1.8000  1:vdd!:85 =   1.8000 
+ +1:vdd!:86 =   1.8000  1:vdd!:87 =   1.8000  1:vdd!:88 =   1.8000 
+ +1:vdd!:89 =   1.8000  1:vdd!:9  =   1.8000  1:vdd!:90 =   1.8000 
+ +1:vdd!:91 =   1.8000  1:vdd!:92 =   1.8000  1:vdd!:93 =   1.8000 
+ +1:vdd!:94 =   1.8000  1:vdd!:95 =   1.8000  1:vdd!:96 =   1.8000 
+ +1:vdd!:97 =   1.8000  1:vdd!:98 =   1.8000  1:vdd!:99 =   1.8000 
+ +1:xi0|mm0:= 468.7446m 1:xi0|mm0:=   1.7990  1:xi0|mm0:=   1.8000 
+ +1:xi0|mm0:=   1.5034  1:xi0|mm1:= 468.7446m 1:xi0|mm1:=   1.5034 
+ +1:xi0|mm1:= 475.8450u 1:xi0|mm1:=   4.4925u 1:xi0|mm2:=   1.3915 
+ +1:xi0|mm2:=   1.7990  1:xi0|mm2:= 476.8202u 1:xi0|mm2:=   1.8000 
+ +1:xi0|mm3:=   1.3915  1:xi0|mm3:=   1.7990  1:xi0|mm3:=   1.8000 
+ +1:xi0|mm3:=   1.8000  1:xi0|net5=   1.5034  1:xi0|net5=   1.5034 
+ +1:xi0|net5=   1.5034  1:xi0|net5=   1.5034  1:xi1|mm0:= 468.7446m
+ +1:xi1|mm0:=   1.7987  1:xi1|mm0:= 475.8942u 1:xi1|mm0:= 393.0613u
+ +1:xi1|mm1:= 468.7446m 1:xi1|mm1:= 389.7257u 1:xi1|mm1:=   1.8000 
+ +1:xi1|mm1:=   8.6801u 1:xi1|mm2:=   1.3915  1:xi1|mm2:=   1.7987 
+ +1:xi1|mm2:=   1.8000  1:xi1|mm2:=   1.8000  1:xi1|mm3:=   1.3915 
+ +1:xi1|mm3:=   1.7987  1:xi1|mm3:= 476.8475u 1:xi1|mm3:=   1.8000 
+ +1:xi1|net5= 391.3935u 1:xi1|net5= 391.3935u 1:xi1|net5= 391.3935u
+ +1:xi1|net5= 391.3935u 1:xi2|mm0:= 468.7446m 1:xi2|mm0:= 449.8212u
+ +1:xi2|mm0:=   1.7990  1:xi2|mm0:= 283.4171u 1:xi2|mm1:= 468.7446m
+ +1:xi2|mm1:= 281.1731u 1:xi2|mm1:=   1.7987  1:xi2|mm1:=   7.4374u
+ +1:xi2|mm2:=   1.3915  1:xi2|mm2:= 453.4699u 1:xi2|mm2:=   1.7987 
+ +1:xi2|mm2:=   1.8000  1:xi2|mm3:=   1.3915  1:xi2|mm3:= 453.4693u
+ +1:xi2|mm3:=   1.7990  1:xi2|mm3:=   1.8000  1:xi2|net5= 282.2951u
+ +1:xi2|net5= 282.2951u 1:xi2|net5= 282.2951u 1:xi2|net5= 282.2951u
+ +1:xi3|mm0:= 468.7446m 1:xi3|mm0:=   1.7990  1:xi3|mm0:= 452.0832u
+ +1:xi3|mm0:= 394.0411u 1:xi3|mm1:= 468.7446m 1:xi3|mm1:= 390.7055u
+ +1:xi3|mm1:=   1.7984  1:xi3|mm1:=   9.9245u 1:xi3|mm2:=   1.3915 
+ +1:xi3|mm2:=   1.7990  1:xi3|mm2:=   1.7984  1:xi3|mm2:=   1.8000 
+ +1:xi3|mm3:=   1.3915  1:xi3|mm3:=   1.7990  1:xi3|mm3:= 452.7266u
+ +1:xi3|mm3:=   1.8000  1:xi3|net5= 392.3733u 1:xi3|net5= 392.3733u
+ +1:xi3|net5= 392.3733u 1:xi3|net5= 392.3733u 1:xi4|mm0:= 468.7446m
+ +1:xi4|mm0:= 420.8146u 1:xi4|mm0:=   1.7984  1:xi4|mm0:= 269.2356u
+ +1:xi4|mm1:= 468.7446m 1:xi4|mm1:= 267.1440u 1:xi4|mm1:=   1.8000 
+ +1:xi4|mm1:=   8.1392u 1:xi4|mm2:=   1.3915  1:xi4|mm2:= 424.1971u
+ +1:xi4|mm2:=   1.8000  1:xi4|mm2:=   1.8000  1:xi4|mm3:=   1.3915 
+ +1:xi4|mm3:= 424.1998u 1:xi4|mm3:=   1.7984  1:xi4|mm3:=   1.8000 
+ +1:xi4|net5= 268.1898u 1:xi4|net5= 268.1898u 1:xi4|net5= 268.1898u
+ +1:xi4|net5= 268.1898u 1:xi5|mm0:= 468.7446m 1:xi5|mm0:=   1.7984 
+ +1:xi5|mm0:= 452.0674u 1:xi5|mm0:= 393.7140u 1:xi5|mm1:= 468.7446m
+ +1:xi5|mm1:= 390.3812u 1:xi5|mm1:=   1.8000  1:xi5|mm1:=   9.6175u
+ +1:xi5|mm2:=   1.3915  1:xi5|mm2:=   1.7984  1:xi5|mm2:=   1.8000 
+ +1:xi5|mm2:=   1.8000  1:xi5|mm3:=   1.3915  1:xi5|mm3:=   1.7984 
+ +1:xi5|mm3:= 452.7108u 1:xi5|mm3:=   1.8000  1:xi5|net5= 392.0476u
+ +1:xi5|net5= 392.0476u 1:xi5|net5= 392.0476u 1:xi5|net5= 392.0476u
+ +1:xi6|mm0:= 468.7446m 1:xi6|mm0:=   1.7993  1:xi6|mm0:=   1.7990 
+ +1:xi6|mm0:=   1.5027  1:xi6|mm1:= 468.7446m 1:xi6|mm1:=   1.5027 
+ +1:xi6|mm1:= 422.7727u 1:xi6|mm1:=   6.6820u 1:xi6|mm2:=   1.3915 
+ +1:xi6|mm2:=   1.7993  1:xi6|mm2:= 423.4303u 1:xi6|mm2:=   1.8000 
+ +1:xi6|mm3:=   1.3915  1:xi6|mm3:=   1.7993  1:xi6|mm3:=   1.7990 
+ +1:xi6|mm3:=   1.8000  1:xi6|net5=   1.5027  1:xi6|net5=   1.5027 
+ +1:xi6|net5=   1.5027  1:xi6|net5=   1.5027  1:xi7|mm0:= 468.7446m
+ +1:xi7|mm0:=   1.7993  1:xi7|mm0:=   1.7984  1:xi7|mm0:=   1.5022 
+ +1:xi7|mm1:= 468.7446m 1:xi7|mm1:=   1.5022  1:xi7|mm1:= 475.9575u
+ +1:xi7|mm1:=   6.7398u 1:xi7|mm2:=   1.3915  1:xi7|mm2:=   1.7993 
+ +1:xi7|mm2:= 476.9328u 1:xi7|mm2:=   1.8000  1:xi7|mm3:=   1.3915 
+ +1:xi7|mm3:=   1.7993  1:xi7|mm3:=   1.7984  1:xi7|mm3:=   1.8000 
+ +1:xi7|net5=   1.5022  1:xi7|net5=   1.5022  1:xi7|net5=   1.5022 
+ +1:xi7|net5=   1.5022  1:xi8|mm0:= 468.7446m 1:xi8|mm0:= 473.4507u
+ +1:xi8|mm0:=   1.8000  1:xi8|mm0:= 294.6993u 1:xi8|mm1:= 468.7446m
+ +1:xi8|mm1:= 292.3274u 1:xi8|mm1:=   1.8000  1:xi8|mm1:=   5.8198u
+ +1:xi8|mm2:=   1.3915  1:xi8|mm2:= 477.2670u 1:xi8|mm2:=   1.8000 
+ +1:xi8|mm2:=   1.8000  1:xi8|mm3:=   1.3915  1:xi8|mm3:= 477.2670u
+ +1:xi8|mm3:=   1.8000  1:xi8|mm3:=   1.8000  1:xi8|net5= 293.5133u
+ +1:xi8|net5= 293.5133u 1:xi8|net5= 293.5133u 1:xi8|net5= 293.5133u
+
+ ******
+ * hspice testbench cho 1-bit full adder (post-layout)
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ trise_s= 125.2922p  targ=   1.1553n   trig=   1.0300n
+ tfall_s=  98.6883p  targ= 126.3996p   trig=  27.7113p
+ trise_cout= 127.2450p  targ=   3.1664n   trig=   3.0391n
+ tfall_cout=  96.6557p  targ= 123.5201p   trig=  26.8644p
+
+          ***** job concluded
+ ******  
+ * hspice testbench cho 1-bit full adder (post-layout)
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: 13th Gen Intel(R) Core(TM) i5-13500H
+ cpu MHz	: 3187.190
+  
+ OS:
+ Linux version 3.10.0-1160.59.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 23 16:47:03 UTC 2022
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Capacitors      :       1
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =    1114 # elements   =    2885
+  # resistors   =    1036 # capacitors =    1809 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      36 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.05           1          90
+  transient          0.37        1001        1123         362 rev=        14
+  readin             0.03
+  errchk             0.01
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        265.46 megabytes
+           total cpu time            0.46 seconds
+           total elapsed time        0.43 seconds
+           job started at     20:55:01 04/27/2026
+           job ended   at     20:55:02 04/27/2026
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.15(s)

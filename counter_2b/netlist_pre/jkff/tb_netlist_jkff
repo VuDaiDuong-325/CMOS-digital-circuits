@@ -1,0 +1,84 @@
+*******************************************************
+* JK Flip-Flop Testbench - Pre-Layout Verification
+*******************************************************
+
+.option post=2 nomod
+.temp 25
+
+* Cài đặt biến VDD 1.2V
+.param vdd_val = 1.2
+
+*******************************************************
+* 1. Include model và netlist pre-layout của JKFF
+*******************************************************
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+.include '/root/lab1vlsi/lab3/jkff/netlist_pre/jkff/jkff_jkff.sp'
+
+*******************************************************
+* 2. Khai báo nguồn DC
+*******************************************************
+VDD vdd! 0 vdd_val
+VSS gnd! 0 0
+
+*******************************************************
+* 3. Input Stimulus (Kích thích ngõ vào)
+* - CLK: Chu kỳ 10ns, các cạnh lên xuất hiện tại 5n, 15n, 25n, 35n, 45n...
+* - J và K: Dùng PWL để thiết lập trạng thái chuẩn xác trước mỗi cạnh lên CLK
+*******************************************************
+VCLK clk 0 PULSE (0 vdd_val 5n 20p 20p 5n 10n)
+
+* Tín hiệu J:
+VJ j 0 PWL (0n 0   12n 0   13n vdd_val  32n vdd_val  33n 0   52n 0   53n vdd_val)
+
+* Tín hiệu K:
+VK k 0 PWL (0n vdd_val 22n vdd_val 23n 0 42n 0 43n vdd_val)
+
+* [Phân tích logic tại các cạnh lên CLK]:
+* Cạnh 1 (5ns):  J=0, K=1 -> RESET ngõ ra Q về mức 0 (Khởi tạo mạch an toàn)
+* Cạnh 2 (15ns): J=1, K=1 -> TOGGLE ngõ ra Q chuyển từ 0 lên 1
+* Cạnh 3 (25ns): J=1, K=0 -> SET ngõ ra Q giữ ở mức 1
+* Cạnh 4 (35ns): J=0, K=0 -> HOLD ngõ ra Q tiếp tục giữ mức 1
+* Cạnh 5 (45ns): J=0, K=1 -> RESET ngõ ra Q chuyển từ 1 xuống 0
+
+*******************************************************
+* 4. Gọi khối DUT (Device Under Test)
+* LƯU Ý: Khớp tuyệt đối thứ tự chân của jkff: clk j k q qn
+*******************************************************
+X1 clk j k q qn jkff
+
+*******************************************************
+* 5. Tải ngõ ra (Output Load)
+*******************************************************
+Cload_q  q  0 10f
+Cload_qn qn 0 10f
+
+*******************************************************
+* 6. Thiết lập thời gian mô phỏng & Đo đạc thời gian
+*******************************************************
+* Chạy 70ns là đủ quét hết toàn bộ chu trình bảng chân trị
+.tran 1p 70n
+
+* --- ĐO ĐẠC CHO NGÕ RA Q ---
+* 1. Đo Rise time tại cạnh lên đầu tiên của Q (xảy ra do cú chuyển mạch Toggle lúc ~15ns)
+.measure tran trise_q TRIG v(q) VAL='0.1*vdd_val' RISE=1 TD=10n
++                     TARG v(q) VAL='0.9*vdd_val' RISE=1 TD=10n
+
+* 2. Đo Fall time tại cạnh xuống đầu tiên của Q (xảy ra do cú chuyển mạch Reset lúc ~45ns)
+.measure tran tfall_q TRIG v(q) VAL='0.9*vdd_val' FALL=1 TD=10n
++                     TARG v(q) VAL='0.1*vdd_val' FALL=1 TD=10n
+
+* --- ĐO ĐẠC CHO NGÕ RA QN ---
+* 3. Đo Rise time tại cạnh lên đầu tiên của QN (xảy ra do cú chuyển mạch Reset lúc ~45ns)
+.measure tran trise_qn TRIG v(qn) VAL='0.1*vdd_val' RISE=1 TD=10n
++                      TARG v(qn) VAL='0.9*vdd_val' RISE=1 TD=10n
+
+* 4. Đo Fall time tại cạnh xuống đầu tiên của QN (xảy ra do cú chuyển mạch Toggle lúc ~15ns)
+.measure tran tfall_qn TRIG v(qn) VAL='0.9*vdd_val' FALL=1 TD=10n
++                      TARG v(qn) VAL='0.1*vdd_val' FALL=1 TD=10n
+
+*******************************************************
+* 7. Xuất dạng sóng
+*******************************************************
+.probe v(clk) v(j) v(k) v(q) v(qn)
+
+.end

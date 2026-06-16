@@ -1,0 +1,69 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12-SP2 linux64"
+* "format" "HSP"
+* "rundate" "23:49:00 06/09/2026 "
+* "netlist" "tb_netlist_jkff_counter_2b "
+* "runtitle" "*******************************************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clk =   0.            
++ q0 =   1.4455n       
++ q1 =   1.0000        
++ vdd! =   1.2000        
++ x1.net2 =   1.1998        
++ x1.net7 = 632.3500u       
++ x1.xi1.net12 = 637.4063u       
++ x1.xi1.net15 =   1.2000        
++ x1.xi1.net18 =   1.1999        
++ x1.xi1.net9 =   1.1999        
++ x1.xi0.net12 =   1.2000        
++ x1.xi0.net15 =  41.1008u       
++ x1.xi0.net18 = 592.2894u       
++ x1.xi0.net9 =   1.1999        
++ x1.xi1.xi0.net29 =  40.7830u       
++ x1.xi1.xi0.net34 =   1.2000        
++ x1.xi1.xi0.net38 =  19.4304u       
++ x1.xi1.xi0.net39 =   1.1999        
++ x1.xi1.xi3.net1 =  92.5763m       
++ x1.xi1.xi2.net1 = 348.0343u       
++ x1.xi1.xi1.net1 = 974.5319m       
++ x1.xi0.xi0.net29 =  40.7830u       
++ x1.xi0.xi0.net34 =   1.2000        
++ x1.xi0.xi0.net38 =  19.4304u       
++ x1.xi0.xi0.net39 =   1.1999        
++ x1.xi0.xi3.net1 =  26.7298u       
++ x1.xi0.xi2.net1 =  92.5487m       
++ x1.xi0.xi1.net1 =  46.3896u       
++ x1.xi1.xi0.xi8.net1 =  41.1150u       
++ x1.xi1.xi0.xi8.net2 =   1.1999        
++ x1.xi1.xi0.xi8.net3 =  15.5552u       
++ x1.xi1.xi0.xi9.net1 =   1.1999        
++ x1.xi1.xi0.xi9.net2 =   1.2000        
++ x1.xi1.xi0.xi9.net3 =  15.5477u       
++ x1.xi0.xi0.xi8.net1 =  41.1171u       
++ x1.xi0.xi0.xi8.net2 =   1.1999        
++ x1.xi0.xi0.xi8.net3 =  15.5587u       
++ x1.xi0.xi0.xi9.net1 =   1.1999        
++ x1.xi0.xi0.xi9.net2 =   1.2000        
++ x1.xi0.xi0.xi9.net3 =  15.5477u       
++ x1.xi1.xi0.xi8.xi6.net1 =  26.5724u       
++ x1.xi1.xi0.xi8.xi5.net1 =  46.3689u       
++ x1.xi1.xi0.xi8.xi3.net1 =  26.7370u       
++ x1.xi1.xi0.xi8.xi4.net1 =  92.1533m       
++ x1.xi1.xi0.xi9.xi6.net1 = 296.6002u       
++ x1.xi1.xi0.xi9.xi5.net1 =  92.1506m       
++ x1.xi1.xi0.xi9.xi3.net1 = 974.9249m       
++ x1.xi1.xi0.xi9.xi4.net1 = 946.8891m       
++ x1.xi0.xi0.xi8.xi6.net1 =  26.5724u       
++ x1.xi0.xi0.xi8.xi5.net1 =  46.3689u       
++ x1.xi0.xi0.xi8.xi3.net1 =  26.7375u       
++ x1.xi0.xi0.xi8.xi4.net1 =  92.1533m       
++ x1.xi0.xi0.xi9.xi6.net1 =  46.3535u       
++ x1.xi0.xi0.xi9.xi5.net1 =  92.1506m       
++ x1.xi0.xi0.xi9.xi3.net1 = 974.9217m       
++ x1.xi0.xi0.xi9.xi4.net1 =   6.1797u       
+***   END: Saved Operating Point ***                     

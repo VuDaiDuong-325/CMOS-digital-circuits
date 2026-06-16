@@ -1,0 +1,68 @@
+* HSPICE Testbench - Full Adder 2-bit Post-Layout Timing
+
+.options POST=1 parhier=local
+
+* --- 1. Models & Extracted Netlist ---
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+.include '/root/lab1vlsi/synopsys_custom/full_adder_2b.starrc.lpe/full_adder_2b.SPF'
+
+* --- 2. Design Variables ---
+.global vdd! gnd!
+.param vdd = 1.8
+
+* --- 3. Power Supply ---
+V_VDD vdd! 0 DC 'vdd'
+V_GND gnd! 0 DC 0
+
+* --- 4. Input Stimuli ---
+* Lưu ý: A0, A1, B0, B1 là HOA TOÀN BỘ. Cin là chữ C hoa.
+Vcin Cin 0 PULSE('vdd' 0 0 20p 20p 1n 2n)
+Va0  A0  0 PULSE('vdd' 0 0 20p 20p 2n 4n)
+Vb0  B0  0 PULSE('vdd' 0 0 20p 20p 4n 8n)
+Va1  A1  0 PULSE('vdd' 0 0 20p 20p 8n 16n)
+Vb1  B1  0 PULSE('vdd' 0 0 20p 20p 16n 32n)
+
+* --- 5. DUT ---
+XFA2B A0 A1 B0 B1 Cin Cout S0 S1 full_adder_2b
+
+* --- 6. Output Load ---
+Cload_s0 S0 0 10f
+Cload_s1 S1 0 10f
+Cload_cout Cout 0 10f
+
+* --- 7. Analysis & Probe ---
+.tran 0.01n 40n
+.probe tran V(A0) V(A1) V(B0) V(B1) V(Cin) V(S0) V(S1) V(Cout)
+
+* ==============================================================================
+* MEASURE: Rise/Fall Time
+* ==============================================================================
+
+* --- S0 ---
+.meas tran trise_s0 
++ TRIG v(S0) VAL='0.1*vdd' RISE=1 TD=20n
++ TARG v(S0) VAL='0.9*vdd' RISE=1 TD=20n
+
+.meas tran tfall_s0 
++ TRIG v(S0) VAL='0.9*vdd' FALL=1 TD=20n
++ TARG v(S0) VAL='0.1*vdd' FALL=1 TD=20n
+
+* --- S1 ---
+.meas tran trise_s1 
++ TRIG v(S1) VAL='0.1*vdd' RISE=1 TD=20n
++ TARG v(S1) VAL='0.9*vdd' RISE=1 TD=20n
+
+.meas tran tfall_s1 
++ TRIG v(S1) VAL='0.9*vdd' FALL=1 TD=20n
++ TARG v(S1) VAL='0.1*vdd' FALL=1 TD=20n
+
+* --- Cout ---
+.meas tran trise_cout 
++ TRIG v(Cout) VAL='0.1*vdd' RISE=1 TD=20n
++ TARG v(Cout) VAL='0.9*vdd' RISE=1 TD=20n
+
+.meas tran tfall_cout 
++ TRIG v(Cout) VAL='0.9*vdd' FALL=1 TD=20n
++ TARG v(Cout) VAL='0.1*vdd' FALL=1 TD=20n
+
+.end

@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '* hspice netlist cho 1-bit full adder (pre-layout)'
+ trise_s          tfall_s          trise_cout       tfall_cout      
+ temper           alter#          
+  2.010e-10        1.153e-10        1.968e-10        1.159e-10      
+   25.0000        1               

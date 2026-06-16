@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '* hspice testbench - nand2 post-layout timing simulation'
+ trise_y          tfall_y          tpd_hl           tpd_lh          
+ temper           alter#          
+  5.694e-11        9.383e-11        4.532e-11        2.648e-11      
+   25.0000        1               

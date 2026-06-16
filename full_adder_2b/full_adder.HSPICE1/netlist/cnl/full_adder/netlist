@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : full_adder_2b
+* Cell             : full_adder
+* View             : schematic
+* View Search List : hspice hspiceD cmos.sch cmos_sch schematic veriloga
+* View Stop List   : hspice hspiceD veriloga
+********************************************************************************
+xi8 a b net36 nand2
+xi7 net34 net36 cout nand2
+xi6 net32 net33 s nand2
+xi5 net35 cin net34 nand2
+xi4 net34 cin net33 nand2
+xi3 net35 net34 net32 nand2
+xi2 net37 net38 net35 nand2
+xi1 net36 b net38 nand2
+xi0 a net36 net37 nand2

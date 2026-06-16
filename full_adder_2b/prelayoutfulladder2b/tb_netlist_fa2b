@@ -1,0 +1,107 @@
+*******************************************************
+* HSPICE Testbench - Full Adder 2-bit (Pre-layout)
+*******************************************************
+
+.options POST=1 PARHIER=LOCAL NOMOD
+.temp 25
+
+*******************************************************
+* 1) Models & DUT netlist
+*******************************************************
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+.include '/root/lab1vlsi/lab2/prelayoutfulladder2b/full_adder_2b_full_adder_2b.sp'
+
+*******************************************************
+* 2) Global / Supply
+*******************************************************
+.global vdd! gnd!
+.param vdd = 1.8
+
+V_GND gnd! 0 0
+V_VDD vdd! 0 'vdd'
+
+*******************************************************
+* 3) Input stimuli
+*
+* Mục tiêu: quét nhiều tổ hợp logic để kiểm tra
+* full adder 2-bit:
+*   a0, b0, cin -> s0, net10 -> s1, cout
+*
+* Chọn các chu kỳ khác nhau để tạo chuỗi trạng thái.
+* Các cạnh được đặt đủ chậm để dễ đo timing.
+*******************************************************
+
+* cin nhanh nhất
+Vcin cin 0 PULSE('vdd' 0 0 20p 20p 1n 2n)
+
+* a0
+Va0 a0 0 PULSE('vdd' 0 0 20p 20p 2n 4n)
+
+* b0
+Vb0 b0 0 PULSE('vdd' 0 0 20p 20p 4n 8n)
+
+* a1
+Va1 a1 0 PULSE('vdd' 0 0 20p 20p 8n 16n)
+
+* b1 chậm nhất
+Vb1 b1 0 PULSE('vdd' 0 0 20p 20p 16n 32n)
+
+*******************************************************
+* 4) DUT instantiation
+*******************************************************
+XUUT a0 a1 b0 b1 cin cout s0 s1 full_adder_2b
+
+*******************************************************
+* 5) Output loads
+*******************************************************
+Cload_s0   s0   0 10f
+Cload_s1   s1   0 10f
+Cload_cout cout 0 10f
+
+*******************************************************
+* 6) Transient analysis
+*******************************************************
+.tran 10p 40n
+
+*******************************************************
+* 7) Probes
+*******************************************************
+.probe tran v(a0) v(a1) v(b0) v(b1) v(cin) v(s0) v(s1) v(cout)
+
+*******************************************************
+* 8) Measurements
+*
+* Ngưỡng đo:
+*   10% = 0.18V
+*   50% = 0.9V
+*   90% = 1.62V
+*******************************************************
+
+* -------- s0 timing --------
+.measure tran trise_s0
++ trig v(s0) val='0.1*vdd' rise=1
++ targ v(s0) val='0.9*vdd' rise=1
+
+.measure tran tfall_s0
++ trig v(s0) val='0.9*vdd' fall=1
++ targ v(s0) val='0.1*vdd' fall=1
+
+* -------- s1 timing --------
+.measure tran trise_s1
++ trig v(s1) val='0.1*vdd' rise=1
++ targ v(s1) val='0.9*vdd' rise=1
+
+.measure tran tfall_s1
++ trig v(s1) val='0.9*vdd' fall=1
++ targ v(s1) val='0.1*vdd' fall=1
+
+* -------- cout timing --------
+.measure tran trise_cout
++ trig v(cout) val='0.1*vdd' rise=1
++ targ v(cout) val='0.9*vdd' rise=1
+
+.measure tran tfall_cout
++ trig v(cout) val='0.9*vdd' fall=1
++ targ v(cout) val='0.1*vdd' fall=1
+
+.end

@@ -1,0 +1,72 @@
+*******************************************************
+* D Flip-Flop Testbench - Post-Layout Verification
+*******************************************************
+
+.option post=2 nomod
+.temp 25
+
+* Cài đặt biến VDD 
+.param vdd_val = 1.2
+
+.GLOBAL vdd! gnd!
+
+*******************************************************
+* 1. Include model và netlist post-layout (file SPF)
+*******************************************************
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+.include '/root/lab1vlsi/synopsys_custom/dff.starrc.lpe/dff.SPF'
+
+*******************************************************
+* 2. Khai báo nguồn DC
+*******************************************************
+VDD vdd! 0 vdd_val
+VSS gnd! 0 0
+
+*******************************************************
+* 3. Input Stimulus (Tạo xung Clock và tín hiệu Data)
+* Giữ nguyên thiết lập giống pre-layout để tiện so sánh delay
+*******************************************************
+VCLK clk 0 PULSE (0 vdd_val 5n 20p 20p 5n 10n)
+VD   d   0 PULSE (0 vdd_val 0  20p 20p 11n 23n)
+
+*******************************************************
+* 4. Gọi khối DUT (Device Under Test)
+*******************************************************
+X1 clk d q qn dff
+
+*******************************************************
+* 5. Tải ngõ ra (Output Load)
+*******************************************************
+Cload_q  q  0 10f
+Cload_qn qn 0 10f
+
+*******************************************************
+* 6. Thiết lập thời gian mô phỏng & Đo đạc cơ bản
+*******************************************************
+* Chạy 100ns để quan sát dạng sóng toàn diện
+.tran 1p 100n
+
+* --- ĐO ĐẠC CHO NGÕ RA Q ---
+* Đo Rise time của Q (Bắt đầu tìm kiếm sau 10ns)
+.measure tran trise_q TRIG v(q) VAL='0.1*vdd_val' RISE=1 TD=10n
++                     TARG v(q) VAL='0.9*vdd_val' RISE=1 TD=10n
+
+* Đo Fall time của Q (Bắt đầu tìm kiếm sau 10ns)
+.measure tran tfall_q TRIG v(q) VAL='0.9*vdd_val' FALL=1 TD=10n
++                     TARG v(q) VAL='0.1*vdd_val' FALL=1 TD=10n
+
+* --- ĐO ĐẠC CHO NGÕ RA QN ---
+* Đo Rise time của QN (Bắt đầu tìm kiếm sau 10ns)
+.measure tran trise_qn TRIG v(qn) VAL='0.1*vdd_val' RISE=1 TD=10n
++                      TARG v(qn) VAL='0.9*vdd_val' RISE=1 TD=10n
+
+* Đo Fall time của QN (Bắt đầu tìm kiếm sau 10ns)
+.measure tran tfall_qn TRIG v(qn) VAL='0.9*vdd_val' FALL=1 TD=10n
++                      TARG v(qn) VAL='0.1*vdd_val' FALL=1 TD=10n
+
+*******************************************************
+* 7. Xuất dạng sóng
+*******************************************************
+.probe v(clk) v(d) v(q) v(qn)
+
+.end

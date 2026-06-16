@@ -1,0 +1,44 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12-SP2 linux64"
+* "format" "HSP"
+* "rundate" "23:03:57 06/09/2026 "
+* "netlist" "tb_netlist_jkff "
+* "runtitle" "*******************************************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clk =   0.            
++ j =   0.            
++ k =   1.2000        
++ q = 560.8039m       
++ qn = 532.1843m       
++ vdd! =   1.2000        
++ x1.net12 =   1.1999        
++ x1.net15 =   1.2000        
++ x1.net18 =  15.5434u       
++ x1.net9 =  45.6430u       
++ x1.xi0.net29 =   1.2000        
++ x1.xi0.net34 =  50.3425u       
++ x1.xi0.net38 =  19.4304u       
++ x1.xi0.net39 =   1.1999        
++ x1.xi3.net1 = 475.0248m       
++ x1.xi2.net1 = 124.4738u       
++ x1.xi1.net1 =  29.0026u       
++ x1.xi0.xi8.net1 =   1.1999        
++ x1.xi0.xi8.net2 =  40.7866u       
++ x1.xi0.xi8.net3 =   1.1999        
++ x1.xi0.xi9.net1 =   1.2000        
++ x1.xi0.xi9.net2 =   1.1999        
++ x1.xi0.xi9.net3 =   1.1999        
++ x1.xi0.xi8.xi6.net1 =  92.1599m       
++ x1.xi0.xi8.xi5.net1 =  26.5733u       
++ x1.xi0.xi8.xi3.net1 =  46.3946u       
++ x1.xi0.xi8.xi4.net1 =  31.3511u       
++ x1.xi0.xi9.xi6.net1 =  41.4989m       
++ x1.xi0.xi9.xi5.net1 = 974.9040m       
++ x1.xi0.xi9.xi3.net1 =  92.1746m       
++ x1.xi0.xi9.xi4.net1 = 480.0824m       
+***   END: Saved Operating Point ***                     

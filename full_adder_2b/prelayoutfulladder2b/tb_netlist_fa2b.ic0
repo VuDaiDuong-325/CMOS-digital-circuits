@@ -1,0 +1,55 @@
+* "simulator" "HSPICE" 
+* "version" "N-2017.12-SP2 linux64"
+* "format" "HSP"
+* "rundate" "14:21:37 04/28/2026 "
+* "netlist" "tb_netlist_fa2b "
+* "runtitle" "*******************************************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a0 =   1.8000        
++ a1 =   1.8000        
++ b0 =   1.8000        
++ b1 =   1.8000        
++ cin =   1.8000        
++ cout =   1.7997        
++ s0 =   1.7997        
++ s1 =   1.7997        
++ vdd! =   1.8000        
++ xuut.net10 =   1.7988        
++ xuut.xi1.net32 =   1.7994        
++ xuut.xi1.net33 = 399.5006u       
++ xuut.xi1.net34 =   1.7986        
++ xuut.xi1.net35 = 428.5658u       
++ xuut.xi1.net36 = 455.8496u       
++ xuut.xi1.net37 =   1.7992        
++ xuut.xi1.net38 =   1.7990        
++ xuut.xi0.net32 =   1.7994        
++ xuut.xi0.net33 = 398.8541u       
++ xuut.xi0.net34 =   1.7986        
++ xuut.xi0.net35 = 428.5658u       
++ xuut.xi0.net36 = 455.8488u       
++ xuut.xi0.net37 =   1.7992        
++ xuut.xi0.net38 =   1.7990        
++ xuut.xi1.xi8.net32 = 298.1827u       
++ xuut.xi1.xi7.net32 =   1.4970        
++ xuut.xi1.xi6.net32 =   1.4977        
++ xuut.xi1.xi5.net32 = 251.5667u       
++ xuut.xi1.xi4.net32 = 269.6945u       
++ xuut.xi1.xi3.net32 = 251.7758u       
++ xuut.xi1.xi2.net32 = 284.3320u       
++ xuut.xi1.xi1.net32 = 252.0563u       
++ xuut.xi1.xi0.net32 =   1.4980        
++ xuut.xi0.xi8.net32 = 298.1823u       
++ xuut.xi0.xi7.net32 =   1.4969        
++ xuut.xi0.xi6.net32 =   1.4977        
++ xuut.xi0.xi5.net32 = 251.8301u       
++ xuut.xi0.xi4.net32 = 269.5025u       
++ xuut.xi0.xi3.net32 = 251.7758u       
++ xuut.xi0.xi2.net32 = 284.3320u       
++ xuut.xi0.xi1.net32 = 252.0563u       
++ xuut.xi0.xi0.net32 =   1.4980        
+***   END: Saved Operating Point ***                     

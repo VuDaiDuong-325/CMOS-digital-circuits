@@ -1,0 +1,66 @@
+* HSPICE Netlist - NAND2 Functional Verification (With Load Capacitor)
+
+.options POST=1 parhier=local
+
+* --- 1. Models Section ---
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+
+* --- 2. Design Variables ---
+.param vdd = 1.8
+
+* --- 3. Power Supply ---
+V_GND gnd! 0 0
+V_VDD vdd! 0 'vdd'
+
+* --- 4. Input Stimuli ---
+* Quét 4 trạng thái logic bằng 2 xung vuông (Trise/Tfall = 20ps để đo delay chuẩn hơn)
+Va a 0 PULSE('vdd' 0 0 20p 20p 4n 8n)
+Vb b 0 PULSE('vdd' 0 0 20p 20p 2n 4n)
+
+* --- 5. Core NAND2 ---
+m1 net5 b gnd! gnd! N w=0.48u l=0.1u nf=1 m=1 ad=0.1056p as=0.1056p pd=0.92u ps=0.92u
++  nrd=0.4583333333 nrs=0.4583333333 sa=0.22u sb=0.22u sd=0
+m0 y a net5 gnd! N w=0.48u l=0.1u nf=1 m=1 ad=0.1056p as=0.1056p pd=0.92u ps=0.92u
++  nrd=0.4583333333 nrs=0.4583333333 sa=0.22u sb=0.22u sd=0
+m3 y a vdd! vdd! P w=0.48u l=0.1u nf=1 m=1 ad=0.1056p as=0.1056p pd=0.92u ps=0.92u
++  nrd=0.4583333333 nrs=0.4583333333 sa=0.22u sb=0.22u sd=0
+m2 y b vdd! vdd! P w=0.48u l=0.1u nf=1 m=1 ad=0.1056p as=0.1056p pd=0.92u ps=0.92u
++  nrd=0.4583333333 nrs=0.4583333333 sa=0.22u sb=0.22u sd=0
+
+* --- 6. Output Load ---
+* Thêm tụ tải 10fF từ ngõ ra Y xuống GND để dập glitch và đo timing chính xác
+Cload y 0 10f
+
+* --- 7. Analysis Section ---
+* Tăng thời gian mô phỏng lên 10ns để mạch chạy trọn vẹn qua mốc 8ns
+.tran 0.01n 10n START=0
+.probe tran V(a) V(b) V(y)
+
+* ==============================================================================
+* LỆNH ĐO ĐẠC (.MEASURE)
+* ==============================================================================
+
+* 1. Đo Rise Time (trise) tại sự kiện 8ns (sử dụng TD=7n để bỏ qua nhiễu trước đó)
+.meas tran trise_y 
++ TRIG v(y) VAL='0.1*vdd' RISE=1 TD=7n
++ TARG v(y) VAL='0.9*vdd' RISE=1 TD=7n
+
+* 2. Đo Fall Time (tfall) tại sự kiện 6ns (sử dụng TD=5n để bỏ qua nhiễu trước đó)
+.meas tran tfall_y 
++ TRIG v(y) VAL='0.9*vdd' FALL=1 TD=5n
++ TARG v(y) VAL='0.1*vdd' FALL=1 TD=5n
+
+* 3. Đo Propagation Delay (tpd_hl): Output Y kéo xuống GND (xảy ra tại 6ns)
+* Kích hoạt đo khi ngõ B rớt sườn lên lúc 6ns. Dùng TD=5n.
+.meas tran tpd_hl 
++ TRIG v(b) VAL='0.5*vdd' RISE=1 TD=5n 
++ TARG v(y) VAL='0.5*vdd' FALL=1 TD=5n
+
+* 4. Đo Propagation Delay (tpd_lh): Output Y kéo lên VDD (xảy ra tại 8ns)
+* Kích hoạt đo khi ngõ A rớt sườn xuống lúc 8ns. Dùng TD=7n.
+.meas tran tpd_lh 
++ TRIG v(a) VAL='0.5*vdd' FALL=1 TD=7n 
++ TARG v(y) VAL='0.5*vdd' RISE=1 TD=7n
+
+.end
+

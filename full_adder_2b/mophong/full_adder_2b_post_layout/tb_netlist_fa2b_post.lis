@@ -1,0 +1,1614 @@
+ ****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: tb_netlist_fa2b_post                                              
+  Command line options: /usr/synopsys/hspice/N-2017.12-SP2/hspice/linux64/hspice tb_netlist_fa2b_post -o tb_netlist_fa2b_post.lis
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.3 
+ lic: USER:   root                 HOSTNAME: localhost.localdomain 
+ lic: HOSTID: 1234567890ab         PID:      28322 
+ lic: Using FLEXlm license file: 
+ lic: 27000@localhost 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2030/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@localhost 
+ lic:   
+1****** HSPICE -- N-2017.12-SP2 linux64 (May 24 2018) ******                    
+ ******  
+ * hspice testbench - full adder 2-bit post-layout timing
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xfa2b.                          full_adder_2b      1.00 
+ ******  
+ * hspice testbench - full adder 2-bit post-layout timing
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: /root/lab1vlsi/PDK/hspice/reference_models.inc
+ Model line:          346
+ Model Name: n  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VERSION =    4.2 
+    TOXREF =  3e-09 
+    TOXE = 2.33e-09 
+    TOXP = 2.03e-09 
+    TOXM = 2.33e-09 
+    DTOX =  3e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR = 0.3235 
+    XJ = 1.5e-07 
+    VSAT = 9.706e+04 
+    A0 =  2.167 
+    AGS = 0.8235 
+    A1 = -0.5166 
+    A2 = 0.9523 
+    AT = 4.5e+04 
+    KETA = -0.03675 
+    NSUB =  6e+16 
+    NDEP = 8.369e+17 
+    NSD =  1e+20 
+    NGATE =  4e+20 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.3189 
+    KT1 = -0.2081 
+    KT1L =      0 
+    KT2 = -0.04464 
+    K2 = 0.009447 
+    K3 = -2.212 
+    K3B =  0.354 
+    LPE0 = 1.222e-07 
+    LPEB =      0 
+    DVTP0 =  4e-07 
+    DVTP1 =      2 
+    W0 =      0 
+    DVT0 =   13.9 
+    DVT1 =  5.692 
+    DVT2 = -1.143e-12 
+    DVT0W = -99.96 
+    DVT1W = 4.864e+06 
+    DVT2W = -0.07826 
+    DROUT =      0 
+    DSUB = 0.4885 
+    VTH0 = 0.2273 
+    EU =   1.67 
+    UA = -4.842e-10 
+    UA1 = 2.684e-09 
+    UB =  2e-18 
+    UB1 = -3.673e-18 
+    UC = 2.215e-10 
+    UC1 = -6.421e-11 
+    U0 = 0.04031 
+    UTE =  -1.73 
+    VOFF = -0.1061 
+    VOFFL =      0 
+    MINV = 0.0545 
+    FPROUT =    200 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA = 0.0075 
+    RDSW =    100 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 6.345e+04 
+    ETAB = 3.348e+04 
+    PCLM = 0.8927 
+    PDIBLC1 =      0 
+    PDIBLC2 = 0.0001763 
+    PDIBLCB =      0 
+    PSCBE1 = 9.264e+08 
+    PSCBE2 =  1e-20 
+    PVAG = -0.05627 
+    WR =      1 
+    DWG = -5.051e-08 
+    DWB = -8.395e-08 
+    XW = 1.5e-08 
+    XWREF = 1.5e-08 
+    XL = -3.5e-08 
+    XLREF = -3.5e-08 
+    B0 = -6.833e-08 
+    B1 = -1.218e-07 
+    ALPHA0 =      0 
+    ALPHA1 =   0.03 
+    AGIDL =  9e-08 
+    BGIDL = 2.3e+09 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =   0.53 
+    AIGC = 0.0103 
+    BIGC = 0.001525 
+    CIGC =      0 
+    AIGSD = 0.00845 
+    BIGSD = 0.0004021 
+    CIGSD = 0.001463 
+    AIGBACC = 0.01134 
+    BIGBACC = 0.003249 
+    CIGBACC = 0.1416 
+    AIGBINV =   0.35 
+    BIGBINV =   0.03 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      1 
+    NIGBACC =   4.05 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =    2.3 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =    8.7 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 6.514e-11 
+    CGDL = 6.514e-11 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.38e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC = 1.172e-08 
+    DLCIG = 2.5e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    1.2 
+    MOIN =   12.6 
+    NOFF =  1.686 
+    VOFFCV = -0.05472 
+    DMCG = 9.25e-08 
+    DMCI = 9.25e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000732 
+    TPB =  0.001 
+    TCJSW = 0.000357 
+    TPBSW = 0.0019 
+    TCJSWG = 0.000357 
+    TPBSWG = 0.0019 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LNFACTOR = 1.062e-06 
+    LA1 = 5.819e-08 
+    LKETA = 3.404e-08 
+    LK1 = 7.948e-08 
+    LK2 = -3.398e-08 
+    LVTH0 = -2.235e-08 
+    LUA = -6.01e-16 
+    LUC = -8.463e-17 
+    LU0 = 5.87e-09 
+    LPRWG = 2.732e-06 
+    LPRWB = -7.551e-07 
+    LETA0 = -0.01995 
+    LETAB = -0.01088 
+    WKETA = -1.405e-08 
+    WVTH0 = 2.468e-09 
+    WUA = 4.058e-16 
+    WUC = -4.983e-17 
+    WU0 = -1.953e-09 
+    WPRWB = 1.014e-05 
+    PNFACTOR = 3.446e-14 
+    PVSAT = -2.973e-09 
+    PKETA = 1.896e-15 
+    PK1 = 1.389e-15 
+    PK2 = -1e-15 
+    PVTH0 = -4.112e-15 
+    PUA = -6.55e-24 
+    PUB = 1.779e-31 
+    PUC = -2.958e-34 
+    PU0 = 2.289e-15 
+    PVOFF = 1.447e-15 
+    PRDSW = 3.812e-10 
+    PPRWG = 8.224e-12 
+    PPRWB = -2.572e-12 
+    PWR = -1.046e-12 
+    SA0 = 6.3e-07 
+    SB0 = 6.3e-07 
+    WLOD =  8e-07 
+    KU0 = -7.36e-08 
+    KVSAT =    0.2 
+    KVTH0 = 3.5e-09 
+    TKU0 =   0.01 
+    LLODKU0 =      1 
+    WLODKU0 =      1 
+    LLODVTH =      1 
+    WLODVTH =      1 
+    LKU0 = 4.027e-07 
+    WKU0 =  8e-07 
+    PKU0 = -2e-13 
+    LKVTH0 = -2.68e-11 
+    WKVTH0 = 1.5e-06 
+    PKVTH0 =      0 
+    STK2 = 1.35e-09 
+    LODK2 =    0.5 
+    STETA0 =      0 
+    LODETA0 =      1 
+    TNOM =  298.1 
+    CGSO = 1.209e-10 
+    CGDO = 1.209e-10 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   10.5 
+    JSS = 1.77e-07 
+    JSWS = 4.23e-13 
+    JSWGS =      0 
+    PBS =    0.5 
+    MJS =   0.25 
+    PBSWS =    0.8 
+    MJSWS =   0.01 
+    CJS = 0.00098 
+    CJSWS =  4e-11 
+    NJS =      1 
+    PBSWGS =   0.78 
+    MJSWGS =   0.52 
+    CJSWGS = 3.7e-10 
+    XTIS =      3 
+    JSD = 1.77e-07 
+    JSWD = 4.23e-13 
+    JSWGD =      0 
+    PBD =    0.5 
+    MJD =   0.25 
+    PBSWD =    0.8 
+    MJSWD =   0.01 
+    CJD = 0.00098 
+    CJSWD =  4e-11 
+    NJD =      1 
+    PBSWGD =   0.78 
+    MJSWGD =   0.52 
+    CJSWGD = 3.7e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = -1.287e-07 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = -1.227e-08 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 4.293e+24 
+    NOIB = 1.612e+24 
+    NOIC =   8.75 
+    EM = 1.192e+07 
+    EF = 0.8841 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ Model file: /root/lab1vlsi/PDK/hspice/reference_models.inc
+ Model line:          607
+ Model Name: p  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VERSION =    4.2 
+    TOXREF =  3e-09 
+    TOXE = 2.5e-09 
+    TOXP = 1.975e-09 
+    TOXM = 2.5e-09 
+    DTOX = 5.25e-10 
+    EPSROX =    3.9 
+    CDSC =  1e-12 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = -0.0001318 
+    NFACTOR =    0.5 
+    XJ = 1.7e-07 
+    VSAT = 3.77e+04 
+    A0 =  5.506 
+    AGS =  1.218 
+    A1 = -1.139e-07 
+    A2 =      1 
+    AT = 2.8e+05 
+    KETA = -0.02974 
+    NSUB =  6e+16 
+    NDEP = 1.72e+17 
+    NSD =  1e+20 
+    NGATE =  8e+19 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.1623 
+    KT1 = -0.2898 
+    KT1L =      0 
+    KT2 = -0.02958 
+    K2 = 0.01058 
+    K3 = -12.26 
+    K3B =  1.146 
+    LPE0 = 5.966e-07 
+    LPEB =  1e-07 
+    DVTP0 =      0 
+    DVTP1 =      0 
+    W0 = 4.976e-09 
+    DVT0 = 0.1239 
+    DVT1 = 0.1221 
+    DVT2 = -0.5358 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =   0.05 
+    DSUB = 0.1634 
+    VTH0 = -0.1647 
+    EU =      1 
+    UA = -2.764e-10 
+    UA1 = 4.215e-09 
+    UB = 2.014e-18 
+    UB1 = -8.025e-18 
+    UC = 8.649e-11 
+    UC1 = -6.421e-11 
+    U0 = 0.008392 
+    UTE = -1.198 
+    VOFF = -0.09684 
+    VOFFL =      0 
+    MINV =      0 
+    FPROUT =   1000 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA =   0.02 
+    RDSW =    160 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      0 
+    PRWB = 1.896e-16 
+    PRT =      0 
+    ETA0 =  0.085 
+    ETAB = -6.583e-10 
+    PCLM = 0.09455 
+    PDIBLC1 =      0 
+    PDIBLC2 =  0.005 
+    PDIBLCB =      0 
+    PSCBE1 = 9.264e+08 
+    PSCBE2 =  1e-20 
+    PVAG =      0 
+    WR =  4.853 
+    DWG = -8.023e-08 
+    DWB = -6.224e-08 
+    XW = 1.5e-08 
+    XWREF = 1.5e-08 
+    XL = -3.5e-08 
+    XLREF = -3.5e-08 
+    B0 = -5.549e-42 
+    B1 =      0 
+    ALPHA0 =      0 
+    ALPHA1 =   0.06 
+    AGIDL =  9e-08 
+    BGIDL = 2.3e+09 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =   0.53 
+    AIGC = 0.00606 
+    BIGC = 0.0007625 
+    CIGC =  1e-10 
+    AIGSD = 0.00459 
+    BIGSD =      0 
+    CIGSD = 0.002267 
+    AIGBACC = 0.01069 
+    BIGBACC = 0.003132 
+    CIGBACC = 0.1498 
+    AIGBINV =   0.35 
+    BIGBINV =   0.03 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      1 
+    NIGBACC =  4.049 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =    2.3 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =     12 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 1.896e-10 
+    CGDL = 1.896e-10 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.69e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC = 1.525e-08 
+    DLCIG = 2.5e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    1.2 
+    MOIN =  11.09 
+    NOFF =  2.175 
+    VOFFCV = -0.03885 
+    DMCG = 9.25e-08 
+    DMCI = 9.25e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000854 
+    TPB = 0.0019 
+    TCJSW = 0.000357 
+    TPBSW = 0.0019 
+    TCJSWG = 0.00312 
+    TPBSWG = 0.0019 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LCIT = 1.313e-09 
+    LAGS = 8.468e-07 
+    LKETA = -6.589e-08 
+    LK1 = -1.194e-10 
+    LK2 = 2.194e-08 
+    LVTH0 = 2.402e-08 
+    LUA = -2.621e-16 
+    LUB = -1.05e-25 
+    LUC = -6.27e-17 
+    LU0 = 1.696e-09 
+    LVOFF = 1.347e-08 
+    LPRWB = -9.343e-07 
+    LETAB = -2.045e-08 
+    LPCLM = 1.05e-06 
+    WVTH0 = -2.317e-08 
+    WUA = 1.042e-15 
+    WUC = -1.322e-16 
+    WU0 = 1.146e-09 
+    WPRWB = 4.937e-06 
+    PNFACTOR = 2.733e-13 
+    PVSAT = -9.545e-10 
+    PK1 = -1.487e-16 
+    PK2 =  1e-22 
+    PVTH0 = 9.589e-15 
+    PUA = 2.558e-23 
+    PUB = -1.331e-31 
+    PUC = 1.674e-23 
+    PU0 = -3.644e-16 
+    PVOFF = 5.229e-15 
+    PPRWB = -1.549e-31 
+    PWR = -6.867e-13 
+    SA0 = 6.3e-07 
+    SB0 = 6.3e-07 
+    WLOD =  8e-07 
+    KU0 = 1.325e-07 
+    KVSAT =   -0.9 
+    KVTH0 = -1.5e-09 
+    TKU0 =    0.1 
+    LLODKU0 =      1 
+    WLODKU0 =      1 
+    LLODVTH =      2 
+    WLODVTH =      1 
+    LKU0 = 1.33e-07 
+    WKU0 = 6.5e-07 
+    PKU0 =      0 
+    LKVTH0 = -1.68e-15 
+    WKVTH0 =  5e-07 
+    PKVTH0 =      0 
+    STK2 =  4e-10 
+    LODK2 =      2 
+    STETA0 =      0 
+    LODETA0 =      1 
+    TNOM =  298.1 
+    CGSO = 2.568e-11 
+    CGDO = 2.568e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   9.68 
+    JSS = 1.245e-07 
+    JSWS = 3.77e-13 
+    JSWGS =      0 
+    PBS =    0.8 
+    MJS =   0.36 
+    PBSWS =    0.8 
+    MJSWS =   0.01 
+    CJS = 0.00114 
+    CJSWS =  6e-11 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.99 
+    CJSWGS = 3.6e-10 
+    XTIS =      3 
+    JSD = 1.245e-07 
+    JSWD = 3.77e-13 
+    JSWGD =      0 
+    PBD =    0.8 
+    MJD =   0.36 
+    PBSWD =    0.8 
+    MJSWD =   0.01 
+    CJD = 0.00114 
+    CJSWD =  6e-11 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.99 
+    CJSWGD = 3.6e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = -9.028e-08 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 1.333e-10 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 1.635e+24 
+    NOIB = 7.241e+26 
+    NOIC =   8.75 
+    EM = 1.5e+08 
+    EF =   1.19 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+  **warning** (tb_netlist_fa2b_post:15) Both nodes of element v_gnd are connected together; Line ignored.
+  **info** (tb_netlist_fa2b_post:20) DC voltage reset to initial transient source value in source 0:va0. new dc=0.1800D+01
+  
+             
+ Warning:'No DC path nodes' occurs 284 times
+ No DC path from the following nodes,connected with gdcpath:
+ ---------------------------------------------------
+ |Node                               |Subckt       |
+ |-----------------------------------+-------------|
+ |xfa2b.ln_n__hercules_generated_31:1|full_adder_2b|
+ |xfa2b.ln_n__hercules_generated_31:2|full_adder_2b|
+ |xfa2b.ln_i0|n_205:2                |full_adder_2b|
+ |xfa2b.ln_i0|n_205:4                |full_adder_2b|
+ |xfa2b.ln_i0|n_205:5                |full_adder_2b|
+ |xfa2b.ln_i0|n_206:2                |full_adder_2b|
+ |xfa2b.ln_i0|n_206:3                |full_adder_2b|
+ |xfa2b.ln_i0|n_206:4                |full_adder_2b|
+ |xfa2b.ln_i0|n_207:2                |full_adder_2b|
+ |xfa2b.ln_i0|n_211:2                |full_adder_2b|
+ ---------------------------------------------------
+              
+             
+ Warning:'1 connection nodes' occurs 611 times
+ Summary of 1 connection from the following nodes:
+ ---------------------------
+ |Node       |Subckt       |
+ |-----------+-------------|
+ |xfa2b.a0:16|full_adder_2b|
+ |xfa2b.a0:20|full_adder_2b|
+ |xfa2b.a0:21|full_adder_2b|
+ |xfa2b.a0:23|full_adder_2b|
+ |xfa2b.a0:24|full_adder_2b|
+ |xfa2b.a1:16|full_adder_2b|
+ |xfa2b.a1:20|full_adder_2b|
+ |xfa2b.a1:21|full_adder_2b|
+ |xfa2b.a1:23|full_adder_2b|
+ |xfa2b.a1:24|full_adder_2b|
+ ---------------------------
+              
+             
+ Warning:'No Tran path ' occurs 192 times
+ Summary of No Tran path from the following nodes:
+ ---------------------------------------------------
+ |Node                               |Subckt       |
+ |-----------------------------------+-------------|
+ |xfa2b.ln_n__hercules_generated_31:1|full_adder_2b|
+ |xfa2b.ln_n__hercules_generated_31:2|full_adder_2b|
+ |xfa2b.ln_i0|n_205:2                |full_adder_2b|
+ |xfa2b.ln_i0|n_205:4                |full_adder_2b|
+ |xfa2b.ln_i0|n_205:5                |full_adder_2b|
+ |xfa2b.ln_i0|n_206:2                |full_adder_2b|
+ |xfa2b.ln_i0|n_206:3                |full_adder_2b|
+ |xfa2b.ln_i0|n_206:4                |full_adder_2b|
+ |xfa2b.ln_i0|n_207:2                |full_adder_2b|
+ |xfa2b.ln_i0|n_211:2                |full_adder_2b|
+ ---------------------------------------------------
+              
+      
+             
+ Warning:'Floating bulk' occurs 72 times
+ Summary of floating bulk:
+ ---------------------------------------------
+ |Node                   |Device             |
+ |-----------------------+-------------------|
+ |xfa2b.xi0|xi0|mm10:bulk|xfa2b.mxi0|xi0|mm10|
+ |xfa2b.xi0|xi0|mm11:bulk|xfa2b.mxi0|xi0|mm11|
+ |xfa2b.xi0|xi0|mm8:bulk |xfa2b.mxi0|xi0|mm8 |
+ |xfa2b.xi0|xi0|mm9:bulk |xfa2b.mxi0|xi0|mm9 |
+ |xfa2b.xi0|xi1|mm10:bulk|xfa2b.mxi0|xi1|mm10|
+ |xfa2b.xi0|xi1|mm11:bulk|xfa2b.mxi0|xi1|mm11|
+ |xfa2b.xi0|xi1|mm8:bulk |xfa2b.mxi0|xi1|mm8 |
+ |xfa2b.xi0|xi1|mm9:bulk |xfa2b.mxi0|xi1|mm9 |
+ |xfa2b.xi0|xi2|mm10:bulk|xfa2b.mxi0|xi2|mm10|
+ |xfa2b.xi0|xi2|mm11:bulk|xfa2b.mxi0|xi2|mm11|
+ ---------------------------------------------
+              
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-04  ~  1e-03|83        |3.9923    |
+ |1e-02  ~  1e-01|555       |26.6955   |
+ |1e-01  ~  1e+00|490       |23.5690   |
+ |1e+00  ~  1e+03|951       |45.7431   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-24  ~  1e-23|15        |0.6834    |
+ |1e-23  ~  1e-22|57        |2.5968    |
+ |1e-22  ~  1e-21|13        |0.5923    |
+ |1e-21  ~  1e-20|16        |0.7289    |
+ |1e-20  ~  1e-19|168       |7.6538    |
+ |1e-19  ~  1e-18|383       |17.4487   |
+ |1e-18  ~  1e-17|681       |31.0251   |
+ |1e-17  ~  1e-16|822       |37.4487   |
+ |1e-16  ~  1e-15|36        |1.6401    |
+ |1e-15  ~  1e-14|1         |0.0456    |
+ |1e-14  ~  1e-13|3         |0.1367    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|2079      |
+ |            |          |
+ |Constant Cap|2195      |
+ -------------------------
+              
+  Opening plot unit= 15
+ file=tb_netlist_fa2b_post.pa0
+
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ * hspice testbench - full adder 2-bit post-layout timing
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a0      =   1.8000  0:a1      =   1.8000  0:b0      =   1.8000 
+ +0:b1      =   1.8000  0:cin     =   1.8000  0:cout    =   1.7993 
+ +0:s0      =   1.7993  0:s1      =   1.7993  0:vdd!    =   1.8000 
+ +1:a0:1    =   1.8000  1:a0:10   =   1.8000  1:a0:11   =   1.8000 
+ +1:a0:12   =   1.8000  1:a0:13   =   1.8000  1:a0:14   =   1.8000 
+ +1:a0:15   =   1.8000  1:a0:16   =   1.8000  1:a0:17   =   1.8000 
+ +1:a0:18   =   1.8000  1:a0:19   =   1.8000  1:a0:2    =   1.8000 
+ +1:a0:20   =   1.8000  1:a0:21   =   1.8000  1:a0:22   =   1.8000 
+ +1:a0:23   =   1.8000  1:a0:24   =   1.8000  1:a0:25   =   1.8000 
+ +1:a0:26   =   1.8000  1:a0:27   =   1.8000  1:a0:28   =   1.8000 
+ +1:a0:3    =   1.8000  1:a0:4    =   1.8000  1:a0:5    =   1.8000 
+ +1:a0:6    =   1.8000  1:a0:7    =   1.8000  1:a0:8    =   1.8000 
+ +1:a0:9    =   1.8000  1:a1:1    =   1.8000  1:a1:10   =   1.8000 
+ +1:a1:11   =   1.8000  1:a1:12   =   1.8000  1:a1:13   =   1.8000 
+ +1:a1:14   =   1.8000  1:a1:15   =   1.8000  1:a1:16   =   1.8000 
+ +1:a1:17   =   1.8000  1:a1:18   =   1.8000  1:a1:19   =   1.8000 
+ +1:a1:2    =   1.8000  1:a1:20   =   1.8000  1:a1:21   =   1.8000 
+ +1:a1:22   =   1.8000  1:a1:23   =   1.8000  1:a1:24   =   1.8000 
+ +1:a1:25   =   1.8000  1:a1:26   =   1.8000  1:a1:27   =   1.8000 
+ +1:a1:28   =   1.8000  1:a1:3    =   1.8000  1:a1:4    =   1.8000 
+ +1:a1:5    =   1.8000  1:a1:6    =   1.8000  1:a1:7    =   1.8000 
+ +1:a1:8    =   1.8000  1:a1:9    =   1.8000  1:b0:1    =   1.8000 
+ +1:b0:10   =   1.8000  1:b0:11   =   1.8000  1:b0:12   =   1.8000 
+ +1:b0:13   =   1.8000  1:b0:14   =   1.8000  1:b0:15   =   1.8000 
+ +1:b0:16   =   1.8000  1:b0:17   =   1.8000  1:b0:18   =   1.8000 
+ +1:b0:19   =   1.8000  1:b0:2    =   1.8000  1:b0:20   =   1.8000 
+ +1:b0:21   =   1.8000  1:b0:22   =   1.8000  1:b0:23   =   1.8000 
+ +1:b0:24   =   1.8000  1:b0:25   =   1.8000  1:b0:26   =   1.8000 
+ +1:b0:3    =   1.8000  1:b0:4    =   1.8000  1:b0:5    =   1.8000 
+ +1:b0:6    =   1.8000  1:b0:7    =   1.8000  1:b0:8    =   1.8000 
+ +1:b0:9    =   1.8000  1:b1:1    =   1.8000  1:b1:10   =   1.8000 
+ +1:b1:11   =   1.8000  1:b1:12   =   1.8000  1:b1:13   =   1.8000 
+ +1:b1:14   =   1.8000  1:b1:15   =   1.8000  1:b1:16   =   1.8000 
+ +1:b1:17   =   1.8000  1:b1:18   =   1.8000  1:b1:19   =   1.8000 
+ +1:b1:2    =   1.8000  1:b1:20   =   1.8000  1:b1:21   =   1.8000 
+ +1:b1:22   =   1.8000  1:b1:23   =   1.8000  1:b1:24   =   1.8000 
+ +1:b1:25   =   1.8000  1:b1:26   =   1.8000  1:b1:3    =   1.8000 
+ +1:b1:4    =   1.8000  1:b1:5    =   1.8000  1:b1:6    =   1.8000 
+ +1:b1:7    =   1.8000  1:b1:8    =   1.8000  1:b1:9    =   1.8000 
+ +1:cin:1   =   1.8000  1:cin:10  =   1.8000  1:cin:11  =   1.8000 
+ +1:cin:12  =   1.8000  1:cin:13  =   1.8000  1:cin:14  =   1.8000 
+ +1:cin:15  =   1.8000  1:cin:16  =   1.8000  1:cin:17  =   1.8000 
+ +1:cin:18  =   1.8000  1:cin:19  =   1.8000  1:cin:2   =   1.8000 
+ +1:cin:20  =   1.8000  1:cin:21  =   1.8000  1:cin:22  =   1.8000 
+ +1:cin:23  =   1.8000  1:cin:24  =   1.8000  1:cin:25  =   1.8000 
+ +1:cin:26  =   1.8000  1:cin:3   =   1.8000  1:cin:4   =   1.8000 
+ +1:cin:5   =   1.8000  1:cin:6   =   1.8000  1:cin:7   =   1.8000 
+ +1:cin:8   =   1.8000  1:cin:9   =   1.8000  1:cout:1  =   1.7993 
+ +1:cout:2  =   1.7993  1:cout:3  =   1.7993  1:cout:4  =   1.7993 
+ +1:cout:5  =   1.7993  1:cout:6  =   1.7993  1:cout:7  =   1.7993 
+ +1:gnd!:1  =   0.      1:gnd!:10 =  15.5833u 1:gnd!:100=  20.2636u
+ +1:gnd!:101=  20.2724u 1:gnd!:102=  20.0741u 1:gnd!:103=  20.2381u
+ +1:gnd!:104=  20.2381u 1:gnd!:105=  21.0040u 1:gnd!:106=  21.0100u
+ +1:gnd!:107=  21.0227u 1:gnd!:108=  20.7364u 1:gnd!:109=  20.9733u
+ +1:gnd!:11 =  16.5333u 1:gnd!:110=  20.9733u 1:gnd!:111=  21.6874u
+ +1:gnd!:112=  21.6956u 1:gnd!:113=  21.7133u 1:gnd!:114=  21.3158u
+ +1:gnd!:115=  21.6446u 1:gnd!:116=  21.6446u 1:gnd!:117=  22.1521u
+ +1:gnd!:118=  22.1603u 1:gnd!:119=  22.1781u 1:gnd!:12 =  16.5333u
+ +1:gnd!:120=  21.7803u 1:gnd!:121=  22.1093u 1:gnd!:122=  22.1093u
+ +1:gnd!:123=  22.4098u 1:gnd!:124=  22.4159u 1:gnd!:125=  22.4293u
+ +1:gnd!:126=  22.1297u 1:gnd!:127=  22.3775u 1:gnd!:128=  22.3775u
+ +1:gnd!:129=  22.7645u 1:gnd!:13 =  17.7508u 1:gnd!:130=  22.7727u
+ +1:gnd!:131=  22.7905u 1:gnd!:132=  22.3924u 1:gnd!:133=  22.7217u
+ +1:gnd!:134=  22.7217u 1:gnd!:135=  22.7258u 1:gnd!:136=  22.7299u
+ +1:gnd!:137=  22.7388u 1:gnd!:138=  22.5400u 1:gnd!:139=  22.7044u
+ +1:gnd!:14 =  17.7508u 1:gnd!:140=  22.7044u 1:gnd!:141=  22.9214u
+ +1:gnd!:142=  22.9278u 1:gnd!:143=  22.9417u 1:gnd!:144=  22.8879u
+ +1:gnd!:145=  22.8879u 1:gnd!:146=  22.6302u 1:gnd!:147=  22.6302u
+ +1:gnd!:148=   4.9513u 1:gnd!:149=  10.9972u 1:gnd!:15 =  18.3156u
+ +1:gnd!:150=  12.5115u 1:gnd!:151=  13.9618u 1:gnd!:152=  15.2030u
+ +1:gnd!:153=  16.2466u 1:gnd!:154=  17.3699u 1:gnd!:155=  18.1255u
+ +1:gnd!:156=  18.0561u 1:gnd!:157=  19.5254u 1:gnd!:158=  20.2422u
+ +1:gnd!:159=  20.9792u 1:gnd!:16 =  18.3156u 1:gnd!:160=  21.6528u
+ +1:gnd!:161=  22.1176u 1:gnd!:162=  22.3837u 1:gnd!:163=  22.7299u
+ +1:gnd!:164=  22.7085u 1:gnd!:165=  22.8943u 1:gnd!:17 =  18.4449u
+ +1:gnd!:18 =  18.4449u 1:gnd!:19 =  19.7153u 1:gnd!:2  =   0.     
+ +1:gnd!:20 =  19.7153u 1:gnd!:21 =  20.4320u 1:gnd!:22 =  20.4320u
+ +1:gnd!:23 =  21.2532u 1:gnd!:24 =  21.2532u 1:gnd!:25 =  22.0332u
+ +1:gnd!:26 =  22.0332u 1:gnd!:27 =  22.4982u 1:gnd!:28 =  22.4982u
+ +1:gnd!:29 =  22.6704u 1:gnd!:3  =  11.1870u 1:gnd!:30 =  22.6704u
+ +1:gnd!:31 =  23.1108u 1:gnd!:32 =  23.1108u 1:gnd!:33 =  22.8987u
+ +1:gnd!:34 =  22.8987u 1:gnd!:35 =  23.1924u 1:gnd!:36 =  23.1924u
+ +1:gnd!:37 =   4.5019u 1:gnd!:38 =   4.3949u 1:gnd!:39 =   4.1643u
+ +1:gnd!:4  =  11.1870u 1:gnd!:40 =   9.3382u 1:gnd!:41 =   5.0583u
+ +1:gnd!:42 =   5.0583u 1:gnd!:43 =   9.3382u 1:gnd!:44 =  11.0144u
+ +1:gnd!:45 =  11.0185u 1:gnd!:46 =  11.0274u 1:gnd!:47 =  10.8291u
+ +1:gnd!:48 =  10.9931u 1:gnd!:49 =  10.9931u 1:gnd!:5  =  12.7858u
+ +1:gnd!:50 =  12.5364u 1:gnd!:51 =  12.5423u 1:gnd!:52 =  12.5551u
+ +1:gnd!:53 =  12.2684u 1:gnd!:54 =  12.5055u 1:gnd!:55 =  12.5055u
+ +1:gnd!:56 =  13.9963u 1:gnd!:57 =  14.0045u 1:gnd!:58 =  14.0222u
+ +1:gnd!:59 =  13.6247u 1:gnd!:6  =  12.7858u 1:gnd!:60 =  13.9536u
+ +1:gnd!:61 =  13.9536u 1:gnd!:62 =  15.2376u 1:gnd!:63 =  15.2458u
+ +1:gnd!:64 =  15.2635u 1:gnd!:65 =  14.8661u 1:gnd!:66 =  15.1948u
+ +1:gnd!:67 =  15.1948u 1:gnd!:68 =  16.2726u 1:gnd!:69 =  16.2788u
+ +1:gnd!:7  =  14.3422u 1:gnd!:70 =  16.2922u 1:gnd!:71 =  15.9926u
+ +1:gnd!:72 =  16.2404u 1:gnd!:73 =  16.2404u 1:gnd!:74 =  17.4044u
+ +1:gnd!:75 =  17.4127u 1:gnd!:76 =  17.4304u 1:gnd!:77 =  17.0324u
+ +1:gnd!:78 =  17.3616u 1:gnd!:79 =  17.3616u 1:gnd!:8  =  14.3422u
+ +1:gnd!:80 =  18.1428u 1:gnd!:81 =  18.1469u 1:gnd!:82 =  18.1557u
+ +1:gnd!:83 =  18.1214u 1:gnd!:84 =  18.1214u 1:gnd!:85 =  17.9570u
+ +1:gnd!:86 =  18.4800u 1:gnd!:87 =  18.1564u 1:gnd!:88 =  18.1803u
+ +1:gnd!:89 =  18.1941u 1:gnd!:9  =  15.5833u 1:gnd!:90 =  18.5802u
+ +1:gnd!:91 =  18.0322u 1:gnd!:92 =  18.0322u 1:gnd!:93 =  19.5427u
+ +1:gnd!:94 =  19.5468u 1:gnd!:95 =  19.5556u 1:gnd!:96 =  19.3572u
+ +1:gnd!:97 =  19.5213u 1:gnd!:98 =  19.5213u 1:gnd!:99 =  20.2595u
+ +1:ln_n__he=   0.      1:ln_n__he=   0.      1:ln_n__he=   0.     
+ +1:ln_n__he=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i0|n_=   0.      1:ln_i0|n_=   0.      1:ln_i0|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_i1|n_=   0.     
+ +1:ln_i1|n_=   0.      1:ln_i1|n_=   0.      1:ln_n_27:=   0.     
+ +1:ln_n_27:=   0.      1:ln_n_27:=   0.      1:ln_n_27:=   0.     
+ +1:ln_n_28:=   0.      1:ln_n_28:=   0.      1:ln_n_28:=   0.     
+ +1:ln_n_28:=   0.      1:ln_n_29:=   0.      1:ln_n_29:=   0.     
+ +1:ln_n_29:=   0.      1:ln_n_29:=   0.      1:ln_n_29:=   0.     
+ +1:ln_n_5:1=   0.      1:ln_n_5:2=   0.      1:ln_n_6:1= 468.7571m
+ +1:ln_n_6:2= 468.7571m 1:ln_n_7:1=   0.      1:ln_n_7:2=   0.     
+ +1:net10:1 =   1.7987  1:net10:10=   1.7987  1:net10:11=   1.7987 
+ +1:net10:12=   1.7987  1:net10:13=   1.7987  1:net10:14=   1.7987 
+ +1:net10:15=   1.7987  1:net10:16=   1.7987  1:net10:17=   1.7987 
+ +1:net10:18=   1.7987  1:net10:19=   1.7987  1:net10:2 =   1.7987 
+ +1:net10:20=   1.7987  1:net10:21=   1.7987  1:net10:22=   1.7987 
+ +1:net10:23=   1.7987  1:net10:24=   1.7987  1:net10:25=   1.7987 
+ +1:net10:26=   1.7987  1:net10:27=   1.7987  1:net10:28=   1.7987 
+ +1:net10:29=   1.7987  1:net10:3 =   1.7987  1:net10:30=   1.7987 
+ +1:net10:31=   1.7987  1:net10:32=   1.7987  1:net10:33=   1.7987 
+ +1:net10:34=   1.7987  1:net10:35=   1.7987  1:net10:36=   1.7987 
+ +1:net10:37=   1.7987  1:net10:38=   1.7987  1:net10:39=   1.7987 
+ +1:net10:4 =   1.7987  1:net10:40=   1.7987  1:net10:41=   1.7987 
+ +1:net10:42=   1.7987  1:net10:43=   1.7987  1:net10:44=   1.7987 
+ +1:net10:45=   1.7987  1:net10:46=   1.7987  1:net10:5 =   1.7987 
+ +1:net10:6 =   1.7987  1:net10:7 =   1.7987  1:net10:8 =   1.7987 
+ +1:net10:9 =   1.7987  1:s0:1    =   1.7993  1:s0:2    =   1.7993 
+ +1:s0:3    =   1.7993  1:s0:4    =   1.7993  1:s0:5    =   1.7993 
+ +1:s0:6    =   1.7993  1:s0:7    =   1.7993  1:s1:1    =   1.7993 
+ +1:s1:2    =   1.7993  1:s1:3    =   1.7993  1:s1:4    =   1.7993 
+ +1:s1:5    =   1.7993  1:s1:6    =   1.7993  1:s1:7    =   1.7993 
+ +1:vdd!:1  =   1.8000  1:vdd!:10 =   1.8000  1:vdd!:100=   1.8000 
+ +1:vdd!:101=   1.8000  1:vdd!:102=   1.8000  1:vdd!:103=   1.8000 
+ +1:vdd!:104=   1.8000  1:vdd!:105=   1.8000  1:vdd!:106=   1.8000 
+ +1:vdd!:107=   1.8000  1:vdd!:108=   1.8000  1:vdd!:109=   1.8000 
+ +1:vdd!:11 =   1.8000  1:vdd!:110=   1.8000  1:vdd!:111=   1.8000 
+ +1:vdd!:112=   1.8000  1:vdd!:113=   1.8000  1:vdd!:114=   1.8000 
+ +1:vdd!:115=   1.8000  1:vdd!:116=   1.8000  1:vdd!:117=   1.8000 
+ +1:vdd!:118=   1.8000  1:vdd!:119=   1.8000  1:vdd!:12 =   1.8000 
+ +1:vdd!:120=   1.8000  1:vdd!:121=   1.8000  1:vdd!:122=   1.8000 
+ +1:vdd!:123=   1.8000  1:vdd!:124=   1.8000  1:vdd!:125=   1.8000 
+ +1:vdd!:126=   1.8000  1:vdd!:127=   1.8000  1:vdd!:128=   1.8000 
+ +1:vdd!:129=   1.8000  1:vdd!:13 =   1.8000  1:vdd!:130=   1.8000 
+ +1:vdd!:131=   1.8000  1:vdd!:132=   1.8000  1:vdd!:133=   1.8000 
+ +1:vdd!:134=   1.8000  1:vdd!:135=   1.8000  1:vdd!:136=   1.8000 
+ +1:vdd!:137=   1.8000  1:vdd!:138=   1.8000  1:vdd!:139=   1.8000 
+ +1:vdd!:14 =   1.8000  1:vdd!:140=   1.8000  1:vdd!:141=   1.8000 
+ +1:vdd!:142=   1.8000  1:vdd!:143=   1.8000  1:vdd!:144=   1.8000 
+ +1:vdd!:145=   1.8000  1:vdd!:146=   1.8000  1:vdd!:147=   1.8000 
+ +1:vdd!:148=   1.8000  1:vdd!:149=   1.8000  1:vdd!:15 =   1.8000 
+ +1:vdd!:150=   1.8000  1:vdd!:151=   1.8000  1:vdd!:152=   1.8000 
+ +1:vdd!:153=   1.8000  1:vdd!:154=   1.8000  1:vdd!:155=   1.8000 
+ +1:vdd!:156=   1.8000  1:vdd!:157=   1.8000  1:vdd!:158=   1.8000 
+ +1:vdd!:159=   1.8000  1:vdd!:16 =   1.8000  1:vdd!:160=   1.8000 
+ +1:vdd!:161=   1.8000  1:vdd!:162=   1.8000  1:vdd!:163=   1.8000 
+ +1:vdd!:164=   1.8000  1:vdd!:165=   1.8000  1:vdd!:166=   1.8000 
+ +1:vdd!:167=   1.8000  1:vdd!:168=   1.8000  1:vdd!:169=   1.8000 
+ +1:vdd!:17 =   1.8000  1:vdd!:170=   1.8000  1:vdd!:171=   1.8000 
+ +1:vdd!:172=   1.8000  1:vdd!:173=   1.8000  1:vdd!:174=   1.8000 
+ +1:vdd!:175=   1.8000  1:vdd!:176=   1.8000  1:vdd!:177=   1.8000 
+ +1:vdd!:178=   1.8000  1:vdd!:179=   1.8000  1:vdd!:18 =   1.8000 
+ +1:vdd!:180=   1.8000  1:vdd!:181=   1.8000  1:vdd!:182=   1.8000 
+ +1:vdd!:183=   1.8000  1:vdd!:184=   1.8000  1:vdd!:185=   1.8000 
+ +1:vdd!:186=   1.8000  1:vdd!:187=   1.8000  1:vdd!:188=   1.8000 
+ +1:vdd!:189=   1.8000  1:vdd!:19 =   1.8000  1:vdd!:190=   1.8000 
+ +1:vdd!:191=   1.8000  1:vdd!:192=   1.8000  1:vdd!:193=   1.8000 
+ +1:vdd!:194=   1.8000  1:vdd!:195=   1.8000  1:vdd!:196=   1.8000 
+ +1:vdd!:197=   1.8000  1:vdd!:198=   1.8000  1:vdd!:199=   1.8000 
+ +1:vdd!:2  =   1.8000  1:vdd!:20 =   1.8000  1:vdd!:200=   1.8000 
+ +1:vdd!:201=   1.8000  1:vdd!:202=   1.8000  1:vdd!:203=   1.8000 
+ +1:vdd!:204=   1.8000  1:vdd!:205=   1.8000  1:vdd!:206=   1.8000 
+ +1:vdd!:207=   1.8000  1:vdd!:208=   1.8000  1:vdd!:209=   1.8000 
+ +1:vdd!:21 =   1.8000  1:vdd!:210=   1.8000  1:vdd!:211=   1.8000 
+ +1:vdd!:212=   1.8000  1:vdd!:213=   1.8000  1:vdd!:214=   1.8000 
+ +1:vdd!:215=   1.8000  1:vdd!:216=   1.8000  1:vdd!:217=   1.8000 
+ +1:vdd!:218=   1.8000  1:vdd!:219=   1.8000  1:vdd!:22 =   1.8000 
+ +1:vdd!:220=   1.8000  1:vdd!:221=   1.8000  1:vdd!:222=   1.8000 
+ +1:vdd!:223=   1.8000  1:vdd!:224=   1.8000  1:vdd!:225=   1.8000 
+ +1:vdd!:226=   1.8000  1:vdd!:227=   1.8000  1:vdd!:228=   1.8000 
+ +1:vdd!:229=   1.8000  1:vdd!:23 =   1.8000  1:vdd!:230=   1.8000 
+ +1:vdd!:231=   1.8000  1:vdd!:232=   1.8000  1:vdd!:233=   1.8000 
+ +1:vdd!:234=   1.8000  1:vdd!:235=   1.8000  1:vdd!:236=   1.8000 
+ +1:vdd!:237=   1.8000  1:vdd!:238=   1.8000  1:vdd!:239=   1.8000 
+ +1:vdd!:24 =   1.8000  1:vdd!:240=   1.8000  1:vdd!:241=   1.8000 
+ +1:vdd!:242=   1.8000  1:vdd!:243=   1.8000  1:vdd!:244=   1.8000 
+ +1:vdd!:245=   1.8000  1:vdd!:246=   1.8000  1:vdd!:247=   1.8000 
+ +1:vdd!:248=   1.8000  1:vdd!:249=   1.8000  1:vdd!:25 =   1.8000 
+ +1:vdd!:250=   1.8000  1:vdd!:251=   1.8000  1:vdd!:252=   1.8000 
+ +1:vdd!:253=   1.8000  1:vdd!:254=   1.8000  1:vdd!:255=   1.8000 
+ +1:vdd!:256=   1.8000  1:vdd!:257=   1.8000  1:vdd!:258=   1.8000 
+ +1:vdd!:259=   1.8000  1:vdd!:26 =   1.8000  1:vdd!:260=   1.8000 
+ +1:vdd!:261=   1.8000  1:vdd!:262=   1.8000  1:vdd!:263=   1.8000 
+ +1:vdd!:264=   1.8000  1:vdd!:265=   1.8000  1:vdd!:266=   1.8000 
+ +1:vdd!:267=   1.8000  1:vdd!:268=   1.8000  1:vdd!:269=   1.8000 
+ +1:vdd!:27 =   1.8000  1:vdd!:270=   1.8000  1:vdd!:271=   1.8000 
+ +1:vdd!:272=   1.8000  1:vdd!:273=   1.8000  1:vdd!:274=   1.8000 
+ +1:vdd!:275=   1.8000  1:vdd!:276=   1.8000  1:vdd!:277=   1.8000 
+ +1:vdd!:278=   1.8000  1:vdd!:279=   1.8000  1:vdd!:28 =   1.8000 
+ +1:vdd!:280=   1.8000  1:vdd!:281=   1.8000  1:vdd!:282=   1.8000 
+ +1:vdd!:283=   1.8000  1:vdd!:284=   1.8000  1:vdd!:285=   1.8000 
+ +1:vdd!:286=   1.8000  1:vdd!:287=   1.8000  1:vdd!:288=   1.8000 
+ +1:vdd!:289=   1.8000  1:vdd!:29 =   1.8000  1:vdd!:290=   1.8000 
+ +1:vdd!:291=   1.8000  1:vdd!:292=   1.8000  1:vdd!:293=   1.8000 
+ +1:vdd!:294=   1.8000  1:vdd!:295=   1.8000  1:vdd!:296=   1.8000 
+ +1:vdd!:297=   1.8000  1:vdd!:298=   1.8000  1:vdd!:299=   1.8000 
+ +1:vdd!:3  =   1.8000  1:vdd!:30 =   1.8000  1:vdd!:300=   1.8000 
+ +1:vdd!:301=   1.8000  1:vdd!:302=   1.8000  1:vdd!:303=   1.8000 
+ +1:vdd!:304=   1.8000  1:vdd!:305=   1.8000  1:vdd!:306=   1.8000 
+ +1:vdd!:307=   1.8000  1:vdd!:308=   1.8000  1:vdd!:309=   1.8000 
+ +1:vdd!:31 =   1.8000  1:vdd!:310=   1.8000  1:vdd!:311=   1.8000 
+ +1:vdd!:312=   1.8000  1:vdd!:313=   1.8000  1:vdd!:314=   1.8000 
+ +1:vdd!:315=   1.8000  1:vdd!:316=   1.8000  1:vdd!:317=   1.8000 
+ +1:vdd!:318=   1.8000  1:vdd!:319=   1.8000  1:vdd!:32 =   1.8000 
+ +1:vdd!:320=   1.8000  1:vdd!:321=   1.8000  1:vdd!:322=   1.8000 
+ +1:vdd!:323=   1.8000  1:vdd!:324=   1.8000  1:vdd!:325=   1.8000 
+ +1:vdd!:326=   1.8000  1:vdd!:327=   1.8000  1:vdd!:33 =   1.8000 
+ +1:vdd!:34 =   1.8000  1:vdd!:35 =   1.8000  1:vdd!:36 =   1.8000 
+ +1:vdd!:37 =   1.8000  1:vdd!:38 =   1.8000  1:vdd!:39 =   1.8000 
+ +1:vdd!:4  =   1.8000  1:vdd!:40 =   1.8000  1:vdd!:41 =   1.8000 
+ +1:vdd!:42 =   1.8000  1:vdd!:43 =   1.8000  1:vdd!:44 =   1.8000 
+ +1:vdd!:45 =   1.8000  1:vdd!:46 =   1.8000  1:vdd!:47 =   1.8000 
+ +1:vdd!:48 =   1.8000  1:vdd!:49 =   1.8000  1:vdd!:5  =   1.8000 
+ +1:vdd!:50 =   1.8000  1:vdd!:51 =   1.8000  1:vdd!:52 =   1.8000 
+ +1:vdd!:53 =   1.8000  1:vdd!:54 =   1.8000  1:vdd!:55 =   1.8000 
+ +1:vdd!:56 =   1.8000  1:vdd!:57 =   1.8000  1:vdd!:58 =   1.8000 
+ +1:vdd!:59 =   1.8000  1:vdd!:6  =   1.8000  1:vdd!:60 =   1.8000 
+ +1:vdd!:61 =   1.8000  1:vdd!:62 =   1.8000  1:vdd!:63 =   1.8000 
+ +1:vdd!:64 =   1.8000  1:vdd!:65 =   1.8000  1:vdd!:66 =   1.8000 
+ +1:vdd!:67 =   1.8000  1:vdd!:68 =   1.8000  1:vdd!:69 =   1.8000 
+ +1:vdd!:7  =   1.8000  1:vdd!:70 =   1.8000  1:vdd!:71 =   1.8000 
+ +1:vdd!:72 =   1.8000  1:vdd!:73 =   1.8000  1:vdd!:74 =   1.8000 
+ +1:vdd!:75 =   1.8000  1:vdd!:76 =   1.8000  1:vdd!:77 =   1.8000 
+ +1:vdd!:78 =   1.8000  1:vdd!:79 =   1.8000  1:vdd!:8  =   1.8000 
+ +1:vdd!:80 =   1.8000  1:vdd!:81 =   1.8000  1:vdd!:82 =   1.8000 
+ +1:vdd!:83 =   1.8000  1:vdd!:84 =   1.8000  1:vdd!:85 =   1.8000 
+ +1:vdd!:86 =   1.8000  1:vdd!:87 =   1.8000  1:vdd!:88 =   1.8000 
+ +1:vdd!:89 =   1.8000  1:vdd!:9  =   1.8000  1:vdd!:90 =   1.8000 
+ +1:vdd!:91 =   1.8000  1:vdd!:92 =   1.8000  1:vdd!:93 =   1.8000 
+ +1:vdd!:94 =   1.8000  1:vdd!:95 =   1.8000  1:vdd!:96 =   1.8000 
+ +1:vdd!:97 =   1.8000  1:vdd!:98 =   1.8000  1:vdd!:99 =   1.8000 
+ +1:xi0|xi2|=   1.7987  1:xi1|xi4|=   1.7987  1:xi1|xi5|=   1.7987 
+ +1:xi0|xi7|= 468.7571m 1:xi1|xi8|= 468.7571m 1:xi0|xi0|= 468.7571m
+ +1:xi0|xi6|= 468.7571m 1:xi0|xi7|= 468.7571m 1:xi1|xi7|= 468.7571m
+ +1:xi0|xi2|= 468.7571m 1:xi1|xi0|= 468.7571m 1:xi1|xi6|= 468.7571m
+ +1:xi0|xi3|= 468.7571m 1:xi0|xi2|= 468.7571m 1:xi1|xi7|= 468.7571m
+ +1:xi0|xi3|= 468.7571m 1:xi1|xi2|= 468.7571m 1:xi0|xi1|= 468.7571m
+ +1:xi1|xi3|= 468.7571m 1:xi0|xi5|= 468.7571m 1:xi1|xi2|= 468.7571m
+ +1:xi0|xi1|= 468.7571m 1:xi1|xi3|= 468.7571m 1:xi0|xi5|= 468.7571m
+ +1:xi1|xi1|= 468.7571m 1:xi0|xi0|= 468.7571m 1:xi1|xi5|= 468.7571m
+ +1:xi0|xi4|= 468.7571m 1:xi1|xi1|= 468.7571m 1:xi1|xi5|= 468.7571m
+ +1:xi0|xi4|= 468.7571m 1:xi1|xi0|= 468.7571m 1:xi1|xi4|= 468.7571m
+ +1:xi0|xi6|= 468.7571m 1:xi1|xi4|= 468.7571m 1:xi0|xi8|= 468.7571m
+ +1:xi1|xi6|= 468.7571m 1:xi1|xi8|= 468.7571m 1:xi0|xi8|= 468.7571m
+ +1:xi1|xi1|=   1.8000  1:xi1|xi8|=   1.8000  1:xi1|xi0|=   1.8000 
+ +1:xi1|xi8|=   1.8000  1:xi0|xi0|=   1.8000  1:xi0|xi8|=   1.8000 
+ +1:xi0|xi1|=   1.8000  1:xi0|xi8|=   1.8000  1:xi0|xi4|=   1.8000 
+ +1:xi0|xi5|=   1.8000  1:xi0|xi2|=   1.7990  1:xi0|xi3|= 472.0896u
+ +1:xi0|xi5|= 472.0738u 1:xi0|xi7|=   1.7984  1:xi0|xi4|=   1.7984 
+ +1:xi0|xi3|=   1.7984  1:xi0|xi7|= 498.2988u 1:xi0|xi1|= 498.2354u
+ +1:xi0|xi0|= 498.1862u 1:xi0|xi6|=   1.7990  1:xi0|xi6|= 440.4297u
+ +1:xi1|xi2|=   1.7990  1:xi1|xi2|=   1.7987  1:xi1|xi3|= 465.9667u
+ +1:xi1|xi5|= 465.9510u 1:xi1|xi7|=   1.7984  1:xi1|xi4|=   1.7984 
+ +1:xi1|xi3|=   1.7984  1:xi1|xi7|= 493.5690u 1:xi1|xi1|= 493.5056u
+ +1:xi1|xi0|= 493.4564u 1:xi1|xi6|=   1.7990  1:xi1|xi6|= 433.5110u
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3= 441.0872u 1:xi0|net3= 440.4055u
+ +1:xi0|net3= 440.1845u 1:xi0|net3= 440.1845u 1:xi0|net3= 440.1776u
+ +1:xi0|net3= 440.0177u 1:xi0|net3= 440.0177u 1:xi0|net3= 440.2000u
+ +1:xi0|net3= 440.3373u 1:xi0|net3= 440.3373u 1:xi0|net3= 440.4118u
+ +1:xi0|net3= 440.4297u 1:xi0|net3= 440.0099u 1:xi0|net3= 440.3440u
+ +1:xi0|net3= 441.0872u 1:xi0|net3= 440.4297u 1:xi0|net3= 440.2071u
+ +1:xi0|net3= 440.2000u 1:xi0|net3= 439.9108u 1:xi0|net3= 440.2071u
+ +1:xi0|net3= 440.4055u 1:xi0|net3= 441.6408u 1:xi0|net3= 440.9675u
+ +1:xi0|net3= 440.4272u 1:xi0|net3= 440.2071u 1:xi0|net3= 440.4108u
+ +1:xi0|net3= 440.4586u 1:xi0|net3= 439.9108u 1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3=   1.7984 
+ +1:xi0|net3=   1.7984  1:xi0|net3=   1.7984  1:xi0|net3= 472.7329u
+ +1:xi0|net3= 471.8499u 1:xi0|net3= 472.0565u 1:xi0|net3= 472.1044u
+ +1:xi0|net3= 471.8342u 1:xi0|net3= 472.0409u 1:xi0|net3= 472.0887u
+ +1:xi0|net3= 471.4828u 1:xi0|net3= 472.0187u 1:xi0|net3= 471.8269u
+ +1:xi0|net3= 471.8112u 1:xi0|net3= 472.0896u 1:xi0|net3= 471.8269u
+ +1:xi0|net3= 471.7896u 1:xi0|net3= 471.6057u 1:xi0|net3= 471.6057u
+ +1:xi0|net3= 471.8121u 1:xi0|net3= 471.9501u 1:xi0|net3= 471.9501u
+ +1:xi0|net3= 472.0583u 1:xi0|net3= 472.0426u 1:xi0|net3= 471.5967u
+ +1:xi0|net3= 472.7172u 1:xi0|net3= 471.9569u 1:xi0|net3= 472.7329u
+ +1:xi0|net3= 472.0896u 1:xi0|net3= 472.7172u 1:xi0|net3= 472.0738u
+ +1:xi0|net3= 471.8499u 1:xi0|net3= 471.8342u 1:xi0|net3= 471.8121u
+ +1:xi0|net3= 471.8499u 1:xi0|net3= 471.8342u 1:xi0|net3= 472.0738u
+ +1:xi0|net3= 471.4828u 1:xi0|net3= 472.0187u 1:xi0|net3= 473.2604u
+ +1:xi0|net3= 472.6132u 1:xi0|net3= 472.0853u 1:xi0|net3= 472.5974u
+ +1:xi0|net3= 472.0696u 1:xi0|net3= 499.2739u 1:xi0|net3= 498.2963u
+ +1:xi0|net3= 498.2311u 1:xi0|net3= 499.0416u 1:xi0|net3= 498.1837u
+ +1:xi0|net3= 498.0822u 1:xi0|net3= 498.2858u 1:xi0|net3= 498.3461u
+ +1:xi0|net3= 498.0065u 1:xi0|net3= 498.2131u 1:xi0|net3= 498.2609u
+ +1:xi0|net3= 499.1542u 1:xi0|net3= 497.9696u 1:xi0|net3= 498.1732u
+ +1:xi0|net3= 498.2336u 1:xi0|net3= 497.6259u 1:xi0|net3= 498.1766u
+ +1:xi0|net3= 498.0595u 1:xi0|net3= 498.0595u 1:xi0|net3= 497.9835u
+ +1:xi0|net3= 497.9469u 1:xi0|net3= 497.9231u 1:xi0|net3= 498.2988u
+ +1:xi0|net3= 497.7193u 1:xi0|net3= 497.7193u 1:xi0|net3= 497.9452u
+ +1:xi0|net3= 498.0807u 1:xi0|net3= 498.0807u 1:xi0|net3= 498.2870u
+ +1:xi0|net3= 498.2149u 1:xi0|net3= 498.1744u 1:xi0|net3= 499.2739u
+ +1:xi0|net3= 498.2988u 1:xi0|net3= 499.1887u 1:xi0|net3= 499.1887u
+ +1:xi0|net3= 498.2354u 1:xi0|net3= 499.1613u 1:xi0|net3= 498.1862u
+ +1:xi0|net3= 497.7093u 1:xi0|net3= 498.0822u 1:xi0|net3= 498.0065u
+ +1:xi0|net3= 497.9696u 1:xi0|net3= 498.0874u 1:xi0|net3= 497.9452u
+ +1:xi0|net3= 499.0690u 1:xi0|net3= 498.0822u 1:xi0|net3= 498.0065u
+ +1:xi0|net3= 498.1766u 1:xi0|net3= 497.6259u 1:xi0|net3= 497.9696u
+ +1:xi0|net3= 498.2354u 1:xi0|net3= 499.1613u 1:xi0|net3= 498.1862u
+ +1:xi0|net3= 499.3966u 1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7990 
+ +1:xi0|net3=   1.7990  1:xi0|net3=   1.7990  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|net3=   1.7987 
+ +1:xi0|net3=   1.7987  1:xi0|net3=   1.7987  1:xi0|xi0|=   1.7990 
+ +1:xi0|xi0|=   1.5034  1:xi0|xi0|=   1.5034  1:xi0|xi0|=  26.0867u
+ +1:xi0|xi0|=   1.3914  1:xi0|xi0|=   1.7990  1:xi0|xi0|=   1.8000 
+ +1:xi0|xi0|=   1.8000  1:xi0|xi0|=   1.3914  1:xi0|xi0|=   1.7990 
+ +1:xi0|xi0|= 499.1613u 1:xi0|xi0|=   1.8000  1:xi0|xi0|=   1.5034 
+ +1:xi0|xi0|=   1.5034  1:xi0|xi0|=   1.5034  1:xi0|xi0|=   1.5034 
+ +1:xi0|xi1|=   1.7987  1:xi0|xi1|= 413.8618u 1:xi0|xi1|= 410.5262u
+ +1:xi0|xi1|=  29.4969u 1:xi0|xi1|=   1.3914  1:xi0|xi1|=   1.7987 
+ +1:xi0|xi1|= 499.1887u 1:xi0|xi1|=   1.8000  1:xi0|xi1|=   1.3914 
+ +1:xi0|xi1|=   1.7987  1:xi0|xi1|=   1.8000  1:xi0|xi1|=   1.8000 
+ +1:xi0|xi1|= 412.1940u 1:xi0|xi1|= 412.1940u 1:xi0|xi1|= 412.1940u
+ +1:xi0|xi1|= 412.1940u 1:xi0|xi2|= 469.8277u 1:xi0|xi2|= 303.4333u
+ +1:xi0|xi2|= 301.1895u 1:xi0|xi2|=  27.4771u 1:xi0|xi2|=   1.3914 
+ +1:xi0|xi2|= 473.4757u 1:xi0|xi2|=   1.7990  1:xi0|xi2|=   1.8000 
+ +1:xi0|xi2|=   1.3914  1:xi0|xi2|= 473.4763u 1:xi0|xi2|=   1.7987 
+ +1:xi0|xi2|=   1.8000  1:xi0|xi2|= 302.3114u 1:xi0|xi2|= 302.3114u
+ +1:xi0|xi2|= 302.3114u 1:xi0|xi2|= 302.3114u 1:xi0|xi3|=   1.7990 
+ +1:xi0|xi3|= 412.5145u 1:xi0|xi3|= 409.1790u 1:xi0|xi3|=  28.4102u
+ +1:xi0|xi3|=   1.3914  1:xi0|xi3|=   1.7990  1:xi0|xi3|= 472.7329u
+ +1:xi0|xi3|=   1.8000  1:xi0|xi3|=   1.3914  1:xi0|xi3|=   1.7990 
+ +1:xi0|xi3|=   1.7984  1:xi0|xi3|=   1.8000  1:xi0|xi3|= 410.8467u
+ +1:xi0|xi3|= 410.8467u 1:xi0|xi3|= 410.8467u 1:xi0|xi3|= 410.8467u
+ +1:xi0|xi4|= 438.4719u 1:xi0|xi4|= 286.9113u 1:xi0|xi4|= 284.8200u
+ +1:xi0|xi4|=  25.8475u 1:xi0|xi4|=   1.3914  1:xi0|xi4|= 441.8566u
+ +1:xi0|xi4|=   1.7984  1:xi0|xi4|=   1.8000  1:xi0|xi4|=   1.3914 
+ +1:xi0|xi4|= 441.8539u 1:xi0|xi4|=   1.8000  1:xi0|xi4|=   1.8000 
+ +1:xi0|xi4|= 285.8656u 1:xi0|xi4|= 285.8656u 1:xi0|xi4|= 285.8656u
+ +1:xi0|xi4|= 285.8656u 1:xi0|xi5|=   1.7984  1:xi0|xi5|= 412.9560u
+ +1:xi0|xi5|= 409.6233u 1:xi0|xi5|=  28.8801u 1:xi0|xi5|=   1.3914 
+ +1:xi0|xi5|=   1.7984  1:xi0|xi5|= 472.7172u 1:xi0|xi5|=   1.8000 
+ +1:xi0|xi5|=   1.3914  1:xi0|xi5|=   1.7984  1:xi0|xi5|=   1.8000 
+ +1:xi0|xi5|=   1.8000  1:xi0|xi5|= 411.2897u 1:xi0|xi5|= 411.2897u
+ +1:xi0|xi5|= 411.2897u 1:xi0|xi5|= 411.2897u 1:xi0|xi6|=   1.7993 
+ +1:xi0|xi6|=   1.5027  1:xi0|xi6|=   1.5027  1:xi0|xi6|=  23.6138u
+ +1:xi0|xi6|=   1.3914  1:xi0|xi6|=   1.7993  1:xi0|xi6|=   1.7990 
+ +1:xi0|xi6|=   1.8000  1:xi0|xi6|=   1.3914  1:xi0|xi6|=   1.7993 
+ +1:xi0|xi6|= 441.0872u 1:xi0|xi6|=   1.8000  1:xi0|xi6|=   1.5027 
+ +1:xi0|xi6|=   1.5027  1:xi0|xi6|=   1.5027  1:xi0|xi6|=   1.5027 
+ +1:xi0|xi7|=   1.7987  1:xi0|xi7|=   1.5021  1:xi0|xi7|=   1.5021 
+ +1:xi0|xi7|=  22.8976u 1:xi0|xi7|=   1.3914  1:xi0|xi7|=   1.7987 
+ +1:xi0|xi7|=   1.7984  1:xi0|xi7|=   1.8000  1:xi0|xi7|=   1.3914 
+ +1:xi0|xi7|=   1.7987  1:xi0|xi7|= 499.2739u 1:xi0|xi7|=   1.8000 
+ +1:xi0|xi7|=   1.5021  1:xi0|xi7|=   1.5021  1:xi0|xi7|=   1.5021 
+ +1:xi0|xi7|=   1.5021  1:xi0|xi8|= 495.7920u 1:xi0|xi8|= 317.0472u
+ +1:xi0|xi8|= 314.6754u 1:xi0|xi8|=  28.1906u 1:xi0|xi8|=   1.3914 
+ +1:xi0|xi8|= 499.6083u 1:xi0|xi8|=   1.8000  1:xi0|xi8|=   1.8000 
+ +1:xi0|xi8|=   1.3914  1:xi0|xi8|= 499.6084u 1:xi0|xi8|=   1.8000 
+ +1:xi0|xi8|=   1.8000  1:xi0|xi8|= 315.8613u 1:xi0|xi8|= 315.8613u
+ +1:xi0|xi8|= 315.8613u 1:xi0|xi8|= 315.8613u 1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3= 434.1685u 1:xi1|net3= 433.4891u 1:xi1|net3= 433.2658u
+ +1:xi1|net3= 433.2658u 1:xi1|net3= 433.2589u 1:xi1|net3= 433.0976u
+ +1:xi1|net3= 433.0976u 1:xi1|net3= 433.2815u 1:xi1|net3= 433.4202u
+ +1:xi1|net3= 433.4202u 1:xi1|net3= 433.4931u 1:xi1|net3= 433.5110u
+ +1:xi1|net3= 433.0897u 1:xi1|net3= 433.4270u 1:xi1|net3= 434.1685u
+ +1:xi1|net3= 433.5110u 1:xi1|net3= 433.2884u 1:xi1|net3= 433.2815u
+ +1:xi1|net3= 432.9898u 1:xi1|net3= 433.2884u 1:xi1|net3= 433.4891u
+ +1:xi1|net3= 434.7372u 1:xi1|net3= 434.0488u 1:xi1|net3= 433.5085u
+ +1:xi1|net3= 433.2884u 1:xi1|net3= 433.4921u 1:xi1|net3= 433.5399u
+ +1:xi1|net3= 432.9898u 1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3=   1.7984  1:xi1|net3=   1.7984 
+ +1:xi1|net3=   1.7984  1:xi1|net3= 466.6100u 1:xi1|net3= 465.7270u
+ +1:xi1|net3= 465.9337u 1:xi1|net3= 465.9815u 1:xi1|net3= 465.7113u
+ +1:xi1|net3= 465.9180u 1:xi1|net3= 465.9658u 1:xi1|net3= 465.3599u
+ +1:xi1|net3= 465.8958u 1:xi1|net3= 465.7040u 1:xi1|net3= 465.6884u
+ +1:xi1|net3= 465.9667u 1:xi1|net3= 465.7040u 1:xi1|net3= 465.6667u
+ +1:xi1|net3= 465.4828u 1:xi1|net3= 465.4828u 1:xi1|net3= 465.6893u
+ +1:xi1|net3= 465.8272u 1:xi1|net3= 465.8272u 1:xi1|net3= 465.9354u
+ +1:xi1|net3= 465.9197u 1:xi1|net3= 465.4738u 1:xi1|net3= 466.5943u
+ +1:xi1|net3= 465.8340u 1:xi1|net3= 466.6100u 1:xi1|net3= 465.9667u
+ +1:xi1|net3= 466.5943u 1:xi1|net3= 465.9510u 1:xi1|net3= 465.7270u
+ +1:xi1|net3= 465.7113u 1:xi1|net3= 465.6893u 1:xi1|net3= 465.7270u
+ +1:xi1|net3= 465.7113u 1:xi1|net3= 465.9510u 1:xi1|net3= 465.3599u
+ +1:xi1|net3= 465.8958u 1:xi1|net3= 467.1376u 1:xi1|net3= 465.9624u
+ +1:xi1|net3= 466.4903u 1:xi1|net3= 466.4746u 1:xi1|net3= 465.9467u
+ +1:xi1|net3= 494.5442u 1:xi1|net3= 493.5665u 1:xi1|net3= 493.5013u
+ +1:xi1|net3= 494.3118u 1:xi1|net3= 493.4539u 1:xi1|net3= 493.3523u
+ +1:xi1|net3= 493.5559u 1:xi1|net3= 493.6163u 1:xi1|net3= 493.2766u
+ +1:xi1|net3= 493.4833u 1:xi1|net3= 493.5311u 1:xi1|net3= 494.4244u
+ +1:xi1|net3= 493.2397u 1:xi1|net3= 493.4433u 1:xi1|net3= 493.5037u
+ +1:xi1|net3= 492.8960u 1:xi1|net3= 493.4468u 1:xi1|net3= 493.3297u
+ +1:xi1|net3= 493.3297u 1:xi1|net3= 493.2537u 1:xi1|net3= 493.2171u
+ +1:xi1|net3= 493.1932u 1:xi1|net3= 493.5690u 1:xi1|net3= 492.9894u
+ +1:xi1|net3= 492.9894u 1:xi1|net3= 493.2154u 1:xi1|net3= 493.3509u
+ +1:xi1|net3= 493.3509u 1:xi1|net3= 493.5572u 1:xi1|net3= 493.4850u
+ +1:xi1|net3= 493.4446u 1:xi1|net3= 494.5442u 1:xi1|net3= 493.5690u
+ +1:xi1|net3= 494.4589u 1:xi1|net3= 494.4589u 1:xi1|net3= 493.5056u
+ +1:xi1|net3= 494.4315u 1:xi1|net3= 493.4564u 1:xi1|net3= 492.9795u
+ +1:xi1|net3= 493.3523u 1:xi1|net3= 493.2766u 1:xi1|net3= 493.2397u
+ +1:xi1|net3= 493.3576u 1:xi1|net3= 493.2154u 1:xi1|net3= 494.3392u
+ +1:xi1|net3= 493.3523u 1:xi1|net3= 493.2766u 1:xi1|net3= 493.4468u
+ +1:xi1|net3= 492.8960u 1:xi1|net3= 493.2397u 1:xi1|net3= 493.5056u
+ +1:xi1|net3= 494.4315u 1:xi1|net3= 493.4564u 1:xi1|net3= 494.6668u
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7990  1:xi1|net3=   1.7990 
+ +1:xi1|net3=   1.7990  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|net3=   1.7987  1:xi1|net3=   1.7987 
+ +1:xi1|net3=   1.7987  1:xi1|xi0|=   1.7990  1:xi1|xi0|=   1.5034 
+ +1:xi1|xi0|=   1.5034  1:xi1|xi0|=  21.5037u 1:xi1|xi0|=   1.3914 
+ +1:xi1|xi0|=   1.7990  1:xi1|xi0|=   1.8000  1:xi1|xi0|=   1.8000 
+ +1:xi1|xi0|=   1.3914  1:xi1|xi0|=   1.7990  1:xi1|xi0|= 494.4315u
+ +1:xi1|xi0|=   1.8000  1:xi1|xi0|=   1.5034  1:xi1|xi0|=   1.5034 
+ +1:xi1|xi0|=   1.5034  1:xi1|xi0|=   1.5034  1:xi1|xi1|=   1.7987 
+ +1:xi1|xi1|= 408.5113u 1:xi1|xi1|= 405.1756u 1:xi1|xi1|=  24.1370u
+ +1:xi1|xi1|=   1.3914  1:xi1|xi1|=   1.7987  1:xi1|xi1|= 494.4589u
+ +1:xi1|xi1|=   1.8000  1:xi1|xi1|=   1.3914  1:xi1|xi1|=   1.7987 
+ +1:xi1|xi1|=   1.8000  1:xi1|xi1|=   1.8000  1:xi1|xi1|= 406.8434u
+ +1:xi1|xi1|= 406.8434u 1:xi1|xi1|= 406.8434u 1:xi1|xi1|= 406.8434u
+ +1:xi1|xi2|= 463.7047u 1:xi1|xi2|= 297.3051u 1:xi1|xi2|= 295.0612u
+ +1:xi1|xi2|=  21.3401u 1:xi1|xi2|=   1.3914  1:xi1|xi2|= 467.3529u
+ +1:xi1|xi2|=   1.7990  1:xi1|xi2|=   1.8000  1:xi1|xi2|=   1.3914 
+ +1:xi1|xi2|= 467.3535u 1:xi1|xi2|=   1.7987  1:xi1|xi2|=   1.8000 
+ +1:xi1|xi2|= 296.1832u 1:xi1|xi2|= 296.1832u 1:xi1|xi2|= 296.1832u
+ +1:xi1|xi2|= 296.1832u 1:xi1|xi3|=   1.7990  1:xi1|xi3|= 404.8420u
+ +1:xi1|xi3|= 401.5063u 1:xi1|xi3|=  20.7195u 1:xi1|xi3|=   1.3914 
+ +1:xi1|xi3|=   1.7990  1:xi1|xi3|= 466.6100u 1:xi1|xi3|=   1.8000 
+ +1:xi1|xi3|=   1.3914  1:xi1|xi3|=   1.7990  1:xi1|xi3|=   1.7984 
+ +1:xi1|xi3|=   1.8000  1:xi1|xi3|= 403.1742u 1:xi1|xi3|= 403.1742u
+ +1:xi1|xi3|= 403.1742u 1:xi1|xi3|= 403.1742u 1:xi1|xi4|= 431.5381u
+ +1:xi1|xi4|= 279.1093u 1:xi1|xi4|= 277.0092u 1:xi1|xi4|=  17.3857u
+ +1:xi1|xi4|=   1.3914  1:xi1|xi4|= 434.9541u 1:xi1|xi4|=   1.7984 
+ +1:xi1|xi4|=   1.8000  1:xi1|xi4|=   1.3914  1:xi1|xi4|= 434.9536u
+ +1:xi1|xi4|=   1.7987  1:xi1|xi4|=   1.8000  1:xi1|xi4|= 278.0592u
+ +1:xi1|xi4|= 278.0592u 1:xi1|xi4|= 278.0592u 1:xi1|xi4|= 278.0592u
+ +1:xi1|xi5|=   1.7984  1:xi1|xi5|= 405.8396u 1:xi1|xi5|= 402.5068u
+ +1:xi1|xi5|=  21.9581u 1:xi1|xi5|=   1.3914  1:xi1|xi5|=   1.7984 
+ +1:xi1|xi5|= 466.5943u 1:xi1|xi5|=   1.8000  1:xi1|xi5|=   1.3914 
+ +1:xi1|xi5|=   1.7984  1:xi1|xi5|=   1.7987  1:xi1|xi5|=   1.8000 
+ +1:xi1|xi5|= 404.1732u 1:xi1|xi5|= 404.1732u 1:xi1|xi5|= 404.1732u
+ +1:xi1|xi5|= 404.1732u 1:xi1|xi6|=   1.7993  1:xi1|xi6|=   1.5027 
+ +1:xi1|xi6|=   1.5027  1:xi1|xi6|=  14.3690u 1:xi1|xi6|=   1.3914 
+ +1:xi1|xi6|=   1.7993  1:xi1|xi6|=   1.7990  1:xi1|xi6|=   1.8000 
+ +1:xi1|xi6|=   1.3914  1:xi1|xi6|=   1.7993  1:xi1|xi6|= 434.1685u
+ +1:xi1|xi6|=   1.8000  1:xi1|xi6|=   1.5027  1:xi1|xi6|=   1.5027 
+ +1:xi1|xi6|=   1.5027  1:xi1|xi6|=   1.5027  1:xi1|xi7|=   1.7993 
+ +1:xi1|xi7|=   1.5022  1:xi1|xi7|=   1.5022  1:xi1|xi7|=   3.1836u
+ +1:xi1|xi7|=   1.3914  1:xi1|xi7|=   1.7993  1:xi1|xi7|=   1.7984 
+ +1:xi1|xi7|=   1.8000  1:xi1|xi7|=   1.3914  1:xi1|xi7|=   1.7993 
+ +1:xi1|xi7|= 494.5442u 1:xi1|xi7|=   1.8000  1:xi1|xi7|=   1.5022 
+ +1:xi1|xi7|=   1.5022  1:xi1|xi7|=   1.5022  1:xi1|xi7|=   1.5022 
+ +1:xi1|xi8|= 491.0620u 1:xi1|xi8|= 312.3093u 1:xi1|xi8|= 309.9374u
+ +1:xi1|xi8|=  23.4432u 1:xi1|xi8|=   1.3914  1:xi1|xi8|= 494.8786u
+ +1:xi1|xi8|=   1.8000  1:xi1|xi8|=   1.8000  1:xi1|xi8|=   1.3914 
+ +1:xi1|xi8|= 494.8786u 1:xi1|xi8|=   1.8000  1:xi1|xi8|=   1.8000 
+ +1:xi1|xi8|= 311.1233u 1:xi1|xi8|= 311.1233u 1:xi1|xi8|= 311.1233u
+ +1:xi1|xi8|= 311.1233u
+
+ ******
+ * hspice testbench - full adder 2-bit post-layout timing
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ trise_s0= 124.6117p  targ=  20.2039n   trig=  20.0793n
+ tfall_s0= 100.3701p  targ=  21.1851n   trig=  21.0847n
+ trise_s1= 124.4172p  targ=  20.2522n   trig=  20.1277n
+ tfall_s1=  98.7495p  targ=  21.2400n   trig=  21.1413n
+ trise_cout= 127.5811p  targ=  21.2497n   trig=  21.1221n
+ tfall_cout= 104.6475p  targ=  20.2107n   trig=  20.1061n
+
+          ***** job concluded
+ ******  
+ * hspice testbench - full adder 2-bit post-layout timing
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: 13th Gen Intel(R) Core(TM) i5-13500H
+ cpu MHz	: 3187.190
+  
+ OS:
+ Linux version 3.10.0-1160.59.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 23 16:47:03 UTC 2022
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Voltage Sources :       1
+
+  ******  Circuit Statistics  ******
+  # nodes       =    2228 # elements   =    4352
+  # resistors   =    2079 # capacitors =    2195 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      72 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.06           1          86
+  transient          1.05        4001        4092        1307 rev=        41
+  readin             0.06
+  errchk             0.03
+  setup              0.04
+  output             0.00
+
+
+           peak memory used        273.47 megabytes
+           total cpu time            1.25 seconds
+           total elapsed time        1.47 seconds
+           job started at     16:27:55 04/28/2026
+           job ended   at     16:27:56 04/28/2026
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.12(s)

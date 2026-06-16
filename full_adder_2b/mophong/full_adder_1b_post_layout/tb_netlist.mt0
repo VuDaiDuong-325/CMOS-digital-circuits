@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '* hspice testbench cho 1-bit full adder (post-layout)'
+ trise_s          tfall_s          trise_cout       tfall_cout      
+ temper           alter#          
+  1.253e-10        9.869e-11        1.272e-10        9.666e-11      
+   25.0000        1               

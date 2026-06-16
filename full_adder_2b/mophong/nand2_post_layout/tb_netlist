@@ -1,0 +1,62 @@
+* HSPICE Testbench - NAND2 Post-Layout Timing Simulation
+
+.options POST=1 parhier=local
+
+* --- 1. Models & Extracted Parasitics Section ---
+* Gọi thư viện công nghệ
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+* Gọi file Standard Parasitic Format (SPF) chứa layout đã trích xuất
+.include '/root/lab1vlsi/synopsys_custom/nand2.starrc.lpe/nand2.SPF'
+
+* --- 2. Design Variables ---
+.global vdd! gnd!
+.param vdd = 1.8
+
+* --- 3. Power Supply ---
+V_GND gnd! 0 0
+V_VDD vdd! 0 'vdd'
+
+* --- 4. Input Stimuli ---
+* Quét 4 trạng thái logic bằng 2 xung vuông (Trise/Tfall = 20ps)
+Va a 0 PULSE('vdd' 0 0 20p 20p 4n 8n)
+Vb b 0 PULSE('vdd' 0 0 20p 20p 2n 4n)
+
+* --- 5. DUT (Device Under Test) Instantiation ---
+* Khai báo X_core với đúng 3 chân A, B, Y theo thứ tự trong file SPF
+X_core a b y nand2
+
+* --- 6. Output Load ---
+* Tụ tải 10fF để đo đạc thực tế
+Cload y 0 10f
+
+* --- 7. Analysis Section ---
+* Mô phỏng 10ns để bao quát toàn bộ chu kỳ chuyển mạch
+.tran 0.01n 10n START=0
+* Lệnh vẽ đồ thị (Waveview sẽ đọc data từ option POST=1 này)
+.probe tran V(a) V(b) V(y)
+
+* ==============================================================================
+* LỆNH ĐO ĐẠC TIMING VÀ DELAY
+* ==============================================================================
+
+* 1. Đo Rise Time (trise) tại sự kiện 8ns (sử dụng TD=7n)
+.meas tran trise_y 
++ TRIG v(y) VAL='0.1*vdd' RISE=1 TD=7n
++ TARG v(y) VAL='0.9*vdd' RISE=1 TD=7n
+
+* 2. Đo Fall Time (tfall) tại sự kiện 6ns (sử dụng TD=5n)
+.meas tran tfall_y 
++ TRIG v(y) VAL='0.9*vdd' FALL=1 TD=5n
++ TARG v(y) VAL='0.1*vdd' FALL=1 TD=5n
+
+* 3. Đo Propagation Delay (tpd_hl): Output Y kéo xuống GND (tại 6ns)
+.meas tran tpd_hl 
++ TRIG v(b) VAL='0.5*vdd' RISE=1 TD=5n 
++ TARG v(y) VAL='0.5*vdd' FALL=1 TD=5n
+
+* 4. Đo Propagation Delay (tpd_lh): Output Y kéo lên VDD (tại 8ns)
+.meas tran tpd_lh 
++ TRIG v(a) VAL='0.5*vdd' FALL=1 TD=7n 
++ TARG v(y) VAL='0.5*vdd' RISE=1 TD=7n
+
+.end

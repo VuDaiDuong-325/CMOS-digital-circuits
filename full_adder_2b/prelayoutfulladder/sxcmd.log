@@ -1,0 +1,25 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP2 (build May 31, ) ###
+### created at 22:27:36 on Mon Apr 27 2026 (Linux AMD64) ###
+### Host Name: localhost.localdomain   User ID: root   PID: 12505   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) HOME defined
+sx_open_sim_file_read {tb_netlist.tr0}
+wv_move_window {Custom WaveView} {} -10 27
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 5
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(a)} 5
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 6
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(b)} 6
+wv_select_list_item {Custom WaveView} {} {sigview} {v(cin)} 7
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cin)} 7
+wv_select_list_item {Custom WaveView} {} {sigview} {v(s)} 9
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(s)} 9
+wv_select_list_item {Custom WaveView} {} {sigview} {v(cout)} 8
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cout)} 8
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/root/.cx_hostport/.cx_hostport_localhost.localdomain_12505'.

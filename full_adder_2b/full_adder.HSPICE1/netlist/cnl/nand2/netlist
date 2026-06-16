@@ -1,0 +1,18 @@
+********************************************************************************
+* Library          : nand2
+* Cell             : nand2
+* View             : schematic
+* View Search List : hspice hspiceD cmos.sch cmos_sch schematic veriloga
+* View Stop List   : hspice hspiceD veriloga
+********************************************************************************
+.subckt nand2 a b y
+m1 net5 b gnd! gnd! N w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++  nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+m0 y a net5 gnd! N w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++ nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+m3 y a vdd! vdd! P w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++ nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+m2 y b vdd! vdd! P w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++ nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+.ends nand2
+

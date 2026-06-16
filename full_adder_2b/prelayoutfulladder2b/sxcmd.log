@@ -1,0 +1,32 @@
+### Custom WaveView ADV log file, revision N-2017.12-SP2 (build May 31, ) ###
+### created at 14:21:39 on Tue Apr 28 2026 (Linux AMD64) ###
+### Host Name: localhost.localdomain   User ID: root   PID: 1709   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) HOME defined
+sx_open_sim_file_read {tb_netlist_fa2b.tr0}
+wv_move_window {Custom WaveView} {} -10 20
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_fa2b.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_fa2b.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:tb_netlist_fa2b.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a1)} 8
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(a1)} 8
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a0)} 7
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(a0)} 7
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b1)} 10
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(b1)} 10
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b0)} 9
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(b0)} 9
+wv_select_list_item {Custom WaveView} {} {sigview} {v(cin)} 11
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cin)} 11
+wv_select_list_item {Custom WaveView} {} {sigview} {v(s1)} 14
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(s1)} 14
+wv_select_list_item {Custom WaveView} {} {sigview} {v(s0)} 13
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(s0)} 13
+wv_select_list_item {Custom WaveView} {} {sigview} {v(cout)} 12
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(cout)} 12
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Grid Display} 
+wv_select_waveview 1 {waveview 1}
+wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Grid Display} 
+wv_select_window {Custom WaveView} 

@@ -1,0 +1,84 @@
+* HSPICE Netlist cho 1-bit Full Adder (Pre-layout)
+
+.options POST=1 parhier=local
+
+* ==============================================
+* 1. KHAI BÁO MODEL TRANSISTOR
+* ==============================================
+.include '/root/lab1vlsi/PDK/hspice/reference_models.inc'
+
+
+* ==============================================
+* 2. KHAI BÁO NGUỒN VÀ TÍN HIỆU KÍCH (TESTBENCH)
+* ==============================================
+.GLOBAL gnd! vdd!
+.param vdd_val = 1.2
+
+* Nguồn DC nuôi mạch
+V_vdd vdd! 0 DC vdd_val
+V_gnd gnd! 0 DC 0
+
+* Tạo tín hiệu xung (PULSE) để test toàn bộ 8 tổ hợp (000 đến 111) của A, B, Cin.
+* Cấu trúc: PULSE(V_low V_high T_delay T_rise T_fall T_on T_period)
+Va   a   0 PULSE(vdd_val 0 0 1p 1p 4n 8n)
+Vb   b   0 PULSE(vdd_val 0 0 1p 1p 2n 4n)
+Vcin cin 0 PULSE(vdd_val 0 0 1p 1p 1n 2n)
+
+* ==============================================
+* 3. KHAI BÁO SUBCIRCUIT NAND2
+* ==============================================
+.subckt nand2 a b y
+m1 net5 b gnd! gnd! N w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++  nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+m0 y a net5 gnd! N w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++ nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+m3 y a vdd! vdd! P w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++ nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+m2 y b vdd! vdd! P w=0.24u l=0.1u nf=1 m=1 ad=52.8f as=52.8f pd=0.68u ps=0.68u
++ nrd=0.9166666667 nrs=0.9166666667 sa=0.22u sb=0.22u sd=0
+.ends nand2
+
+* ==============================================
+* 4. MẠCH CHÍNH: KẾT NỐI FULL ADDER
+* ==============================================
+xi8 a b net36 nand2
+xi7 net34 net36 cout nand2
+xi6 net32 net33 s nand2
+xi5 net35 cin net34 nand2
+xi4 net34 cin net33 nand2
+xi3 net35 net34 net32 nand2
+xi2 net37 net38 net35 nand2
+xi1 net36 b net38 nand2
+xi0 a net36 net37 nand2
+
+* Gắn tụ tải thực tế (10fF) cho ngõ ra để kết quả delay không bị "ảo"
+Cload_s    s    0 10f
+Cload_cout cout 0 10f
+
+* ==============================================
+* 5. THIẾT LẬP LỆNH MÔ PHỎNG (ANALYSIS)
+* ==============================================
+* Quét mô phỏng từ 0 đến 10ns với bước nhảy 10ps (đủ để xem hết chu kỳ 8ns của chân A)
+.tran 10p 10n 
+
+* Yêu cầu lưu kết quả các node quan trọng để xem trên ezwave hoặc cscope
+.probe v(a) v(b) v(cin) v(s) v(cout)
+
+* ==============================================
+* 6. LỆNH ĐO ĐẠC (MEASUREMENTS)
+* ==============================================
+
+* Đo Rise Time cho chân S (Tăng từ 10% -> 90% VDD ở sườn lên đầu tiên)
+.meas tran trise_s TRIG v(s) VAL='0.1*vdd_val' RISE=1 TARG v(s) VAL='0.9*vdd_val' RISE=1
+
+* Đo Fall Time cho chân S (Giảm từ 90% -> 10% VDD ở sườn xuống đầu tiên)
+.meas tran tfall_s TRIG v(s) VAL='0.9*vdd_val' FALL=1 TARG v(s) VAL='0.1*vdd_val' FALL=1
+
+* Đo Rise Time cho chân Cout (Tăng từ 10% -> 90% VDD ở sườn lên đầu tiên)
+.meas tran trise_cout TRIG v(cout) VAL='0.1*vdd_val' RISE=1 TARG v(cout) VAL='0.9*vdd_val' RISE=1
+
+* Đo Fall Time cho chân Cout (Giảm từ 90% -> 10% VDD ở sườn xuống đầu tiên)
+.meas tran tfall_cout TRIG v(cout) VAL='0.9*vdd_val' FALL=1 TARG v(cout) VAL='0.1*vdd_val' FALL=1
+
+.end
+

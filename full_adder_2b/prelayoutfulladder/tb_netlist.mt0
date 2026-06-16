@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='N-2017.12-SP2 linux64' PARAM_COUNT=0
+.TITLE '*******************************************************'
+ trise_s          tfall_s          trise_cout       tfall_cout      
+ temper           alter#          
+  2.006e-10        1.151e-10        2.018e-10        5.117e-09      
+   25.0000        1               
