@@ -1,0 +1,10 @@
+INCLUDE $SYNOPSYS_CUSTOM_INSTALL/samples/lib.defs
+ASSIGN reference90RF libMode shared
+
+DEFINE reference90RF /root/lab1vlsi/PDK/reference90RF
+DEFINE CE222 ./CE222
+DEFINE Lab2 ./Lab2
+DEFINE baitap2904 ./baitap2904
+DEFINE Decoder ./Decoder
+DEFINE Lab3 ./Lab3
+DEFINE TEST_DFF ./TEST_DFF
